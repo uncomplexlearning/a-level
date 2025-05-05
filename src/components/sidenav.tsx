@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { slug } from "github-slugger";
 import "../app.css";
 
@@ -8,7 +9,13 @@ interface Heading {
   id: string;
 }
 
-export default function Sidenav({ content }: { content: string }) {
+export default function Sidenav({
+  content,
+  pathname,
+}: {
+  content: string;
+  pathname: string;
+}) {
   const [headings, setHeadings] = useState<Heading[]>([]);
 
   useEffect(() => {
@@ -43,7 +50,9 @@ export default function Sidenav({ content }: { content: string }) {
             style={{ marginLeft: (h.level - 1) * 16 }}
             className={styleLevel(h.level)}
           >
-            <a href={`#${h.id}`}>{h.text}</a>
+            <Link to={{ pathname: `/${pathname}`, hash: `#${h.id}` }}>
+              {h.text}
+            </Link>
           </li>
         ))}
       </ul>

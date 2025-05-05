@@ -11,8 +11,15 @@ import "../app.css";
 import Sidenav from "../components/sidenav";
 import TopNav from "../components/topNav";
 import SidebarToggle from "../components/sidebarToggle";
+import ScrollToHash from "../components/scrollToHash";
 
-export default function ContentPage({ file }: { file: string }) {
+export default function ContentPage({
+  file,
+  pathname,
+}: {
+  file: string;
+  pathname: string;
+}) {
   const [content, setContent] = useState("");
 
   useEffect(() => {
@@ -23,8 +30,9 @@ export default function ContentPage({ file }: { file: string }) {
 
   return (
     <>
+      <ScrollToHash />
       <TopNav />
-      <SidebarToggle content={content} />
+      <SidebarToggle content={content} pathname={pathname} />
       <div className="body-container">
         <div className="markdown-container">
           <div className="markdown-content">
@@ -42,7 +50,7 @@ export default function ContentPage({ file }: { file: string }) {
           </div>
         </div>
         <div className="sidenav-container">
-          <Sidenav content={content} />
+          <Sidenav content={content} pathname={pathname} />
         </div>
       </div>
       <footer className="main-footer">

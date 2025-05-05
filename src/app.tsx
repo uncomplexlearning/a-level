@@ -11,8 +11,14 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/physics" element={<ContentPage file="physics.md" />} />
-        <Route path="/cs" element={<ContentPage file="cs.md" />} />
+        <Route
+          path="/physics"
+          element={<ContentPage file="physics.md" pathname="physics" />}
+        />
+        <Route
+          path="/cs"
+          element={<ContentPage file="cs.md" pathname="cs" />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

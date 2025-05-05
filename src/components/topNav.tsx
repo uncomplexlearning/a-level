@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../app.css";
 
 export default function TopNav() {
@@ -10,10 +11,10 @@ export default function TopNav() {
         </a>
       </div>
       <div>
-        <a href="/cs">Computer Science</a>
+        <Link to="/cs">Computer Science</Link>
       </div>
       <div>
-        <a href="/physics">Physics</a>
+        <Link to="/physics">Physics</Link>
       </div>
     </header>
   );
