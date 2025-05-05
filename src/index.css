@@ -8,11 +8,12 @@
 }
 
 body {
-  overflow: hidden;
   position: relative;
+  color: #252525;
+  background-color: #fdfaff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    monospace !important;
 }
