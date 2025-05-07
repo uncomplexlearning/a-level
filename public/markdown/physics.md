@@ -1,11 +1,43 @@
 # 2 Particles and radiation
 
+## 2.1 Particles
+
+### 2.1.1 Constituents of the atom
+
+- Simple model of the atom, including the proton, neutron and electron. Charge and mass of the proton, neutron and electron in SI units and relative units.
+- Specific charge of the proton and the electron, and of nuclei and ions.
+- Proton number Z, nucleon number A, nuclide notation.
+- Meaning of isotopes and the use of isotopic data
+
+### 2.1.2 Stable and unstable nuclei
+
+The strong nuclear force; its role in keeping the nucleus
+stable; short-range attraction up to approximately 3 fm,
+very-short range repulsion closer than approximately 0.5
+fm.
+Unstable nuclei; alpha and beta decay.
+Equations for alpha decay, β− decay including the need for
+the neutrino.
+The existence of the neutrino was hypothesised to
+account for conservation of energy in beta decay.
+
+### 2.1.3 Particles, antiparticles and photons
+
+### 2.1.4 Particle interactions
+
+### 2.1.5 Classification of particles
+
+### 2.1.6 Quarks and antiquarks
+
+### 2.1.7 Applications of conservation laws
+
 ## 2.2 Electromagnetic radiation and quantum phenomena
 
 ### 2.2.1 The photoelectric effect
 
 - The photoelectric effect is where electrons (photoelectrons) are emitted from the **surface of a metal** after absorbing EM radiation
-  - provides evidence that light behaves as a particle - carried in discrete packets/quantised
+  - provides evidence that light behaves as a particle
+    - carried in discrete packets/quantised
 - As the incident radiation intensity is increased
   - more photons are incident on the material per second
   - more photoelectrons are emitted per second
@@ -212,19 +244,49 @@
 
 ### 3.1.2 Longitudinal and transverse waves
 
-- Transverse waves - waves oscillations perpendicular to direction of propagation - examples: - EM waves - vibrations on a string - S-waves - can be polarised - has crests and troughs - can be demonstrated with a vertical slinky
-  <br>
-- Longitudinal waves - waves oscillations parallel to direction of propagation - examples: - sound waves - P-waves - cannot be polarised - has areas of compression and rarefaction - can be demonstrated with a horizontal slinky
-  <br>
-- Polarisation - oscillations occur in only one plane perpendicular to the direction of propagation - this plane is known as the plane of polarisation - can only occur in transverse waves - because transverse waves oscillate planes perpendicular to the direction of propagation - can be used in: - polaroid sunglasses - light reflecting from reflective surfaces (e.g. puddles) undergo partial plane polarisation - polaroid sunglasses polarise the light so reduces glare - radio/microwave signals - radio and television signals are usually vertically polarised or horizontally polarised - therefore aerials need to be mounted flat (horizontal) or on its side (vertical)
-  > When answering scenairos related to polarisation, make use of "maximum" and "minimum"
-  > Always link back - "max occurs when aerial is aligned with plane of polarisation of the wave"
+- Transverse waves
+  - waves oscillations perpendicular to direction of propagation
+  - examples:
+    - EM waves
+    - vibrations on a string
+    - S-waves
+  - can be polarised
+  - has crests and troughs
+  - can be demonstrated with a vertical slinky
+    <br>
+- Longitudinal waves
+  - waves oscillations parallel to direction of propagation
+  - examples:
+    - sound waves
+    - P-waves
+  - cannot be polarised
+  - has areas of compression and rarefaction
+  - can be demonstrated with a horizontal slinky
+    <br>
+- Polarisation
+  - oscillations occur in only one plane perpendicular to the direction of propagation
+    - this plane is known as the plane of polarisation
+  - can only occur in transverse waves
+    - because transverse waves oscillate planes perpendicular to the direction of propagation
+  - can be used in:
+    - polaroid sunglasses
+      - light reflecting from reflective surfaces (e.g. puddles) undergo partial plane polarisation
+      - polaroid sunglasses polarise the light so reduces glare
+    - radio/microwave signals - radio and television signals are usually vertically polarised or horizontally polarised - therefore aerials need to be mounted flat (horizontal) or on its side (vertical)
+      > When answering scenairos related to polarisation, make use of "maximum" and "minimum"
+      > Always link back - "max occurs when aerial is aligned with plane of polarisation of the wave"
 - All EM waves travel at the same speed in a vacuum - 3 \* 10<sup>8</sup> ms<sup>-1</sup>
 
 ### 3.1.3 Principle of superposition of waves and formation of stationary waves
 
-- Superposition - when two or more waves with the same frequency arrive at a point, the resultant displacement is the sum of the displacements of each wave - if both waves have the same amplitude, they will meet: - in phase - constructive interference - in anti-phase - destructive interference
-  <br>
+- Superposition
+
+  - when two or more waves with the same frequency arrive at a point, the resultant displacement is the sum of the displacements of each wave
+  - if both waves have the same amplitude, they will meet:
+    - in phase
+      - constructive interference
+    - in anti-phase - destructive interference
+      <br>
 
 - Stationary waves
 
