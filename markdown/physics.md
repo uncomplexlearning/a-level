@@ -23,13 +23,76 @@ account for conservation of energy in beta decay.
 
 ### 2.1.3 Particles, antiparticles and photons
 
+For every type of particle, there is a corresponding
+antiparticle.
+Comparison of particle and antiparticle masses, charge
+and rest energy in MeV.
+Students should know that the positron, antiproton,
+antineutron and antineutrino are the antiparticles of the
+electron, proton, neutron and neutrino respectively.
+Photon model of electromagnetic radiation, the Planck
+constant.
+Knowledge of annihilation and pair production and the
+energies involved.
+
 ### 2.1.4 Particle interactions
 
+Four fundamental interactions: gravity, electromagnetic,
+weak nuclear, strong nuclear.
+
+The concept of exchange particles to explain forces
+between elementary particles.
+
+The electromagnetic force; virtual photons as the
+exchange particle.
+The weak interaction limited to β−and β+ decay, electron capture and electron–proton collisions; W+ and W− as the
+exchange particles.
+
 ### 2.1.5 Classification of particles
+
+#### Hadrons
+
+- made from quarks
+- ...and therefore are subject to the strong interaction and strong nuclear force
+- has two types:
+  - baryons (3 quarks)
+    - the baryon number is a quantum number (and so is conserved)
+    - the proton is the only stable baryon
+      - all other baryons eventually decay into protons
+  - mesons (2 quarks)
+    - the pion is the exchange particle of the strong nuclear force between nucleons (baryons)
+      > the gluon is the exchange particle of the strong interaction between quarks
+    - the kaon decays into a pion
+
+#### Leptons
+
+- are fundamental particles
+- the lepton number is a quantum number (and so is conserved)
+  > the different "flavours" of the lepton number are conserved seperately
+- the muon decays into an electron
+
+#### Strange particles
+
+- produced through the strong interaction
+- decay through the weak interaction
+- are usually created in pairs
+- ...so strangeness is a quantum number
+  - however, strangeness can change by 0, +1 or -1 in weak interactions only
+    > the weak interaction allows for quark flavour changes
 
 ### 2.1.6 Quarks and antiquarks
 
 ### 2.1.7 Applications of conservation laws
+
+- Change of quark character in β−and in β+ decay.
+- Conservation applies to:
+  - Quantum numbers
+    - Charge
+    - Baryon number
+    - Lepton number
+    - Strangeness (except in weak interactions)
+  - Energy
+  - Momentum
 
 ## 2.2 Electromagnetic radiation and quantum phenomena
 
