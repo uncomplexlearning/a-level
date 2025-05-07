@@ -68,7 +68,6 @@ header div a:hover {
   max-height: 94vh;
   padding: 2em 2em 2em 4em;
   margin-right: 2.5em;
-  line-height: 2em;
 }
 
 .markdown-container {
@@ -117,10 +116,19 @@ header div a:hover {
   list-style-type: none;
 }
 
+.sidenav li {
+  margin-top: 0.8em;
+}
+
 /* sidenav contents */
 .sidenav-heading {
   font-size: 1.3em;
-  line-height: 2.2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.sidenav-heading:first-child {
+  margin-top: 0em;
 }
 
 .sidenav-heading:not(:first-child) {
@@ -249,7 +257,8 @@ header div a:hover {
   .sidenav {
     padding: 1em 1em 1em 1em;
     margin-right: 0em;
-    line-height: 2em;
+    margin-top: 2em;
+    line-height: 1.5em;
     max-height: 75vh;
   }
 
