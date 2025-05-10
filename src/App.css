@@ -35,6 +35,11 @@ header div a:hover {
   color: rgb(34, 34, 34);
 }
 
+.katex .mord:not(:has(*)),
+.katex .mbin:not(:has(*)) {
+  font-family: KaTeX_Main !important;
+}
+
 .header-logo {
   font-size: 1.7em !important;
   background: -webkit-linear-gradient(left, #7000ff, #ff00f5);
@@ -156,6 +161,16 @@ header div a:hover {
   margin-top: 0.5em;
 }
 
+.markdown-content h4 {
+  margin-top: 0.5em;
+}
+
+.markdown-content h2:not(:is(h1, h2, h3, h4, h5, h6) + h2),
+.markdown-content h3:not(:is(h1, h2, h3, h4, h5, h6) + h3),
+.markdown-content h4:not(:is(h1, h2, h3, h4, h5, h6) + h4) {
+  margin-top: 2em;
+}
+
 .markdown-content li {
   margin-left: 20px;
 }
@@ -184,8 +199,15 @@ header div a:hover {
 
 .markdown-content table {
   margin: 1.3em;
+  display: block;
   border-collapse: collapse;
   border-spacing: 0;
+  overflow-x: auto;
+}
+
+.markdown-content .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .markdown-content td {
@@ -207,6 +229,14 @@ header div a:hover {
 
 .markdown-content tr {
   display: table-row;
+}
+
+.markdown-content blockquote {
+  border: 1px solid #cdcdcd;
+  border-left: 3px solid #7c7c7c;
+  color: #7c7c7c;
+  padding-left: 1em;
+  border-radius: 0.3em;
 }
 
 @media screen and (max-width: 1300px) {
