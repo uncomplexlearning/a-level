@@ -210,6 +210,10 @@ header div a:hover {
   overflow-y: hidden;
 }
 
+.markdown-content .katex * {
+  z-index: -1;
+}
+
 .markdown-content td {
   border-top: 1px solid #dcdcdc;
   display: table-cell;
@@ -259,7 +263,7 @@ header div a:hover {
 
 /* mobile */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1240px) {
   .body-container {
     display: block;
   }
@@ -270,13 +274,14 @@ header div a:hover {
 
   .sidebar-toggle-container {
     display: block;
-    position: sticky;
+    position: fixed;
     top: 9vh;
     right: 2vw;
     float: right;
   }
 
   .mobile-sidebar {
+    z-index: 2;
     background: #fdfaff;
     border: 1px solid #cdcdcd;
     border-radius: 1rem;
@@ -315,5 +320,16 @@ header div a:hover {
   header {
     gap: 1em;
     font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .markdown-content table,
+  .markdown-content .katex-display {
+    font-size: 0.9em;
+  }
+
+  .markdown-content table {
+    line-height: 1.5em;
   }
 }
