@@ -328,10 +328,6 @@ d \to u + \beta^- + \bar{\nu}_e
   - Energy
   - Momentum
 
-### Appendix - Particles
-
-> So, to summarise
-
 ## 2.2 Electromagnetic radiation and quantum phenomena
 
 ### 2.2.1 The photoelectric effect
