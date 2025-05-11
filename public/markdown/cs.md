@@ -191,6 +191,19 @@ bool success = int.TryParse(string abc, out number)
 - It must have a base case (stopping condition)
   - otherwise, it will never terminal
 
+## 1.2 Programming paradigms
+
+### 1.2.1 Programming paradigms
+
+### 1.2.2 Procedural-oriented programming
+
+### 1.2.3 Object-oriented programming
+
+- object-oriented design principles:
+  - encapsulate what varies
+  - favour composition over inheritance
+  - program to interfaces, not implementation
+
 # 2 Fundamentals of data structures
 
 ## 2.1 Data structures and abstract data types
@@ -458,6 +471,35 @@ bool success = int.TryParse(string abc, out number)
 - Applications:
   - satellite navigation systems
   - routers
+
+# 4 Theory of computation
+
+## 4.1 Abstraction and automation
+
+### 4.1.1 Problem-solving
+
+### 4.1.2 Following and writing algorithms
+
+### 4.1.3 Abstraction
+
+### 4.1.4 Information hiding
+
+### 4.1.5 Procedural abstraction
+
+### 4.1.6 Functional abstraction
+
+### 4.1.7 Data abstraction
+
+### 4.1.8 Problem abstraction/reduction
+
+### 4.1.9 Decomposition
+
+### 4.1.10 Composition
+
+### 4.1.11 Automation
+
+## 4.2 Finite state machines (FSMs)
+### 4.2.1 Finite state machines (FSMs) without output
 
 # 5 Fundamentals of data representation
 
