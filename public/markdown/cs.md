@@ -189,7 +189,7 @@ bool success = int.TryParse(string abc, out number)
 
 - Recursive subroutines call themselves
 - It must have a base case (stopping condition)
-  - otherwise, it will never terminal
+  - otherwise, it will never terminate
 
 ## 1.2 Programming paradigms
 
@@ -197,9 +197,42 @@ bool success = int.TryParse(string abc, out number)
 
 ### 1.2.2 Procedural-oriented programming
 
+- a structured approach to program design and construction
+
+#### Advantages of a structured approach
+
 ### 1.2.3 Object-oriented programming
 
-- object-oriented design principles:
+#### Class
+
+- defines methods and property/attribute fields that capture the common behaviours and characteristics of objects
+
+#### Object
+
+- based on a class
+- created using a constructor
+  - can be implicit (without using `new()` or explicit)
+- a reference to the object assigned is a reference variable of the class type
+
+#### Instantiation
+
+#### Encapsulation
+
+#### Inheritance
+
+#### Aggregation
+
+- in UML, represented by a white diamond line
+
+#### Composition
+
+- in UML, represented by a black diamond line
+
+#### Polymorphism
+
+#### Overriding
+
+- Object-oriented design principles include
   - encapsulate what varies
   - favour composition over inheritance
   - program to interfaces, not implementation
@@ -480,26 +513,169 @@ bool success = int.TryParse(string abc, out number)
 
 ### 4.1.2 Following and writing algorithms
 
+- An algorithm is a sequence of steps that can be followed to
+  complete a task and that always terminates
+
+#### Programming constructs
+
+- sequence
+- assignment
+- selection
+- iteration
+
 ### 4.1.3 Abstraction
+
+#### Representational abstraction
+
+- representation arrived at by removing unnecessary details
+
+#### Abstraction by generalisation or categorisation
+
+- grouping by common characteristics to arrive at a hierarchical relationship
+  > something "is a kind of" something else
 
 ### 4.1.4 Information hiding
 
+- Hiding all details of an object that do not contribute to its essential characteristics
+
 ### 4.1.5 Procedural abstraction
+
+- To abstract a computational method (the actual values used in any particular computation)
+- ...in order to create a computational pattern or computational method
+  - also known as a procedure
 
 ### 4.1.6 Functional abstraction
 
+- To abstract a procedure
+- ...in order to disregard the particular computational method
+  - also known as a fucntion
+
 ### 4.1.7 Data abstraction
+
+- To isolate how a compound data object is used from the details of how it is constructed
+- ...in order to allow new kinds of data objects to be constructed from previously defined types of data objects
 
 ### 4.1.8 Problem abstraction/reduction
 
+- Details are removed until the problem is represented in a way that is possible to solve
+- ...because the problem reduces to one that has already been solved
+
 ### 4.1.9 Decomposition
+
+- Breaking a problem into a number of subproblems
+- ...so that each sub-problem accomplishes an identifiable task
+- which can be further subdivided
 
 ### 4.1.10 Composition
 
+- Combining procedures to form compound procedures
+- Combining data objects to form compound data
+  - e.g.: a tree data structure
+
 ### 4.1.11 Automation
 
+- Automation requires putting models (abstraction of real world objects/phenomena) to solve problems
+- This is achieved by:
+  - creating algorithms
+  - implementing the algorithms in program code
+  - implementing the models in data structures
+  - executing the code
+
 ## 4.2 Finite state machines (FSMs)
+
 ### 4.2.1 Finite state machines (FSMs) without output
+
+### 4.2.2 Maths for regular expressions
+
+- A set is an unordered collection of values in which each value occurs at most once
+
+#### Finite sets
+
+- elements can be counted off by natural numbers up to a particular number
+
+#### Infinite sets
+
+#### Countably infinite sets
+
+- elements can be counted off by the natural numbers.
+
+#### Cardinality of a finite set
+
+- the number of elements in a set
+
+#### Cartesian product of sets
+
+- the set of all ordered pairs $(a, b)$ where $a$ is a member of $A$ and $b$ is a member of $B$
+
+### 4.2.3 Regular expressions
+
+- a way of describing a set and that regular expressions allow particular types of languages to be described in a convenient shorthand notation
+
+#### Metacharacters
+
+- \* (0 or more repetitions)
+- \+ (1 or more repetitions)
+- ? (0 or 1 repetitions, ie optional)
+- | (alternation, ie or)
+- ( ) to group regular expressions.
+
+### 4.2.4 Regular language
+
+- A language is called regular if it can be represented by a regular expression
+- Regular expressions and FSMs are equivalent ways of defining a regular language
+
+## 4.3 Context-free languages
+
+### 4.3.1 Backus-Naur Form (BNF)/syntax diagrams
+
+## 4.4 Classifcation of algorithms
+
+### 4.4.1 Comparing algorithms
+
+- Algorithms can be compared by expressing their complexity as a function relative to the size of the problem
+- Efficiently implementing automated abstractions means designing data models and algorithms to run quickly while taking up the minimal amount of resources.
+
+### 4.4.2 Maths for understanding Big-0 notation
+
+- a function is a mapping from the domain to the co-domain
+
+### 4.4.3 Order of complexity
+
+### 4.4.4 Limits of computation
+
+- Algorithmic complexity and hardware impose limits on what can be computed
+
+### 4.4.5 Classifcation of algorithmic problems
+
+- Heuristic methods are often used when tackling intractable problems
+
+#### Tractable problems
+
+- problems that have a polynomial (or less) time solution
+
+#### Intractable problems
+
+- problems that have no polynomial (or less) time solution
+
+### 4.4.6 Computable and non-computable problems
+
+- some problems cannot be solved algorithmically
+
+### 4.4.7 Halting problem
+
+- the unsolvable problem of determining whether any program will eventually stop if given particular input
+
+## 4.5 A model of computation
+
+### 4.5.1 Turing machine
+
+- a Turing machine can be viewed as a computer with a single fixed program, expressed using
+  - a finite set of states in a state transition diagram
+  - a finite alphabet of symbols
+  - an infinite tape with marked-off squares
+  - a sensing read-write head that can travel along the tape, one square at a time
+- One of the states is called a start state and states that have no outgoing transitions arecalled halting states
+- Turing machines provide a (general/formal) model of computation
 
 # 5 Fundamentals of data representation
 
@@ -1010,21 +1186,101 @@ Exponent
 
 ### 5.6.10 Encryption
 
-- Encryption - scrambling data so it cannot be understood if intercepted
-  <br>
-- Caesar cipher
-  - replaces characters with another character, which is kept the same
-  - shift cipher
-    - all letters are shifted by the same amount
-    - can be very easily cracked
-      - the frequency of each character provides a clue; E is the most common letter in the English alphabet
-  - subsitution cipher
-    - letters are randomly replaced
-- Vernam cipher - contains a one-time pad - key that should only be used once - key should be random and at least as long as the plaintext - the binary value of each character has a logical XOR applied with the key - the key and the ciphertext must be transmitted to be decoded
-  <br>
+- Scrambling data so it cannot be understood if intercepted
+
+#### Caesar cipher
+
+- replaces characters with another character, which is kept the same
+- shift cipher
+  - all letters are shifted by the same amount
+  - can be very easily cracked
+    - the frequency of each character provides a clue; E is the most common letter in the English alphabet
+- subsitution cipher
+  - letters are randomly replaced
+
+#### Vernam cipher
+
+- contains a one-time pad
+  - key that should only be used once
+- key should be random and at least as long as the plaintext
+- the binary value of each character has a logical XOR applied with the key
+  -the key and the ciphertext must be transmitted to be decoded
+
+</br>
+
 - All ciphers except the vernam cipher are crackable in theory.
 - Not all of them can be cracked within a reasonable timeframe
   - This is known as computational security
+
+# 9 Fundamentals of communication and networking
+
+## 9.1 Communication
+
+### 9.1.1 Communication methods
+
+#### Serial transmission
+
+#### Parallel transmission
+
+#### Synchronous and data transmission
+
+#### Asynchronous data transmission
+
+- Use of start and stop bits
+
+### 9.1.2 Communication basics
+
+#### Baud rate
+
+#### Bit rate
+
+- can be higher than baud rate if more than one bit is encoded in each signal change
+- directly proportionate to bandwidth
+
+#### Bandwidth
+
+#### Latency
+
+#### Protocol
+
+## 9.2 Networking
+
+### 9.2.1 Network topology
+
+#### Physical star topology
+
+- can behave logically as a bus network by using a bus protocol and appropriate physical switching
+
+#### Logical bus network topology
+
+### 9.2.2 Types of networking between hosts
+
+#### Peer-to-peer networking
+
+- each computer has equal status
+
+#### Client-server networking
+
+- most computers are nominated as clients and one or more as servers
+- clients request services from the servers, which provide these services
+
+### 9.2.3 Wireless networking
+
+- WiFi (IEEE 802.11x) is wireless local area network that is based on international standards.
+- Used to enable devices to connect to a network wirelessly
+
+#### Security
+
+- Strong encryption of transmitted data using
+  WPA (Wifi Protected Access)/WPA2
+- SSID (Service Set Identifier) broadcast disabled
+- MAC (Media Access Control) address allow list
+
+#### Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA)
+
+- Request to Send/Clear to Send (RTS/CTS)
+
+#### Service Set Identifier (SSID)
 
 # 10 Fundamentals of databases
 

@@ -1370,7 +1370,9 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 - Electromotive force (emf) is the amount of energy provided by the battery (i.e. transferred from chemical energy to electrical energy) for every coulomb of charge (Q) passing through.
   ε = E / Q = I (R + r)
 - Total resistance = internal resistance + load resistance
-  <br>
+
+</br>
+
 - The p.d. across the load resistor is known as the terminal p.d. (V)
 - The p.d. across the internal resistor is known as lost volts (V)
 - it is the energy wasted by the cell per coulomb of charge
