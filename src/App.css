@@ -183,11 +183,15 @@ header div a:hover {
   padding: 0.3em;
 }
 
+.markdown-content code * {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace !important;
+}
+
 .markdown-content pre:has(code) {
   background-color: #f1eef3;
   border: 1px solid #cdcdcd;
   border-radius: 0.3em;
-  padding: 0.3em;
 }
 
 .markdown-content pre:has(code) code {
