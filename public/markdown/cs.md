@@ -4,20 +4,25 @@
 
 ### 1.1.1 Data types
 
-- Data types determine: - the range of values assigned to a variable - the way the data in memory is interpreted - the operations that can be performed on the data
-  <br>
-- C# types
-  - `int = 1`
-  - (4 bytes) `float = 0.0d`
-  - (8 bytes) `double = 0.0`
-  - (16 bytes) `decimal = 0.0m`
-  - `bool = true`
-  - `char = 'a'`
-  - `String = "Hello World!"`
-  - `DateTime = new DateTime(year, month, day, hour, minute, second)`
-    <br>
+- Data types determine:
+  - the range of values assigned to a variable
+  - the way the data in memory is interpreted
+  - the operations that can be performed on the data
+
+#### C# types
+
+- `int = 1`
+- (4 bytes) `float = 0.0d`
+- (8 bytes) `double = 0.0`
+- (16 bytes) `decimal = 0.0m`
+- `bool = true`
+- `char = 'a'`
+- `String = "Hello World!"`
+- `DateTime = new DateTime(year, month, day, hour, minute, second)`
+
+</br>
+
 - Composite types are built with atomic types
-  <br>
 - Records are collections of related data of different types
 
 ```c#
@@ -28,25 +33,39 @@ struct S {
 
 ### 1.1.2 Programming concepts
 
-- Variable declaration
-  - allocating memory
-- Constant declaration
-  - constants do not change during runtime
-- Assignment
-  - giving a variable/constant a value
-- Iteration
-  - repeating a set of instructions
-  - definite (count-controlled)
-    - for, foreach
-    - number of iterations is known before start
-  - indefinite (condition-controlled)
-    - while, do...while
-  - can be nested
-- Selection
-  - choosing an action based on a value
-  - can be nested
-- Subroutine (procedure/function) - a named block of code containing a set of instructions
-  <br>
+#### Variable declaration
+
+- allocating memory
+
+#### Constant declaration
+
+- constants do not change during runtime
+
+#### Assignment
+
+- giving a variable/constant a value
+
+#### Iteration
+
+- repeating a set of instructions
+- definite (count-controlled)
+  - for, foreach
+  - number of iterations is known before start
+- indefinite (condition-controlled)
+  - while, do...while
+- can be nested
+
+#### Selection
+
+- choosing an action based on a value
+- can be nested
+
+#### Subroutine (procedure/function)
+
+- a named block of code containing a set of instructions
+
+</br>
+
 - Identifiers for variables should be sensible and meaningful
   - easier for other developers to understand
 
@@ -103,24 +122,26 @@ struct S {
 
 - The value of constants cannot be changed during runtime
 - The value of variables can be changed during runtime
-  <br>
+
+</br>
+
 - Constants makes it:
   - easier to understand as it is named
   - easier to update in multiple places
 
 ### 1.1.7 String-handling operations in a programming language
 
-- length
+- length</br>
   `String.length -> int`
-- position
+- position</br>
   `String.IndexOf(string) -> int`
-- substring
+- substring</br>
   `String.Substring(int start, int length) -> String`
-- concatenation
+- concatenation</br>
   `String + String`
-- character → character code
+- character → character code</br>
   `(int)char`
-- character code → character
+- character code → character</br>
   `(char)int`
 
 ### 1.1.8 Random number generation in a programming language
@@ -136,7 +157,8 @@ Random.NextDouble(); //between 0.0 and 1.0
 
 - Thrown exceptions will have to be handled to prevent crashing
 - The system state (registers) is stored in a stack
-  <br>
+
+</br>
 
 ```csharp
 try
@@ -153,7 +175,10 @@ bool success = int.TryParse(string abc, out number)
 
 ### 1.1.10 Subroutines (procedures/functions)
 
-- A subroutine is a named ‘out of line’ block of code that may be executed (called) by simply writing its name in a program statement.
+- A subroutine is:
+  - named
+  - a ‘out of line’ block of code
+  - executed (called) by writing its name in a program statement
 
 ### 1.1.11 Parameters of subroutines
 
@@ -167,10 +192,11 @@ bool success = int.TryParse(string abc, out number)
 ### 1.1.13 Local variables in subroutines
 
 - Subroutines may declare their own local variables
-  <br>
-- Local variables:
-  - exist only while the subroutine is executing
-  - are accessible only within the subroutine
+
+#### Local variables:
+
+- exist only while the subroutine is executing
+- are accessible only within the subroutine
 
 ### 1.1.14 Global variables in a programming languages
 
@@ -179,11 +205,16 @@ bool success = int.TryParse(string abc, out number)
 
 ### 1.1.15 Role of stack frames in subroutine calls
 
-- Stack frames are used with subroutine calls to store: - return addresses - parameters - local variables
-  <br>
+- Stack frames are used with subroutine calls to store:
+  - return addresses
+  - parameters
+  - local variables
+
+</br>
+
 - Nesting occurs when one subroutine calls another
-- Each subroutine call is pushed onto the call stack on top
-- When the subroutine finishes executing, the stack frame is popped from the call stack
+  - Each subroutine call is pushed onto the call stack on top
+  - When the subroutine finishes executing, the stack frame is popped from the call stack
 
 ### 1.1.16 Recursive techniques
 
@@ -194,6 +225,20 @@ bool success = int.TryParse(string abc, out number)
 ## 1.2 Programming paradigms
 
 ### 1.2.1 Programming paradigms
+
+- there are different approaches to designing and writing a program
+- ...but they will all compiled into the same machine code
+
+#### Functional programming
+
+- no variables and no imperative statements
+- consists only of functions mapping one value to another
+
+#### Imperative programming
+
+- imperative statements (`if`, `for`, etc.)
+- variables
+  > includes procedural and object-oriented programming
 
 ### 1.2.2 Procedural-oriented programming
 
@@ -270,18 +315,25 @@ bool success = int.TryParse(string abc, out number)
 - Abstract data types are conceptual models of
   - how data is organised
   - the operations that can be carried out on that data
-- Data structures are implementations of abstract data types - Technically, they are partial implementations - the data structure itself doesn't contain the operations
-  <br>
-- Static data structures:
-  - fixed size determined at compilation
-    - thus inefficient if more memory is assigned than is needed
-  - stored contiguously in memory
-  - does not require pointers to be stored
-- Dynamic data structures:
-  - change in size during runtime
-    - utilises pointers and allocates memory from the heap
-  - data is stored across memory locations
-  - pointers have to be stored with the data in memory to point to the next element
+- Data structures are implementations of abstract data types
+  - Technically, they are partial implementations
+  - the data structure itself doesn't contain the operations
+
+</br>
+
+#### Static data structures:
+
+- fixed size determined at compilation
+  - thus inefficient if more memory is assigned than is needed
+- stored contiguously in memory
+- does not require pointers to be stored
+
+#### Dynamic data structures:
+
+- change in size during runtime
+  - utilises pointers and allocates memory from the heap
+- data is stored across memory locations
+- pointers have to be stored with the data in memory to point to the next element
 
 ## 2.2 Queues
 
@@ -289,22 +341,52 @@ bool success = int.TryParse(string abc, out number)
 
 - Queues are a type of ADT based on an array
 - They act on a first in, first out (FIFO) principle
-  <br>
-- Queues are used for: - keyboard buffers - handling file downloads - allocating resources (priority queue) - playlists - buffering network streams
-  <br>
+
+</br>
+
+- Queues are used for:
+  - keyboard buffers
+  - handling file downloads
+  - allocating resources (priority queue)
+  - playlists
+  - buffering network streams
+
+</br>
+
 - A queue consists of:
   - an array
   - a front pointer
   - a rear pointer
-- and has operations: - enqueue - check if queue is full - increment rear pointer - insert item into the index position of the rear pointer > circular queue > - check queuesize variable > - mod incremented pointers by queue maxsize - dequeue - check if queue is empty - front pointer is smaller than rear pointer - return item at the index position of the front pointer - increment the front pointer - (peek)
-  <br>
-- Linear queues
-  - may result in unused capacity
-- Circular queues
-  - front and rear pointers can wrap around
-- Priority queues
-  - priority is stored with each element
-  - shuffle items in each queue to "make room"
+- and has operations:
+  - enqueue
+    - check if queue is full
+    - increment rear pointer
+    - insert item into the index position of the rear pointer
+      > circular queue
+      >
+      > - check queuesize variable
+      > - mod incremented pointers by queue maxsize
+  - dequeue
+    - check if queue is not empty
+      - ..which is when front pointer is smaller than rear pointer
+    - return item at the index position of the front pointer
+    - increment the front pointer
+  - (peek)
+
+</br>
+
+#### Linear queues
+
+- may result in unused capacity
+
+#### Circular queues
+
+- front and rear pointers can wrap around
+
+#### Priority queues
+
+- priority is stored with each element
+- shuffle items in each queue to "make room"
 
 ## 2.3 Stacks
 
@@ -312,9 +394,18 @@ bool success = int.TryParse(string abc, out number)
 
 - Queues are a type of ADT based on an array
 - They act on a last in, first out (LIFO) principle
-  <br>
-- Queues are used for: - reversing sequences - call stacks (storing stack frames) - storing register values while handling an interrupt - reverse polish notation - undo lists
-  <br>
+
+</br>
+
+- Queues are used for:
+  - reversing sequences
+  - call stacks (storing stack frames)
+  - storing register values while handling an interrupt
+  - reverse polish notation
+  - undo lists
+
+</br>
+
 - A queue consists of:
   - an array
   - a stack pointer
@@ -332,11 +423,23 @@ bool success = int.TryParse(string abc, out number)
 ## 2.4 Graphs
 
 - Graphs are used to represent more complex relationships.
-  <br>
-- Graphs are used for: - representing networks - representing maps
-  <br>
-- A graph consists of - nodes - vertex - smallest unit of a graph - joined by edges
-  <br>
+
+</br>
+
+- Graphs are used for:
+  - representing networks
+  - representing maps
+
+</br>
+
+- A graph consists of
+  - nodes
+    - vertex
+    - smallest unit of a graph
+  - ...joined by edges
+
+</br>
+
 - Can be represented by:
   - Adjacency list
     - each node has a list of adjacent nodes
@@ -356,7 +459,9 @@ bool success = int.TryParse(string abc, out number)
 ## 2.5 Trees
 
 - Trees are connected, undirected graphs with no cycles
-  <br>
+
+</br>
+
 - A rooted tree is a tree in which one vertex has been designated as the root (usually at the top of a tree
 - A rooted tree has:
   - parent-child relationships between nodes
@@ -368,12 +473,18 @@ bool success = int.TryParse(string abc, out number)
 
 - Hash tables are data structures that creates a mapping between keys and values based on an index calculated from a hashing algorithm
 - Theoretically O(1) access
-  <br>
+
+</br>
+
 - Hashing algorithms takes in a input and returns a hash
   - The same hash is always returned for the same input
   - Usually, the hashing algorithm involves modulo division with the size of the table
-- A good hashing algorithm should: - have a even distribution of hash values - use efficient operations
-  <br>
+- A good hashing algorithm should:
+  - have a even distribution of hash values
+  - use efficient operations
+
+</br>
+
 - A collision occurs when two key values compute the same hash
 - This can be solved by:
   - Rehashing
@@ -388,7 +499,9 @@ bool success = int.TryParse(string abc, out number)
 ## 2.7 Dictionaries
 
 - Dictionaries are collections of key-value pairs in which the value is accessed via the associated key
-  <br>
+
+</br>
+
 - Can be implemented as:
   - Associative arrays
     - A pair of arrays, one storing keys and one storing values
@@ -399,14 +512,20 @@ bool success = int.TryParse(string abc, out number)
 ## 2.8 Vectors
 
 - Vectors can be represented as: - a list of numbers - a function - a way of representing a geometric point in space
-  <br>
+
+</br>
+
 - Notationally,
   - A 4-vector over ℝ = ℝ<sup>4</sup>
   - 0 maps to 2 = 0 ↦ 2
 - All entries must be drawn from the same field (set)
-  <br>
+
+</br>
+
 - Vectors can be implemented as: - Dictionaries - Lists - 1-D arrays - Arrows
-  <br>
+
+</br>
+
 - Operations
   - Addition
     - added top to tail geometrically
@@ -449,27 +568,59 @@ bool success = int.TryParse(string abc, out number)
 
 ### 3.2.1 Simple tree-traversal algorithms
 
-- Pre-order - Application: - copying a tree - Steps: - visit current node - traverse left subtree - traverse right subtree
-  > Left dot
-- In-order - Can only be used on binary trees - Application: - binary search tree - Steps: - traverse left subtree - visit current node - traverse right subtree
-  > Bottom dot
-- Post-order - Application: - infix to PRN conversion - producing a postfix expression from an expression tree - emptying a tree - Steps: - traverse left subtree - traverse right subtree - visit current node
-  > Right dot
+#### Pre-order
+
+- Application:
+  - copying a tree
+- Steps:
+  - visit current node
+  - traverse left subtree
+  - traverse right subtree
+    > Left dot
+
+#### In-order
+
+- Can only be used on binary trees
+- Application:
+  - binary search tree
+- Steps:
+  - traverse left subtree
+  - visit current node
+  - traverse right subtree
+    > Bottom dot
+
+#### Post-order
+
+- Application:
+  - infix to PRN conversion
+  - producing a postfix expression from an expression tree
+  - emptying a tree
+- Steps:
+  - traverse left subtree
+  - traverse right subtree
+  - visit current node
+    > Right dot
 
 ## 3.3 Reverse Polish
 
 ### 3.3.1 Reverse Polish – infix transformations
 
-- Applications: - Eliminates need for brackets in subexpressions - Form suitable for evaluation using a stack - Used in interpreters based on a stack for example Postscript and bytecode
-  <br>
-- Infix to RPN
-  - Traverse left to right
-  - Evaluate brackets first
-  - Write operands in order, then append operator at the end
-- RPN to Infix
-  - Traverse left to right
-  - Place operator between preceding two operands
-  - Place expresssion in backets
+- Applications:
+  - Eliminates need for brackets in subexpressions
+  - Evaluation using a stack
+  - Used in interpreters based on a stack for example Postscript and bytecode
+
+#### Infix to RPN
+
+- Traverse left to right
+- Evaluate brackets first
+- Write operands in order, then append operator at the end
+
+#### RPN to Infix
+
+- Traverse left to right
+- Place operator between preceding two operands
+- Place expresssion in backets
 
 ## 3.4 Searching algorithms
 
@@ -1191,12 +1342,16 @@ Exponent
 #### Caesar cipher
 
 - replaces characters with another character, which is kept the same
-- shift cipher
-  - all letters are shifted by the same amount
-  - can be very easily cracked
-    - the frequency of each character provides a clue; E is the most common letter in the English alphabet
-- subsitution cipher
-  - letters are randomly replaced
+
+#### Shift cipher
+
+- all letters are shifted by the same amount
+- can be very easily cracked
+  - the frequency of each character provides a clue; E is the most common letter in the English alphabet
+
+#### Subsitution cipher
+
+- letters are randomly replaced
 
 #### Vernam cipher
 
@@ -1286,36 +1441,51 @@ Exponent
 
 ## 10.1 Conceptual data models and entity relationship model
 
-- Entity
-  - Thing about which data is to be store
-- Attributes
-  - Information about entities
-- Entity Indentifiers - Unique attribute within a table to identify an entity
-  <br>
-- Entity description - Used to describe how an entity can be stored in a database - Written as:<br>Entity1 (<ins>Identifier</ins>, Attribute1, Attribute2, Attribute3)
-  <br>
-- Entity-relationship diagrams
-  - Tables in a database can be related to each other, linked by common attributes
-  - ER diagrams are used to graphically represent relationships between tables
-  - There are three types of relationships:
-    - One-to-one
-      - Each company has one CEO
-    - One-to-many
-      - Each company has many employees; each employee is employed by one company
-    - Many-to-many
-      - Each company has many offices; each office has many companies
+#### Entity
+
+- Thing about which data is to be store
+
+#### Attributes
+
+- Information about entities
+
+#### Entity Indentifiers
+
+- Unique attribute within a table to identify an entity
+
+#### Entity description
+
+- Used to describe how an entity can be stored in a database
+- Written as:<br>Entity1 (<ins>Identifier</ins>, Attribute1, Attribute2, Attribute3)
+
+#### Entity-relationship diagrams
+
+- Tables in a database can be related to each other, linked by common attributes
+- ER diagrams are used to graphically represent relationships between tables
+- There are three types of relationships:
+  - One-to-one
+    - Each company has one CEO
+  - One-to-many
+    - Each company has many employees; each employee is employed by one company
+  - Many-to-many
+    - Each company has many offices; each office has many companies
 
 ## 10.2 Relational databases
 
-- Relational database - A type of database that organises data into multiple linked tables and provides access to data points related to each other
-  <br>
-- Primary key
-  - An attribute that provides a unique identifier for each entity
-- Composite primary key
-  - A primary key composed of multiple primary keys
-  - Only used when it is not possible to form a primary key from just one attribute
-- Foreign key
-  - Attribute which is the primary key in another related table
+- A type of database that organises data into multiple linked tables and provides access to data points related to each other
+
+#### Primary key
+
+- An attribute that provides a unique identifier for each entity
+
+#### Composite primary key
+
+- A primary key composed of multiple primary keys
+- Only used when it is not possible to form a primary key from just one attribute
+
+#### Foreign key
+
+- Attribute which is the primary key in another related table
 
 ## 10.3 Database design and normalisation techniques
 
@@ -1331,7 +1501,9 @@ Exponent
       - not all instances of duplicated data is updated
     - insertion and deletion anomalies
 - Therefore, a fully normalised database: - Eliminates update, insertion and deletion anomalies - Eliminates data inconsistency - Minimises data duplication
-  <br>
+
+</br>
+
 - First normal form (1NF)
   - Data is atomic
     - no attribute has more than one value
@@ -1342,10 +1514,11 @@ Exponent
   - Table is already in 1NF
   - There are no partial key dependencies
     - every non-key attribute should depend upon the whole composite key
-- Third normal form (3NF) - Table is already in 2NF - There are no non-key dependencies
-  <br>
-  > For AQA, only knowledge of 3NF is required:
-  > every non-key attribute is dependent on the key; the whole key; and nothing but the key; contains no repeating groups; and all data is atomic
+- Third normal form (3NF)
+  - Table is already in 2NF
+  - There are no non-key dependencies
+    > For AQA, only knowledge of 3NF is required:
+    > every non-key attribute is dependent on the key; the whole key; and nothing but the key; contains no repeating groups; and all data is atomic
 
 ## 10.4 Structured Query Language (SQL)
 
@@ -1409,7 +1582,9 @@ Exponent
 ## 10.5 Client server databases
 
 - Client server databases provide simultaneous access to a database for multiple clients
-  <br>
+
+</br>
+
 - Concurrent access can result in the problem of updates being lost if two clients update a record simultaneously
 - This is managed through:
   - Record locks
