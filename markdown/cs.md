@@ -1375,13 +1375,33 @@ Exponent
 
 #### Serial transmission
 
+- data is transmitted 1 bit at a time
+
 #### Parallel transmission
+
+- multiple bits of data is tramsitted simultaneously across multiple wires
+
+</br>
+
+- data skew may occur
 
 #### Synchronous and data transmission
 
+- a common clock signal is shared between the two devices
+  - usually the clock signal is provided by the transmitting device along a dedicated wire
+
 #### Asynchronous data transmission
 
-- Use of start and stop bits
+- Start and stop bits added to data to form a frame
+- The reciever reads the data on receipt of the start bit
+- Start and stop bits must be opposites of each other
+  - so if the start bit is logically low (0), then the stop bit must be logically high (1)
+    > this is especially helpful if the line is kept logically high when idle
+
+</br>
+
+- The use of start and stop bits create overhead
+  - the number of additional bits transmitted in a frame
 
 ### 9.1.2 Communication basics
 
@@ -1389,8 +1409,8 @@ Exponent
 
 #### Bit rate
 
-- can be higher than baud rate if more than one bit is encoded in each signal change
-- directly proportionate to bandwidth
+- Can be higher than baud rate if more than one bit is encoded in each signal change
+- Directly proportionate to bandwidth
 
 #### Bandwidth
 
