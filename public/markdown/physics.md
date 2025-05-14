@@ -7,9 +7,9 @@
 - Atoms are made up of 3 types of particles: protons, neutrons and electrons
   | Particle | Charge | Mass | Relative Charge | Relative Mass |
   | --- | --- | --- | --- | --- |
-  | Proton | +1.60 x 10<sup>-19</sup> C | 1.673 x 10<sup>-27</sup>kg | +1 | 1
-  | Neutron | 0 C | 1.675 x 10<sup>-27</sup>kg | 0 | 1
-  | Electron | -1.60 x 10<sup>-19</sup> C | 9.11 x 10<sup>-31</sup>kg | -1 | Negligible
+  | Proton | +1.60 x 10<sup>-19</sup> C | 1.673 x 10<sup>-27</sup> kg | +1 | 1
+  | Neutron | 0 C | 1.675 x 10<sup>-27</sup> kg | 0 | 1
+  | Electron | -1.60 x 10<sup>-19</sup> C | 9.11 x 10<sup>-31</sup> kg | -1 | Negligible
 
 #### Specific charge
 
@@ -384,7 +384,7 @@ d \to u + \beta^- + \bar{\nu}_e
   ```math
   hf = \phi + E_{k_{max}}
   ```
-  > $E*{k*{max}}$ depends only on the frequency of the incident radiation and the work function
+  > $E_{k_{max}}$ depends only on the frequency of the incident radiation and the work function
 
 ### 2.2.2 Collisions of electrons with atoms
 
@@ -483,25 +483,30 @@ d \to u + \beta^- + \bar{\nu}_e
 
 ### 2.2.4 Wave-particle duality
 
-- Light can behave as a particle (i.e. have the properties of a particle)
-  - photoelectric effect
-    - EM radiation carry energy in discrete packets (photons)
-- Light can also behave as a wave
-  - diffraction and intereference in Young's double-slit experiment
-    > Wave theory suggests
-    >
-    > - any frequency of light will have photoelectric emission - but a threshold frequency exists
-    > - the energy absorbed will gradually increase with each wave - but energy is absorbed instantaneously
-    > - the kinetic energy of the emited electron will increase with intensity - but energy remains constant
-    >   <br>
-- Electrons can behave as a particle
-- Electrons can also behave as a wave
-  - electron diffraction
-    - diffraction pattern is produced when an electron beam is directed at a thin graphite film
-    - the material used to diffract electrons must have gaps similar in size to their de Broglie wavelength
-      - so usually atomic lattices are used, e.g. graphite, which has a crystalline structure
-    - diffraction pattern is a series of concentric rings
-      - if electrons had particle behaviour, they would be distributed uniformly across the screen
+#### Light can behave as a particle (i.e. have the properties of a particle)
+
+- photoelectric effect
+  - EM radiation carry energy in discrete packets (photons)
+
+#### Light can also behave as a wave
+
+- diffraction and intereference in Young's double-slit experiment
+  > Wave theory suggests
+  >
+  > - any frequency of light will have photoelectric emission - but a threshold frequency exists
+  > - the energy absorbed will gradually increase with each wave - but energy is absorbed instantaneously
+  > - the kinetic energy of the emited electron will increase with intensity - but energy remains constant
+
+#### Electrons can behave as a particle
+
+#### Electrons can also behave as a wave
+
+- electron diffraction
+  - diffraction pattern is produced when an electron beam is directed at a thin graphite film
+  - the material used to diffract electrons must have gaps similar in size to their de Broglie wavelength
+    - so usually atomic lattices are used, e.g. graphite, which has a crystalline structure
+  - diffraction pattern is a series of concentric rings
+    - if electrons had particle behaviour, they would be distributed uniformly across the screen
 
 #### de Broglie wavelength
 
@@ -542,10 +547,14 @@ d \to u + \beta^- + \bar{\nu}_e
   - the "distance" a wave is behind another
   - may be measured as angles (radians and degrees) or as fractions of a cycle
 - Period - the time taken for one full oscillation
-  <br>
+
+</br>
+
 - Two waves are in phase if they are both at the same point in the cycle; i.e. their phase difference 2π rad.
 - Two waves are in antiphase if their phase difference is π rad.
-  <br>
+
+</br>
+
 - Progressive waves - waves which transfer energy from one point to another without transferring material (i.e. causing permanent displacement of the medium)
   - all points have the same amplitude in each period
     > Always refer to:
@@ -574,7 +583,6 @@ d \to u + \beta^- + \bar{\nu}_e
 - can be polarised
 - has crests and troughs
 - can be demonstrated with a vertical slinky
-  <br>
 
 #### Longitudinal waves
 
@@ -585,7 +593,6 @@ d \to u + \beta^- + \bar{\nu}_e
 - cannot be polarised
 - has areas of compression and rarefaction
 - can be demonstrated with a horizontal slinky
-  <br>
 
 #### Polarisation
 
@@ -600,7 +607,7 @@ d \to u + \beta^- + \bar{\nu}_e
   - radio/microwave signals - radio and television signals are usually vertically polarised or horizontally polarised - therefore aerials need to be mounted flat (horizontal) or on its side (vertical)
     > When answering scenairos related to polarisation, make use of "maximum" and "minimum"
     > Always link back - "max occurs when aerial is aligned with plane of polarisation of the wave"
-- All EM waves travel at the same speed in a vacuum - 3 \* 10<sup>8</sup> ms<sup>-1</sup>
+- All EM waves travel at the same speed in a vacuum - $3.0 \times 10^{-8} ms^{-1} $
 
 ### 3.1.3 Principle of superposition of waves and formation of stationary waves
 
@@ -612,7 +619,6 @@ d \to u + \beta^- + \bar{\nu}_e
     - constructive interference
   - in anti-phase
     - destructive interference
-      <br>
 
 #### Stationary waves
 
@@ -952,7 +958,10 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 ### 4.1.2 Moments
 
 - the turning effect of a force
-- given by<br>force × perpendicular distance from the point to the line of action of the force
+- given by
+  ```math
+  force \times perpendicular\ distance\ from\ the\ point\ to\ the\ line\ of\ action\ of\ the\ force
+  ```
 
 #### Principle of moments
 
@@ -960,7 +969,10 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Couples
 
-- a pair of equal and opposite coplanar forces<br>force × perpendicular distance between the lines of action of the forces
+- a pair of equal and opposite coplanar forces
+  ```math
+  force \times perpendicular\ distance\ between\ the\ lines\ of\ action\ of\ the\ forces
+  ```
 
 #### Centre of mass
 
@@ -979,8 +991,6 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   - rate of change of displacement
 - Acceleration
   - rate of change of velocity
-
-</br>
 
 #### Graphs
 
@@ -1040,7 +1050,10 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Second law
 
-- The resultant force acting on an object with a constant mass is directly proportional to its acceleration<br>F = ma
+- The resultant force acting on an object with a constant mass is directly proportional to its acceleration
+  ```math
+  F = ma
+  ```
 
 #### Third law
 
@@ -1062,28 +1075,35 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Linear momentum
 
-- defined as<br>p = mv
+- defined as
+  ```math
+  p = mv
+  ```
 - momentum in one direction
 - remains constant unless the system is acted upon by an external resultant force
 - Conservation of linear momentum
   - The total momentum before a collision is equal to the total momentum after a collision, provided no external force acts
-    <br>
 
 #### External forces
 
 - forces that act on a system from outside
 - e.g. friction
 - Internal forces - forces exchanged by particles within the system - e.g. tension in a string
-  <br>
 
 #### Force
 
-- the rate of change of momentum <br>F = ∆(mv)/∆t
+- the rate of change of momentum
+  ```math
+  F = \frac{\Delta mv}{\Delta t}
+  ```
 
 #### Impulse
 
 - change in momentum
-- or the product of the force applied and time<br> ∆p = F∆t = mv - mu
+- or the product of the force applied and time
+  ```math
+  \Delta p = F \Delta t = mv - mu
+  ```
   - (where the force is constant)
 - therefore a small force acting over a long time has the same effect as a large force acting over a short time
 - in a force–time graph,
@@ -1127,7 +1147,10 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Power
 
-- rate of doing work = rate of energy transfer<br>P = ΔW/Δt = Fv
+- rate of doing work = rate of energy transfer
+  ```math
+  P = \frac{\Delta W}{\Delta t} = Fv
+  ```
 
 #### Force–displacement graph
 
@@ -1151,12 +1174,20 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Gravitational potential energy
 
-- ∆E<sub>p</sub> = mg∆h
+- defined as
+
+  ```math
+  \Delta E_p = mg \Delta h
+  ```
+
 - energy stored in mass due to its position in a gravitational field
 
 #### Kinetic energy
 
-- E<sub>k</sub> = (1/2)mv<sup>2</sup>
+- defined as
+  ```math
+  E_k = \frac{1}{2}mv^2
+  ```
 - energy an object has due to its motion
 
 ## 4.2 Materials
@@ -1165,11 +1196,17 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Density
 
-- Mass per unit volume<br>ρ = m/v
+- Mass per unit volume
+  ```math
+  ρ = \frac{m}{v}
+  ```
 
 #### Hooke's kaw
 
-- A material that obeys hooke's law has extension that is directly proportional to the force applied up to the limit of proportionality<br>F = kΔL
+- A material that obeys hooke's law has extension that is directly proportional to the force applied up to the limit of proportionality
+  ```math
+  F = k \Delta L
+  ```
 - The stiffer the material, the higher the spring constant k
 
 </br>
@@ -1183,10 +1220,16 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 - Tensile forces are stretching forces which act on a material
 - Tensile stress
-  - force exerted per unit area (Pa) <br>σ = F/A
+  - force exerted per unit area (Pa)
+    ```math
+    \sigma = \frac{F}{A}
+    ```
   - a material is able to support up to its ultimate tensile stress, at which point it breaks
 - Tensile strain
-  - extention per unit length<br>ε = ΔL/L
+  - extention per unit length
+    ```math
+    \varepsilon = \frac{\Delta L}{L}
+    ```
 
 </br>
 
@@ -1206,7 +1249,10 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 #### Elastic strain energy
 
 - Work is done to stretch a material
-- For a material obeying Hooke's law, work done is stored as elastic strain energy<br>E = (1/2)F∆L
+- For a material obeying Hooke's law, work done is stored as elastic strain energy
+  ```math
+  E = \frac{1}{2} F \Delta L
+  ```
 - which is also the area under a force-extention graph
 
 #### Spring energy
@@ -1224,7 +1270,9 @@ n_1 sin \theta_1 = n_2 sin \theta_2
     - objects return to their original shape when the stretching force is removed
   - plastic deformation
     - objects remain stretched and do not return to their original shape when the stretching force is removed
-      <br>
+
+</br>
+
 - Brittle materials
   - small plastic region
   - low breaking stress
@@ -1235,13 +1283,19 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 #### Energy conservation issues
 
 - When a stretching force is removed, the material is unloaded
-  <br>
+
+</br>
+
 - After an object undergoes plastic deformation, the unloading curve on a force-extention graph will not pass through the origin
   - the object is permanently extended
   - the area between the loading and unloading curves is the work done to deform the wire
-    <br>
+
+</br>
+
 - the unloading curve is always below the loading curve - some energy may be transferred into other energy stores, e.g. thermal for rubber bands
-  <br>
+
+</br>
+
 - In a vehicle, a suspension system is used to provide comfortable handling of a vehicle
 - elastic shock absorbers dampen movements of the springs
   - kinetic energy from the car is converted into thermal energy
@@ -1253,9 +1307,16 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   - i.e. the stiffness of a material
 - For a material which obey's Hooke's law, stress is proportional to strain
 - therefore the ratio of tensile stress and tensile strain is constant
-- therefore:<br>E (Pa) = Tensile stress/Tensile strain = FL/∆LA
+- therefore:
+  ```math
+  E = \frac{Tensile\ stress}{Tensile\ strain} = \frac{FL}{A \Delta L}
+  ```
 
-> When considering springs/materials with the same Young modulus but different diameter/length, this rearrangement may be useful<br>k = E (A/L)
+> When considering springs/materials with the same Young modulus but different diameter/length, this rearrangement may be useful
+>
+> ```math
+> k = E \frac{A}{L}
+> ```
 
 # 5 Electricity
 
@@ -1264,18 +1325,24 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 ### 5.1.1 Basics of electricity
 
 - Current is the rate of flow of charge
-- I = ∆Q / ∆t
+  ```math
+  I = \frac{\Delta Q}{\Delta t}
+  ```
 - Potential difference is the work done per unit charge
-- V = W / Q
+  ```math
+  V = \frac{W}{Q}
+  ```
 - Resistance is how difficult it is for charge carriers to get past a component
-- R = V / I
+  ```math
+  R = \frac{V}{I}
+  ```
 
 ### 5.1.2 Current–voltage characteristics
 
 - Ohm's law states that I ∝ V under constant physical conditions.
 - We need to consider 3 types of component:
   - Ohmic conductor
-    - follows Ohm's law<br>V = I R
+    - follows Ohm's law $V = IR$
       - graph is directly proportional
   - Semiconductor diode
     - forward bias
@@ -1293,7 +1360,10 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 ### 5.1.3 Resistivity
 
-- Resistivity is the extent to which a material opposes the flow of electric current through it<br>ρ = RA / L
+- Resistivity is the extent to which a material opposes the flow of electric current through it
+  ```math
+  \rho = \frac{RA}{L}
+  ```
 - It is dependent on environmental factors, e.g. temperature
 - Metal conductors
   - when temperature increases, resistance increases.
@@ -1318,41 +1388,69 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Series circuits
 
-- Potential difference is shared in proportion to resistance<br>V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub> + ...
+- Potential difference is shared in proportion to resistance
+  ```math
+  V_{total} = V_1 + V_2 + V_3 + ...
+  ```
 - a "potential drop" occurs across each component
-  - the amount of drop is calculated with Ohm's law<br> V = I R
-- Current is constant<br>I<sub>total</sub> = I<sub>1</sub> = I<sub>2</sub> = ...
-- Resistance adds up<br>R<sub>total</sub> = R<sub>1</sub> + R<sub>2</sub> + ...
+  - the amount of drop is calculated with Ohm's law $V = IR$
+- Current is constant
+  ```math
+  I_{total} = I_1 = I_2 = I_3 = ...
+  ```
+- Resistance adds up
+  ```math
+  R_{total} = R_1 + R_2 + R_3 + ...
+  ```
 
 #### Parallel circuits
 
 - Potential difference is constant across all branches
-  V<sub>total</sub> = V<sub>1</sub> = V<sub>2</sub> = ...
+  ```math
+  V_{total} = V_1 = V_2 = V_3 = ...
+  ```
 - Current is shared between branches
-  I<sub>total</sub> = I<sub>1</sub> + I<sub>2</sub> + ...
+  ```math
+  I_{total} = I_1 + I_2 + I_3 + ...
+  ```
 - Resistors in parallel reduces total resistance
-  R<sub>total</sub><sup>-1</sup> = R<sub>1</sub><sup>-1</sup> + R<sub>2</sub><sup>-1</sup> + ...
+  ```math
+  \frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...
+  ```
 
-#### Battery cells:
+#### Battery cells
 
 - Series:
-  - V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub> + ...
+  ```math
+  V_{total} = V_1 + V_2 + V_3 + ...
+  ```
   - Cancels out in opposite directions
 - Parallel:
-  - V<sub>total</sub> = V<sub>1</sub> = V<sub>2</sub> = ...
+  ```math
+  V_{total} = V_1 = V_2 = V_3 = ...
+  ```
 - For both cases, the current remains unchanged
   - Each cell provides less power/energy in parallel, so they last longer, and reduces internal resistance.
-    <br>
+
+#### Power and energy
+
 - Power is rate of transfer of energy:
-  - P = I V = I<sup>2</sup> R = V<sup>2</sup>/R
+  ```math
+  P = I V = I^2 R = \frac{V^2}{R}
+  ```
 - Energy:
-  - E = P t = I V t
-    <br>
+
+  ```math
+  E = P t = I V t
+  ```
+
+  </br>
+
 - In DC circuits, charge and energy are conserved:
 - Kirchoff's first law: the current flowing into a node/junction must be equal to the current flowing out of it
-  - Q = I t, so this proofs conservation of charge
+  - $Q = I t$, so this proofs conservation of charge
 - Kirchoff's second law: the sum of all voltages across components which supply electrical energy must equal the sum of all voltages across the other components in the same loop
-  - E = I V t, so this proofs conservation of energy.
+  - $E = I V t$, so this proofs conservation of energy.
 
 ### 5.1.5 Potential divider
 
@@ -1360,7 +1458,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 - This is achieved with several resistors in series across a source of p.d.
 - this includes variable resistors, or semiconductor components, e.g. LDRs.
 - Potential dividers can used as control circuts to trigger events.
-- e.g. when light intensity falls, resistance across the LDR will increase, so the current decreases (as I = V / R), so there is less shared of p.d. across the fixed resistor.
+- e.g. when light intensity falls, resistance across the LDR will increase, so the current decreases (as $I = \frac{V}{R}$), so there is less shared of p.d. across the fixed resistor.
 
 ### 5.1.6 Electromotive force and internal resistance
 
@@ -1368,13 +1466,19 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 - caused by charge carriers (electrons) colliding with atoms/ions inside the cell, which leads to energy loss
 - represented as a resistor inside the battery in a circuit diagram
 - Electromotive force (emf) is the amount of energy provided by the battery (i.e. transferred from chemical energy to electrical energy) for every coulomb of charge (Q) passing through.
-  ε = E / Q = I (R + r)
-- Total resistance = internal resistance + load resistance
+  ```math
+  \varepsilon = \frac{E}{Q} = I (R + r)
+  ```
+  ```math
+  Total\ resistance = internal\ resistance + load\ resistance
+  ```
 
 </br>
 
-- The p.d. across the load resistor is known as the terminal p.d. (V)
-- The p.d. across the internal resistor is known as lost volts (V)
-- it is the energy wasted by the cell per coulomb of charge
-- emf = terminal p.d. + lost volts
+- The p.d. across the load resistor is known as the terminal p.d.
+  - it is the energy wasted by the cell per coulomb of charge
+- ...therefore,
+  ```math
+  emf = terminal\ p.d. + lost\ volts
+  ```
 - The emf can be measured using a voltmeter across a cell when no current is running through it.
