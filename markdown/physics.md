@@ -33,19 +33,25 @@
 #### Random errors
 
 - Fluctuations in a reading due to uncontrollable factors
+  - readings will be spread about the true value
 - To reduce random errors:
   - repeat and calculate mean
 
 #### Systematic errors
 
 - Incorrect readings due to faulty instruments or flaws in the method
+  - readings will differ from the true value by a consistent amount each time
 - To reduce systematic errors:
   - recalibrate instruments
   - use a different method
 
+#### Zero errors
+
+- A reading is given when the true value is 0
+
 #### Precision
 
-- Spread of data around the mean value
+- Spread of data about the mean value
 
 #### Repeatability
 
@@ -82,11 +88,11 @@
 
 </br>
 
-- when adding/subtracting data
+- To add/subtract data
   - add the absolute uncertainties
-- when multiplying/dividing data
+- To multiply/divide data
   - add the percentage uncertainties
-- when exponentiating data
+- To exponentiate data
   - multiply the percentage uncertainty by the power
 
 ## 1.3 Estimation of physical quantities
@@ -644,7 +650,8 @@ d \to u + \beta^- + \bar{\nu}_e
 - Phase Difference
   - the "distance" a wave is behind another
   - may be measured as angles (radians and degrees) or as fractions of a cycle
-- Period - the time taken for one full oscillation
+- Period
+  - the time taken for one full oscillation
 
 </br>
 
@@ -655,19 +662,20 @@ d \to u + \beta^- + \bar{\nu}_e
 
 - Progressive waves - waves which transfer energy from one point to another without transferring material (i.e. causing permanent displacement of the medium)
   - all points have the same amplitude in each period
-    > Always refer to:
-    >
-    > - (both) waves interfere
-    > - path difference varies
-    > - phase difference varies
-    > - produces maxima and minima
-    > - recieved signal goes through series of maxima and minma
-    >
-    > When asked to compare:
-    >
-    > - refer to phase
-    > - refer to frequency
-    > - refer to speed
+
+> Always refer to:
+>
+> - (both) waves interfere
+> - path difference varies
+> - phase difference varies
+> - produces maxima and minima
+> - recieved signal goes through series of maxima and minima
+>
+> When asked to compare:
+>
+> - refer to phase
+> - refer to frequency
+> - refer to speed
 
 ### 3.1.2 Longitudinal and transverse waves
 
@@ -702,9 +710,11 @@ d \to u + \beta^- + \bar{\nu}_e
   - polaroid sunglasses
     - light reflecting from reflective surfaces (e.g. puddles) undergo partial plane polarisation
     - polaroid sunglasses polarise the light so reduces glare
-  - radio/microwave signals - radio and television signals are usually vertically polarised or horizontally polarised - therefore aerials need to be mounted flat (horizontal) or on its side (vertical)
-    > When answering scenairos related to polarisation, make use of "maximum" and "minimum"
-    > Always link back - "max occurs when aerial is aligned with plane of polarisation of the wave"
+  - radio/microwave signals
+    - radio and television signals are usually vertically polarised or horizontally polarised
+    - therefore aerials need to be mounted flat (horizontal) or on its side (vertical)
+      > When answering scenairos related to polarisation, make use of "maximum" and "minimum"
+      > Always link back - "max occurs when aerial is aligned with plane of polarisation of the wave"
 - All EM waves travel at the same speed in a vacuum - $3.0 \times 10^{-8} ms^{-1} $
 
 ### 3.1.3 Principle of superposition of waves and formation of stationary waves
@@ -777,6 +787,21 @@ d \to u + \beta^- + \bar{\nu}_e
   f = \frac{1}{2L}\sqrt{\frac{T}{\mu}}
   ```
 
+### Practical 1 - Stationary waves on a string
+
+#### Method
+
+#### Graph
+
+- plotting $f$/Hz against $\frac{1}{L}$/m<sup>-1</sup>
+- ...such that
+
+```math
+f = \frac{v}{2} \left(\frac{1}{L}\right)
+```
+
+- ...so the gradient is $\frac{v}{2}$
+
 ## 3.2 Refraction, diffraction and interference
 
 ### 3.2.1 Interference
@@ -812,9 +837,9 @@ d \to u + \beta^- + \bar{\nu}_e
   - sound waves are longitudinal
   - constructive interference is heard with a louder sound
   - destructive interference is heard with no sound
-  - Interference can be shown with microwaves
-    - constructive interference is shown with higher amplitude on detector
-    - destructive interference is shown with lower amplitude on detector
+- Interference can be shown with microwaves
+  - constructive interference is shown with higher amplitude on detector
+  - destructive interference is shown with lower amplitude on detector
 
 #### Double slit interference
 
@@ -914,7 +939,7 @@ d \to u + \beta^- + \bar{\nu}_e
   n = \frac{d}{\lambda}, n \in \mathbb{N}
   ```
 
-  </br>
+</br>
 
 - Diffraction grating equation
   - consider the first order maximum
@@ -957,7 +982,7 @@ d \to u + \beta^- + \bar{\nu}_e
 #### Refraction
 
 - wave speed is different in the more optically dense material
-  - ... the edge of a wavefront slows down or speed up when entering that material
+  - ...the edge of a wavefront slows down or speed up when entering that material
   - ...but the part of the wave not in the material continues at a different speed
 
 </br>
@@ -975,7 +1000,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Total internal reflection
 
-- when the angle of refraction is 90° such that $sin \theta_1 = 1$
+- when the angle of refraction is 90° such that $sin \theta_2 = 1$
   - light is refracted along the boundary
   - angle of incidence is known as the critical angle $\theta_c$
 - we can therefore derive that
@@ -1148,7 +1173,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Second law
 
-- The resultant force acting on an object with a constant mass is directly proportional to its acceleration
+- The resultant force acting on an object with a constant mass is directly proportional to its acceleration (and change in momentum)
   ```math
   F = ma
   ```
@@ -1164,10 +1189,12 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 > When describing using Newton's laws of motion:
 >
-> - describe using all laws
-> - state direction of all forces
-> - exerts force instead of displace water/gas
-> - refer to the object stated in question - gas accelerated
+> - refer to laws explicitly
+> - refer to the forces explicitly (by name, e.g. weight)
+> - state the directions of all forces
+> - to displace a fluid, force must be exerted (2nd law)
+> - and so there will be a equal and opposite force from the fluid (3rd law)
+> - so the resultant force...
 
 ### 4.1.6 Momentum
 
@@ -1186,7 +1213,11 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 - forces that act on a system from outside
 - e.g. friction
-- Internal forces - forces exchanged by particles within the system - e.g. tension in a string
+
+#### Internal forces
+
+- forces exchanged by particles within the system
+- e.g. tension in a string
 
 #### Force
 
@@ -1250,9 +1281,12 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   P = \frac{\Delta W}{\Delta t} = Fv
   ```
 
+> When answering longer questions, remember to decide which one of work done or power the question is looking for
+
 #### Force–displacement graph
 
-- Area: work done - useful for variable forces
+- Area: work done
+- useful for variable forces
 
 #### Efficiency
 
@@ -1262,7 +1296,8 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Conservation of energy
 
-- energy cannot be created or destroyed, it can only be transferred from one form to another
+- energy cannot be created or destroyed
+- ...it can only be transferred from one form to another
 
 #### Dissipation of energy
 
@@ -1450,8 +1485,12 @@ n_1 sin \theta_1 = n_2 sin \theta_2
       - because resistance is very high during reverse bias
   - Filament lamp
     - the wire in the lamp heats up as current increases, therefore its resistance increases
-    - at low currents, Ohm's law is obeyed as the component does not heat up much.
-      > Remember the order of the axes! Normally, it will be I (vertical) and V (horizontal)
+    - at low currents, Ohm's law is obeyed as the component does not heat up much
+
+> Remember the order of the axes! Normally, it will be I (vertical) and V (horizontal)
+
+</br>
+
 - Ammeters have 0 resistance to not affect the reading of current
 - Voltmeters have infinite resistance so no current can flow through them
   - it takes all the p.d. if it is the only path
