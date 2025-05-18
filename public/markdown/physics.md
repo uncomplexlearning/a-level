@@ -28,6 +28,22 @@
 | resistance           | ohm            | Ω      | kg m<sup>2</sup> s<sup>-3</sup> A<sup>-2</sup> |
 | temperature          | degree celsius | °C     | K + 273.15 K                                   |
 
+#### SI prefixes
+
+| Abbreviation | Prefix | Base 10          |
+| ------------ | ------ | ---------------- |
+| T            | tera   | 10<sup>12</sup>  |
+| G            | giga   | 10<sup>9</sup>   |
+| M            | mega   | 10<sup>6</sup>   |
+| k            | kilo   | 10<sup>3</sup>   |
+| -            | -      | 10<sup>1</sup>   |
+| c            | centi  | 10<sup>-2</sup>  |
+| m            | milli  | 10<sup>-3</sup>  |
+| μ            | micro  | 10<sup>-6</sup>  |
+| n            | nano   | 10<sup>-9</sup>  |
+| p            | pico   | 10<sup>-12</sup> |
+| f            | femto  | 10<sup>-15</sup> |
+
 ## 1.2 Limitation of physical measurements
 
 #### Random errors
