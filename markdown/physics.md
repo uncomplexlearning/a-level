@@ -1,3 +1,101 @@
+# 1 Measurements and their errors
+
+## 1.1 Use of SI units and their prefixes
+
+#### SI base units
+
+| Measure             | Unit                      | Symbol | Dimension |
+| ------------------- | ------------------------- | ------ | --------- |
+| time                | second                    | s      | T         |
+| length              | metre                     | m      | L         |
+| mass                | kilogram                  | kg     | M         |
+| electric current    | ampere                    | A      | I         |
+| kelvin              | thermodynamic temperature | K      | Θ         |
+| amount of substance | mole                      | mol    | N         |
+| luminous intensity  | candela                   | cd     | J         |
+
+#### Common derived units
+
+| Measure              | Unit           | Symbol | SI base units                                  |
+| -------------------- | -------------- | ------ | ---------------------------------------------- |
+| frequency            | hertz          | Hz     | s<sup>-1</sup>                                 |
+| force                | newton         | N      | kg m s<sup>-2</sup>                            |
+| pressure             | pascal         | Pa     | kg m<sup>-1</sup> s<sup>-2</sup>               |
+| energy               | joule          | J      | kg m<sup>2</sup> s<sup>-2</sup>                |
+| power                | watt           | W      | kg m<sup>2</sup> s<sup>-3</sup>                |
+| charge               | coulomb        | C      | A s                                            |
+| potential difference | volt           | V      | kg m<sup>2</sup> s<sup>-3</sup> A<sup>-1</sup> |
+| resistance           | ohm            | Ω      | kg m<sup>2</sup> s<sup>-3</sup> A<sup>-2</sup> |
+| temperature          | degree celsius | °C     | K + 273.15 K                                   |
+
+## 1.2 Limitation of physical measurements
+
+#### Random errors
+
+- Fluctuations in a reading due to uncontrollable factors
+- To reduce random errors:
+  - repeat and calculate mean
+
+#### Systematic errors
+
+- Incorrect readings due to faulty instruments or flaws in the method
+- To reduce systematic errors:
+  - recalibrate instruments
+  - use a different method
+
+#### Precision
+
+- Spread of data around the mean value
+
+#### Repeatability
+
+- The same result is obtained by the same person, using the same method
+
+#### Reproducibility
+
+- The same result is obtained by another person and/or a different method
+
+#### Resolution
+
+- The smallest unit of change that can be measured by an instrument
+
+#### Accuracy
+
+- Close to the true value
+
+#### Uncertainties
+
+- Measurements can be separated into two forms
+
+  | Reading (one judgement) | Measurement (two judgements) |
+  | ----------------------- | ---------------------------- |
+  | thermometer             | ruler                        |
+  | top pan balance         | vernier calliper             |
+  | measuring cylinder      | micrometer                   |
+  | digital voltmeter       | protractor                   |
+  | Geiger counter          | stopwatch                    |
+  | pressure gauge          | analogue meter               |
+
+- ...for readings, the absolute uncertainty is ± 0.5 of the smallest scale
+- ...for measurements, the absolute uncertainty is ± 1 of the smallest scale
+- ...for repeated data, the absolute uncertainty is ± half of the range
+
+</br>
+
+- when adding/subtracting data
+  - add the absolute uncertainties
+- when multiplying/dividing data
+  - add the percentage uncertainties
+- when exponentiating data
+  - multiply the percentage uncertainty by the power
+
+## 1.3 Estimation of physical quantities
+
+| Quantity               | Size               |
+| ---------------------- | ------------------ |
+| Diameter of an atom    | 10<sup>-10</sup> m |
+| Wavelength of UV light | 10<sup>-7</sup> m  |
+
 # 2 Particles and radiation
 
 ## 2.1 Particles
