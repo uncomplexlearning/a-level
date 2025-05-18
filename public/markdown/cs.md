@@ -242,9 +242,19 @@ bool success = int.TryParse(string abc, out number)
 
 ### 1.2.2 Procedural-oriented programming
 
-- a structured approach to program design and construction
+- A structured approach to program design and construction
+- This includes:
+  - using subroutines and modules
+  - using hierarchy charts
+  - using meaningful identifiers for variables and constants
+  - using appropriate scopes for variables
+  - using identation and comments
 
-#### Advantages of a structured approach
+#### Advantages
+
+- subroutines and modules can be individually tested
+- indented and commented code is easier to read and understand
+- meaningful identifiers make the code easier to debug
 
 ### 1.2.3 Object-oriented programming
 
@@ -254,33 +264,96 @@ bool success = int.TryParse(string abc, out number)
 
 #### Object
 
-- based on a class
-- created using a constructor
+- An instance of a class
+- Created using a constructor
   - can be implicit (without using `new()` or explicit)
-- a reference to the object assigned is a reference variable of the class type
+- A reference to the object assigned is a reference variable of the class type
 
 #### Instantiation
 
+- A class is a definition of an object
+  - attribures and methods are declared
+- An object is an instance of a class
+- ...and instantiation is the process of creating the object belonging to a class
+- ...which can be done by calling the constructor method of the class
+
+```C#
+class ClassName {
+  public ClassName(params) {
+    //constructor
+  }
+}
+
+ClassName instance = new ClassName(params);
+```
+
 #### Encapsulation
+
+- Combining a record with the procedures and functions that manipulate it to form a class
+- ...aka putting things in classes
 
 #### Inheritance
 
+- When a child class gains the attributes and methods of a parent class
+- All `private` and `protected` attributes of the parent class are available to the child class
+- in UML, represented by an arrow from the child towards the parent
+  > Because consistency is bad, we have:
+  > superclass - subclass
+  > parent class - child class
+  > base class - derived class
+
 #### Aggregation
 
+- Form of association
+- An object is associated with another
+- Aggregated objects exist independently of the aggregating object
+  - if the aggregating object is deleted, the aggregated object will not be
 - in UML, represented by a white diamond line
 
 #### Composition
 
+- Restricted form of association
+- An object contains another
+  - if the container is deleted, the component is also deleted
 - in UML, represented by a black diamond line
 
 #### Polymorphism
 
+- Providing interfaces for parameters of different types
+- ...this can be done using override methods
+
 #### Overriding
 
-- Object-oriented design principles include
-  - encapsulate what varies
-  - favour composition over inheritance
-  - program to interfaces, not implementation
+- Methods which can be overriden have to be declared as `virtual`
+- ...and methods which override have to be declared as `override`
+
+```C#
+private class Class1 {
+  protected virtual void Method1() {};
+}
+
+public class Class2 : Class1 {
+  protected override void Method1() {};
+}
+```
+
+#### OOP principles
+
+- encapsulate what varies
+- favour composition over inheritance
+- program to interfaces, not implementation
+
+#### Access modifiers
+
+- `public`
+  - UML: `+`
+  - can be accessed by any other object
+- `private`
+  - UML: `-`
+  - can be accessed objects of the same class
+- `protected`
+  - UML: `-`
+  - can be accessed objects of the same class or subclass (derived class)
 
 # 2 Fundamentals of data structures
 
@@ -319,8 +392,6 @@ bool success = int.TryParse(string abc, out number)
   - Technically, they are partial implementations
   - the data structure itself doesn't contain the operations
 
-</br>
-
 #### Static data structures:
 
 - fixed size determined at compilation
@@ -342,38 +413,36 @@ bool success = int.TryParse(string abc, out number)
 - Queues are a type of ADT based on an array
 - They act on a first in, first out (FIFO) principle
 
-</br>
+#### Uses
 
-- Queues are used for:
-  - keyboard buffers
-  - handling file downloads
-  - allocating resources (priority queue)
-  - playlists
-  - buffering network streams
+- keyboard buffers
+- handling file downloads
+- allocating resources (priority queue)
+- playlists
+- buffering network streams
 
-</br>
+#### Conatins
 
-- A queue consists of:
-  - an array
-  - a front pointer
-  - a rear pointer
-- and has operations:
-  - enqueue
-    - check if queue is full
-    - increment rear pointer
-    - insert item into the index position of the rear pointer
-      > circular queue
-      >
-      > - check queuesize variable
-      > - mod incremented pointers by queue maxsize
-  - dequeue
-    - check if queue is not empty
-      - ..which is when front pointer is smaller than rear pointer
-    - return item at the index position of the front pointer
-    - increment the front pointer
-  - (peek)
+- an array
+- a front pointer
+- a rear pointer
 
-</br>
+#### Operations
+
+- enqueue
+  - check if queue is full
+  - increment rear pointer
+  - insert item into the index position of the rear pointer
+    > circular queue
+    >
+    > - check queuesize variable
+    > - mod incremented pointers by queue maxsize
+- dequeue
+  - check if queue is not empty
+    - ..which is when front pointer is smaller than rear pointer
+  - return item at the index position of the front pointer
+  - increment the front pointer
+- (peek)
 
 #### Linear queues
 
@@ -397,59 +466,58 @@ bool success = int.TryParse(string abc, out number)
 
 </br>
 
-- Queues are used for:
-  - reversing sequences
-  - call stacks (storing stack frames)
-  - storing register values while handling an interrupt
-  - reverse polish notation
-  - undo lists
+#### Uses
 
-</br>
+- reversing sequences
+- call stacks (storing stack frames)
+- storing register values while handling an interrupt
+- reverse polish notation
+- undo lists
 
-- A queue consists of:
-  - an array
-  - a stack pointer
-- and has operations:
-  - push
-    - check if stack is full
-    - increment pointer
-    - insert item into the index position of the pointer
-  - pop
-    - check if stack is empty
-    - decrement pointer
-    - return item at the old position of the stack pointer
-  - (peek)
+#### Contains
+
+- an array
+- a stack pointer
+
+#### Operations
+
+- push
+  - check if stack is full
+  - increment pointer
+  - insert item into the index position of the pointer
+- pop
+  - check if stack is empty
+  - decrement pointer
+  - return item at the old position of the stack pointer
+- (peek)
 
 ## 2.4 Graphs
 
 - Graphs are used to represent more complex relationships.
 
-</br>
+#### Uses
 
-- Graphs are used for:
-  - representing networks
-  - representing maps
+- representing networks
+- representing maps
 
-</br>
+#### Contains
 
-- A graph consists of
-  - nodes
-    - vertex
-    - smallest unit of a graph
-  - ...joined by edges
+- nodes
+  - vertex
+  - smallest unit of a graph
+- ...joined by edges
 
-</br>
+#### Representations
 
-- Can be represented by:
-  - Adjacency list
-    - each node has a list of adjacent nodes
-    - suitable for sparse graphs
-  - Adjacency matrix
-    - tabular representation
-    - each node is assigned a row and column
-    - 1 is assigned to show that an edge exists, otherwise 0 is used
-    - there is a diagonal line of 0s and diagonal symmetry
-    - suitable for dense graphs
+- Adjacency list
+  - each node has a list of adjacent nodes
+  - suitable for sparse graphs
+- Adjacency matrix
+  - tabular representation
+  - each node is assigned a row and column
+  - 1 is assigned to show that an edge exists, otherwise 0 is used
+  - there is a diagonal line of 0s and diagonal symmetry
+  - suitable for dense graphs
 
 |      | Matrix                                                                  | List                                                                          |
 | ---- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -460,18 +528,21 @@ bool success = int.TryParse(string abc, out number)
 
 - Trees are connected, undirected graphs with no cycles
 
-</br>
+#### Rooted tree
 
-- A rooted tree is a tree in which one vertex has been designated as the root (usually at the top of a tree
-- A rooted tree has:
+- One vertex has been designated as the root (usually at the top of a tree), and has
   - parent-child relationships between nodes
   - root is the only node with no parent
   - all other nodes are descendants of the root
 - Trees do not have to have a root
 
+#### Binary tree
+
+- Each node has at most 2 children
+
 ## 2.6 Hash tables
 
-- Hash tables are data structures that creates a mapping between keys and values based on an index calculated from a hashing algorithm
+- Data structure containing mappings between keys and values based on an index calculated from a hashing algorithm
 - Theoretically O(1) access
 
 </br>
@@ -498,7 +569,8 @@ bool success = int.TryParse(string abc, out number)
 
 ## 2.7 Dictionaries
 
-- Dictionaries are collections of key-value pairs in which the value is accessed via the associated key
+- Key-value pairs
+- Value is accessed via the associated key
 
 </br>
 
@@ -547,22 +619,59 @@ bool success = int.TryParse(string abc, out number)
 
 ### 3.1.1 Simple graph-traversal algorithms
 
-- Breadth-first
-  - Application:
-    - finding the shortest path between two nodes in an unweighted graph
-    - finding first-degree "friends" in social media networks
-  - Steps:
-    - uses a queue
-    - adds all nodes adjacent to the current node to a queue
-    - iterates to repeat the process with the node at the front of the queue
-- Depth-first
-  - Application:
-    - maze navigation
-    - determining processing order
-  - Steps:
-    - uses a stack
-    - recursively visit nodes adjacent to the starting node
-    - when there are no unvisited adjacent nodes, backtrack and visit any unvisited adjacent nodes
+#### Breadth-first
+
+- Application:
+  - finding the shortest path between two nodes in an unweighted graph
+  - finding first-degree "friends" in social media networks
+- Steps:
+  - uses a queue
+  - adds all nodes adjacent to the current node to a queue
+  - iterates to repeat the process with the node at the front of the queue
+
+```pseudocode
+procedure BFS()
+  queue.enqueue(root)
+  while queue is not empty do
+    vertex = queue.dequeue()
+    label vertex as visited
+    for each connected_vertex from vertex do
+      if connected_vertex is not visited
+        queue.enqueue(connected_vertex)
+```
+
+#### Depth-first
+
+- Application:
+  - maze navigation
+  - determining processing order
+- Steps:
+  - uses a stack
+  - recursively visit nodes adjacent to the starting node
+  - when there are no unvisited adjacent nodes, backtrack and visit any unvisited adjacent nodes
+
+```pseudocode
+procedure DFS()
+  vertex = stack.peek()
+  label vertex as visited
+  for each connected_vertex from vertex do
+    if connected_vertex is not visited then
+      push connected_vertex to stack
+      DFS()
+  stack.pop()
+```
+
+</br>
+
+> Recursive implementation
+>
+> ```pseudocode
+> procedure DFS(graph, vertex)
+>   label vertex as visited
+>   for each connected_vertex from vertex do
+>     if connected_vertex is not visited then
+>       recursively call DFS(graph, connected_vertex)
+> ```
 
 ## 3.2 Tree-traversal
 
@@ -578,6 +687,16 @@ bool success = int.TryParse(string abc, out number)
   - traverse right subtree
     > Left dot
 
+```pseudocode
+procedure preorder(node)
+  label node as visited
+  if node.left exists
+    preorder(node.left)
+  if node.right exists
+    preorder(node.right)
+
+```
+
 #### In-order
 
 - Can only be used on binary trees
@@ -588,6 +707,16 @@ bool success = int.TryParse(string abc, out number)
   - visit current node
   - traverse right subtree
     > Bottom dot
+
+```pseudocode
+procedure inorder(node)
+  if node.left exists
+    preorder(node.left)
+  label node as visited
+  if node.right exists
+    preorder(node.right)
+
+```
 
 #### Post-order
 
@@ -601,20 +730,33 @@ bool success = int.TryParse(string abc, out number)
   - visit current node
     > Right dot
 
+```pseudocode
+procedure postorder(node)
+  if node.left exists
+    preorder(node.left)
+  if node.right exists
+    preorder(node.right)
+  label node as visited
+
+```
+
 ## 3.3 Reverse Polish
 
 ### 3.3.1 Reverse Polish – infix transformations
 
-- Applications:
-  - Eliminates need for brackets in subexpressions
-  - Evaluation using a stack
-  - Used in interpreters based on a stack for example Postscript and bytecode
+#### Applications
+
+- Eliminates need for brackets in subexpressions
+- Evaluation using a stack
+- Used in interpreters based on a stack for example Postscript and bytecode
 
 #### Infix to RPN
 
 - Traverse left to right
 - Evaluate brackets first
 - Write operands in order, then append operator at the end
+
+> This is a post-order traversal
 
 #### RPN to Infix
 
@@ -1030,7 +1172,9 @@ Hex 6B = 01101011
 
 - Unsigned binary only represents positive numbers
 - Signed binary represents both positive and negative numbers
-  <br>
+
+</br>
+
 - 2<sup>n</sup> values (range 0 to 2<sup>n</sup>-1) can be represented with a binary number of word length n.
 
 ### 5.4.2 Unsigned binary arithmetic
@@ -1165,7 +1309,9 @@ Exponent
 - Absolute error = actual value - approximated value
   - It is always stated as a positive value
 - Relative error = (absolute error / actual value) x 100%
-  <br>
+
+</br>
+
 - The impact of absoulte errors vary based on magnitude
 
 ### 5.4.7 Range and precision
@@ -1190,7 +1336,9 @@ Exponent
 
 - Underflow occurs when the number is too small to be represented with the given word length
 - Overflow occurs when the number is too large to be represented with the given word length
-  <br>
+
+</br>
+
 - Common causes of overflows include:
   - Multiplying/adding large numbers
   - Dividing a number by a very small number
@@ -1208,8 +1356,10 @@ Exponent
 
 ### 5.5.2 ASCII and Unicode
 
-- Information coding systems for characters are known as character sets.
-  <br>
+- Information coding systems for characters are known as character sets
+
+</br>
+
 - **ASCII** (American Standard Code for Information Interchange)
   - 7 bits, 128 characters
     - 26 upper case letters (65 - 90)
@@ -1262,7 +1412,7 @@ Exponent
 
 ### 5.6.1 Bit patterns, images, sound and other data
 
-- Describe how bit patterns may represent other forms of data, including graphics and sound.
+- Bit patterns may represent other forms of data, including graphics and sound.
 
 ### 5.6.2 Analogue and digital
 
