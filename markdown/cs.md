@@ -297,10 +297,10 @@ ClassName instance = new ClassName(params);
 - When a child class gains the attributes and methods of a parent class
 - All `private` and `protected` attributes of the parent class are available to the child class
 - in UML, represented by an arrow from the child towards the parent
-  > Because consistency is bad, we have:
-  > superclass - subclass
-  > parent class - child class
-  > base class - derived class
+  > Because consistency is bad, we have:</br>
+  > superclass - subclass</br>
+  > parent class - child class</br>
+  > base class - derived class</br>
 
 #### Aggregation
 
@@ -1670,7 +1670,10 @@ Exponent
     - update anomalies
       - not all instances of duplicated data is updated
     - insertion and deletion anomalies
-- Therefore, a fully normalised database: - Eliminates update, insertion and deletion anomalies - Eliminates data inconsistency - Minimises data duplication
+- Therefore, a fully normalised database:
+  - Eliminates update, insertion and deletion anomalies
+  - Eliminates data inconsistency
+  - Minimises data duplication
 
 </br>
 
