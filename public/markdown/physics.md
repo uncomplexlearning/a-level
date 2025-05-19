@@ -101,6 +101,11 @@
 - ...for readings, the absolute uncertainty is ± 0.5 of the smallest scale
 - ...for measurements, the absolute uncertainty is ± 1 of the smallest scale
 - ...for repeated data, the absolute uncertainty is ± half of the range
+- ...for gradients, the percentage uncertainty is:
+
+```math
+percentage\ uncertainty = \frac{best\ gradient - worst\ gradient}{best\ gradient} \times 100 \%
+```
 
 </br>
 
@@ -807,16 +812,25 @@ d \to u + \beta^- + \bar{\nu}_e
 
 #### Method
 
-#### Graph
+- Record the mass per unit length of the wire
+- Set up the signal generator/magnet
+- Make sure the wire is taut between the two bridges, using masses
+- Adjust the distance between the two bridges on the wire until a 1st order stationary wave is formed
+- Record the distance between the two bridges
+- Vary the mass on the end of the wire and redord the distance needed to create a 1st order stationary wave
 
-- plotting $f$/Hz against $\frac{1}{L}$/m<sup>-1</sup>
-- ...such that
+#### Results
 
-```math
-f = \frac{v}{2} \left(\frac{1}{L}\right)
-```
-
-- ...so the gradient is $\frac{v}{2}$
+- Rearranging
+  ```math
+  f = \frac{1}{2L}\sqrt{\frac{T}{\mu}}
+  ```
+  gives
+  ```math
+  \frac{1}{2L} = f\sqrt{\frac{\mu}{T}}
+  ```
+- Plotting $\frac{1}{2L}$/m<sup>-1</sup> against $\sqrt{\frac{\mu}{T}}$
+- ...so the gradient is $f$
 
 ## 3.2 Refraction, diffraction and interference
 
@@ -981,6 +995,32 @@ f = \frac{v}{2} \left(\frac{1}{L}\right)
     - can be used to measure atomic spacing in materials
   - monochromators
     - to analyse a wavelength emitted by molecules in diseased cells
+
+### Practical 2 - Young’s slits and diffraction grating
+
+#### Method
+
+- Young's slits
+  - Use a coherent light source (laser)
+  - Adjust the position of the laser so the light is evenly spread across the two slits
+  - Use a pencil to mark the position of the fringes
+  - Measure the distance between the slits and the paper
+- Diffraction grating
+  - Use a coherent light source (laser)
+  - Adjust the position of the laser so the light is evenly spread across the grating
+  - Use a pencil to mark the position of the fringes
+  - Measure the distance between the grating and the paper
+
+#### Results
+
+- Rearranging
+  ```math
+  w = \frac{\lambda D}{s}
+  ```
+  gives
+  ```math
+  \lambda = \frac{ws}{D}
+  ```
 
 ### 3.2.3 Refraction at a plane surface
 
@@ -1180,6 +1220,26 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   - humidity
 - decreases the horizontal component of velocity in a projectile
 
+### Practical 3 - Determination of g
+
+#### Method
+
+- Drop a card with weight through two light gates/a light gate measuring speed on a clamp
+- Vary the drop height
+
+#### Results
+
+- Rearranging
+  ```math
+  v^2 = u^2 + 2as
+  ```
+  gives
+  ```math
+  v^2 = 2gs
+  ```
+- Plotting $v^2$ against $2 \times s$
+- ...g is the gradient
+
 ### 4.1.5 Newton’s laws of motion
 
 #### First law
@@ -1265,6 +1325,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   - usually colliding objects move in opposite direction
 - inelastic collisions
   - kinetic energy is not conserved
+    - because some energy is lost to (internal) friction
   - usually colliding objects stick together
 
 #### Momentum conservation issues
@@ -1467,6 +1528,33 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 > k = E \frac{A}{L}
 > ```
 
+### Practical 4 - Determination of the Young Modulus
+
+#### Method
+
+- Measure the diameter of the wire with a micrometer
+- Measure the original length of the wire and mark the point with tape, as close as possible to the end
+- Record the initial reading of the marking
+- Add masses to the hanger
+- Record the new reading of the marking
+- Repeat
+
+#### Results
+
+- Rearranging
+  ```math
+  E = \frac{FL}{A \Delta L}
+  ```
+  gives
+  ```math
+  E = \frac{mg}{\Delta L}\left(\frac{L}{A}\right)
+  ```
+- Plotting $\Delta L$/m against $mg$/N
+- ...so
+  ```math
+  E = \frac{L}{A \times gradient}
+  ```
+
 # 5 Electricity
 
 ## 5.1 Current electricity
@@ -1536,6 +1624,29 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   - power cables, to reduce energy loss through heating
   - strong magnetic fields, which are used for maglev trains or medical equipment
 - The resistance/temperature graph is non-linear and drops dramatically to 0 at the critical temperature
+
+### Practical 5 - Determination of the resistivity of a wire
+
+#### Method
+
+- Connect a power supply in series with an ammeter and two crocodile clips
+- Connect the crocodile clips across the wire and connect a voltmeter across the wire
+- Record the current from the ammeter
+- Check the pd from the voltmeter
+- Vary the distance of the wire between the crocodile clips
+
+#### Results
+
+- Rearranging
+  ```math
+  \rho = \frac{RA}{L}
+  ```
+  gives
+  ```math
+  R = \frac{\rho L}{A}
+  ```
+- Plotting mean $R$ against $L$
+- ...so gradient is $\frac{\rho}{A}$
 
 ### 5.1.4 Circuits
 
@@ -1635,3 +1746,26 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   emf = terminal\ p.d. + lost\ volts
   ```
 - The emf can be measured using a voltmeter across a cell when no current is running through it.
+
+### Practical 6 - Investigation of emf and internal resistance
+
+#### Method
+
+- Connect a voltmeter across a cell
+- Connect a switch, ammeter and a variable resistor in series
+- Record the pd and current
+- Adjust the variable resistor to obtain pairs of $V$ and $I$
+
+#### Results
+
+- Rearranging
+  ```math
+  \varepsilon = I(R + r)
+  ```
+  gives
+  ```math
+  V = -rI + \varepsilon
+  ```
+- plotting $V$/V against $I$/A
+- ...so the graident is $-r$
+- ...and the y-intercept is $\varepsilon$
