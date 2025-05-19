@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <>
       <TopNav />
-      <div className="homepage-text">Not found :(</div>
+      <div className="temp-full-text">Not found :(</div>
     </>
   );
 }
