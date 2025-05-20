@@ -352,8 +352,8 @@ public class Class2 : Class1 {
   - UML: `-`
   - can be accessed objects of the same class
 - `protected`
-  - UML: `-`
-  - can be accessed objects of the same class or subclass (derived class)
+  - UML: `#`
+  - can be accessed by objects of the same class or a subclass (derived class)
 
 # 2 Fundamentals of data structures
 
@@ -456,6 +456,12 @@ public class Class2 : Class1 {
 
 - priority is stored with each element
 - shuffle items in each queue to "make room"
+- enqueue:
+  - starting with the item at the rear of the queue move each item back one place in the array
+  - until:
+    - the start of the queue is reached
+    - item with the same or higher priority is reached
+  - add the new item in the position before that item
 
 ## 2.3 Stacks
 
@@ -512,12 +518,14 @@ public class Class2 : Class1 {
 - Adjacency list
   - each node has a list of adjacent nodes
   - suitable for sparse graphs
+    - or when edges rarely change
 - Adjacency matrix
   - tabular representation
   - each node is assigned a row and column
   - 1 is assigned to show that an edge exists, otherwise 0 is used
   - there is a diagonal line of 0s and diagonal symmetry
   - suitable for dense graphs
+    - or where speed of quering edges is crtical
 
 |      | Matrix                                                                  | List                                                                          |
 | ---- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -1326,6 +1334,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n^c) < O(2^n) < O(n!)
 #### Intractable problems
 
 - Problems that have no polynomial (or less) time solution
+  - but still can be solved
 
 #### Heuristics
 
@@ -1333,7 +1342,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n^c) < O(2^n) < O(n!)
 - Rules/knowledge about the problem domain
   - used to find a good/approximate but not optimal solution to a problem
   - reduces the size of the search/problem space
-  - changing some constraints in the problem
+  - changing some constraints in the problem to make it easier to solve
 
 ### 4.4.6 Computable and non-computable problems
 
@@ -1430,7 +1439,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n^c) < O(2^n) < O(n!)
 | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   | 11   | 12   | 13   | 14   | 15   |
 | 0000 | 0001 | 0010 | 0011 | 0100 | 0101 | 0110 | 0111 | 1000 | 1001 | 1010 | 1011 | 1100 | 1101 | 1110 | 1111 |
 
-### Conversions
+#### Conversions
 
 - **Binary** to **Denary**
   - Draw a table:
@@ -1656,12 +1665,12 @@ e.g. 00011010 (denary 26) x 4 / 8
     - Convert both into negative unsigned decimals
 
 Mantissa
-| Sign | 1/2 | 1/4 | 1/8 | 1/16 | 1/32 |
+| -1 | 1/2 | 1/4 | 1/8 | 1/16 | 1/32 |
 | --- | --- | --- | --- | --- | --- |
 0 | 1 | 0 | 1 | 1 | 0
 
 Exponent
-| Sign | 4 | 2 | 1 |
+| -8 | 4 | 2 | 1 |
 | --- | --- | --- | --- |
 0 | 1 | 0 | 0
 
@@ -1672,9 +1681,9 @@ Exponent
   - Moving the point
     Exponent is 4, so we move the decimal point right by 4 places to get<br>
 
-  | Sign | 8   | 4   | 2   | 1   | 1/2 |
-  | ---- | --- | --- | --- | --- | --- |
-  | 0    | 1   | 0   | 1   | 1   | 0   |
+  | -16 | 8   | 4   | 2   | 1   | 1/2 |
+  | --- | --- | --- | --- | --- | --- |
+  | 0   | 1   | 0   | 1   | 1   | 0   |
 
   8 + 2 + 1 = 11
 
@@ -1711,7 +1720,7 @@ Exponent
 
 - Floating point binary numbers are normalised to provide:
   - maximum precision for the word length
-  - unique representations of each number (so easier to compare)
+  - **unique representations** of each number (so easier to compare)
 - This involves:
   - manipulating the mantissa to start with 01 (positive) or 10 (negative)
   - subtracting the number of places the bits have shifted from the exponent in decimal
@@ -1869,6 +1878,10 @@ Exponent
 
 - Vector graphics can be scaled without losing quality
 - Vector graphics use less storage space than bitmapped graphics
+- Vector graphics allow for objects to be edited independently
+- Bitmap graphics can represent images with complex textures
+- Bitmap graphics can represent images not composed of regular shape
+- Images captures from nature are bitmaps
 
 ### 5.6.7 Digital representation of sound
 
@@ -1883,8 +1896,8 @@ Exponent
   - volume
   - sustained
 - Allows easy manipulation
-- Smaller in size (more compact representation)
-- Can be generated directly
+- More compact representation
+- Can be generated directly and send to instruments directly
 - No data is lost through sampling
 
 ### 5.6.9 Data compression
@@ -1977,8 +1990,11 @@ Exponent
 - Start and stop bits must be opposites of each other
   - so if the start bit is logically low (0), then the stop bit must be logically high (1)
     > this is especially helpful if the line is kept logically high when idle
+- Stop bit
 
-</br>
+  - provides time for the receiver to process / transfer the received data
+  - allows the next start bit to be recognised
+    </br>
 
 - The use of start and stop bits create overhead
   - the number of additional bits transmitted in a frame
@@ -2346,7 +2362,8 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 - This is managed through:
   - Record locks
     - Maintains information about which record are currently being accessed
-    - Checks if a lock has been made
+    - Locks are set on a record when a transaction starts
+    - Checks if a lock has been set on the record
     - If a read lock is set, only read transactions are permitted
     - If a write lock has been set, no transactions are permitted
     - Locks are released once transactions are complete
@@ -2354,7 +2371,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
     - Transactions are applied in a logical order
   - Timestamp ordering
     - A timestamp is recorded when each transaction begins
-    - A timestamp recorded for the last successful read/write
+    - A timestamp recorded for the last successful read/write for each record
     - Database determines whether there will be a loss in data integrity
   - Commitment ordering
     - Tracks conflicts between transactions
