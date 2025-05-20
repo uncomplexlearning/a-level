@@ -35,34 +35,34 @@ struct S {
 
 #### Variable declaration
 
-- allocating memory
+- Memory is allocated
 
 #### Constant declaration
 
-- constants do not change during runtime
+- Constants do not change during runtime
 
 #### Assignment
 
-- giving a variable/constant a value
+- Giving a variable/constant a value
 
 #### Iteration
 
-- repeating a set of instructions
-- definite (count-controlled)
+- Repeating a set of instructions
+- Definite (count-controlled)
   - for, foreach
   - number of iterations is known before start
-- indefinite (condition-controlled)
+- Indefinite (condition-controlled)
   - while, do...while
-- can be nested
+- Can be nested
 
 #### Selection
 
-- choosing an action based on a value
-- can be nested
+- Choosing an action based on a value
+- Can be nested
 
 #### Subroutine (procedure/function)
 
-- a named block of code containing a set of instructions
+- A named block of code containing a set of instructions
 
 </br>
 
@@ -260,7 +260,7 @@ bool success = int.TryParse(string abc, out number)
 
 #### Class
 
-- defines methods and property/attribute fields that capture the common behaviours and characteristics of objects
+- Defines methods and property/attribute fields that capture the common behaviours and characteristics of objects
 
 #### Object
 
@@ -339,9 +339,9 @@ public class Class2 : Class1 {
 
 #### OOP principles
 
-- encapsulate what varies
-- favour composition over inheritance
-- program to interfaces, not implementation
+- Encapsulate what varies
+- Favour composition over inheritance
+- Program to interfaces, not implementation
 
 #### Access modifiers
 
@@ -394,17 +394,17 @@ public class Class2 : Class1 {
 
 #### Static data structures:
 
-- fixed size determined at compilation
-  - thus inefficient if more memory is assigned than is needed
-- stored contiguously in memory
-- does not require pointers to be stored
+- Fixed size determined at compilation
+  - ...so they are inefficient if more memory is assigned than is needed
+- Stored contiguously in memory
+- Does not require pointers to be stored
 
 #### Dynamic data structures:
 
-- change in size during runtime
+- Changes in size during runtime
   - utilises pointers and allocates memory from the heap
-- data is stored across memory locations
-- pointers have to be stored with the data in memory to point to the next element
+- Data is stored across memory locations
+- Pointers have to be stored with the data in memory to point to the next element
 
 ## 2.2 Queues
 
@@ -415,11 +415,11 @@ public class Class2 : Class1 {
 
 #### Uses
 
-- keyboard buffers
-- handling file downloads
-- allocating resources (priority queue)
-- playlists
-- buffering network streams
+- Keyboard buffers
+- Handling file downloads
+- Allocating resources (priority queue)
+- Playlists
+- Buffering network streams
 
 #### Conatins
 
@@ -439,7 +439,7 @@ public class Class2 : Class1 {
     > - mod incremented pointers by queue maxsize
 - dequeue
   - check if queue is not empty
-    - ..which is when front pointer is smaller than rear pointer
+    - ...which is when front pointer is smaller than rear pointer
   - return item at the index position of the front pointer
   - increment the front pointer
 - (peek)
@@ -468,16 +468,16 @@ public class Class2 : Class1 {
 
 #### Uses
 
-- reversing sequences
-- call stacks (storing stack frames)
-- storing register values while handling an interrupt
-- reverse polish notation
-- undo lists
+- Rversing sequences
+- Call stacks (storing stack frames)
+- Storing register values while handling an interrupt
+- Reverse polish notation
+- Undo lists
 
 #### Contains
 
-- an array
-- a stack pointer
+- An array
+- A stack pointer
 
 #### Operations
 
@@ -497,12 +497,12 @@ public class Class2 : Class1 {
 
 #### Uses
 
-- representing networks
-- representing maps
+- Representing networks
+- Representing maps
 
 #### Contains
 
-- nodes
+- Nodes
   - vertex
   - smallest unit of a graph
 - ...joined by edges
@@ -545,18 +545,24 @@ public class Class2 : Class1 {
 - Data structure containing mappings between keys and values based on an index calculated from a hashing algorithm
 - Theoretically O(1) access
 
-</br>
+#### Hashing algorithms
 
-- Hashing algorithms takes in a input and returns a hash
-  - The same hash is always returned for the same input
-  - Usually, the hashing algorithm involves modulo division with the size of the table
+- take in a input and return a hash
+  - the same hash is always returned for the same input
+  - usually, the hashing algorithm involves modulo division with the size of the table
 - A good hashing algorithm should:
   - have a even distribution of hash values
   - use efficient operations
 
-</br>
+#### Storing values
 
-- A collision occurs when two key values compute the same hash
+- Hashing algorithm is applied to the key
+- The resultant hash is where the record should be stored
+- If the location is not empty, then resolve the collision
+
+#### Collisions
+
+- Occurs when two key values compute the same hash
 - This can be solved by:
   - Rehashing
     - Increase the size of the hash table
@@ -583,35 +589,49 @@ public class Class2 : Class1 {
 
 ## 2.8 Vectors
 
-- Vectors can be represented as: - a list of numbers - a function - a way of representing a geometric point in space
-
-</br>
-
-- Notationally,
-  - A 4-vector over ℝ = ℝ<sup>4</sup>
-  - 0 maps to 2 = 0 ↦ 2
+- Vectors can be represented as:
+  - a list of numbers
+  - a function
+    a way of representing a geometric point in space
 - All entries must be drawn from the same field (set)
 
-</br>
+#### Notation
 
-- Vectors can be implemented as: - Dictionaries - Lists - 1-D arrays - Arrows
+- A 4-vector over $\mathbb{R}$ = $\mathbb{R}^4$
+- 0 maps to 2 = 0 ↦ 2
 
-</br>
+#### Implementation
 
-- Operations
-  - Addition
-    - added top to tail geometrically
-    - each component is added separately
-    - used for translation
-  - Scalar multiplication
-    - each component is individually multiplied by a scalar
-    - use for scaling
-  - Convex combiation
-    - satisfies **r** = x**a** + y**b**<br>where a, b > 0; a + b = 1
-    - geometrically, r is on the line that joins the tips of a and b
-  - Dot (scalar) product
-    - used to find the angle between two vectors
-    - for u = [u<sub>1</sub>, … , u<sub>n</sub>] and v = [v<sub>1</sub>, … , v<sub>n</sub> ]<br>u ∙ v = u<sub>1</sub>v<sub>1 </sub>+ u<sub>2</sub>v<sub>2</sub> + … + u<sub>n</sub>v<sub>n</sub>
+- Dictionaries
+- Lists
+- 1-D arrays
+- Arrows
+
+#### Operations
+
+- Addition
+  - added top to tail geometrically
+  - each component is added separately
+  - used for translation
+- Scalar multiplication
+  - each component is individually multiplied by a scalar
+  - use for scaling
+- Convex combiation
+  - satisfies
+  ```math
+  \mathbf{r} = a\mathbf{u} + b\mathbf{v}
+  \\
+  where\ a, b > 0; a + b = 1
+  ```
+  - geometrically, r is on the line that joins the tips of a and b
+- Dot (scalar) product
+  - used to find the angle between two vectors
+  - for
+  ```math
+  \mathbf{u} = [u_1, \ldots, u_n] \quad \text{and} \quad \mathbf{v} = [v_1, \ldots, v_n]
+  \\
+  \mathbf{u} \cdot \mathbf{v} = u_1 v_1 + u_2 v_2 + \ldots + u_n v_n
+  ```
 
 # 3 Fundamentals of algorithms
 
@@ -694,7 +714,6 @@ procedure preorder(node)
     preorder(node.left)
   if node.right exists
     preorder(node.right)
-
 ```
 
 #### In-order
@@ -715,7 +734,6 @@ procedure inorder(node)
   label node as visited
   if node.right exists
     preorder(node.right)
-
 ```
 
 #### Post-order
@@ -737,7 +755,6 @@ procedure postorder(node)
   if node.right exists
     preorder(node.right)
   label node as visited
-
 ```
 
 ## 3.3 Reverse Polish
@@ -748,7 +765,8 @@ procedure postorder(node)
 
 - Eliminates need for brackets in subexpressions
 - Evaluation using a stack
-- Used in interpreters based on a stack for example Postscript and bytecode
+- Used in interpreters based on a stack
+  - Postscript and bytecode
 
 #### Infix to RPN
 
@@ -764,19 +782,96 @@ procedure postorder(node)
 - Place operator between preceding two operands
 - Place expresssion in backets
 
+#### Evaluation
+
+- Starting from the left
+- Push operands onto stack
+- Upon reach an operator, pop two operands off the stack
+- Apply the operation and push the result back on the stack
+- Repeat until the end of the expression
+  - the top item on the stack will be the result
+
 ## 3.4 Searching algorithms
 
 ### 3.4.1 Linear search
 
 - Time complexity O(n)
 
+```pseudocode
+procedure linearsearch(target)
+  for each item in array do
+    if item == target
+      return found
+```
+
 ### 3.4.2 Binary search
 
 - Time complexity O(log n)
 
+```pseudocode
+procedure binarysearch(target)
+  left = 0
+  right = array.length - 1
+
+  while left <= right do
+    middle = (left + right) div 2
+    if array[middle] == target
+      return middle
+    else if array[middle] < target
+      left = middle + 1
+    else
+      right = middle - 1
+
+  return -1
+```
+
 ### 3.4.3 Binary tree search
 
+#### Inserting items
+
+```pseudocode
+procedure bstinsert(root, item)
+  if item < root then
+    if not root.left then
+      root.left = item
+    else
+      bstinsert(root.left, item)
+  else
+    if not root.right then
+      root.right = item
+    else
+      bstinsert (root.right, item)
+```
+
+#### Searching
+
 - Time complexity O(log n)
+
+```pseudocode
+procedure BSTiterative(node, target)
+  found = false
+  while found == false and node do
+    if node == target then
+      found
+    else if node > target then
+      node = node.left
+    else if node < target then
+      node = node.right
+```
+
+</br>
+
+```pseudocode
+procedure BSTrecursive(node, target)
+  if not node then
+    return false
+  if node == target then
+    found
+  else if node > target then
+    return BSTrecursive(node.left, target)
+  else if node > target then
+    return BSTrecursive(node.right, target)
+```
 
 ## 3.5 Sorting algorithms
 
@@ -784,9 +879,56 @@ procedure postorder(node)
 
 - Time complexity O(n<sup>2</sup>)
 
+#### Unoptimised
+
+```pseudocode
+procedure bubblesort(array)
+  for i = 0 to array.length - 1 do
+    for j = 0 to array.length - 1 do
+      if items[j] > items[j + 1]
+        swap(items[j], items[j + 1])
+```
+
+#### Optimised
+
+```pseudocode
+procedure bubblesort(array)
+  no_swaps = false
+  while not no_swaps do
+    no_swaps = true
+    for i = 0 to array.length - 1 do
+      if items[i] > items[i + 1]
+        swap(items[i], items[i + 1])
+        no_swaps = false
+```
+
 ### 3.5.2 Merge sort
 
 - Time complexity O(n log n)
+
+```pseudocode
+function mergesort(array)
+  if array.length = 1 then
+    return array
+  middle = array.length div 2
+  left = mergesort(array[0 : middle])
+  right = mergesort(array[middle : array.length])
+  return merge(left, right)
+
+function merge(left, right)
+  merged = []
+  while left.length > 0 and right.length > 0 do
+    if left[0] < right[0] then
+      merged.append(left.pop(0))
+    else
+      merged.append(right.pop(0))
+
+  if left.length > 0 then
+    merged += left
+  else if right.length > 0 then
+    merged += right
+  return merged
+```
 
 ## 3.6 Optimisation algorithms
 
@@ -794,9 +936,42 @@ procedure postorder(node)
 
 ### 3.6.1 Dijkstra’s shortest path algorithm
 
-- Applications:
-  - satellite navigation systems
-  - routers
+#### Applications
+
+- satellite navigation systems
+- routers
+
+#### Implementation
+
+- Set the distance to the source to 0
+- Set the distance to every other node to infinity
+- Push the source node into a min heap with its distance
+- Pop the node with the smallest distance
+  - calculate the disance to each adjacent neighbour and add it to the distance from the source to the node
+  - if the distance is shorter than the current distance from the source to the neighbour, update it
+- Repeat until the min heap is empty
+
+```pseudocode
+function dijkstra(Graph, source):
+
+  for each vertex v in Graph.Vertices:
+    dist[v] = INFINITY
+    prev[v] = UNDEFINED
+    add v to Q
+  dist[source] = 0
+
+  while Q is not empty:
+    u = vertex in Q with minimum dist[u]
+    Q.remove(u)
+
+    for each arc (u, v) in Q:
+      alt = dist[u] + Graph.Edges(u, v)
+      if alt < dist[v]:
+        dist[v] = alt
+        prev[v] = u
+
+  return dist[], prev[]
+```
 
 # 4 Theory of computation
 
@@ -806,25 +981,25 @@ procedure postorder(node)
 
 ### 4.1.2 Following and writing algorithms
 
-- An algorithm is a sequence of steps that can be followed to
-  complete a task and that always terminates
+- An algorithm is a sequence of steps that can be followed to complete a task
+- Always terminates
 
 #### Programming constructs
 
-- sequence
-- assignment
-- selection
-- iteration
+- Sequence
+- Assignment
+- Selection
+- Iteration
 
 ### 4.1.3 Abstraction
 
 #### Representational abstraction
 
-- representation arrived at by removing unnecessary details
+- Representation arrived at by removing unnecessary details
 
 #### Abstraction by generalisation or categorisation
 
-- grouping by common characteristics to arrive at a hierarchical relationship
+- Grouping by common characteristics to arrive at a hierarchical relationship
   > something "is a kind of" something else
 
 ### 4.1.4 Information hiding
@@ -857,7 +1032,7 @@ procedure postorder(node)
 
 - Breaking a problem into a number of subproblems
 - ...so that each sub-problem accomplishes an identifiable task
-- which can be further subdivided
+- ...or can be further subdivided
 
 ### 4.1.10 Composition
 
@@ -876,33 +1051,140 @@ procedure postorder(node)
 
 ## 4.2 Finite state machines (FSMs)
 
-### 4.2.1 Finite state machines (FSMs) without output
+### 4.2.1 Finite state machines (FSMs) with and without output
+
+#### Use
+
+- Model the behaviour of systems
+  - compilers
+  - hardware systems
+  - syntax parsing
+  - network protocols
+- Define languages
+
+#### State diagrams
+
+- Circle - state
+- Arrow pointing towards circle - inital state
+- Two concentric circles - accepting state
+- Arrow labelled with input - transition
+
+#### Finite State Automata
+
+- FSMs with no output
+- If only one transition between each state and input are possible
+  - then the transition is uniquely determined by its input
+  - and so the FSM is a deterministic Finite State Automaton
+
+#### Mealy Machine
+
+- A type of FSM with output
+- Do not have accepting states
+- Produces output when input is being processed
+  - ...instead of when a accepting state is reached
+- Only one transition between each state and input are possible
+  - is deterministic
+
+</br>
+
+- Used for
+  - ciphertext
+  - digital logic circuits
 
 ### 4.2.2 Maths for regular expressions
 
 - A set is an unordered collection of values in which each value occurs at most once
 
+#### Notation
+
+- A set A has elements 1, 2, 3, 4 and 5
+
+```math
+A = \{1, 2, 3, 4, 5\}
+\\
+A = \{x | x \in \mathbb{N} \wedge x \leq 5\}
+```
+
+- Compact representation
+
+```math
+\{0^n1^n | n \geq 1\} = \{01, 0011, 000111, ...\}
+```
+
 #### Finite sets
 
-- elements can be counted off by natural numbers up to a particular number
+- Elements can be counted off by natural numbers up to a particular number
 
 #### Infinite sets
 
+- Sets with infinite elements
+
 #### Countably infinite sets
 
-- elements can be counted off by the natural numbers.
+- Elements can be counted off by the natural numbers.
 
 #### Cardinality of a finite set
 
-- the number of elements in a set
+- The number of elements in a set
 
 #### Cartesian product of sets
 
-- the set of all ordered pairs $(a, b)$ where $a$ is a member of $A$ and $b$ is a member of $B$
+- The set of all ordered pairs $(a, b)$ where $a$ is a member of $A$ and $b$ is a member of $B$
+
+```math
+A \times B
+```
+
+#### Subset
+
+- Set A contains everything in set B
+- ...then set B is a subset of set A
+
+```math
+B \subseteq A
+```
+
+#### Proper subset
+
+- Set B is a subset of set A, but there is at least one element in set A that is not in set B
+- ...then set B is a proper subset of set A
+
+```math
+B \subset A
+```
+
+#### Countable set
+
+- A set with the same cardinality as some subset of $\mathbb{N}$
+
+#### Union
+
+- A set S produced by the union of sets A and B will contain all unique elements of A and B
+
+```math
+A \cup B
+```
+
+#### Intersection
+
+- A set S produced by the intersection of sets A and B will contain all elements in both A and B
+
+```math
+A \cap B
+```
+
+#### Difference
+
+- A set S produced by the difference of sets A and B will contain all elements in A but not in B
+
+```math
+A - B = A \backslash B = \{x | x \in A \wedge x \notin B\}
+```
 
 ### 4.2.3 Regular expressions
 
-- a way of describing a set and that regular expressions allow particular types of languages to be described in a convenient shorthand notation
+- A way of describing a set
+- Allow particular types of languages to be described in a convenient shorthand notation
 
 #### Metacharacters
 
@@ -916,10 +1198,52 @@ procedure postorder(node)
 
 - A language is called regular if it can be represented by a regular expression
 - Regular expressions and FSMs are equivalent ways of defining a regular language
+- Any language that FSMs will accept are regular languages
 
 ## 4.3 Context-free languages
 
 ### 4.3.1 Backus-Naur Form (BNF)/syntax diagrams
+
+#### Context-free languages
+
+- Languages that follow the rules of a context-free grammar
+- Context-free grammars are a set of production rules
+  - production rules can be made up of other production rules
+  - does not depend on the context of where it is used
+    </br>
+- All regular expressions are context-free
+
+#### Backus-Naur Form
+
+- `<n>` - non-terminal symbols
+- `n` - terminal symbol (literal character)
+- `|` - OR operator
+- `ε` - the empty set
+- `<n> ::= ab` - production rule
+  </br>
+- Recursive definition:
+
+```pseudocode
+<Integer> ::= <Digit>|<Digit><Integer>
+<Digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+```
+
+#### Syntax diagrams
+
+- Visual representation of BNF
+  - exactly equivalent
+
+</br>
+
+- Ovals - terminal symbols
+- Rectangles - non-terminal symbols
+- Arrows
+  > Recursion is represented by an arrow that loops back to itself (non-terminal symbol)
+
+#### Representation
+
+- BNF can represent some languages that cannot be represented using regular expressions
+  - Regular expressions do not support recursion
 
 ## 4.4 Classifcation of algorithms
 
@@ -930,9 +1254,64 @@ procedure postorder(node)
 
 ### 4.4.2 Maths for understanding Big-0 notation
 
-- a function is a mapping from the domain to the co-domain
+- A function is a mapping from the domain to the co-domain
+
+#### Types of function
+
+- linear
+
+```math
+y = 2x
+```
+
+- polynomial
+
+```math
+y = x^2 + 2x
+```
+
+- exponential
+
+```math
+y = 2^x
+```
+
+- logarithmic
+
+```math
+y = log_{10} x
+```
 
 ### 4.4.3 Order of complexity
+
+- Constant - $O(1)$
+
+  - same no matter input size
+
+- Linear - $O(n)$
+
+  - proportional to input size
+
+- Polynomial - $O(n^c)$
+
+  - proportional to the power c of input size for any real constant c
+
+- Exponential - $O(2^n)$
+
+  - doubles for every increase in input size
+
+- Logarithmic - $O(log n)$
+
+  - proportional to the logarithm of input size
+
+- Factorial - $O(n!)$
+  - grows factorially with input size
+
+#### In order,
+
+```math
+O(1) < O(log n) < O(n) < O(n log n) < O(n^c) < O(2^n) < O(n!)
+```
 
 ### 4.4.4 Limits of computation
 
@@ -940,15 +1319,21 @@ procedure postorder(node)
 
 ### 4.4.5 Classifcation of algorithmic problems
 
-- Heuristic methods are often used when tackling intractable problems
-
 #### Tractable problems
 
-- problems that have a polynomial (or less) time solution
+- Problems that have a polynomial (or less) time solution
 
 #### Intractable problems
 
-- problems that have no polynomial (or less) time solution
+- Problems that have no polynomial (or less) time solution
+
+#### Heuristics
+
+- Heuristic methods are often used when tackling intractable problems
+- Rules/knowledge about the problem domain
+  - used to find a good/approximate but not optimal solution to a problem
+  - reduces the size of the search/problem space
+  - changing some constraints in the problem
 
 ### 4.4.6 Computable and non-computable problems
 
@@ -1326,7 +1711,7 @@ Exponent
 
 - Floating point binary numbers are normalised to provide:
   - maximum precision for the word length
-  - unique representations of each numer (so easier to compare)
+  - unique representations of each number (so easier to compare)
 - This involves:
   - manipulating the mantissa to start with 01 (positive) or 10 (negative)
   - subtracting the number of places the bits have shifted from the exponent in decimal
@@ -1439,6 +1824,34 @@ Exponent
 
 ### 5.6.4 Bitmapped graphics
 
+- Image is broken down into pixels
+- Each pixel has a binary value assigned to it
+- Stored as an array of pixels
+
+#### Resolution
+
+- Size of the image
+- Number of dots per inch
+
+#### Size in pixels
+
+- Number of pixels in the image
+
+#### Colour depth
+
+- Number of bits stored in each pixel
+- Corresponding to the number of colours that can be displayed
+
+#### Metadata
+
+- Bitmap images are usually stored with metadata, which includes:
+  - width
+  - height
+  - colour depth
+  - date created
+  - make and model of camera
+  - etc.
+
 ### 5.6.5 Vector graphics
 
 - Vector graphics represent images using geometric shapes/objects/lines
@@ -1525,25 +1938,42 @@ Exponent
 
 #### Serial transmission
 
-- data is transmitted 1 bit at a time
+- Data is transmitted 1 bit at a time
 
 #### Parallel transmission
 
-- multiple bits of data is tramsitted simultaneously across multiple wires
+- Multiple bits of data is tramsitted simultaneously across multiple wires
 
 </br>
 
-- data skew may occur
+- Uses:
+  - PATA
+  - Within intergrated circuits
+  - Buses
 
-#### Synchronous and data transmission
+</br>
+
+- Disadvantages:
+  - data skew may occur - time difference between when each bit is recieved
+    - propagation delay between the clock source and the transmission circuit
+    - physical properties of the wire
+  - crosstalk may occur
+    - interference bwteen parallel wires
+      - capactive and inductive coupling between wires
+  - expensive
+    - multiple wires are needed
+
+#### Synchronous data transmission
 
 - a common clock signal is shared between the two devices
   - usually the clock signal is provided by the transmitting device along a dedicated wire
+  - ...or using phase modulation
 
 #### Asynchronous data transmission
 
 - Start and stop bits added to data to form a frame
 - The reciever reads the data on receipt of the start bit
+  - the clock is temporarily synchronised for the duration of the transmission
 - Start and stop bits must be opposites of each other
   - so if the start bit is logically low (0), then the stop bit must be logically high (1)
     > this is especially helpful if the line is kept logically high when idle
@@ -1557,55 +1987,209 @@ Exponent
 
 #### Baud rate
 
+- Number of symbol changes within a second
+
 #### Bit rate
 
+- Amount of data transferred between two devices in a second
 - Can be higher than baud rate if more than one bit is encoded in each signal change
 - Directly proportionate to bandwidth
 
+```math
+bit\ rate = baud\ rate \times bits\ per\ symbol
+```
+
 #### Bandwidth
+
+- Frequency range available for transmission within a medium
+  - difference between the highest and lowest frequency a communication medium can transmit
 
 #### Latency
 
+- Time delay between a message being sent and recieved
+
 #### Protocol
+
+- Set of rules followed during data transmission over a network to minimise inconsistencies
 
 ## 9.2 Networking
 
 ### 9.2.1 Network topology
 
+#### Local Area Network (LAN)
+
+- Computers are connected within a small geographic area
+- Typically owned by one organisation
+- Baseband
+  - each transmission utilises the full capacity of the network
+
+#### Wide Area Network (WAN)
+
+- Computers are connected across a large geographic area
+- Owned by telecommunications companies
+- May be formed of multiple LANs connected together
+- Broadband
+  - multiple transmissions can occur at once
+
 #### Physical star topology
 
-- can behave logically as a bus network by using a bus protocol and appropriate physical switching
+- each node is individually connected to a central hub/switch
+- switch forwards data using MAC addresses
+
+| Advantages                                          | Disadvantages                             |
+| --------------------------------------------------- | ----------------------------------------- |
+| Rest of network is not affected if one device fails | Single point of failure in the switch/hub |
+| Easy to isolate faults                              | More transmission medium is needed        |
+| Packets can be broadcast without colliding (switch) |                                           |
+| Switch ensures data is not broadcast                |                                           |
+
+- Can behave logically as a bus network by using a bus protocol and appropriate physical switching
+
+> Physical bus topology
+>
+> - each node is connected to a central bus
+> - data from each node is broadcast to all connected devices
+>   - so only one transmission can occur at once
+>   - CSMA/CD
 
 #### Logical bus network topology
+
+- Logical toplogies describe the flow of data across a netwrok
+- So, in a logical bus:
+  - only one device can transmit at a time
+  - data is broadcast to all nodes
+- Ethernet uses a logical bus topology
+  - data is packaged into a frame
+  - frame is broadcast using CSMA/CD into the network
+  - switch forwards the packet based on the frame
+    > It doesn't anymore, lol
 
 ### 9.2.2 Types of networking between hosts
 
 #### Peer-to-peer networking
 
-- each computer has equal status
+- each computer has equal status and can act as both server and cluient
+- peers communicate directly with each other
+- resources are distributed across peers
+
+</br>
+
+- Advantages
+  - no dependence on central server
+  - easy and cheap to set up
+  - no single point of failure
+- Disadvantages
+  - no centralised management/security
+  - no centralised backup
+  - files may be duplicated, leading to data inconsistency
+  - peers may go offline while transmitting
 
 #### Client-server networking
 
-- most computers are nominated as clients and one or more as servers
-- clients request services from the servers, which provide these services
+- Most computers are nominated as clients and one or more as servers
+- Clients request resources from the servers
+- Servers return responses to the client
+
+</br>
+
+- Advantages
+  - files can be stored centrally, so can be accessed from any connected node
+  - centralised backup, updates and security
+  - nodes always recieve the most updated version fo a file
+  - central user and account management
+- Disadvantages
+  - if the server is unavailable, users cannot access their files
+  - server hardware more expensive than normal computers
+  - single point of attack for cyberattacks
+  - servers may be overwhelmed
 
 ### 9.2.3 Wireless networking
 
-- WiFi (IEEE 802.11x) is wireless local area network that is based on international standards.
+- WiFi (IEEE 802.11x) is a wireless local area network
+  - based on international standards
 - Used to enable devices to connect to a network wirelessly
 
-#### Security
+#### Hardware
 
-- Strong encryption of transmitted data using
-  WPA (Wifi Protected Access)/WPA2
-- SSID (Service Set Identifier) broadcast disabled
-- MAC (Media Access Control) address allow list
+- Wireless network adapter
+  - establishes connection between a computer and a WLAN
+  - adapter and WAP must be compatible
+    - WiFi provides backwards-compatibility
+- Wireless access point (WAP)
+  - allows wireless devices to connect to a LAN
+  - broadcasts an SSID
+  - responsible for security of the WLAN
+
+#### Transmission
+
+- 2.4 GHz or 5 GHz baseband
+- broken down into smaller channels of:
+  - 20 MHz (2.4 GHz)
+    - 14 channels
+    - 3 non-overlapping channels (1, 6, 11)
+  - 40/80 MHz (5 GHz)
+    - 24 non-overlapping channels
+- WAP and devices are tuned to the same frequency
+
+#### Performance
+
+- Radio interference
+  - many devices use 2.4GHz and 5GHz, as they are unregulated frequencies
+  - other nearby networks may also interfere
 
 #### Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA)
 
-- Request to Send/Clear to Send (RTS/CTS)
+- Sending device senses for other transmissions
+- If the network is idle, the message is transmitted
+- If the network is not clear, the sending devices waits for a random period of time before reattempting
+- Sending device awaits an ACK frame from the recipient
+  - if no ACK frame is recieved within an agreed timeframe, the packet is assumed to be lost
+    - the message is resent
+  - if an ACK frame is recieved, the sending device can return to idle
+
+#### Hidden node problem
+
+- Devices can only detect communications within their own range
+- At the same time, another device could be communicating with the recepient, which the sending device cannot detect
+
+</br>
+
+- Request to Send/Clear to Send (RTS/CTS) is used:
+  - Sending devices senses for other transmissions
+  - If the network is idle, it sends an RTS frame to the recipient
+    - all other devices go silent
+  - The recipient returns a CTS frame
+    - all devices within the range of the recipient will also go silent
+  - The sending device recieves the CTS frame and transmits the message
+  - Sending device awaits an ACK frame from the recipient
+    - if no ACK frame is recieved within an agreed timeframe, the packet is assumed to be lost
+      - the message is resent
+    - if an ACK frame is recieved, the sending device can return to idle
+
+#### Security
+
+- WiFi is broadcast using radio waves, so any device witin range is able to eavsdrop
+  - packets can be intercepted/sniffed
+- Early WiFi versions provided little-to-no encryption
+
+</br>
+
+- WPA (Wifi Protected Access)/WPA2
+  - users are authenticated using a pre-shared key (password)
+  - or via an itermediary authenticaion server (RADIUS)
+  - each packet is encrypted using AES
+    - a new encryption key is created for each client session
+    - but the packets exchanged during the handshake process will contain the decryption key
+- SSID broadcast disabled
+  - so other devices will not show the network as being available
+- MAC address allow list
+  - so only devices with a MAC address on the list is allowed to connect
+    - this can be spoofed
 
 #### Service Set Identifier (SSID)
+
+- Identifies a network
+- SSID broadcast allows device to show the network in the list of networks available to connect
 
 # 10 Fundamentals of databases
 
