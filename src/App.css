@@ -40,6 +40,12 @@ header div a:hover {
   font-family: KaTeX_Main !important;
 }
 
+.katex .amsrm,
+.katex .mathbb,
+.katex .textbb {
+  font-family: KaTeX_AMS !important;
+}
+
 .header-logo {
   font-size: 1.7em !important;
   background: -webkit-linear-gradient(left, #7000ff, #ff00f5);
@@ -149,16 +155,22 @@ header div a:hover {
   font-size: 1.1em;
 }
 
+.markdown-content h1 {
+  letter-spacing: -0.018em;
+}
+
 .markdown-content h1:not(:first-child) {
   margin-top: 2em;
 }
 
 .markdown-content h2 {
   margin-top: 0.8em;
+  letter-spacing: -0.018em;
 }
 
 .markdown-content h3 {
   margin-top: 0.5em;
+  letter-spacing: -0.018em;
 }
 
 .markdown-content h4 {
