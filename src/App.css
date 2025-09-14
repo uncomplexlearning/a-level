@@ -42,7 +42,9 @@ header div a:hover {
 
 .katex .amsrm,
 .katex .mathbb,
-.katex .textbb {
+.katex .textbb,
+.katex .mrel,
+.katex .base {
   font-family: KaTeX_AMS !important;
 }
 
@@ -388,6 +390,7 @@ header div a:hover {
 }
 
 @media screen and (max-width: 600px) {
+
   .markdown-content table,
   .markdown-content .katex-display {
     font-size: 0.9em;
