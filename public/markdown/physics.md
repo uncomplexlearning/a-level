@@ -1769,3 +1769,94 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 - plotting $V$/V against $I$/A
 - ...so the graident is $-r$
 - ...and the y-intercept is $\varepsilon$
+
+# 6 Further mechanics and thermal physics
+## 6.1 Periodic motion
+
+## 6.2 Thermal physics
+### 6.2.1 Thermal energy transfer
+#### Internal energy
+- the sum of the randomly distributed kinetic energies and potential energies of the particles in a body
+- determined by 
+  - temperature
+  - random motion of molecules
+  - phase of matter
+  - intermolecular interactions
+- increased when
+  - energy is transferred to it by heating
+  - work is done on it
+    - e.g. when the gas is compressed
+- decreased when
+  - energy is lost to surroundings
+  - work is done by the system on its surroundings
+    - e.g. when the gas expands
+
+> **First law of thermodynamics** <br> The internal energy of a system is increased when energy is transferred to it by heating or when work is done on it
+
+#### Specific Heat Capacity
+- the amount of energy required to raise the temperature of 1kg of a substance by 1K (without a change of state)
+- this can be found using a continuous-flow calorimeter
+- for a change of temperature: 
+  ```math
+  Q = mc \Delta\theta
+  ```
+
+#### Specific Latent Heat
+- the amount of energy required to change the state of 1kg of substance without changing its temperature
+- has two types:
+  - specific latent heat of fusion
+    - energy required to convert from solid to liquid
+  - specific latent heat of vaporisation
+    - energy required to convert from liquid to gas
+
+> The specific latent heat of vapourisation is often greater than fusion. This is because energy is required to separate the molecules until there are no attractive forces acting between the molecules
+
+- during a change of state the potential energies of the particle ensemble are changing but **not** the kinetic energies
+  - ...so there must be no change in temperature
+- for a change of state
+  ```math
+  Q = ml
+  ```
+
+
+### 6.2.2 Ideal gases
+- An ideal gas
+  - obeys Boyle's law, Charles' law and the Pressure law
+  - has molecules with negligible volume
+  - cannot be liquified
+  - has elastic collisions
+  - has no interaction between molecules (except during collisions)
+  
+- Gas laws as experimental relationships between $p$, $V$, $T$ and the mass of the gas.
+- Concept of absolute zero of temperature.
+- Ideal gas equation
+  ```math
+  pV = nRT
+  ```
+
+  ```math
+  pV = NkT
+  ```
+- Work done
+  ```math
+  Work\ done = p \Delta V
+  ```
+- Avogadro constant NA, molar gas constant R, Boltzmann constant k
+- Molar mass and molecular mass.
+
+### Practical 8 - Investigation of Boyle's law and Charles’s law for a gas
+
+#### 6.2.3 Molecular kinetic theory model
+- Brownian motion as evidence for existence of atoms.
+- Explanation of relationships between p, V and T in terms of a simple molecular model.
+- Students should understand that the gas laws are empirical in nature whereas the kinetic theory model arises from theory.
+- Assumptions leading to
+  ```math
+  pV = \frac{1}{3} N m (C_{rms})^2
+  ```
+- A simple algebraic approach involving conservation of momentum is required.
+- Appreciation that for an ideal gas internal energy is kinetic energy of the atoms.
+- ```math
+  average\ molecular\ kinetic\ energy = \frac{1}{2} (C_{rms})^2 = \frac{3}{2}kT = \frac{3RT}{2N_A}
+  ```
+- Appreciation of how knowledge and understanding of the behaviour of a gas has changed over time.
