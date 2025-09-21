@@ -1859,10 +1859,12 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   N_A = 6.02 \times 10^{23}
   ```
   ```math
-  number\ of\ moles = \frac{mass}{molar\ mass / g\ mol^-1}
+  number\ of\ moles = \frac{mass\ /\ g}{molar\ mass\ / g\ mol^-1}
   ```
-- Avogadro constant $N_A$, molar gas constant $R$, Boltzmann constant $k$
-- Molar mass and molecular mass
+- molar gas constant $R$, Boltzmann constant $k$
+  ```math
+  k = \frac{R}{N_A}
+  ```
 
 #### Gas Laws
 - are experimental relationships between $p$, $V$, $T$ and the mass of the gas
