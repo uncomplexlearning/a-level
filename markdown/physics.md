@@ -1769,3 +1769,250 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 - plotting $V$/V against $I$/A
 - ...so the graident is $-r$
 - ...and the y-intercept is $\varepsilon$
+
+# 6 Further mechanics and thermal physics
+## 6.1 Periodic motion
+
+## 6.2 Thermal physics
+### 6.2.1 Thermal energy transfer
+#### Internal energy
+- the sum of the randomly distributed kinetic energies and potential energies of the particles in a body
+- determined by 
+  - temperature
+  - random motion of molecules
+  - phase of matter
+  - intermolecular interactions
+- increased when
+  - energy is transferred to it by heating
+  - work is done on it
+    - e.g. when the gas is compressed
+- decreased when
+  - energy is lost to surroundings
+  - work is done by the system on its surroundings
+    - e.g. when the gas expands
+
+<br>
+
+> **First law of thermodynamics** <br> The internal energy of a system is increased when energy is transferred to it by heating or when work is done on it
+
+#### Specific Heat Capacity
+- the amount of energy required to raise the temperature of 1kg of a substance by 1K **without a change of state**
+- this can be found using a continuous-flow calorimeter
+- for a change of temperature: 
+  ```math
+  Q = mc \Delta\theta
+  ```
+
+#### Specific Latent Heat
+- the amount of energy required to change the state of 1kg of substance **without changing its temperature**
+- has two types:
+  - specific latent heat of fusion
+    - energy required to convert from solid to liquid 
+    - which means:
+      - reduces the number of nearest atomic neighbours
+      - allows atoms to move their centre of vibration
+      - breaks some bonds
+  - specific latent heat of vaporisation
+    - energy required to convert from liquid to gas
+
+> The specific latent heat of vapourisation is often greater than fusion. This is because energy is required to separate the molecules until there are no attractive forces acting between the molecules
+
+- during a change of state the potential energies of the particle ensemble are changing but **not** the kinetic energies
+  - ...so there must be no change in temperature
+- for a change of state
+  ```math
+  Q = ml
+  ```
+
+
+### 6.2.2 Ideal gases
+#### Absolute zero of temperature
+- according to gas laws, it is the temperature at which the volume or pressure of a gas extrapolates to zero
+- according to the kinetic theory model, it is the temperature at which the (random) motion can be extrapolated to stop
+  - the kinetic energy of the particles is zero
+  - no more energy can be removed from the system
+```math
+  0 K = -273.15 \degree C
+  ```
+
+#### Ideal gases
+- are gases which
+  - obey Boyle's law, Charles' law and the Pressure law
+  - have molecules with negligible volume
+  - cannot be liquified
+  - have elastic collisions
+  - have no interaction between molecules (except during collisions)
+  - have collisions which have short durations compared to times between collisions
+  - have molecules which move with continuous random motion
+
+  ```math
+  pV = nRT
+  ```
+
+  ```math
+  pV = NkT
+  ```
+
+#### Constants and molar mass
+- Avogadro constant $N_A$
+  ```math
+  N_A = 6.02 \times 10^{23}
+  ```
+  ```math
+  number\ of\ moles = \frac{mass}{molar\ mass / g\ mol^-1}
+  ```
+- Avogadro constant $N_A$, molar gas constant $R$, Boltzmann constant $k$
+- Molar mass and molecular mass
+
+#### Gas Laws
+- are experimental relationships between $p$, $V$, $T$ and the mass of the gas
+- Boyle's law
+  - when temperature is constant, pressure is inversely proportional to the volume of a gas
+    - particles are further apart and thus collide less often
+  ```math
+  P \propto \frac{1}{V}
+  ```
+  ```math
+  P_1V_1 = P_2V_2 = constant
+  ```
+- Charles' law
+  - when pressure is constant, volume is directly proportional to absolute temperature
+    - particles gain kinetic energy and move faster, so to maintain the same temperature they must move apart
+  ```math
+  V \propto T
+  ```
+  ```math
+  \frac{V_1}{T_1} = \frac{V_2}{T_2} = constant
+  ```
+- Pressure law
+  - when volume is constant, pressure is directly proportional to absolute temperature
+    - particles gain kinetic energy and move faster and thus collide more often
+  ```math
+  P \propto T
+  ```
+  ```math
+  \frac{P_1}{T_1} = \frac{P_2}{T_2} = constant
+  ```
+
+#### Work done by an ideal gas
+- when a gas expands, work is done on its surroundings by the gas
+- assuming pressure remains constant:
+  ```math
+  Work\ done = p \Delta V
+  ```
+
+### Practical 8 - Investigation of Boyle's law and Charles’s law for a gas
+#### Method
+- only take readings a few seconds after moving the plunger to ensure temperature is constant
+
+### 6.2.3 Molecular kinetic theory model
+- Ideal gas laws are empirical in nature
+  - based on observation
+- Kinetic theory model arises from theory
+
+#### Internal energy
+- is the sum of kinetic energy of the atoms in the gas
+- ideal gas molecules have no intermolecular forces
+  - ...so they don't have any potential energy
+
+#### Kinetic theory model
+- is modelled on these assumptions:
+  - volume of each molecule is negligible compared with the volume of the gas
+  - molecules in the gas are identical
+  - the separation between molecules is large compared to their diameter
+  - all collisions between particles and the walls of the container are perfectly elastic
+  - Newton's laws apply
+  - molecules move in continuous random motion
+  - there are no intermolecular forces except during collisions
+  - the duration of one collision is much negligible compared to the duration between collisions
+  ```math
+  pV = \frac{1}{3} N m (C_{rms})^2
+  ```
+   ```math
+  average\ molecular\ kinetic\ energy = \frac{1}{2} (C_{rms})^2 = \frac{3}{2}kT = \frac{3RT}{2N_A}
+  ```
+<br>
+
+> **Deriving the kinetic theory model**
+> - cube with sides of equal length $L$
+> - a single molecule, mass $m$, speed $u$
+> - molecules have perfectly elastic collisions, so the change in momentum would be 
+> ```math
+> \Delta p = -mu - mu = -2mu
+> ```
+> - the time between collisions (travelling to the opposite facing wall and back) would be 
+> ```math
+> t = \frac{2L}{u}
+> ```
+> - the force exerted on a wall by a molecule would be
+> ```math
+> F = \frac{\Delta p}{\Delta t} = \frac{2mu}{\frac{2L}{u}} = \frac{mu^2}{L}
+> ```
+> - and so the pressure for one molecule on a single wall would be
+> ```math
+> p = \frac{F}{A} = \frac{\frac{mu^2}{L}}{L^2} = \frac{mu^2}{L^3} = \frac{mu^2}{V}
+> ```
+> - for $n$ particles on a single wall,
+> ```math
+> p = \frac{m}{V} (u_1^2+u_2^2+u_3^2+...+u_n^2)
+> ```
+> - but if we consider that the particles are moving in all 3 dimensions (and not in the same direction), our molecule with speed $u$ will have 3 components, where
+> ```math
+> u^2 = u_x^2+u_y^2+u_z^2
+> ```
+> - since the movement is random, we can assume that the magnitude of each component is equal
+> ```math
+> \frac{1}{3}u^2 = u_x^2 = u_y^2 = u_z^2
+> ```
+> - and so the pressure on one wall would actually be 
+> ```math
+> p = \frac{1}{3}\frac{m}{V}(u_1^2+u_2^2+u_3^2+...+u_n^2)
+> ```
+> - but each molecule has a different speed, so we should consider their average speed instead
+> ```math
+> c_{rms} = \sqrt{\frac{u_1^2+u_2^2+u_3^2+...+u_n^2}{N}}
+> ```
+> ```math
+> N(c_{rms})^2 = u_1^2+u_2^2+u_3^2+...+u_n^2
+> ```
+> - finally, we have
+> ```math
+>p = \frac{1}{3}\frac{m}{V}N(c_{rms})^2
+> \\
+> \implies pV = \frac{1}{3}Nm(c_{rms})^2
+> ```
+
+<br>
+
+> **Deriving the average molecular kinetic energy**
+> ```math
+> pV = NkT = \frac{1}{3}Nm(c_{rms})^2
+> \\
+> \implies m(c_{rms})^2 = 3kT
+> ```
+> - to calculate kinetic energy, we have
+> ```math
+> E_k = \frac{1}{2}mv^2
+> ```
+> - and therefore
+> ```math
+> E_k = \frac{1}{2}m(c_{rms})^2 = \frac{3}{2}kT
+> ```
+
+#### Brownian motion
+- the random motion of (larger, observable) particles suspended in a liquid or a gas
+- provides evidence for existence of atoms
+  - collisions between the smaller and larger particules lead to random motion in the larger particles
+  - small particles travel with a high speed and thus has high momentum
+
+<br>
+
+> **Pressure**
+> - when molecules collide with the walls of its container, there is a change in momentum because the direction has changed
+> - force is the rate of change of momentum (Newton's 2nd law), and pressure is force over area
+> - force is exerted on the walls of the container as every force experienced by an object will lead to it exerting an equal and opposite force (Newton's 3rd law)
+> - ...so if there are fewer collisions per second, but the average momentum change per collisions remains the same, the total momentum change per second falls and pressure drops
+> - ...or if the molecules have less mean speed, the average momentum change per collision decreases, the total momentum change per second falls and pressure drops
+
+<br>
+- Appreciation of how knowledge and understanding of the behaviour of a gas has changed over time.
