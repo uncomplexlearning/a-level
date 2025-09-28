@@ -1812,6 +1812,8 @@ F = \frac{mv^2}{r} = m{\omega}^2r = m{\omega}v
 - there is no work done when an object is travelling in circular motion
   - ...as kinetic energy remains constant
 
+<br>
+
 > In general, if an object is on "top" of its circular path, the reaction force $R$ is given by
 > ```math
 > R = mg - \frac{mv^2}{r}
@@ -1824,9 +1826,11 @@ F = \frac{mv^2}{r} = m{\omega}^2r = m{\omega}v
 > Tension always acts towards the centre of the circle.<br>
 > tl;dr: it depends which direction the normal contact force/tension/whatever other force acts 
 
-> An object in circular motion does not travel in a straight line, so a force must be acting on it (Newton's 1st law)
-> The direction of the object is not constant, so its velocity and acceleration is also not constant
-> There is a force on the object which causes the object to accelerate in the direction of the force (Newton's 2nd law), and that force is centripetal
+<br>
+
+> An object in circular motion does not travel in a straight line, so a force must be acting on it (Newton's 1st law)<br>
+> The direction of the object is not constant, so its velocity and acceleration is also not constant<br>
+> There is a force on the object which causes the object to accelerate in the direction of the force (Newton's 2nd law), and that force is centripetal<br>
 > The object must pull on the central point of support with a force that is equal and opposite to the force pulling on the object from the centre (Newton's 3rd law)
 
 ### 6.1.2 Simple harmonic motion
@@ -1861,18 +1865,18 @@ v_{max} = \pm \ \omega \sqrt{A^2} = \omega A
 
 > - alternatively, we have
 > ```math
-> x = A cos ({\omega} t) \\
-> \implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\
+> x = A cos ({\omega} t) \\[0.8em]
+> \implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\[0.8em]
 > ```
 > - and $v$ is maximum at the stationary points of $v(t)$, so
 > ```math
-> \frac{d^2x}{dt^2} = - \omega^2 A cos ({\omega} t) = 0 \\
-> \implies cos ({\omega} t) = 0 + 2k \pi, k \in \mathbb{Z} \\
+> \frac{d^2x}{dt^2} = - \omega^2 A cos ({\omega} t) = 0 \\[0.8em]
+> \implies cos ({\omega} t) = 0 + 2k \pi, k \in \mathbb{Z} \\[0.8em]
 > \implies {\omega} t  = \frac{\pi}{2}
 > ```
 > - substituting,
 > ```math
-> v_{max} = - \omega A sin (\frac{\pi}{2}) \\
+> v_{max} = - \omega A sin (\frac{\pi}{2}) \\[0.8em]
 > \implies |{v_{max}}| = \omega A 
 > ```
 > - (obviously this was done without any sort of mathematical rigour, but you get the point)
@@ -1880,20 +1884,20 @@ v_{max} = \pm \ \omega \sqrt{A^2} = \omega A
 #### Maximum acceleration
 - we have
 ```math
-x = A cos ({\omega} t) \\
-\implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\
-\implies a = \frac{dv}{dt} = - \omega^2 A cos ({\omega} t) \\
+x = A cos ({\omega} t) \\[0.8em]
+\implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\[0.8em]
+\implies a = \frac{dv}{dt} = - \omega^2 A cos ({\omega} t) \\[0.8em]
 \implies a = - \omega^2 x
 ```
 - and $a$ is maximum at the stationary points of $a(t)$, so
 ```math
-\frac{da}{dt} = \omega^3 A sin ({\omega} t) = 0 \\
-\implies sin ({\omega} t) = 0 \\
+\frac{da}{dt} = \omega^3 A sin ({\omega} t) = 0 \\[0.8em]
+\implies sin ({\omega} t) = 0 \\[0.8em]
 \implies {\omega} t = 0 + 2k \pi, k \in \mathbb{Z}
 ```
 - substituting,
 ```math
-a_{max} = - \omega^2 A cos (0) \\
+a_{max} = - \omega^2 A cos (0) \\[0.8em]
 \implies | a_{max} |  = \omega^2 A
 ```
 
@@ -2200,7 +2204,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 > - finally, we have
 > ```math
 >p = \frac{1}{3}\frac{m}{V}N(c_{rms})^2
-> \\
+> \\[0.8em]
 > \implies pV = \frac{1}{3}Nm(c_{rms})^2
 > ```
 
@@ -2209,7 +2213,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 > **Deriving the average molecular kinetic energy**
 > ```math
 > pV = NkT = \frac{1}{3}Nm(c_{rms})^2
-> \\
+> \\[0.8em]
 > \implies m(c_{rms})^2 = 3kT
 > ```
 > - to calculate kinetic energy, we have
