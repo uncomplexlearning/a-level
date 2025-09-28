@@ -48,6 +48,10 @@ header div a:hover {
   font-family: KaTeX_AMS !important;
 }
 
+.katex .katex-html>.newline {
+  margin-top: 0.8em;
+}
+
 .header-logo {
   font-size: 1.7em !important;
   background: -webkit-linear-gradient(left, #7000ff, #ff00f5);

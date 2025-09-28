@@ -1812,6 +1812,8 @@ F = \frac{mv^2}{r} = m{\omega}^2r = m{\omega}v
 - there is no work done when an object is travelling in circular motion
   - ...as kinetic energy remains constant
 
+<br>
+
 > In general, if an object is on "top" of its circular path, the reaction force $R$ is given by
 > ```math
 > R = mg - \frac{mv^2}{r}
@@ -1824,9 +1826,11 @@ F = \frac{mv^2}{r} = m{\omega}^2r = m{\omega}v
 > Tension always acts towards the centre of the circle.<br>
 > tl;dr: it depends which direction the normal contact force/tension/whatever other force acts 
 
-> An object in circular motion does not travel in a straight line, so a force must be acting on it (Newton's 1st law)
-> The direction of the object is not constant, so its velocity and acceleration is also not constant
-> There is a force on the object which causes the object to accelerate in the direction of the force (Newton's 2nd law), and that force is centripetal
+<br>
+
+> An object in circular motion does not travel in a straight line, so a force must be acting on it (Newton's 1st law)<br>
+> The direction of the object is not constant, so its velocity and acceleration is also not constant<br>
+> There is a force on the object which causes the object to accelerate in the direction of the force (Newton's 2nd law), and that force is centripetal<br>
 > The object must pull on the central point of support with a force that is equal and opposite to the force pulling on the object from the centre (Newton's 3rd law)
 
 ### 6.1.2 Simple harmonic motion
