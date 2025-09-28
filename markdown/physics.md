@@ -1865,18 +1865,18 @@ v_{max} = \pm \ \omega \sqrt{A^2} = \omega A
 
 > - alternatively, we have
 > ```math
-> x = A cos ({\omega} t) \\[0.8em]
-> \implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\[0.8em]
+> x = A cos ({\omega} t) \\
+> \implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\
 > ```
 > - and $v$ is maximum at the stationary points of $v(t)$, so
 > ```math
-> \frac{d^2x}{dt^2} = - \omega^2 A cos ({\omega} t) = 0 \\[0.8em]
-> \implies cos ({\omega} t) = 0 + 2k \pi, k \in \mathbb{Z} \\[0.8em]
+> \frac{d^2x}{dt^2} = - \omega^2 A cos ({\omega} t) = 0 \\
+> \implies cos ({\omega} t) = 0 + 2k \pi, k \in \mathbb{Z} \\
 > \implies {\omega} t  = \frac{\pi}{2}
 > ```
 > - substituting,
 > ```math
-> v_{max} = - \omega A sin (\frac{\pi}{2}) \\[0.8em]
+> v_{max} = - \omega A sin (\frac{\pi}{2}) \\
 > \implies |{v_{max}}| = \omega A 
 > ```
 > - (obviously this was done without any sort of mathematical rigour, but you get the point)
@@ -1884,20 +1884,20 @@ v_{max} = \pm \ \omega \sqrt{A^2} = \omega A
 #### Maximum acceleration
 - we have
 ```math
-x = A cos ({\omega} t) \\[0.8em]
-\implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\[0.8em]
-\implies a = \frac{dv}{dt} = - \omega^2 A cos ({\omega} t) \\[0.8em]
+x = A cos ({\omega} t) \\
+\implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\
+\implies a = \frac{dv}{dt} = - \omega^2 A cos ({\omega} t) \\
 \implies a = - \omega^2 x
 ```
 - and $a$ is maximum at the stationary points of $a(t)$, so
 ```math
-\frac{da}{dt} = \omega^3 A sin ({\omega} t) = 0 \\[0.8em]
-\implies sin ({\omega} t) = 0 \\[0.8em]
+\frac{da}{dt} = \omega^3 A sin ({\omega} t) = 0 \\
+\implies sin ({\omega} t) = 0 \\
 \implies {\omega} t = 0 + 2k \pi, k \in \mathbb{Z}
 ```
 - substituting,
 ```math
-a_{max} = - \omega^2 A cos (0) \\[0.8em]
+a_{max} = - \omega^2 A cos (0) \\
 \implies | a_{max} |  = \omega^2 A
 ```
 
@@ -2204,7 +2204,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 > - finally, we have
 > ```math
 >p = \frac{1}{3}\frac{m}{V}N(c_{rms})^2
-> \\[0.8em]
+> \\
 > \implies pV = \frac{1}{3}Nm(c_{rms})^2
 > ```
 
@@ -2213,7 +2213,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 > **Deriving the average molecular kinetic energy**
 > ```math
 > pV = NkT = \frac{1}{3}Nm(c_{rms})^2
-> \\[0.8em]
+> \\
 > \implies m(c_{rms})^2 = 3kT
 > ```
 > - to calculate kinetic energy, we have
