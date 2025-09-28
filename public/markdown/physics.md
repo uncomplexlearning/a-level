@@ -1772,6 +1772,226 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 # 6 Further mechanics and thermal physics
 ## 6.1 Periodic motion
+### 6.1.1 Circular motion
+
+<br>
+
+> **centripetal force** is a force acting towards the centre of a circular path<br>
+> **centrifugal force** is a pseudo-force experienced by an object acting outwards from the centre to account for inertia
+
+<br>
+
+- Motion in a circular path at constant speed implies there is an acceleration
+- ...and since there is an acceleration, there must be a centripetal force (Newton's 1st law)
+  
+#### Angular speed
+- the velocity and acceleration of an object in circular motion is constantly changing
+  - as its direction is constantly changing
+
+- Magnitude of angular speed:
+```math
+\omega = \frac{\Delta \theta}{\Delta t} = \frac{v}{r} = 2{\pi}f = \frac{2{\pi}}{T}
+```
+
+> $\theta$ is, obviously, in radians. If you aren't familiar with the concept of radians, go revise your maths.
+> Direction of angular velocity will not be considered
+
+#### Centripetal acceleration
+- the acceleration of an object towards the centre of its path when it is moving in a circular path at constant speed
+```math
+a = \frac{v^2}{r} = {\omega}^2r = {\omega}v
+```
+#### Centripetal force
+- the **resultant** force on an object towards the centre of its path when it is moving in a circular path at constant speed
+```math
+F = \frac{mv^2}{r} = m{\omega}^2r = m{\omega}v
+```
+- this is **not a separate force** - other forces will "contribute" to provide the centripetal force
+  - **without** the centripetal force, the object will not remain stationary relative to the spinning base
+  - so the centripetal force **is** the tension or friction towards the centre of the circle
+- there is no work done when an object is travelling in circular motion
+  - ...as kinetic energy remains constant
+
+> In general, if an object is on "top" of its circular path, the reaction force $R$ is given by
+> ```math
+> R = mg - \frac{mv^2}{r}
+> ```
+> This is because 
+> ```math
+> \frac{mv^2}{r} = mg - R
+> ```
+> where the normal contact force $R$ is pointing away from the centre of the circular path.<br>
+> Tension always acts towards the centre of the circle.<br>
+> tl;dr: it depends which direction the normal contact force/tension/whatever other force acts 
+
+> An object in circular motion does not travel in a straight line, so a force must be acting on it (Newton's 1st law)
+> The direction of the object is not constant, so its velocity and acceleration is also not constant
+> There is a force on the object which causes the object to accelerate in the direction of the force (Newton's 2nd law), and that force is centripetal
+> The object must pull on the central point of support with a force that is equal and opposite to the force pulling on the object from the centre (Newton's 3rd law)
+
+### 6.1.2 Simple harmonic motion
+- An object is experiencing simple harmonic motion when:
+  - its acceleration is directly proportional to displacement and is in the opposite direction, i.e. $a \propto -x$
+  - there is repetitive movement back and forth through an equilibrium position
+  - the movement is periodic
+```math
+a = - \omega^2 x
+```
+
+```math
+v = \pm \ \omega \sqrt{A^2-x^2}
+```
+```math
+x = A cos ({\omega} t) \ if \ the \ motion \ starts \ at \ maximum \ amplitude 
+```
+
+#### Graphs
+- the $v − t$ graph is derived from the gradient of the $x − t$ graph
+- the $a − t$ graph is derived from the gradient of the $v − t$ graph
+
+#### Maximum speed
+- we have
+```math
+v = \pm \ \omega \sqrt{A^2-x^2}
+```
+- and $v$ is maximum at $x$ = 0, so
+```math
+v_{max} = \pm \ \omega \sqrt{A^2} = \omega A
+```
+
+> - alternatively, we have
+> ```math
+> x = A cos ({\omega} t) \\
+> \implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\
+> ```
+> - and $v$ is maximum at the stationary points of $v(t)$, so
+> ```math
+> \frac{d^2x}{dt^2} = - \omega^2 A cos ({\omega} t) = 0 \\
+> \implies cos ({\omega} t) = 0 + 2k \pi, k \in \mathbb{Z} \\
+> \implies {\omega} t  = \frac{\pi}{2}
+> ```
+> - substituting,
+> ```math
+> v_{max} = - \omega A sin (\frac{\pi}{2}) \\
+> \implies |{v_{max}}| = \omega A 
+> ```
+> - (obviously this was done without any sort of mathematical rigour, but you get the point)
+
+#### Maximum acceleration
+- we have
+```math
+x = A cos ({\omega} t) \\
+\implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\
+\implies a = \frac{dv}{dt} = - \omega^2 A cos ({\omega} t) \\
+\implies a = - \omega^2 x
+```
+- and $a$ is maximum at the stationary points of $a(t)$, so
+```math
+\frac{da}{dt} = \omega^3 A sin ({\omega} t) = 0 \\
+\implies sin ({\omega} t) = 0 \\
+\implies {\omega} t = 0 + 2k \pi, k \in \mathbb{Z}
+```
+- substituting,
+```math
+a_{max} = - \omega^2 A cos (0) \\
+\implies | a_{max} |  = \omega^2 A
+```
+
+### 6.1.3 Simple harmonic systems
+#### Mass-spring system
+- Restoring force
+```math
+F = -kx
+```
+
+- Time period
+```math
+T = 2 \pi \sqrt{\frac{m}{k}}
+```
+
+> This applies to both horizontal and vertical systems
+
+#### Simple pendulum
+- Restoring force
+  - component of weight acting along the arc of the circle
+```math
+F = mg \ sin \theta
+```
+
+- Time period
+```math
+T = 2 \pi \sqrt{\frac{l}{g}}
+```
+
+> Questions may involve other harmonic oscillators (eg liquid in U-tube) but full information will be provided in questions where necessary
+
+#### Energy
+- There is maximum potential energy at maximum amplitude
+  - for a spring, this is elastic potential energy from stretching
+  - for a pendulum, this is gravitational potential energy
+- As the object in SHM moves towards equilibrium, kinetic energy increases
+  - the total energy remains constant, so the potential energy has to decrease (conservation of energy)
+
+- In an energy-displacement graph
+  - $E_K$ is at a maximum at 0 amplitude
+  - $E_P$ is at a maximum at maximum amplitude
+
+- In an energy-time graph
+  - $E_K$ and $E_P$ are represented by sin/cos waves which are in antiphase
+  - the total energy is always constant
+
+> Remember, energy is a scalar - there is no negative energy!
+
+#### Damping
+- occurs when energy is lost due to resistive forces acing on a system in SHM
+- the frequency of damped systems remain constant
+- the amplitude of damped systems decrease
+
+<br>
+
+- there are three types of damping:
+  - light damping
+    - the amplitude of the oscillaions decays gradually but exponentially with time
+  - critical damping
+    - system returns to rest at equilibrium position in the shortest possible time **without oscillating**
+  - heavy damping
+    - system returns to rest at equilibrium position slower than critical damping **without oscillating**
+
+### Practical 7 - Investigation into simple harmonic motion
+
+<br>
+
+> soon<sup>TM</sup>
+
+### 6.1.4 Forced vibrations and resonance
+#### Free vibrations
+- occurs when there are no external forces acting on a system (and therefore no energy transfer)
+- the system will oscillate at its resonant frequency
+
+#### Forced vibrations
+- occurs when there is an external **driving force** acting on a system causing it to oscillate
+  - the driving force does work against the resistive force responsible for damping
+- the system will oscillate vibrate at the driving frequency
+
+#### Resonance
+- occurs when when the driving frequency of the external driving force is equal to the natural (resonant) frequency of the system
+- as the driving frequency approaches the natural frequency of the system, more energy is gained from the driving force
+  - ...and therefore the amplitude increases
+- at resonance, the system oscillates at its maximum amplitude
+  - energy is transferred from the driving force to the system most efficiently
+
+<br>
+
+- When a system is damped:
+  - the amplitude of resonant vibrations decreases
+  - (in an amplitude-frequency graph) the peak broadens
+  - (in an amplitude-frequency graph) the peak moves towards the left of the natural frequency (i.e. decreases)
+
+<br>
+
+- Resonance can be used in:
+  - musical instruments; where air resonates down a pipe to create stationary waves
+  - radios where electric circuits are tuned to the same resonant frequency as the broadcast
 
 ## 6.2 Thermal physics
 ### 6.2.1 Thermal energy transfer
