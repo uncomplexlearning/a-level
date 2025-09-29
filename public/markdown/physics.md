@@ -1829,7 +1829,7 @@ F = \frac{mv^2}{r} = m{\omega}^2r = m{\omega}v
 <br>
 
 > An object in circular motion does not travel in a straight line, so a force must be acting on it (Newton's 1st law)<br>
-> The direction of the object is not constant, so its velocity and acceleration is also not constant<br>
+> The direction of the object is not constant, so its velocity and acceleration is constantly changing<br>
 > There is a force on the object which causes the object to accelerate in the direction of the force (Newton's 2nd law), and that force is centripetal<br>
 > The object must pull on the central point of support with a force that is equal and opposite to the force pulling on the object from the centre (Newton's 3rd law)
 
@@ -1927,6 +1927,10 @@ F = mg \ sin \theta
 T = 2 \pi \sqrt{\frac{l}{g}}
 ```
 
+> The amplitude is the curved arc
+
+<br>
+
 > Questions may involve other harmonic oscillators (eg liquid in U-tube) but full information will be provided in questions where necessary
 
 #### Energy
@@ -1981,7 +1985,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 - occurs when when the driving frequency of the external driving force is equal to the natural (resonant) frequency of the system
 - as the driving frequency approaches the natural frequency of the system, more energy is gained from the driving force
   - ...and therefore the amplitude increases
-- at resonance, the system oscillates at its maximum amplitude
+- at resonance, the system oscillates at its **maximum amplitude**
   - energy is transferred from the driving force to the system most efficiently
 
 <br>
