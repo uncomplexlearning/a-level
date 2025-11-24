@@ -1848,6 +1848,17 @@ v = \pm \ \omega \sqrt{A^2-x^2}
 ```math
 x = A cos ({\omega} t) \ if \ the \ motion \ starts \ at \ maximum \ amplitude 
 ```
+> **Derivation of SHM**<br>
+> Simple harmonic motion can be desribed by linear, second-order differential equations which are purely sinusoidal<br>
+> ...so, we want an auxiliary equation with solutions $\pm \omega i$
+> ```math
+> \ddot x = -\omega^2x \\
+> ```
+> General solution:
+> ```math
+> x = A sin (\omega t) + B cos (\omega t)
+> ```
+> as required.
 
 #### Graphs
 - the $v − t$ graph is derived from the gradient of the $x − t$ graph
