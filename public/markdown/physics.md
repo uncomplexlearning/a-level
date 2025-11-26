@@ -2332,6 +2332,11 @@ I = \frac{k}{x^2}
 ```
 - Gamma radiation is an EM wave, and therefore shares many properties of EM waves
 
+> For a point source, we can find out the number of $\gamma$ photons travelling through a specific surface area per second
+> ```math
+> A_1 = \frac{Area}{4 \pi d^2} \times A_0
+> ```
+
 #### Background radiation
 - Natural sources
   - Rocks (and derivatives, e.g. brick)
@@ -2418,8 +2423,101 @@ ln N = ln N_0 - \lambda t
     - the amount of $^{14}\,C$ in the matter is used for dating by comparing to the current amount of $^{14}\,C$ in the atmosphere
   - Uranium-Lead dating
     - uranium-238 decays via a decay chain which ends with lead-206, which is a stable isotope
+
 ### 8.1.4 Nuclear instability
+- A nucleus is unstable if it has too
+  - many nucleons
+  - many neutrons
+  - many protons
+  - much energy
+
+#### Graph of N against Z
+- In a graph of number of neutrons $N$, against proton number $Z$, there is a line of stability
+  - for light nuclei, where $Z < 20$, the line is linear with gradient 1 (i.e. $N = Z$)
+  - for heavier nuclei, the gradient of the line increases
+    - i.e. stable nuclei have more neutrons than protons
+
+#### Decay modes
+- $\alpha$ decay
+  - occurs when there are more protons than neutrons, but are too large (has too many nucleons) to be stable ($Z > 82$)
+  > SNF between nucleons is unable to overcome the electromagnetic force between the protons
+  ```math
+  ^{A}_{Z}X \to\  ^{A-4}_{Z-2}Y +\ ^{4}_{2}\alpha
+  ```
+- $\beta^-$ decay
+  - occurs when there are too many neutrons
+  ```math
+  ^{A}_{Z}X \to\  ^{A}_{Z+1}Y +\  ^{0}_{-1}\beta \ + \ ^{0}_{0}\bar{\nu}_e
+  ```
+- $\beta^+$ decay
+  - occurs when there are too many protons
+  ```math
+  ^{A}_{Z}X \to\  ^{A}_{Z-1}Y +\  ^{0}_{+1}\beta \ + \ ^{0}_{0}\nu_e
+  ```
+- Electron capture
+  - occurs when there are too many protons
+    - when a proton within the nucleus captures one of its orbiting electrons and is converted into a neutron
+  ```math
+  p + e^- \to n + \nu_e
+  ```
+- $\gamma$ emission
+  - occurs when there is too much energy
+    - ...often after another type of decay where the nucleus becomes excited
+    - ...or after electron capture, where an inner electron is captured and a "slot" has to be filled
+
+#### Nuclear excited states
+- Nuclei may exist in excited states if there is too much energy
+  - this state is usually short-lived, and the nucleus moves to its ground state
+  - $\gamma$ photon emission reduces the amount of energy in the nucleus
+  
+#### Application
+- Medical diagnosis - technetium-99m
+  - the "m" stands for metastable
+    - an excited state which has a long lifetime
+  - pure $\gamma$ source
+  - decay product of molybdenum-99, a product of nuclear reactors
+  - half life of 6 hours
+    - short enough to cause little damage
+    - but long enough to obtain results
+
 ### 8.1.5 Nuclear radius
+#### Closest approach of alpha particles
+- When a (positively charged) alpha particle is fired at a thin metal foil, there is an electrostatic force of replusion 
+- ...at the point of closest approach, the speed of the particle is 0
+- ...because all of its kinetic energy has been converted into potential energy
+- because the particle starts with an initial kinetic energy, we have
+```math
+E_k = E_p \implies \frac{1}{2}mv^2 = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 Q_2}{r} = \frac{2Ze^2}{4 \pi \varepsilon_0 r}
+```
+<br>
+
+- always provides an overestimate
+#### Electron diffraction
+- Electron diffraction occurs when a beam of electrons is directed at a thin film
+- ...and each electron diffracts around a nucleus
+- ...because the de Broglie wavelength of an electron at high speed is similar to the size of the nucleus
+- This produces a diffraction pattern of concentric circles of minima
+- ...and the size of the nucleus can be determined using the first minima
+```math
+sin \theta = 1.22 \frac {\lambda}{2R}
+```
+
+> **Derivation of 1.22**
+
+#### Dependence of radius on nucleon number
+- From experimental data, it was derived that
+```math
+R = R_0 A^{\frac{1}{3}}
+```
+#### Nuclear density
+```math
+V = \frac{4}{3} \pi r^3 \\
+\implies V = \frac{4}{3} \pi R^3_0 A \\
+\rho = \frac{m}{V} \\
+\implies \rho = \frac{Au}{\frac{4}{3} \pi R^3_0 A} \\
+\implies \rho = \frac{3u}{4 \pi R^3_0}
+```
 ### 8.1.6 Mass and energy
+
 ### 8.1.7 Induced fission
 ### 8.1.8 Safety aspects

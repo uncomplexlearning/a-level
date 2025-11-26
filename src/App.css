@@ -40,12 +40,8 @@ header div a:hover {
   font-family: KaTeX_Main !important;
 }
 
-.katex .amsrm,
-.katex .mathbb,
-.katex .textbb,
-.katex .mrel,
-.katex .base {
-  font-family: KaTeX_AMS !important;
+.katex span {
+  font-family: KaTeX_Main !important;
 }
 
 .katex .katex-html>.newline {
