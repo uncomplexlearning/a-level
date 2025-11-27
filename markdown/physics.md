@@ -1848,6 +1848,17 @@ v = \pm \ \omega \sqrt{A^2-x^2}
 ```math
 x = A cos ({\omega} t) \ if \ the \ motion \ starts \ at \ maximum \ amplitude 
 ```
+> **Derivation of SHM**<br>
+> Simple harmonic motion can be desribed by linear, second-order differential equations which are purely sinusoidal<br>
+> ...so, we want an auxiliary equation with solutions $\pm \omega i$
+> ```math
+> \ddot x = -\omega^2x \\
+> ```
+> General solution:
+> ```math
+> x = A sin (\omega t) + B cos (\omega t)
+> ```
+> as required.
 
 #### Graphs
 - the $v − t$ graph is derived from the gradient of the $x − t$ graph
@@ -2245,4 +2256,268 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 > - ...or if the molecules have less mean speed, the average momentum change per collision decreases, the total momentum change per second falls and pressure drops
 
 <br>
+
 - Appreciation of how knowledge and understanding of the behaviour of a gas has changed over time.
+
+# 8 Nuclear physics
+## 8.1 Radioactivity
+### 8.1.1 Rutherford scattering
+
+- In the early 1900s, Rutherford discovered evidence for the nuclear model of the atom by passing beams of $\alpha$ particles through a thin metal foil
+- This provided data for the number of $\alpha$ particles that were deflected at each angle
+
+#### Apparatus
+- Vacuum chamber
+  - $\alpha$ particles are highly ionising
+  - if there was air in the chamber, the $\alpha$ particles would collide with the air particles before reaching the detector
+- $\alpha$ source in a lead container
+  - $\alpha$ particles are emitted in all directions
+  - the lead container had a small hole to produce a collimated beam of $\alpha$ particles
+  - and the lead absorbed the $\alpha$ particles in other directions
+- Thin metal sheet
+  - a thick sheet would stop the alpha particles completely
+  - typically, gold was used as it is extremely malleable
+- Movable detector
+
+#### Observations
+- The majority of $\alpha$ particles passed straight through with little/no deflection
+  - ...and therefore the atom must be mostly empty space
+- Some $\alpha$ particles were deflected through small angles
+  - ...and therefore there must be a positive nucleus at the centre (repels positively charged $\alpha$ particles)
+- A small number of $\alpha$ particles were deflected through angles of >90°
+  - ...and therefore the nucleus must be extremely small
+  - ...and is where the majority of the mass and charge is concentrated
+
+### 8.1.2 Alpha, beta and gamma radiation
+
+#### Properties
+
+| Radiation | Particle | Range in air | Absorption | Ionisation | Energy
+| --- | --- | --- | --- | --- | --- |
+| $\alpha$ | $^{4}_{2}\,He$ | up to 100 × 10<sup>-3</sup>m | paper or thin metal foil (weak penetrating power) | 10<sup>4</sup> ions per mm in air (highly ionising) | constant |
+| $\beta$ | $^{0}_{-1}\,e$ $^{0}_{+1}\,e$ | up to 1m | 5mm aluminium foil | 100 ions per mm in air (moderately ionising) | varies up to a maximum |
+| $\gamma$ |  $^{0}_{0}\,\gamma$ | infinite, follows inverse-square law | several cm of lead | weakly ionising | constant
+
+#### Applications
+- Smoke detectors
+  - $\alpha$ particles from a weak source causes the ionisation of air molecules
+  - ...so there is a small current flow
+  - if there is smoke, it absorbs the $\alpha$ particles, and the current reduces
+- Thickness control
+  - $\beta$ radiation
+    - $\alpha$ particles would be absorbed by the material
+    - $\gamma$ particles would pass through the material
+  - a Geiger counter controls the thickness of the material being produced
+- Medicine
+  - Radiation therapy
+    - $\gamma$ radiation is used to treat cancerous tumors
+    - $\beta$ radiation is used to treat skin cancer
+  - Radioactive tracers
+    - $\gamma$ or $\beta$ radiation can be used to monitor the processes occuring in bodies
+  - Sterilising equipment
+    - $\gamma$ radiation can be used to sterilise medical equipment
+
+#### Hazards of exposure
+- Damage done by exposure to radiation can be described by the recieved dose/dose equivalent
+- To reduce the recieved dose equivalent:
+  - keep sources shielded in a lead-lined box when not in use
+  - wear protective clothing to prevent contamination
+  - minimise exposure time
+  - handle sources with long tongs
+  - monitoring exposure using dosimeter badges
+
+#### Inverse-square law for $\gamma$ radiation
+```math
+I = \frac{k}{x^2}
+```
+- Gamma radiation is an EM wave, and therefore shares many properties of EM waves
+
+> For a point source, we can find out the number of $\gamma$ photons travelling through a specific surface area per second
+> ```math
+> A_1 = \frac{Area}{4 \pi d^2} \times A_0
+> ```
+
+#### Background radiation
+- Natural sources
+  - Rocks (and derivatives, e.g. brick)
+    - radioactive elements e.g. uranium occur naturally in rocks and soil
+    - uranium decays into radon gas, which is an $\alpha$ emitter
+  - Cosmic rays
+    - some protons emitted by the Sun enter the Earth's atmosphere at high speed
+    - gamma radiation is produced when these protons collide with molecules in the atmosphere 
+- Artificial sources
+  - Medicine
+  - Nuclear fallout (from weapons)
+  - Nuclear accidents
+
+<br>
+
+- Experimental elimination from calculations
+  - readings with no source present are taken and subtracted from other readings to produce a corrected count rate
+
+### Practical 12 -  Investigation of the inverse-square law for gamma radiation
+
+### 8.1.3 Radioactive decay
+- Radioactive decay is random and spontaneous
+  - there is equal probabiliy of any nucleus decaying
+  - the rate of decay is unaffected by environmental conditions
+- ...therefore, we can only consider the average decay rate - represented by the decay constant $\lambda$
+
+```math
+A = \frac{\Delta N}{\Delta t} = - \lambda N
+```
+- where the activity, $A$, is measured in Becquerels ($s^{-1}$)
+
+<br>
+
+- The number of undecayed nuclei $N$ can be found by
+
+```math
+N = N_0 e^{- \lambda t}
+```
+- where $N_0$ is the initial number of undecayed nuclei.
+- Since $A \propto N$, we also have
+
+```math
+A = A_0 e^{- \lambda t}
+```
+
+#### Half-life
+- Half-life is the average time taken for the number of undecayed nuclei to halve
+
+<br>
+
+- Starting with
+```math
+N = N_0 e^{- \lambda t}
+```
+- when $t = T_{\frac{1}{2}}$, $N$ should be half of $N_0$ by definition, so
+```math
+\frac{1}{2}N_0 = N_0 e^{- \lambda T_{\frac{1}{2}}} \\
+\frac{1}{2} = e^{- \lambda T_{\frac{1}{2}}} \\
+ln \frac{1}{2} = - \lambda T_{\frac{1}{2}} \\
+\lambda T_{\frac{1}{2}} = ln 2
+```
+- we get
+```math
+T_{\frac{1}{2}} = \frac{ln 2}{\lambda}
+```
+
+<br>
+
+- Graphically, half-life can be determined by finding the point where the activity has halved (wowzers who could've known)
+- By plotting a log-log graph of $log N$ against $log t$, we get
+```math
+ln N = ln N_0 - \lambda t
+```
+- which is a linear function in $t$ where the gradient is $- \lambda$, and the y-intercept is $ln N_0$
+
+#### Applications
+- Storage of radioactive waste
+  - sources with long half-life will have to be stored more securely
+- Radioactive dating
+  - Carbon dating
+    - carbon-14 $^{14}\,C$ is formed from the interaction of molecules in the atmosphere with cosmic rays
+    - all organisms absorb $^{14}\,C$ through respiration
+    - when an organism stops respiring (i.e. they have died), the number of $^{14}\,C$ molecules in the organic matter falls
+    - the amount of $^{14}\,C$ in the matter is used for dating by comparing to the current amount of $^{14}\,C$ in the atmosphere
+  - Uranium-Lead dating
+    - uranium-238 decays via a decay chain which ends with lead-206, which is a stable isotope
+
+### 8.1.4 Nuclear instability
+- A nucleus is unstable if it has too
+  - many nucleons
+  - many neutrons
+  - many protons
+  - much energy
+
+#### Graph of N against Z
+- In a graph of number of neutrons $N$, against proton number $Z$, there is a line of stability
+  - for light nuclei, where $Z < 20$, the line is linear with gradient 1 (i.e. $N = Z$)
+  - for heavier nuclei, the gradient of the line increases
+    - i.e. stable nuclei have more neutrons than protons
+
+#### Decay modes
+- $\alpha$ decay
+  - occurs when there are more protons than neutrons, but are too large (has too many nucleons) to be stable ($Z > 82$)
+  > SNF between nucleons is unable to overcome the electromagnetic force between the protons
+  ```math
+  ^{A}_{Z}X \to\  ^{A-4}_{Z-2}Y +\ ^{4}_{2}\alpha
+  ```
+- $\beta^-$ decay
+  - occurs when there are too many neutrons
+  ```math
+  ^{A}_{Z}X \to\  ^{A}_{Z+1}Y +\  ^{0}_{-1}\beta \ + \ ^{0}_{0}\bar{\nu}_e
+  ```
+- $\beta^+$ decay
+  - occurs when there are too many protons
+  ```math
+  ^{A}_{Z}X \to\  ^{A}_{Z-1}Y +\  ^{0}_{+1}\beta \ + \ ^{0}_{0}\nu_e
+  ```
+- Electron capture
+  - occurs when there are too many protons
+    - when a proton within the nucleus captures one of its orbiting electrons and is converted into a neutron
+  ```math
+  p + e^- \to n + \nu_e
+  ```
+- $\gamma$ emission
+  - occurs when there is too much energy
+    - ...often after another type of decay where the nucleus becomes excited
+    - ...or after electron capture, where an inner electron is captured and a "slot" has to be filled
+
+#### Nuclear excited states
+- Nuclei may exist in excited states if there is too much energy
+  - this state is usually short-lived, and the nucleus moves to its ground state
+  - $\gamma$ photon emission reduces the amount of energy in the nucleus
+  
+#### Application
+- Medical diagnosis - technetium-99m
+  - the "m" stands for metastable
+    - an excited state which has a long lifetime
+  - pure $\gamma$ source
+  - decay product of molybdenum-99, a product of nuclear reactors
+  - half life of 6 hours
+    - short enough to cause little damage
+    - but long enough to obtain results
+
+### 8.1.5 Nuclear radius
+#### Closest approach of alpha particles
+- When a (positively charged) alpha particle is fired at a thin metal foil, there is an electrostatic force of replusion 
+- ...at the point of closest approach, the speed of the particle is 0
+- ...because all of its kinetic energy has been converted into potential energy
+- because the particle starts with an initial kinetic energy, we have
+```math
+E_k = E_p \implies \frac{1}{2}mv^2 = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 Q_2}{r} = \frac{2Ze^2}{4 \pi \varepsilon_0 r}
+```
+<br>
+
+- always provides an overestimate
+#### Electron diffraction
+- Electron diffraction occurs when a beam of electrons is directed at a thin film
+- ...and each electron diffracts around a nucleus
+- ...because the de Broglie wavelength of an electron at high speed is similar to the size of the nucleus
+- This produces a diffraction pattern of concentric circles of minima
+- ...and the size of the nucleus can be determined using the first minima
+```math
+sin \theta = 1.22 \frac {\lambda}{2R}
+```
+
+> **Derivation of 1.22**
+
+#### Dependence of radius on nucleon number
+- From experimental data, it was derived that
+```math
+R = R_0 A^{\frac{1}{3}}
+```
+#### Nuclear density
+```math
+V = \frac{4}{3} \pi r^3 \\
+\implies V = \frac{4}{3} \pi R^3_0 A \\
+\rho = \frac{m}{V} \\
+\implies \rho = \frac{Au}{\frac{4}{3} \pi R^3_0 A} \\
+\implies \rho = \frac{3u}{4 \pi R^3_0}
+```
+### 8.1.6 Mass and energy
+
+### 8.1.7 Induced fission
+### 8.1.8 Safety aspects
