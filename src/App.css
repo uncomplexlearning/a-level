@@ -35,15 +35,6 @@ header div a:hover {
   color: rgb(34, 34, 34);
 }
 
-.katex .mord:not(:has(*)),
-.katex .mbin:not(:has(*)) {
-  font-family: KaTeX_Main !important;
-}
-
-.katex span {
-  font-family: KaTeX_Main !important;
-}
-
 .katex .katex-html>.newline {
   margin-top: 0.8em;
 }
