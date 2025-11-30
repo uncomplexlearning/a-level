@@ -2452,23 +2452,23 @@ ln N = ln N_0 - \lambda t
 
 #### Decay modes
 - $\alpha$ decay
-  - occurs when there are more protons than neutrons, but are too large (has too many nucleons) to be stable ($Z > 82$)
+  - occurs when the nucleus is proton-rich, but is too large (has too many nucleons) to be stable ($Z > 82$)
   > SNF between nucleons is unable to overcome the electromagnetic force between the protons
   ```math
   ^{A}_{Z}X \to\  ^{A-4}_{Z-2}Y +\ ^{4}_{2}\alpha
   ```
 - $\beta^-$ decay
-  - occurs when there are too many neutrons
+  - occurs when the nucleus is neutron-rich
   ```math
   ^{A}_{Z}X \to\  ^{A}_{Z+1}Y +\  ^{0}_{-1}\beta \ + \ ^{0}_{0}\bar{\nu}_e
   ```
 - $\beta^+$ decay
-  - occurs when there are too many protons
+  - occurs when the nucleus is proton-rich
   ```math
   ^{A}_{Z}X \to\  ^{A}_{Z-1}Y +\  ^{0}_{+1}\beta \ + \ ^{0}_{0}\nu_e
   ```
 - Electron capture
-  - occurs when there are too many protons
+  - occurs when the nucleus is proton-rich
     - when a proton within the nucleus captures one of its orbiting electrons and is converted into a neutron
   ```math
   p + e^- \to n + \nu_e
@@ -2647,10 +2647,12 @@ E = \Delta m c^2
 #### Thermal nuclear reactors
 - Moderator
   - surrounds fuel and control rods
-  - made of poor absorber of neutrons, e.g. water or graphite
+  - made of poor absorber of neutrons, e.g. water, beryllium or graphite
     - closer the moderator atoms are in size to a neutron, the larger the proportion of momentum which is transferred
   - fast moving neutrons collide elastically with the moderator and loses kinetic energy and momentum
     - ...eventually reaching thermal equilibrium, creating thermal neutrons
+    - ...which increases the chance of fission
+    - ...and causes less fatigue on the reactor
 - Control rods
   - absorbs neutrons without being dangerously unstable
   - made of non-fissionable materials, e.g. boron or cadmium
