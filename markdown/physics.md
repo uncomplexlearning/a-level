@@ -2604,7 +2604,7 @@ E = \Delta m c^2
 #### Binding energy per nucleon
 - Nuclei with higher binding energy per nucleon are more stable
   - ...because more energy is required to separate the nucleons
-- Iron $^{56} FE$ has the highest binding energy per nucleon
+- Iron $^{56} Fe$ has the highest binding energy per nucleon
 
 <br>
 
