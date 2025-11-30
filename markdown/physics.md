@@ -2292,11 +2292,11 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 
 #### Properties
 
-| Radiation | Particle | Range in air | Absorption | Ionisation | Energy
-| --- | --- | --- | --- | --- | --- |
-| $\alpha$ | $^{4}_{2}\,He$ | up to 100 × 10<sup>-3</sup>m | paper or thin metal foil (weak penetrating power) | 10<sup>4</sup> ions per mm in air (highly ionising) | constant |
-| $\beta$ | $^{0}_{-1}\,e$ $^{0}_{+1}\,e$ | up to 1m | 5mm aluminium foil | 100 ions per mm in air (moderately ionising) | varies up to a maximum |
-| $\gamma$ |  $^{0}_{0}\,\gamma$ | infinite, follows inverse-square law | several cm of lead | weakly ionising | constant
+| Radiation | Particle                      | Range in air                         | Absorption                                        | Ionisation                                          | Energy                 |
+| --------- | ----------------------------- | ------------------------------------ | ------------------------------------------------- | --------------------------------------------------- | ---------------------- |
+| $\alpha$  | $^{4}_{2}\,He$                | up to 100 × 10<sup>-3</sup>m         | paper or thin metal foil (weak penetrating power) | 10<sup>4</sup> ions per mm in air (highly ionising) | constant               |
+| $\beta$   | $^{0}_{-1}\,e$ $^{0}_{+1}\,e$ | up to 1m                             | 5mm aluminium foil                                | 100 ions per mm in air (moderately ionising)        | varies up to a maximum |
+| $\gamma$  | $^{0}_{0}\,\gamma$            | infinite, follows inverse-square law | several cm of lead                                | weakly ionising                                     | constant               |
 
 #### Applications
 - Smoke detectors
@@ -2304,7 +2304,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
   - ...so there is a small current flow
   - if there is smoke, it absorbs the $\alpha$ particles, and the current reduces
 - Thickness control
-  - $\beta$ radiation
+  - $\beta^-$ radiation
     - $\alpha$ particles would be absorbed by the material
     - $\gamma$ particles would pass through the material
   - a Geiger counter controls the thickness of the material being produced
@@ -2334,7 +2334,7 @@ I = \frac{k}{x^2}
 
 > For a point source, we can find out the number of $\gamma$ photons travelling through a specific surface area per second
 > ```math
-> A_1 = \frac{Area}{4 \pi d^2} \times A_0
+> A_1 = \frac{Area}{4 \pi x^2} \times A_0
 > ```
 
 #### Background radiation
@@ -2356,6 +2356,19 @@ I = \frac{k}{x^2}
   - readings with no source present are taken and subtracted from other readings to produce a corrected count rate
 
 ### Practical 12 -  Investigation of the inverse-square law for gamma radiation
+
+#### Method
+- Measure the background radiation with the $\gamma$ source stored or outside the room
+- Measure the number of counts in a minute for different distances from the source
+
+#### Results
+```math
+I = \frac{k}{x^2} \\
+\implies \frac{1}{\sqrt{c}} = kx
+```
+- ...so if the inverse-square law is followed, the gradient is k
+
+> $I \times x^2 = constant$ is a useful result
 
 ### 8.1.3 Radioactive decay
 - Radioactive decay is random and spontaneous
@@ -2491,7 +2504,9 @@ E_k = E_p \implies \frac{1}{2}mv^2 = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 Q_2
 ```
 <br>
 
-- always provides an overestimate
+- ...which always provides an overestimate
+  - because it only gives the distance of closest approach/upper limit to the radius
+
 #### Electron diffraction
 - Electron diffraction occurs when a beam of electrons is directed at a thin film
 - ...and each electron diffracts around a nucleus
@@ -2501,23 +2516,203 @@ E_k = E_p \implies \frac{1}{2}mv^2 = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 Q_2
 ```math
 sin \theta = 1.22 \frac {\lambda}{2R}
 ```
-
-> **Derivation of 1.22**
+- ...which
+  - gives greater resolution (as the wavelength can be made very small)
+  - gives greater accuracy becausse electrons can get closer to the nuclei (as there is no electrostatic repulsion)
+  - is easier to accelerate (give energy to) compared to $alpha$ particles (as charge-to-mass ratio is higher)
+  - is easier to produce
+  - is easier to interpret
+  - does not involve the strong nuclear force
 
 #### Dependence of radius on nucleon number
 - From experimental data, it was derived that
 ```math
 R = R_0 A^{\frac{1}{3}}
 ```
+- ...which is not exact, as
+  - binding energy is ignored
+  - density is not uniform within the nucleus
+
+> When given the radius $R_X$ and the number of nucleons $A_X$ of one nuclide, the radius $R_Y$ of another nuclide can be found given its number of nucleons $A_Y$
+> ```math
+> R_Y = R_X \left( \frac{A_Y}{A_X} \right)^{\frac{1}{3}}
+> ```
+
 #### Nuclear density
 ```math
 V = \frac{4}{3} \pi r^3 \\
 \implies V = \frac{4}{3} \pi R^3_0 A \\
 \rho = \frac{m}{V} \\
-\implies \rho = \frac{Au}{\frac{4}{3} \pi R^3_0 A} \\
-\implies \rho = \frac{3u}{4 \pi R^3_0}
+\implies \rho = \frac{A m_{nucleon}}{\frac{4}{3} \pi R^3_0 A} \\
+\implies \rho = \frac{3 m_{nucleon}}{4 \pi R^3_0}
 ```
 ### 8.1.6 Mass and energy
+#### Mass-energy equivalence
+```math
+E = m c^2
+```
+- applies to all energy changes
+
+> You may be asked to derive power from energy obtained from the mass-energy equivalence
+
+#### Binding energy
+- Mass defect $\Delta m$ is the difference between the mass of a nucleus and the sum of the mass of its nucleons
+```math
+\Delta m = (Z)m_p + (A - Z)m_n - m_{nuclei}
+```
+- ...mass-energy equivalence implies that this occurs because energy is released when a nucleus is formed
+  - energy is required to overcome the electromagnetic replusion forces between protons in the nucleus to hold the nucleus together
+- Binding energy is the energy required to separate a nucleus into protons and neutrons
+```math
+E = \Delta m c^2
+```
+#### Atomic mass unit
+- Defined as the mass of $\frac{1}{12}$ of an atom of Carbon-12
+```math
+1 \ u = 1.661 \times 10^{-27} \ kg
+```
+
+> Using mass-energy equivalence, we can derive that
+> ```math
+> E = u c^2 \\
+> \implies E = 1.660539 \times 10^{-27}(2.99792458 \times 10^8)^2 \\
+> \implies E = 1.49242 \times 10^{-10} \ J \\
+> = 931.494893 \ MeV
+> ```
+> $\therefore 1 \ u \approx 931.5 \ MeV$, which is a useful result not given on the formula sheet (but is on the spec)
+
+#### Nuclear fission 
+- A larger nucleus is split into two smaller daughter nuclei, along with several neutrons
+  - the neutrons can in turn collide with other nuclei, starting a chain reaction
+
+<br>
+
+- The daughter nuclei have a higher binding energy per nucleon, so energy is released
+
+#### Nuclear fusion
+- Two smaller nuclei join together toform one larger nucleus
+- For fusion to occur, much higher (input) kinetic energy is required to overcome:
+  - electrostatic replusion between protons
+  - strong nuclear force between nucleons
+- ...therefore fusion only occurs in extremely hot and dense environments, e.g. the core of a star
+
+<br>
+
+- The larger nucleus has a much higher binding energy per nucleon, so energy is released
+  - more energy is released by fusion than fission
+
+#### Binding energy per nucleon
+- Nuclei with higher binding energy per nucleon are more stable
+  - ...because more energy is required to separate the nucleons
+- Iron $^{56} FE$ has the highest binding energy per nucleon
+
+<br>
+
+- For $A < 56$
+  - fusion occurs
+  - steeper, positive gradient in a graph of average binding energy per nucleon against nucleon number
+  - lower binding energy per nucleon
+
+- For $A > 56$
+  - fission occurs
+  - less steep, negative gradient in a graph of average binding energy per nucleon against nucleon number
+  - higher binding energy per nucleon (which decreases $\propto A$)
+
+- Some atoms are outliers
+  - $^{4} H$ is particularly stable
+  - $^{12} C$ and $^{16} O$ are helium nuclei bound together
 
 ### 8.1.7 Induced fission
+- Occurs when a thermal neutron is absorbed by a nucleus
+  - thermal neutrons are neutrons which is in thermal equilibrium with its surroundings, which
+    - are slow moving
+    - have low kinetic energy
+- If a fast-moving neutron is incident on a nucleus, it will rebound
+
+#### Chain reaction
+- (Fast-moving) neutrons released from fusion cause more fission reactions
+  - which then recursively causes more fission reactions
+  - ...because each fission goes on to cause at least one more fission
+
+#### Critical mass
+- The minimum mass of fuel required to maintain a steady chain reaction
+- If the mass of fuel used is:
+  - = critical mass:
+    - single fission reaction follows the last
+  - < critical mass:
+    - reaction will eventually stop
+  - \> critial mass:
+    - runaway reaction, leading to explosion
+  
+#### Thermal nuclear reactors
+- Moderator
+  - surrounds fuel and control rods
+  - made of poor absorber of neutrons, e.g. water or graphite
+    - closer the moderator atoms are in size to a neutron, the larger the proportion of momentum which is transferred
+  - fast moving neutrons collide elastically with the moderator and loses kinetic energy and momentum
+    - ...eventually reaching thermal equilibrium, creating thermal neutrons
+- Control rods
+  - absorbs neutrons without being dangerously unstable
+  - made of non-fissionable materials, e.g. boron or cadmium
+  - controls the rate of fission by varying its depth
+    - lowering rods decreases the rate of fission, as more neutrons are absorbed
+    - and is usually adjusted such that one fission neutron from each fission event causes exactly one other fission
+- Coolant
+  - transfers thermal energy (efficiently) between water systems within the reactor
+  - made of materials with a high specific heat capacity, e.g. water, helium, or molten salt
+  - pumped into reactor at a cold temperature to extract the heat released by fission
+    - ...which is then transferred to water used to produce steam externally in the heat exchanger
+
 ### 8.1.8 Safety aspects
+- Fuel used
+  - $^{238}U$ enriched with $^{235}U$
+  - $^{238}U$ absorbs neutrons to control the rate of fission
+- Remote handling of fuel
+  - using robots
+- Shielding
+  - thick lead or concrete
+- Emergency shut-down
+  - control rods can be fully lowered to absorb all free neutrons
+
+#### Radioactive waste materials
+- High-level waste
+  - examples:
+    - spent fuel rods (contains unstable fission products)
+  - most dangerous
+  - processing:
+    - initially placed in cooling ponds close to the reactor for a number of years
+    - plutonium/uranium is separated to be recycled
+    - high level waste is vitrified into (pyrex) glass and placed in (stainless) steel/lead/concrete containers to be stored deep underground
+      - ...because in liquid form, the waste may leak
+      - ...and will be radioactive for thousands of years, so a geologically stable area is required
+    - the waste is initially very hot so has to be placed in water/cooling ponds 
+    - the waste is initially highly radioactive and needs to be screened in water/cooling ponds (to absorb the radiation)
+    - the waste (initially) is highly radioactive and needs to be remotely handled
+    - transporting waste presents a potential danger to the public
+      - ...so waste is transported enclosed in impact/crash resistant/extra thick and strong casings Or processed onsite or nearby
+
+- Intermediate-level waste
+  - examples:
+    - radioactive materials with low activity
+    - containers
+  - processing:
+    - encased in cement and steel, and stored underground
+- Low-level waste
+  - examples:
+    - laboratory equipment
+    - protective clothing
+  - processing:
+    - encased in cement, and stored underground
+
+#### Nuclear power
+- Risks
+  - Non-renewable
+  - Produces radioactive waste
+  - Risk of meltdown
+  - Commissioning and decommissioning is expensive
+- Benefits
+  - Little greenhouse gas emissions
+  - Smaller mass of fuel for the same energy
+  - Can be produced continuously
+  - Produces medical isotopes
+  - Some can adjust output quickly
