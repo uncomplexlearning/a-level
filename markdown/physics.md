@@ -595,7 +595,7 @@ d \to u + \beta^- + \bar{\nu}_e
   - lines coorespond with the differences in energy levels/the coloured lines in an emission spectra
   - formed by passing white light through a cool gas under low pressure
 - Explaination
-  - an electron can gain energy and transition into a higher energy level from absorbing a single photon, if the photon energy equals the difference in energy levels
+  - an electron can gain energy and transition into a higher energy level from **absorbing a single photon**, if the photon energy equals the difference in energy levels
   - these excited electrons de-excite and emit a single photon
   - the emitted photons go off in all directions, so some wavelengths appear to be missing
 

@@ -1943,6 +1943,330 @@ Exponent
 - Not all of them can be cracked within a reasonable timeframe
   - This is known as computational security
 
+# 6 Fundamentals of computer systems
+
+# 7 Fundamentals of computer organisation and architecture
+
+## 7.1 Internal hardware components of a computer
+
+### 7.1.1 Internal hardware components of a computer
+
+#### Hardware components
+- Processor 
+  - executes instructions and sends control signals to other components
+- Main Memory
+  - temporarily stores data and instructions being processed by the CPI
+- Address bus
+  - group of wires which transmit the memory location being accessed by the CPU
+  - unidirectional (CPU to memory)
+  - width determines the amount of addressable memory
+- Data bus
+  - group of wires which transmit the data being accessed by the CPU and/or other components
+  - bidirectional
+  - width determines the rate of data transfer
+- Control bus
+  - group of wires which transmit control signals between the CPU and other components
+  - e.g.:
+    - system clock
+    - read/write signal
+    - interrupt request signal
+- I/O controller
+  - provides an interface between processor and other components
+    - appears to the processor as addressable memory
+  - consists of:
+    - physical I/O ports
+    - registers
+    - physical interface to the motherboard
+
+#### Von Neumann architechure
+- A single shared memory is used to store both instructions and data
+- ...this means that a processor cannot access an instruction and data at the same time, making it slower
+- ...but it is more flexible
+
+#### Havard architecture
+- Instructions and data are stored in separate memory, with separate instruction and data busses
+- ...so it can execute instructions more efficiently as the processor can fetch instructions and data in aprallel
+  - useful in real-time processing, e.g. digital signal processors
+  - useful in embedded systems, the size of each bus can be adjusted separately
+  
+#### Addressable memory
+- Memory is made up of cells
+- ...and each cell contains 1 byte of data
+  - and has a unique address
+
+<br>
+
+- The processor uses the address bus to transmit the required address to memory
+- The read enable and write enable lines determine whether data should be sent to the CPU via the data bus, or stored from the value on the data bus
+
+## 7.2 The stored program concept
+
+### 7.2.1 The meaning of the stored program concept
+
+- Instructions can be encoded and stored in main memory (as opposed to early computers, which had to be physically modified)
+- which are then fetched and executed **serially** by a processor that performs arithmetic and logical operations
+- ...so different programs can be loaded and unloaded
+- ...and can be change at any time by modifing the instructions in memory
+
+<br>
+
+- The OS kernel loads each program into memory
+- ...in continuous blocks of free memory, to optimise execution
+
+## 7.3 Structure and role of the processor and its components
+
+### 7.3.1 The processor and its components
+
+- A processor is made up of many components:
+  - control unit (CU)
+    - decodes instructions fetched from memory and identify the operations to be carried out
+    - ...and if the instruction is arithmetic, it sends a control signal to the ALU
+    - ...or if it is related to memory, then the CU will send control signals to memory
+  - arithmetic logic unit (ALU)
+    - carries out arithmetic and logical operations
+    - stores result in the a specified GP register, or accumulator
+  - clock
+    - generates an oscillating electrical signal which synchronises components
+      - components activate on the rising or falling edge of the signal
+    - determines the number of FDE cycles carried out per second
+  - general-purpose registers
+    - small units of memory, storing values required by the processor to execute instructions
+    - GP registers store any type of data
+  - dedicated registers
+    - program counter (PC)
+      - stores the address of the next instruction to be fetched
+      - updated every FDE cycle and if there is a branch instruction
+    - current instruction register (CIR)
+      - stores the current instruction to be decoded
+    - memory address register (MAR)
+      - stores the memory address where data should be retrieved or written to
+    - memory buffer register (MBR)
+      - stores the data recieved from the data bus/to be written to memory
+    - status register (SR)
+      - provides information about the result of the last instruction
+      - stores the status of the processor, e.g.:
+        - interrupt flag
+        - overflow flag
+        - accumulator
+
+### 7.3.2 The Fetch-Execute cycle and the role of registers within it
+
+#### Fetch
+- contents of PC transferred to MAR
+- address bus used to transfer this address to main memory
+- read enable sent along control bus
+- transfer of main memory content uses the data bus
+- contents of addressed memory location loaded into the MBR
+- increment contents of PC
+- contents of MBR copied to CIR
+
+#### Decode
+- instruction to decode held by the CIR
+- CU decodes the instruction
+  - split into opcode and operand(s) 
+
+#### Execute
+- the identified operation is performed by the CU
+  - if necessary, data is fetched/stored
+  - or ALU used for calculation/comparisons
+- result may be stored in registers or main memory
+- status register updated
+- if jump/branch required, then PC is incremented
+- control bus will transfer signals to other components to initiate actions 
+- check interrupt flag
+
+### 7.3.3 The processor instruction set
+
+- The instruction set is the set of bit patterns defining the machine code operations the processor can perform
+  - each processor architechure has a unique instruction set
+
+<br>
+
+#### Instructions
+- Each instruction is broken up into two parts:
+  - opcode
+    - the instruction to be executed
+  - operand
+    - the parameters required
+    - e.g. value, memory address or register
+
+### 7.3.4 Addressing modes
+#### Immediate addressing
+- the operand is the datum
+
+#### Direct addressing
+- the operand is the address of the datum
+  - address to be interpreted as meaning either main memory or register
+
+> Address modes may be incoporated into the opcode, so there are two opcodes for the same "instruction"
+
+### 7.3.5 Machine-code/assembly language operations
+
+- Assembly language is a low level language
+- ...where each mnemonic maps to one machine code instruction
+- Assembly code is translated into machine code by an assembler
+
+<br>
+
+#### Syntax
+- Symbols
+  - cf. variables in high level languages
+  ```asm
+  VALUE: #12
+  LDA VALUE
+  ```
+- Labels
+  - identifies a section of code to jump to
+
+> Refer to Standard AQA assembly language instruction set for details
+
+### 7.3.6 Interrupts
+
+- Interrupts are signals sent to the processor  allows the current process to be suspended
+- ...so the source of the interrupt can be serviced
+
+<br>
+
+- Interrupts can be caused by:
+  - hardware
+    - I/O controllers raise interrupts in response to inputs or events (e.g. keydown, printer out of paper)
+  - software
+    - terminated (both expected and unexpected)
+  - exceptions
+    - divide by 0, invalid memory address
+  
+#### Interrupt service routines (ISRs)
+
+- Programs stored in memory (ROM or RAM) containing the instructions required to respond to an interrupt
+- Start address of each ISR stored in an interrupt vector table (IVT)
+- Interrupt register stores an offset vector relative to the start of the IVT to indicate the correct ISR to be executed
+
+#### Process
+- Processor detects interrupt
+- Source and priority detected
+- Volatile state of registers copied to system stack (in memory)
+- Start address of the appropriate ISR obtained from the IVT
+- ISR is executed, and the interrupt flag is disabled
+- Register state is restored from the system stack
+
+### 7.3.7 Factors affecting processor performance
+
+#### Multiple cores
+- Each core has its own CU and ALU, so multiple instructions can be processed at the same time
+  - only if programs are multithreaded/tasks are parallelisable
+#### Cache memory
+- Cache is very fast memory located on/closed to the processor
+  - ...made of SRAM (static RAM)
+  - ...and stores recently fetched/anticipated instructions for faster retrieval
+- Larger -> more instructions can be stored, so faster fetching
+#### Clock speed
+- Instructions per second
+#### Word length
+- The size of instructions or the number of bits processed simultaneously
+- Higher -> improved performance
+#### Address bus width
+- Determines the size of addressable memory
+#### Data bus width
+- Determines the number of bits which can be transferred at once
+  - typically identical to word length
+
+## 7.4 External hardware devices
+
+### 7.4.1 Input and output devices
+#### Barcode reader
+- laser is directed at bar code to illuminate the barcode
+- moving mirror/prism moves light beam across bar code (or the reader is manually moved)
+- light is reflected back
+  - black and white bands reflect different amounts of light 
+- A photodiode or CCD (charge-coupled device) measures the amount of reflected light, which is converted into electricial signal
+- and stored as binary
+
+> Alternatively, barcode readers can just be cameras
+> - grid of sensors or a CMOS/CCD sensor measures light intensity of a point
+> - sensor outputs a voltage dependent upon light intensity
+> - which is converted into binary data with an ADC
+> - and analysed by software to identify the black and white bands
+> - and converted into the code
+
+#### Digital camera
+- light enters through the camera and is focused by the lens
+- ...to pass through a Bayer filter to restrict light into RGB grids
+- ...on to an array of sensors on the a (CMOS/CCD) sensor chip
+- each sensor produces an electrical current/signal dependent upon light intensity, which represents a pixel
+- which is converted into binary data with an ADC
+- and a colour filter is applied to generate separate data values for RGB components
+- demosaicing is used to reconstruct the colours
+- the pixels are stored as an array;
+
+#### Laser printer
+
+- bitmap of the page to be printed is generated
+- a negative charge is applied to a photosensitive drum
+- a moving mirror directs a laser beam at the drum
+- ...as the laser moves, areas struck by the laser loses charge
+- ...the negative bitmap is drawn on the paper
+• an opposite charge (to the drum) is applied to the toner
+• toner sticks to drum based on charge
+• and the paper is passed over the drum, where the toner transfers to it
+  • a oppositely charged (to the toner) transfer roller assists transfer of toner from drum to paper
+• a heater fuses the toner onto paper
+• for colour printing four different colour toners (CMYK) are required
+
+#### RFID
+
+- RFID tag contains transmission circuitry and antenna
+  - memory on tag stores data
+- RFID reader emits EM waves
+- ...which induces a current in the RFID tag
+- RFID tag transmits data on the tag to the reader via EM waves
+- RFID reader converts the waves back into binary data
+
+> Active RFID tags also exist; they have a internal power source and transmits actively
+
+### 7.4.2 Secondary storage devices
+
+- Secondary storage is needed because:
+
+
+#### Hard disk
+- contains (multiple) disks stored vertically as a platter, and a read/write head
+- each disk is coated in a magnetisable material
+  - magnetising a spot in one direction could represent 0 and the other direction could represent 1
+- disk divided into tracks (radially) and sectors (like a normal circle)
+  - each intersection is known as a block
+- disks spin at high speed
+  - at a constant angular velocity
+- read/write head moves radially to correct track
+- ...and waits until correct sector passes under the read/write head
+- read/write head senses the magnetic field and converts the data to binary
+  - the whole block is read together
+- data may be stored in a buffer while being read 
+
+> Each block is usually 512 or 4096 bits, but AQA writes their mark scheme like 1 block = 1 bit...
+
+
+#### Optical disk
+- disk is covered with pits and lands
+- a low power laser coupled with a photodiode illuminates the surface
+  - which moves radially
+- disk spins at a constant linear velocity
+- the photodiode detects the amount of light reflected from each pit and land
+- which is converted into binary data
+  - transitions between each pit and land are encoded as 1, while contiuation is encoded as a 0
+
+#### Solid-state disk (SSD)
+> NOOOOO ITS A DRIVE!!! where is the disk in the SSD, AQA? don't you want your answers to be specific? double standards, not fair !! :(
+
+- data is stored electronically with no mechanical moving parts
+- data is stored in NAND flash made of floating gate transistors (electrons are trapped between oxide layers)
+  - presence/absebce of trapped electrons/charge 0 / 1
+- data is organised into pages
+  - and pages form blocks
+- a block must be erased before it can be written to
+  - and only a whole block can be written to, not a page
+- a controller manages the organisation of data
+
+
 # 9 Fundamentals of communication and networking
 
 ## 9.1 Communication
@@ -2206,6 +2530,250 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 - Identifies a network
 - SSID broadcast allows device to show the network in the list of networks available to connect
+
+## 9.3 The Internet
+### 9.3.1 The Internet and how it works
+#### Structure
+- The Internet is made up of a series of interconnected networks
+  - routes connect networks and are arranged in a hierarchy:
+    - packets are passed up the hierarchy and transferred across networks before descending back down to their destination
+    - > Tier 1 networks form the backbone, and are operated by Network Service Provides (NSPs)
+      > - peering allows NSPs to exchange traffic with other NSPs free of charge <br>
+      > 
+      > Tier 2 and 3 networks pay networks higher up the hierarchy to transfer data through their networks <br>
+      > Tier 1, 2 and 3 networks connect physically at Internet Exchange Points (IXs)
+  - procotols supporting the internet operate at the Network/Internet layer 
+
+#### Packet switching and routers
+- Packets are containers of information to be transmitted over a network
+- Packet switching is where information is broken up into packets before being sent independently across a network and reassembled at the destination
+  - ...packets can be sent via different paths
+  - ...and is efficient and fault-tolerant
+
+- Packet switching process:
+  - Data broken down into smaller packets by TCP or UDP
+    - if TCP is used, each packet is given a sequence number and checksum
+  - Packet is encapsulated within an IP packet and the header is filled
+  - Each packet is sent to its destination
+    - route is determined as the packets travel from router to router
+  - Packets are unencapsulated at the destination
+    - if TCP, an acknowledgement packet is sent
+
+<br>
+
+- Routers pass packets across netwroks, which
+  - is connected to one or more routes via its interfaces
+  - determines:
+    - if the packet should be dropped
+    - if the packet should be forwarded, and if so, where
+  - uses a routing and forwarding table, along with routing protocols and shortest path algorithms to route packets efficiently
+    - contains the shortest path for certain destinations
+  - ...but if the destination is not known, longest prefix matching is used
+    - the known network address with the highest number of prefix bits matching the destination IP is used
+
+<br>
+
+- Gateways repackage packets to use a different link layer proctocol
+  - packets may be sent between networks which use different link layer protocols
+    - e.g. Ethernet to PPP (Point to Point Protocol)
+
+#### Packets
+- IP packets carry TCP segments and UDP datagrams, and allows them to be routed
+  - IPv4 headers (20 bytes) contain:
+    - the IP addresses of the source and destination
+    - a checksum
+    - a time to live (TTL) value
+      - ensures packets do not get stuck in a cyclical route
+      - decremented on every hop
+      - ...and the packet is discarded when the TTL value is 1
+
+#### URLs and FQDNs
+- Fully Qualified Domain Names (FQDNs)
+  - provide a human-friendly and easy to remember/identify address for a host in place of an IP address
+  - provide the exact location of a particular host within a DNS hierarchy
+  - comprised of:
+    - hostname
+    - names of all domains
+  - and is separated by full stops
+
+<br>
+
+- Uniform Resource Locators (URLs)
+  - a FQDN provides access to a particular host
+  - a URL provides access to a particular resource from that host
+  - comprised of:
+    - protocol
+    - FQDN or host address
+    - path
+
+#### DNS
+- The Domain Name System (DNS) is responsible for resolving FQDNs into IP addresses
+
+<br>
+
+- Process:
+  - A computer checks its local DNS cache for a record of the required FQDN
+    - if it is found, the associated IP address is retrieved and used to send the request
+  - The OS sends a DNS lookup request to its assigned DNS resolver
+    - if the DNS resolver has a matching record, it responds with the associated IP address
+  - A query to one of 13 root name servers is sent, which responds with the IP address of the TLD nameserver
+  - The DNS resolver then sends a DNS request to the TLD nameserver, which responds with the IP addess of the nameserver for the domain in the FQDN
+  - The DNS resolver sends a DNS request to the authoritative nameserver for that domain, which knows the IP address of all of its hosts. It returns the IP address to the resolver, which then returns it to the client
+
+<br>
+
+- DNS is not required if:
+  - local device has a matching record in the hosts file
+  - local device has a matching record in its DNS cache
+  - URL has an IP address
+  - URL is for a local resource
+  - URL refers to localhost (127.0.0.1)
+
+#### Internet registries
+- Internet registries are organisations responsible for the administration and organisation of IP address and domain names
+- Internet Assigned Numbers Authority (IANA) - IP
+  - delegates the administraion of IP addresses and ASNs to 5 regional internet registeries
+- Internet Corporation for Assigned Names and Number (iCANN) - DNS
+  - delegates the responsibility for authoritatve nameservers within each TLD to other organisations
+
+### 9.3.2 Internet security
+#### Firewalls
+- Firewalls are security measures designed to provide protection to a network by inspecting IP headers and restricting the exchange of data between the protected network and an external network
+  - can be hardware or software
+  - protects network from unauthorised access
+
+<br>
+
+- Packet filtering
+  - the header of IP packets is inspected and compared to rules in the router's access control list (ACL)
+  - this filters information such as:
+    - source and destination IP address
+    - protocol
+    - source and destination ports
+    - payload size
+  - ...but does not inspect the payload itself
+- Stateful inspection
+  - inspect transport and application layer protocols within the packet
+  - dynamically generate filtering rules
+    - allows incoming packets which are part of an ongoing exchange initiated by an internal host
+    - this can be done by recognising the TCP handshake, or passive FTP
+- Proxy server
+  - handles communication on behalf of an internal host
+    - there is no direct connection between the internal and external host
+    - provides anonymity to the internal host
+    - provides application/request-level filtering 
+    - logging
+    - detects malformed packets
+
+#### Encryption
+- Encryption is the process of using an algorithm to convert plaintext into ciphertext which cannot be understood without a key
+
+<br>
+
+- Symmetric encyption
+  - the same key is used to encrypt and decrypt the message
+  - key exchange is required before communication starts
+  - e.g. AES
+- Asymmetric encryprtion
+  - different (but related) keys are used to encrupt and decrypt the message
+  - the public key is shared but the private key is kept secret
+    - anyone can use the public key to encrypt a message that only the holder of the private key can decrypt
+    - anyone can use the public key to verify that a message has been sent from a person with the private key
+  - e.g. RSA
+  
+<br>
+
+- Symmetric encryption is much faster than asymmetric
+  - and so these two types of encryption are often combined
+- Process:
+  - A generates a symmetric key
+  - A encypts the symmetric key with B's public key
+  - A sends the key to B
+  - B decrypts the key using its private key
+  - A and B now share a symmetric key
+
+#### Digital certificates
+- A public key can be provided with a digital certificate generated and signed by a certificate authority
+
+#### Digital signatures
+- Digital signatures verify the identity of the sender and detect if a message has been altered during transmission
+- Process:
+  - A generates a hash of the message and encrypts it using A's private key
+    - the encrypted digest is the digital signature
+  - A appends the signature to the original message
+  - A's original message and the signature is encrypted using B's public key before being sent to B
+  - B uses its private key to decrypt the message and the signature
+  - B rehashes the recieved message to produce a new digest
+  - B uses A's public key to decrypt the original hash
+  - The two hashes are compared
+    - if the hashes match, A is verified as the sender
+
+#### Malware
+- Malware is software designed to damage data and/or systems
+- ...by exploiting vuluerabilities in computer systems, e.g.:
+  - ineffective firewalks
+  - remote management software
+  - default passwords
+  - out of date software
+  - bad memory management
+    - buffer overlow attack
+
+<br>
+
+- Worms
+  - standalone malware which doesnt require a host file to run
+  - self-replicating
+  - exploits network vulunerabilities
+- Trojans
+  - malware which appears legitimate
+- Viruses
+  - malware which attaches to/conceals itself within another program/file
+  - memory resident
+    - viruses which are loaded into memory when their host is opened, and continues running after it has been closed
+  - boot sector virus
+    - runs before operating systems
+
+## 9.4 The Transmission Control Protocol/Internet Protocol (TCP/IP) protocol
+### 9.4.1 TCP/IP
+#### TCP/IP stack
+- Divides protocols into layers
+
+| Layer       | Purpose                                       | Examples      |
+| ----------- | --------------------------------------------- | ------------- |
+| Application | creates requests and interprets responses     | HTTPS, POP    |
+| Transport   | set up end-to-end communication between hosts | TCP, UDP      |
+| Network     | encapsulates segements into packets           | IP            |
+| Link        | physical transmission of data in frames       | Ethernet, PPP |
+
+#### Sockets
+- Consists of an IP address and a port, separated by a colon
+  - ports are allocated to network application by the OS
+    - allows a single device to run multiple network applications on a single IP address
+
+<br>
+
+- Well-known ports are reserved ports for a specific procotol
+  - so clients can initiate communication with remote servers
+  - assigned by IANA
+
+| Protocol | default TCP port |
+| -------- | ---------------- |
+| HTTPS    | 443              |
+| HTTP     | 80               |
+| FTP      | 21               |
+| SSH      | 22               |
+| SMTP     | 25               |
+| POP      | 110              |
+| IMAP     | 143              |
+
+- Client ports are dynamically allocated
+  - changes with each new TCP session
+  - used by the OS to direct packets towards each application
+
+#### MAC addresses
+- are 48-bit (6 pairs of hexadecimal digits) 
+- Used to identify network interfaces on a LAN
+  - used by link layer protocols to direct frames between network interfaces
 
 # 10 Fundamentals of databases
 
