@@ -593,7 +593,7 @@ public class Class2 : Class1 {
     - A pair of arrays, one storing keys and one storing values
     - Indices correspond
   - Multi-dimensional arrays
-    - Keys are values are stored on the same array
+    - Keys and values are stored on the same array
 
 ## 2.8 Vectors
 
@@ -1364,6 +1364,18 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n^c) < O(2^n) < O(n!)
 - One of the states is called a start state and states that have no outgoing transitions arecalled halting states
 - Turing machines provide a (general/formal) model of computation
 
+<br>
+
+- Universal Turing machines are turing machines which can:
+  - simulate the behaviour of any other turing machine
+  - can compute any computable sequence
+  - faithfully executes every single operation on the data precisely as the simulated turing machine would
+  - store instructions for any turing machine on its tape
+
+> more formally,
+> A UTM, U, is an interpreter that reads the description of any arbitrary Turing machine M; and faithfully executes operations on data D precisely as M does.; The description is written at the beginning of the tape, followed by D
+
+
 # 5 Fundamentals of data representation
 
 ## 5.1 Number systems
@@ -1945,6 +1957,107 @@ Exponent
 
 # 6 Fundamentals of computer systems
 
+## 6.1 Hardware and software
+
+### 6.1.1 Relationship between hardware and software
+
+- Hardware is the physical components of a computer
+- Software are the sequences of instructions which make up programs on a computer
+
+### 6.1.2 Classification of software
+
+- System software is used in the management of the system
+- Application software peforms tasks for the user
+  - general purpose software performs many tasks
+  - special purpose software performs one specific task
+  - bespoke software is written for a specific customer/organisation
+
+### 6.1.3 System software
+
+- OS
+  - provides an interface between hardware and software
+- Utility programs
+  - peforms non-core system maintenance
+- Libraries
+  - provides reusable code used by software applications
+- Translators
+  - translate high-level source code to low-level machine code to be executed
+
+### 6.1.4 Role of an operating system (OS)
+
+- Operating systems exist to hide the complexities of the hardware through virtual machines
+  - ...so each process things it has its own machine
+  - provides a standard platform for applications using an API
+- and also provides resource management
+  - allocate processors (scheduling) and memory to competing processes
+  - handle communcation between I/O devices and processes
+  - file system to allocate space on storage devices
+
+## 6.2 Classification of programming languages
+
+### 6.2.1 Classification of programming languages
+
+#### Low-level languages
+- Low-level languages are:
+  - based upon the instruction set of the processor
+  - interacts with the hardware closely
+  - not portable, as they are architechure dependent
+- They are made of opcodes and operands:
+  - expressed as binary (machine code)
+  - mnemonics (assembly)
+
+#### High-level languages
+- High-level languages use human-oriented statements
+  - ...so are highly abstracted
+  - ...so:
+    - they are easier to understand by humans
+    - programs are shorter and quicker to write
+    - meaningful names and reusable libraries can be used
+    - data structures and programming structures can be used
+    - programs are portable between architecture
+
+<br>
+
+- Imperative languages provide instructions which are executed by the computer in a defined sequence
+  - each instruction in a high-level imperative language translates to many instructions in machine code
+
+## 6.3 Types of program translator
+
+### 6.3.1 Types of program translator
+
+#### Assembler
+- Translates assembly language source code into machine code
+#### Compiler
+- Translates a program as a whole and produces object code
+- Compiling can be slow, but the compiled machine code runs quicker than a complier
+- Only provides a list of error once the compiling process has finished/stopped because there is an error
+- Hides the original source code
+- Compiled program does not require the compiler to run
+- If an unchanged program is executed multiple times, the compiler will only need to translate it once
+#### Interpreter
+- Translates a program one statement at a time, and calls pre-compiled subroutines to execute each statement
+- Stops intepreting when an error is encounted
+- Interpreter must be present for the program to run
+#### Bytecode
+- Provides an intermediate medium between interpreted and compiled languages
+- Source code is compiled into bytecode, which is then:
+  - just-in-time (JIT) compiled into object code and executed (by a virtual machine)
+  - interpreted and executed using pre-compiled subroutines
+- Bytecode is:
+  - portable, if the appropriate runtime environment has been installed
+  - faster than purely interpreted languages (but not as fast as compiled code)
+  - binary, consisting of opcodes and operands
+
+## 6.4 Logic gates
+  
+### 6.4.1 Logic gates
+
+## 6.5 Boolean algebra
+
+### 6.5.1 Using Boolean algebra
+
+> Coming soon!
+
 # 7 Fundamentals of computer organisation and architecture
 
 ## 7.1 Internal hardware components of a computer
@@ -2240,10 +2353,9 @@ Exponent
 - ...and waits until correct sector passes under the read/write head
 - read/write head senses the magnetic field and converts the data to binary
   - the whole block is read together
-- data may be stored in a buffer while being read 
+- data may be stored in a buffer while being read
 
 > Each block is usually 512 or 4096 bits, but AQA writes their mark scheme like 1 block = 1 bit...
-
 
 #### Optical disk
 - disk is covered with pits and lands
@@ -2253,6 +2365,14 @@ Exponent
 - the photodiode detects the amount of light reflected from each pit and land
 - which is converted into binary data
   - transitions between each pit and land are encoded as 1, while contiuation is encoded as a 0
+
+<br>
+- prone to scratching
+- very cheap
+
+> Writing to optical disks
+> - disks have a photosensitive layer
+> - high power laser makes areas less reflective
 
 #### Solid-state disk (SSD)
 > NOOOOO ITS A DRIVE!!! where is the disk in the SSD, AQA? don't you want your answers to be specific? double standards, not fair !! :(
@@ -2266,6 +2386,10 @@ Exponent
   - and only a whole block can be written to, not a page
 - a controller manages the organisation of data
 
+<br>
+- can only be written a finite number of times; error rate will increase
+- lower power consumpton
+- generate less heat
 
 # 9 Fundamentals of communication and networking
 
@@ -2561,8 +2685,9 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 <br>
 
-- Routers pass packets across netwroks, which
-  - is connected to one or more routes via its interfaces
+- Routers
+  - pass packets across netwroks
+  - are connected to one or more routes via its interfaces
   - determines:
     - if the packet should be dropped
     - if the packet should be forwarded, and if so, where
@@ -2774,6 +2899,176 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 - are 48-bit (6 pairs of hexadecimal digits) 
 - Used to identify network interfaces on a LAN
   - used by link layer protocols to direct frames between network interfaces
+
+### 9.4.2 Standard application layer protocols
+#### FTP (File Transfer Protocol)
+- Used to transfer files between computers on networsk
+- FTP server
+  - allows FTP clients to make requests
+- FTP client
+  - can be anonymous or non-anonymous (user authorisation)
+
+#### HTTP (Hypertext Transfer Protocol)
+- Used by web browsers and webservers
+- a HTTP request contains
+  - an access method (e.g. `GET`)
+  - a file path
+- a HTTP response contains
+  - a status code
+  - a body (in plaintext)
+
+<br>
+
+- Webservers
+  - recieves (listens for) HTTP requests
+  - responds with HTML text in HTTP responses
+- Web browsers
+  - generates HTTP requests
+  - renders the recieved HTML from the response
+  - provides a ECMAScript runtime environment
+
+#### HTTPS (Hypertext Transfer Protocol Secure)
+- uses TLS (Transport Layer Security) to encrypt HTTP 
+
+#### POP3 (Post Office Protocol (v3))
+- retrieves a copy of email messages from the mail server onto the client
+- local changes are not synchronised
+
+#### IMAP (Internet Message Access Procotol)
+- access email messages from the mail server
+- changes are synchronised
+
+#### SMTP (Simple Mail Transfer Protocol)
+- transmits emails from a client to a mail server, or between mail servers
+
+#### SSH (Secure Shell)
+- allows for remote access to the command line interface of another device
+- useful for managing remote servers, e.g.
+  - configuring services
+  - user management
+  - configuring firewalls
+- SSH provides an encrypted connection
+
+<br>
+
+- SSH client can also be used to make a TCP connection to a remote port for the purpose of sending commands to this port using application level protocols
+  - e.g. GET for HTTP, SMTP commands for sending email and POP3 for retrieving email
+
+
+### 9.4.3 IP address structure
+- an IP address is split into a network identifier part and a host identifier part
+
+<br>
+
+- there are two unusable host identifiers (0000 - subnet; 1111 - broadcast)
+  - so if n bits is used to represent the address, only 2<sup>n</sup>-2 unique hosts can be represented
+
+### 9.4.4 Subnet masking
+- Networks can be divided into subnets
+- A subnet mask is used to identify the network identifier part of the IP address
+
+<br>
+
+- Subnet masks are applied by bitwise AND with the addresss in binary
+
+<br>
+
+- Subnets:
+  - reduce the broadcast domain of the network, so performance is improved
+  - increases security as packets between subnets must be exchanged through routers
+  - is used by routers to determine if the destination host is internal or external
+
+### 9.4.5 IP standards
+- IPv4
+  - 4, one byte numbers separated by full stops (32 bits in total)
+  - only around 4 billion in total, all address have been assigned
+- IPv6
+  - 8, 4 hexadecimal digits (16 bits) separated by colons (128 bits in total)
+  - introduced to solve the address exhaustion problem
+  - removes need for NAT and DHCP
+  - has larger IP packet size
+
+### 9.4.6 Public and private IP addresses
+
+#### Routable IP addresses
+- are globally unique
+- assigned by authorties
+
+#### Non-routable IP addresses
+- private IP addresses
+- unique within LAN, but not globally
+
+### 9.4.7 Dynamic Host Configuration Protocol (DHCP)
+- IP address is dynamically allocated and leased to a host for a fixed duration
+- DHCP server is required
+- Process:
+  - host broadcasts DHCPDISCOVER packet
+  - server broadcasts with DHCPOFFER pack
+  - host sends DHCPREQUEST packet to confirm the offer, and ask for additional information (e.g. subnet mask, DNS server)
+  - server sends DHCPACK packet with the information requested
+
+<br>
+
+- less error-prone, as no chance of IP conflict
+- more efficient, as IP addresses can be reassigned after their lease expires
+- easier, as no user input required
+
+### 9.4.8 Network Address Translation (NAT)
+- NAT allows a single global IP address to be shared amongst many hosts in a LAN
+- managed by routers
+  - a translation table is used 
+  - the TCP/UDP source port is changed to indicate which internal host/port the packet originated from
+
+### 9.4.9 Port forwarding
+- a feature of NAT
+- routers set up to always forward packets with a specific destination port to a specific host/port
+
+### 9.4.10 Client server model
+- Servers provide services requested by clients
+- Clients utilise resources provided by servers
+
+<br>
+
+- Client sends a request message to server
+- Server responds to request by replying with a response message to client
+
+#### Websockets
+- an API establishing a full-duplex 'socket' connection between a web browser and a server over TCP
+  - persistent connection between client and server
+  - data can be sent at any time
+
+#### RESTful APIs
+- REST (Representational State Transfer) APIs use standard HTTP methods 
+  - so the server's implementation is abstracted from clients
+  - enables CRUD to be mapped to database functions (SQL) 
+
+| HTTP Method (REST) | SQL    | CRUD     |
+| ------------------ | ------ | -------- |
+| POST               | INSERT | CREATE   |
+| GET                | SELECT | RETRIEVE |
+| PUT                | UPDATE | UPDATE   |
+| DELETE             | DELETE | DELETE   |
+
+- databases can be connected to browsers through a REST API
+  - ECMAScript in browser calls the API to communicate with server
+
+#### JSON and XML
+- used to transmit data between a server and web application
+- JSON is:
+  - easier for a human to read
+  - more compact
+  - can be converted into objects natively in some languages
+  - supports arrays/lists natively
+
+### 9.4.11 Thin- versus thick-client computing
+
+| Thin-client                                         | Thick-client                          |
+| --------------------------------------------------- | ------------------------------------- |
+| Most processing performed on server                 | Most processing performed on machine  |
+| Inputs sent to server                               | Inputs processed locally              |
+| Applications hosted on server and accessed remotely | Applications installed locally        |
+| Has less computational power                        | Requires more computational power     |
+| Server requires more computational power            | Servers can be relatively low powered |
 
 # 10 Fundamentals of databases
 
