@@ -2866,8 +2866,8 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 | Layer       | Purpose                                       | Examples      |
 | ----------- | --------------------------------------------- | ------------- |
 | Application | creates requests and interprets responses     | HTTPS, POP    |
-| Transport   | set up end-to-end communication between hosts | TCP, UDP      |
-| Network     | encapsulates segements into packets           | IP            |
+| Transport   | set up end-to-end communication between hosts <br> performs error detection <br> splits data into segments <br> adds port numbers to identify the correct application| TCP, UDP      |
+| Network     | encapsulates segements into packets <br> allows routing to be performed by adding source and destination IP address  | IP            |
 | Link        | physical transmission of data in frames       | Ethernet, PPP |
 
 #### Sockets
