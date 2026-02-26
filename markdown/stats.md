@@ -1,5 +1,6 @@
-> Remember the distinction between $X$ and $\bar{X}$ when calculating/checking CIs and estimators!!
 # The hypotheses
+> Remember the distinction between $X$ and $\bar{X}$ when calculating/checking CIs and estimators!!
+
 ## $\chi^2$
 - reject if $>$ CV
 ### Contingency table
