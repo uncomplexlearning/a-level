@@ -2718,3 +2718,193 @@ E = \Delta m c^2
   - Can be produced continuously
   - Produces medical isotopes
   - Some can adjust output quickly
+
+# 12 Turning poins in physics
+## 12.1 The discovery of the electron
+### 12.1.1 Cathode rays
+- Production of cathode rays in a discharged tube is schieved by:
+  - ionisation of gas atoms by an strong electric field
+    - positive ions are attracted to the cathode
+    - required low pressure
+  - emission of electrons by the cathode
+  - electrons are accelerated towards the anode by a potential difference
+  - when the electron and positive ions collide, they become excited
+    - when the orbital electrons de-excite, visible photons are emitted
+
+### 12.1.2 Thermionic emission of electrons
+- In thermionic emission,
+  - filament is heated due to current
+  - (free) electrons gain sufficient energy ($> \phi$) to leave the surface of the metal
+- Electrons can then be accelerated by a pd (via an anode) to form an electron gun
+```math
+work\ done\ = \frac{1}{2}mv^2 = eV
+```
+### 12.1.3 Specific charge of the electron
+#### Circular motion
+```math
+F = \frac{mv^2}{r} = Bev \\
+\implies v = \frac{Ber}{m} \\
+eV = \frac{1}{2}mv^2 \\
+\implies \frac{e}{m_e} = \frac{2V}{B^2r^2}
+```
+#### Magnetic and electric fields
+```math
+F = eE = \frac{eV}{d} = Bev\\
+\implies v = \frac{V}{Bd}
+```
+switching off the E field,
+```math
+F = \frac{mv^2}{r} = Bev\\
+\implies v = \frac{Ber}{m} \\
+\implies \frac{e}{m_e} = \frac{V}{rB^2d}
+```
+
+> Also with constant acceleration formulae for electric field only
+
+#### Significance
+- specific charge of the cathode rays was much larger than the hydrogen ion
+- ...so the cathode ray particles must have a very small mass or very high charge
+
+### 12.1.4 Principle of Millikan’s determination of the electronic charge
+#### Stationary force
+- Oil drops:
+  - are ionised
+  - do not evaporate quickly, so the mass remains constant
+```math
+F = \frac{QV}{d} = mg
+```
+#### Mass
+- When the electric field is turned off, the oil droplets fall at terminal velocity
+- Stoke's law for the viscous force on an oil droplet, assuming that it is:
+  - small
+  - spherical
+  - slow
+```math
+F = 6 \pi \eta r v
+```
+- then,
+```math
+F = 6 \pi \eta r v = mg \\
+\implies m = \frac{\rho 4 \pi r^3}{3}
+```
+## 12.2 Wave-particle duality
+### 12.2.1 Newton’s corpuscular theory of light
+#### Newton's corpuscular theory
+- light is made up of corpuscles (particles), which are elastic spheres
+- refraction
+  - force acts attracting them to the denser medium
+    - attraction only affects motion at the interface/boundary
+  - only one component of momentum changes at the interface
+  - ...which causes the change in direction
+- reflection
+  - corpuscles hit the reflective medium and experience a reaction force (Newton's 3rd law)
+#### Huygens’ wave theory
+- wave front is incident on interface
+- there are secondary wavelets at wave fronts
+- refraction
+  - wavelets travel more slowly in a heavier medium
+  - different parts of the wave front cross the interface at different times
+  - ...so the slowing down of the wavelets causes the change in direction
+- reflection
+  - each point of reflection becomes a new point source for wavelets
+
+<br>
+
+> Newton's theory was more accepted due to:
+> - Newton being widely respected for motion
+> - No way of measuring speed of light or diffraction
+
+### 12.2.2 Significance of Young’s double slits experiment
+Explanation for fringes in general terms, no calculations are expected.
+Delayed acceptance of Huygens’ wave theory of light.
+
+<br>
+
+> Huygen's theory was now accepted:
+> - Light was observed to travel slower in denser media
+> - Light was observed to show interference effects that cannot be explained using corpuscular theory
+
+### 12.2.3 Electromagnetic waves
+- Electromagnetic waves consist of an electric field and a magnetic field, which are
+  - perpendicular to each other
+  - perpendicular to the direction of motion
+  - in phase with each other
+  - formed by each other (self propagation)
+    - hence EM waves do not require a medium to travel
+
+<br>
+
+Maxwell’s formula for the speed of electromagnetic waves in a vacuum
+- $\varepsilon_0$ relates to the electric field strength due to a charged object in free space
+- $\mu_0$ relates to the magnetic flux density due to a current-carrying wire in free space.
+
+<br>
+Hertz’s discovery of radio waves including measurements of the speed of radio waves.
+
+#### Fizeau’s determination of the speed of light
+- Maxwell’s theory of electromagnetic waves predicted a value for the speed of EM waves
+- Fizeau’s result is close to the predicted speed $\implies$ light is an EM wave
+
+### 12.2.4 The discovery of photoelectricity
+The ultraviolet catastrophe and black-body radiation.
+Planck’s interpretation in terms of quanta.
+#### Obersverations
+- no photoelectric emission if incident light below threshold frequency
+  - classical wave theory: light of any frequency should cause emission
+- photoelectric emission is instantaneous
+  - classical wave theory: energy is spread and needs time to accumulate
+- (photoelectrons have a range of KE from zero to max value)
+- number of photoelectrons per second is proportional to intensity of incident radiation
+  - classical wave theory: intensity of wave should determine whether photoelectron emitted
+
+#### Einstein's explanation
+- Light is made of photons
+- Photoelectrons due to one photon interacting with one electron in surface of metal.
+- Minimum energy (work function of metal) needed for electron to be emitted related to a threshold frequency
+- Remaining energy of photon becomes max KE of photoelectron.
+- Brighter source means more photons (per second) and therefore more photoelectrons (per second).
+
+
+### 12.2.5 Wave–particle duality
+de Broglie’s hypothesis
+Low-energy electron diffraction experiments; qualitative explanation of the effect of a change of
+electron speed on the diffraction pattern.
+#### Electron diffraction
+- de Broglie hypothesis suggests that λ will decrease if the momentum increases
+- the momentum of the electrons depends on the accelerating pd
+- so increasing the pd results in a decreased ring diameter
+
+### 12.2.6 Electron microscopes
+- an atom has a diameter of approximately $1 \times 10^{-10}$m
+
+#### Transmission electron microscope (TEM)
+  - uses magnetic lenses to deflect moving electrons
+  - electrons through the middle of the lenses are undeviated
+  - electrons on the edges are deflected by magnetic fields toward the axis of the TEM
+  - condenser lens deflects the electrons into a wide parallel beam incident uniformly on the sample
+  - objective lens then forms an image of the sample
+  - projector lens then casts a second image onto the fluorescent screen
+
+<br>
+
+> - Wavelength depends on speed of the electrons, and the lower the wavelength gives greater the detail
+> - Emitted electrons come from a heated cathode and therefore have a speed distribution dependent on temperature
+> - The speed of the electrons is not always the same which causes different pathways through the lens and so aberration
+> - The sample thickness reduces the speed of the electrons increasing the wavelength and decreasing the detail
+
+#### Scanning tunnelling microscope (STM)
+- uses quantum tunnelling
+  - electrons on the surface may jump onto the tip of the probe, if
+  - ...they can overcome the potential barrier
+  - but not all electrons have sufficient energy to do so
+- tip of probe maintained a certain distance (about 1nm) above surface
+- when probe moves over higher layer of electrons, current increases
+- tip is moved higher to reduce current to original value
+- so the surface can be mapped by the position of the tip
+
+## 12.3 Special relativity
+### 12.3.1 The Michelson-Morley experiment
+### 12.3.2 Einstein’s theory of special relativity
+### 12.3.3 Time dilation
+### 12.3.4 Length contraction
+### 12.3.5 Mass and energy
