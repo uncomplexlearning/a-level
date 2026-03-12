@@ -1,3 +1,61 @@
+# The hypotheses
+> Remember the distinction between $X$ and $\bar{X}$ when calculating/checking CIs and estimators!!
+
+## $\chi^2$
+- reject if $>$ CV
+### Contingency table
+- $H_0$: ...are independent 
+- $H_1$: ...are not independent
+
+### Goodness-of-fit
+> Do not specify parameters unless explicitly requested in the question!
+- $H_0$: data is consientent with/fits the (named) distribution/ratio
+- $H_1$: data is not consientent with/does not fit the (named) distribution/ratio
+- To retain:
+    - Insufficient evidence that the (named) distribution is not a good fit/consistent/well modelled
+- To reject:
+    - Sufficient evidence that the (named) distribution is not a good fit/consistent/well modelled
+
+## Signed
+- use p-value from $B(n, 0.5)$
+### Single sample
+- $H_0$: $m = m_0$ 
+- $H_1$: $m > m_0\ (or <, \neq)$, where $m$ is the population median of...
+### Paired sample
+- $H_0$: $m_d = 0$ 
+- $H_1$: $m_d > 0\ (or <, \neq)$, where $m_d$ is the median difference between...
+
+## Wilcoxon signed rank
+- reject if $\leq$ CV
+### Single sample
+- $H_0$: $m = m_0$ 
+- $H_1$: $m > m_0\ (or <, \neq)$, where $m$ is the population median of...
+### Paired samples
+- $H_0$: $m_d = 0$ 
+- $H_1$: $m_d > 0\ (or <, \neq)$, where $m_d$ is the median difference between...
+
+## Wilcoxon rank sum
+- reject if $\leq$ CV
+### Two sample
+- $H_0$: $m_A = m_B$ 
+- $H_1$: $m_A > m_B\ (or <, \neq)$, where $m_A$ and $m_B$ are the median...
+
+## PMCC
+- reject if $>$ CV
+- $H_0$: $\rho = 0$ 
+- $H_1$: $\rho > 0 \ (or <, \neq)$, where $\rho$ is the population pmcc
+- (In)sufficient evidence of (positive/negative) correlation between...
+
+## Spearman's
+- reject if $>$ CV
+- $H_0$: no association between population ranks of...
+- $H_1$: (positive/negative) association between population ranks of...
+- (In)sufficient evidence of (positive/negative) association between...
+
+> Alternatively,
+> - $H_0$: $\rho_s = 0$ 
+> - $H_1$: $\rho_s > 0 \ (or <, \neq)$, where $\rho_s$ is the population Spearman's rank correlation coefficient
+
 # The fun probability question at the end
 
 ## 2018
