@@ -2949,18 +2949,49 @@ p = \frac{h}{\lambda} \\
 
 ## 12.3 Special relativity
 ### 12.3.1 The Michelson-Morley experiment
-Principle of the Michelson-Morley interferometer.
-Outline of the experiment as a means of detecting absolute motion.
-Significance of the failure to detect absolute motion.
-The invariance of the speed of light.
+- Semi-silvered glass block splits the beam of monochromatic light into two beams
+  - (The plane block ensures that both beams pass through the same thickness of glass and air)
+- Beams travel at right angles and return to combine at telescope with a path difference
+  - Observer sees interference pattern from two beams
+  - If the speed of light depends on the Earth's velocity through the ether, rotating the apparatus through 90° would cause the phase difference to change
+- Apparatus rotated 90 degrees and pattern observed
+  - If the ether existed, the pattern would shift
+    - path length/speed of light different depending on orientation relative to motion of apparatus
+  - However, there was no shift in pattern
+
+#### Significance
+- No evidence of ether
+- Speed of light is invariant
+  - all motion is relative/there isno absolute motion
+
 ### 12.3.2 Einstein’s theory of special relativity
 - The two postulates of Einstein’s theory of special relativity are
   - the laws of physics have the same form in all inertial frames
-  - the speed of light in free space is invariant
+    - ...so an observer in a frame will not able to tell if they are moving
+  - the speed of light in free space is invariant in all inertial frames
 
 #### Inertial frame of reference
+- reference frames which are non-accelerating
+
 ### 12.3.3 Time dilation
+- $t$ = time measured from an observer moving relative to the time being measured
+- $t_0$ = (proper time) time measrued from an observer at rest relative to the time being measured
+  
+> $t > t_0 \ \forall t$ <br>
+> the time must be measured at the same position (otherwise use length, it's easier!)
+
 ### 12.3.4 Length contraction
+- $L$ = length measured from an observer moving relative to the time being measured
+- $L_0$ = (proper length) time measrued from an observer at rest relative to the length being measured
+  
+> $L < L_0 \ \forall L$
+
+<br>
+
+> Both time dilation and length contraction are due to Einstein's 2nd postulate
+> - since both observers must have the same speed of light
+> - if L decreases, then t must increase, and vice versa
+
 ### 12.3.5 Mass and energy
 - Equivalence of mass and energy means that
   - if work is done on an object, its mass will increase
@@ -2971,4 +3002,11 @@ E = m c^2 \\
 E_k = mc^2 - m_0c^2 = \frac{m_0 c^2}{\sqrt{1 - \frac{v^2}{c^2}}} - m_0c^2
 ```
 
-Bertozzi’s experiment as direct evidence for the variation of kinetic energy with speed.
+#### Bertozzi’s experiment
+- Accelerate electrons close to the speed of light and measure their KE
+  - ...by using a strong electric field to accelerate the electrons
+    ```math
+    E_k = QV
+    ```
+  - ...and using the change in temperature to measure KE
+- which provides evidence for the variation of kinetic energy with speed
