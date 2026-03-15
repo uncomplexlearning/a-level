@@ -2734,19 +2734,24 @@ E = \Delta m c^2
 ### 12.1.2 Thermionic emission of electrons
 - In thermionic emission,
   - filament is heated due to current
-  - (free) electrons gain sufficient energy ($> \phi$) to leave the surface of the metal
+  - some (free) electrons gain sufficient energy ($> \phi$) to leave the surface of the metal
 - Electrons can then be accelerated by a pd (via an anode) to form an electron gun
 ```math
 work\ done\ = \frac{1}{2}mv^2 = eV
 ```
 ### 12.1.3 Specific charge of the electron
 #### Circular motion
+- Using a fine beam tube, which has
+  - low pressure gas, which collides with the electrons and de-excite to emit light of visible wavelengths
 ```math
 F = \frac{mv^2}{r} = Bev \\
 \implies v = \frac{Ber}{m} \\
 eV = \frac{1}{2}mv^2 \\
 \implies \frac{e}{m_e} = \frac{2V}{B^2r^2}
 ```
+
+> You (usually) can't measure the speed of the electrons, so you must rearrange the given equation to use the accelerating pd
+
 #### Magnetic and electric fields
 ```math
 F = eE = \frac{eV}{d} = Bev\\
@@ -2773,9 +2778,18 @@ F = \frac{mv^2}{r} = Bev\\
 ```math
 F = \frac{QV}{d} = mg
 ```
+
+#### Radius
+- Assuming the droplet is a perfect sphere,
+```math
+m = \frac{4}{3} \pi \rho r^3 \\
+mg = 6 \pi \eta r v \\
+\implies r = \sqrt{\frac{9 \eta v}{2 \rho g}}
+```
+
 #### Mass
-- When the electric field is turned off, the oil droplets fall at terminal velocity
-- Stoke's law for the viscous force on an oil droplet, assuming that it is:
+- When the electric field is turned off, the oil droplets fall at **terminal velocity**
+- Assuming air is a viscous fluid, we can use Stoke's law for the force on an oil droplet, assuming that the droplet is:
   - small
   - spherical
   - slow
@@ -2787,6 +2801,10 @@ F = 6 \pi \eta r v
 F = 6 \pi \eta r v = mg \\
 \implies m = \frac{\rho 4 \pi r^3}{3}
 ```
+- which is true if:
+  - Newton's laws apply
+  - upthrust is negligible
+
 ## 12.2 Wave-particle duality
 ### 12.2.1 Newton’s corpuscular theory of light
 #### Newton's corpuscular theory
@@ -2794,10 +2812,12 @@ F = 6 \pi \eta r v = mg \\
 - refraction
   - force acts attracting them to the denser medium
     - attraction only affects motion at the interface/boundary
-  - only one component of momentum changes at the interface
+  - only one component of momentum (perpendicular to the surface) changes at the interface
   - ...which causes the change in direction
 - reflection
   - corpuscles hit the reflective medium and experience a reaction force (Newton's 3rd law)
+- particles travel in a straight line
+  - ...so there is no diffraction (and the shadows of the image would be sharp)
 #### Huygens’ wave theory
 - wave front is incident on interface
 - there are secondary wavelets at wave fronts
@@ -2815,8 +2835,13 @@ F = 6 \pi \eta r v = mg \\
 > - No way of measuring speed of light or diffraction
 
 ### 12.2.2 Significance of Young’s double slits experiment
-Explanation for fringes in general terms, no calculations are expected.
-Delayed acceptance of Huygens’ wave theory of light.
+- When the light wave reaches a slit,
+  - each point at slit produces secondary wavelets
+  - wavelets overlap on the screen
+- There is path difference due to different distances between a point on the screen and the two slits
+- ...which introduces phase differences
+- Bright fringes form where waves arrive in phase
+- Dark fringes form where waves arrive in antiphase
 
 <br>
 
@@ -2834,20 +2859,37 @@ Delayed acceptance of Huygens’ wave theory of light.
 
 <br>
 
-Maxwell’s formula for the speed of electromagnetic waves in a vacuum
-- $\varepsilon_0$ relates to the electric field strength due to a charged object in free space
-- $\mu_0$ relates to the magnetic flux density due to a current-carrying wire in free space.
+- Maxwell’s formula for the speed of electromagnetic waves in a vacuum
+  ```math
+  c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}
+  ```
+  - $\varepsilon_0$ relates to the electric field strength due to a charged object in free space
+  - $\mu_0$ relates to the magnetic flux density due to a current-carrying wire in free space.
 
-<br>
-Hertz’s discovery of radio waves including measurements of the speed of radio waves.
+#### Hertz’s discovery of radio waves
+- Using a spark gap transmitter and loop detector, with a metal reflector
+- A stationary wave is created
+  - $\implies$ $\lambda$ = 2 × distance between adjacent maxima
+- ...which can then be used to determine the speed of EM waves
 
 #### Fizeau’s determination of the speed of light
 - Maxwell’s theory of electromagnetic waves predicted a value for the speed of EM waves
 - Fizeau’s result is close to the predicted speed $\implies$ light is an EM wave
 
 ### 12.2.4 The discovery of photoelectricity
-The ultraviolet catastrophe and black-body radiation.
-Planck’s interpretation in terms of quanta.
+#### Black-body radiation
+- Black-body radiation has a spectrum with peak depending on temperature of the emitted **only**
+
+#### Ultraviolet catastrophe
+- If EM radiaiton was a wave, it is predicted that a black body wouth emit an infinite amount of UV as its temperature increased
+- This did not match up with experimental evidence
+
+#### Planck’s interpretation 
+- The energy emitted by oscillators was quantised
+```math
+E = nhf
+```
+
 #### Obersverations
 - no photoelectric emission if incident light below threshold frequency
   - classical wave theory: light of any frequency should cause emission
@@ -2866,9 +2908,12 @@ Planck’s interpretation in terms of quanta.
 
 
 ### 12.2.5 Wave–particle duality
-de Broglie’s hypothesis
-Low-energy electron diffraction experiments; qualitative explanation of the effect of a change of
-electron speed on the diffraction pattern.
+#### de Broglie’s hypothesis
+- all matter exhibit wave-particle duality
+```math
+p = \frac{h}{\lambda} \\
+\implies \lambda = \frac{h}{\sqrt{2meV}}
+```
 #### Electron diffraction
 - de Broglie hypothesis suggests that λ will decrease if the momentum increases
 - the momentum of the electrons depends on the accelerating pd
@@ -2904,7 +2949,26 @@ electron speed on the diffraction pattern.
 
 ## 12.3 Special relativity
 ### 12.3.1 The Michelson-Morley experiment
+Principle of the Michelson-Morley interferometer.
+Outline of the experiment as a means of detecting absolute motion.
+Significance of the failure to detect absolute motion.
+The invariance of the speed of light.
 ### 12.3.2 Einstein’s theory of special relativity
+- The two postulates of Einstein’s theory of special relativity are
+  - the laws of physics have the same form in all inertial frames
+  - the speed of light in free space is invariant
+
+#### Inertial frame of reference
 ### 12.3.3 Time dilation
 ### 12.3.4 Length contraction
 ### 12.3.5 Mass and energy
+- Equivalence of mass and energy means that
+  - if work is done on an object, its mass will increase
+  - if an object in motion has energy greater than its rest energy, then the additional energy is kinetic
+
+```math
+E = m c^2 \\
+E_k = mc^2 - m_0c^2 = \frac{m_0 c^2}{\sqrt{1 - \frac{v^2}{c^2}}} - m_0c^2
+```
+
+Bertozzi’s experiment as direct evidence for the variation of kinetic energy with speed.
