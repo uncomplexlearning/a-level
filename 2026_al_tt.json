@@ -1,0 +1,64 @@
+{
+    "timetable": [
+        {
+            "datetime": "2026-05-14T13:30:00+01:00[Europe/London]",
+            "duration": "PT1H30M",
+            "paper_name": "OCR H245 Further Mathematics A: Y540/01 Pure Core 1"
+        },
+        {
+            "datetime": "2026-05-20T13:30:00+01:00[Europe/London]",
+            "duration": "PT2H00M",
+            "paper_name": "AQA 7408 Physics: 7408/1 Paper 1"
+        },
+        {
+            "datetime": "2026-05-21T13:30:00+01:00[Europe/London]",
+            "duration": "PT1H30M",
+            "paper_name": "OCR H245 Further Mathematics A: Y541/01 Pure Core 2"
+        },
+        {
+            "datetime": "2026-06-01T08:30:00+01:00[Europe/London]",
+            "duration": "PT2H00M",
+            "paper_name": "AQA 7408 Physics: 7408/2 Paper 2"
+        },
+        {
+            "datetime": "2026-06-03T13:30:00+01:00[Europe/London]",
+            "duration": "PT2H00M",
+            "paper_name": "OCR H240 Mathematics A: H240/01 Pure Mathematics"
+        },
+        {
+            "datetime": "2026-06-05T13:30:00+01:00[Europe/London]",
+            "duration": "PT1H30M",
+            "paper_name": "OCR H245 Further Mathematics A: Y542/01 Statistics"
+        },
+        {
+            "datetime": "2026-06-08T08:30:00+01:00[Europe/London]",
+            "duration": "PT2H00M",
+            "paper_name": "AQA 7408 Physics: 7408/3A Paper 3 & 7408/3BD Turning Points in Physics"
+        },
+        {
+            "datetime": "2026-06-10T13:30:00+01:00[Europe/London]",
+            "duration": "PT2H30M",
+            "paper_name": "AQA 7517 Computer Science: 7517/1A Paper 1 (C#)"
+        },
+        {
+            "datetime": "2026-06-11T13:30:00+01:00[Europe/London]",
+            "duration": "PT2H00M",
+            "paper_name": "OCR H240 Mathematics A: H240/02 Pure Mathematics and Statistics"
+        },
+        {
+            "datetime": "2026-06-16T13:30:00+01:00[Europe/London]",
+            "duration": "PT1H30M",
+            "paper_name": "OCR H245 Further Mathematics A: Y544/01 Discrete Mathematics"
+        },
+        {
+            "datetime": "2026-06-17T08:30:00+01:00[Europe/London]",
+            "duration": "PT2H30M",
+            "paper_name": "AQA 7517 Computer Science: 7517/1A Paper 2"
+        },
+        {
+            "datetime": "2026-06-18T13:30:00+01:00[Europe/London]",
+            "duration": "PT2H00M",
+            "paper_name": "OCR H240 Mathematics A: H240/03 Pure Mathematics and Mechanics"
+        }
+    ]
+}
