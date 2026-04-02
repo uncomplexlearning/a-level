@@ -263,6 +263,8 @@ header div a:hover {
 /* homepage */
 .homepage-container {
   width: 100%;
+  padding-left: 8em;
+  padding-right: 8em;
   min-height: 95vh;
   height: 100%;
   display: flex;
@@ -295,6 +297,13 @@ header div a:hover {
   user-select: none;
 }
 
+.homepage-container .small {
+  font-size: 2.8em;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  user-select: none;
+}
+
 .homepage-container .big-gradient {
   font-size: 4.3em;
   font-weight: 650;
@@ -305,6 +314,13 @@ header div a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   user-select: none;
+}
+
+.homepage-container .gradient {
+  background: -webkit-linear-gradient(left, #7000ff, #ff00f5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* temp */
@@ -390,5 +406,11 @@ header div a:hover {
 
   .markdown-content table {
     line-height: 1.5em;
+  }
+
+  .homepage-container {
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 0.8em;
   }
 }
