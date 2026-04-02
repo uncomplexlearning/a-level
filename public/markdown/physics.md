@@ -595,7 +595,7 @@ d \to u + \beta^- + \bar{\nu}_e
   - lines coorespond with the differences in energy levels/the coloured lines in an emission spectra
   - formed by passing white light through a cool gas under low pressure
 - Explaination
-  - an electron can gain energy and transition into a higher energy level from absorbing a single photon, if the photon energy equals the difference in energy levels
+  - an electron can gain energy and transition into a higher energy level from **absorbing a single photon**, if the photon energy equals the difference in energy levels
   - these excited electrons de-excite and emit a single photon
   - the emitted photons go off in all directions, so some wavelengths appear to be missing
 
@@ -2604,7 +2604,7 @@ E = \Delta m c^2
 #### Binding energy per nucleon
 - Nuclei with higher binding energy per nucleon are more stable
   - ...because more energy is required to separate the nucleons
-- Iron $^{56} FE$ has the highest binding energy per nucleon
+- Iron $^{56} Fe$ has the highest binding energy per nucleon
 
 <br>
 
@@ -2718,3 +2718,295 @@ E = \Delta m c^2
   - Can be produced continuously
   - Produces medical isotopes
   - Some can adjust output quickly
+
+# 12 Turning poins in physics
+## 12.1 The discovery of the electron
+### 12.1.1 Cathode rays
+- Production of cathode rays in a discharged tube is schieved by:
+  - ionisation of gas atoms by an strong electric field
+    - positive ions are attracted to the cathode
+    - required low pressure
+  - emission of electrons by the cathode
+  - electrons are accelerated towards the anode by a potential difference
+  - when the electron and positive ions collide, they become excited
+    - when the orbital electrons de-excite, visible photons are emitted
+
+### 12.1.2 Thermionic emission of electrons
+- In thermionic emission,
+  - filament is heated due to current
+  - some (free) electrons gain sufficient energy ($> \phi$) to leave the surface of the metal
+- Electrons can then be accelerated by a pd (via an anode) to form an electron gun
+```math
+work\ done\ = \frac{1}{2}mv^2 = eV
+```
+### 12.1.3 Specific charge of the electron
+#### Circular motion
+- Using a fine beam tube, which has
+  - low pressure gas, which collides with the electrons and de-excite to emit light of visible wavelengths
+```math
+F = \frac{mv^2}{r} = Bev \\
+\implies v = \frac{Ber}{m} \\
+eV = \frac{1}{2}mv^2 \\
+\implies \frac{e}{m_e} = \frac{2V}{B^2r^2}
+```
+
+> You (usually) can't measure the speed of the electrons, so you must rearrange the given equation to use the accelerating pd
+
+#### Magnetic and electric fields
+```math
+F = eE = \frac{eV}{d} = Bev\\
+\implies v = \frac{V}{Bd}
+```
+switching off the E field,
+```math
+F = \frac{mv^2}{r} = Bev\\
+\implies v = \frac{Ber}{m} \\
+\implies \frac{e}{m_e} = \frac{V}{rB^2d}
+```
+
+> Also with constant acceleration formulae for electric field only
+
+#### Significance
+- specific charge of the cathode rays was much larger than the hydrogen ion
+- ...so the cathode ray particles must have a very small mass or very high charge
+
+### 12.1.4 Principle of Millikan’s determination of the electronic charge
+#### Stationary force
+- Oil drops:
+  - are ionised
+  - do not evaporate quickly, so the mass remains constant
+```math
+F = \frac{QV}{d} = mg
+```
+
+#### Radius
+- Assuming the droplet is a perfect sphere,
+```math
+m = \frac{4}{3} \pi \rho r^3 \\
+mg = 6 \pi \eta r v \\
+\implies r = \sqrt{\frac{9 \eta v}{2 \rho g}}
+```
+
+#### Mass
+- When the electric field is turned off, the oil droplets fall at **terminal velocity**
+- Assuming air is a viscous fluid, we can use Stoke's law for the force on an oil droplet, assuming that the droplet is:
+  - small
+  - spherical
+  - slow
+```math
+F = 6 \pi \eta r v
+```
+- then,
+```math
+F = 6 \pi \eta r v = mg \\
+\implies m = \frac{\rho 4 \pi r^3}{3}
+```
+- which is true if:
+  - Newton's laws apply
+  - upthrust is negligible
+
+## 12.2 Wave-particle duality
+### 12.2.1 Newton’s corpuscular theory of light
+#### Newton's corpuscular theory
+- light is made up of corpuscles (particles), which are elastic spheres
+- refraction
+  - force acts attracting them to the denser medium
+    - attraction only affects motion at the interface/boundary
+  - only one component of momentum (perpendicular to the surface) changes at the interface
+  - ...which causes the change in direction
+- reflection
+  - corpuscles hit the reflective medium and experience a reaction force (Newton's 3rd law)
+- particles travel in a straight line
+  - ...so there is no diffraction (and the shadows of the image would be sharp)
+#### Huygens’ wave theory
+- wave front is incident on interface
+- there are secondary wavelets at wave fronts
+- refraction
+  - wavelets travel more slowly in a heavier medium
+  - different parts of the wave front cross the interface at different times
+  - ...so the slowing down of the wavelets causes the change in direction
+- reflection
+  - each point of reflection becomes a new point source for wavelets
+
+<br>
+
+> Newton's theory was more accepted due to:
+> - Newton being widely respected for motion
+> - No way of measuring speed of light or diffraction
+
+### 12.2.2 Significance of Young’s double slits experiment
+- When the light wave reaches a slit,
+  - each point at slit produces secondary wavelets
+  - wavelets overlap on the screen
+- There is path difference due to different distances between a point on the screen and the two slits
+- ...which introduces phase differences
+- Bright fringes form where waves arrive in phase
+- Dark fringes form where waves arrive in antiphase
+
+<br>
+
+> Huygen's theory was now accepted:
+> - Light was observed to travel slower in denser media
+> - Light was observed to show interference effects that cannot be explained using corpuscular theory
+
+### 12.2.3 Electromagnetic waves
+- Electromagnetic waves consist of an electric field and a magnetic field, which are
+  - perpendicular to each other
+  - perpendicular to the direction of motion
+  - in phase with each other
+  - formed by each other (self propagation)
+    - hence EM waves do not require a medium to travel
+
+<br>
+
+- Maxwell’s formula for the speed of electromagnetic waves in a vacuum
+  ```math
+  c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}
+  ```
+  - $\varepsilon_0$ relates to the electric field strength due to a charged object in free space
+  - $\mu_0$ relates to the magnetic flux density due to a current-carrying wire in free space.
+
+#### Hertz’s discovery of radio waves
+- Using a spark gap transmitter and loop detector, with a metal reflector
+- A stationary wave is created
+  - $\implies$ $\lambda$ = 2 × distance between adjacent maxima
+- ...which can then be used to determine the speed of EM waves
+
+#### Fizeau’s determination of the speed of light
+- Maxwell’s theory of electromagnetic waves predicted a value for the speed of EM waves
+- Fizeau’s result is close to the predicted speed $\implies$ light is an EM wave
+
+### 12.2.4 The discovery of photoelectricity
+#### Black-body radiation
+- Black-body radiation has a spectrum with peak depending on temperature of the emitted **only**
+
+#### Ultraviolet catastrophe
+- If EM radiaiton was a wave, it is predicted that a black body wouth emit an infinite amount of UV as its temperature increased
+- This did not match up with experimental evidence
+
+#### Planck’s interpretation 
+- The energy emitted by oscillators was quantised
+```math
+E = nhf
+```
+
+#### Obersverations
+- no photoelectric emission if incident light below threshold frequency
+  - classical wave theory: light of any frequency should cause emission
+- photoelectric emission is instantaneous
+  - classical wave theory: energy is spread and needs time to accumulate
+- (photoelectrons have a range of KE from zero to max value)
+- number of photoelectrons per second is proportional to intensity of incident radiation
+  - classical wave theory: intensity of wave should determine whether photoelectron emitted
+
+#### Einstein's explanation
+- Light is made of photons
+- Photoelectrons due to one photon interacting with one electron in surface of metal.
+- Minimum energy (work function of metal) needed for electron to be emitted related to a threshold frequency
+- Remaining energy of photon becomes max KE of photoelectron.
+- Brighter source means more photons (per second) and therefore more photoelectrons (per second).
+
+
+### 12.2.5 Wave–particle duality
+#### de Broglie’s hypothesis
+- all matter exhibit wave-particle duality
+```math
+p = \frac{h}{\lambda} \\
+\implies \lambda = \frac{h}{\sqrt{2meV}}
+```
+#### Electron diffraction
+- de Broglie hypothesis suggests that λ will decrease if the momentum increases
+- the momentum of the electrons depends on the accelerating pd
+- so increasing the pd results in a decreased ring diameter
+
+### 12.2.6 Electron microscopes
+- an atom has a diameter of approximately $1 \times 10^{-10}$m
+
+#### Transmission electron microscope (TEM)
+  - uses magnetic lenses to deflect moving electrons
+  - electrons through the middle of the lenses are undeviated
+  - electrons on the edges are deflected by magnetic fields toward the axis of the TEM
+  - condenser lens deflects the electrons into a wide parallel beam incident uniformly on the sample
+  - objective lens then forms an image of the sample
+  - projector lens then casts a second image onto the fluorescent screen
+
+<br>
+
+> - Wavelength depends on speed of the electrons, and the lower the wavelength gives greater the detail
+> - Emitted electrons come from a heated cathode and therefore have a speed distribution dependent on temperature
+> - The speed of the electrons is not always the same which causes different pathways through the lens and so aberration
+> - The sample thickness reduces the speed of the electrons increasing the wavelength and decreasing the detail
+
+#### Scanning tunnelling microscope (STM)
+- uses quantum tunnelling
+  - electrons on the surface may jump onto the tip of the probe, if
+  - ...they can overcome the potential barrier
+  - but not all electrons have sufficient energy to do so
+- tip of probe maintained a certain distance (about 1nm) above surface
+- when probe moves over higher layer of electrons, current increases
+- tip is moved higher to reduce current to original value
+- so the surface can be mapped by the position of the tip
+
+## 12.3 Special relativity
+### 12.3.1 The Michelson-Morley experiment
+- Semi-silvered glass block splits the beam of monochromatic light into two beams
+  - (The plane block ensures that both beams pass through the same thickness of glass and air)
+- Beams travel at right angles and return to combine at telescope with a path difference
+  - Observer sees interference pattern from two beams
+  - If the speed of light depends on the Earth's velocity through the ether, rotating the apparatus through 90° would cause the phase difference to change
+- Apparatus rotated 90 degrees and pattern observed
+  - If the ether existed, the pattern would shift
+    - path length/speed of light different depending on orientation relative to motion of apparatus
+  - However, there was no shift in pattern
+
+#### Significance
+- No evidence of ether
+- Speed of light is invariant
+  - all motion is relative/there isno absolute motion
+
+### 12.3.2 Einstein’s theory of special relativity
+- The two postulates of Einstein’s theory of special relativity are
+  - the laws of physics have the same form in all inertial frames
+    - ...so an observer in a frame will not able to tell if they are moving
+  - the speed of light in free space is invariant in all inertial frames
+
+#### Inertial frame of reference
+- reference frames which are non-accelerating
+
+### 12.3.3 Time dilation
+- $t$ = time measured from an observer moving relative to the time being measured
+- $t_0$ = (proper time) time measrued from an observer at rest relative to the time being measured
+  
+> $t > t_0 \ \forall t$ <br>
+> the time must be measured at the same position (otherwise use length, it's easier!)
+
+### 12.3.4 Length contraction
+- $L$ = length measured from an observer moving relative to the time being measured
+- $L_0$ = (proper length) time measrued from an observer at rest relative to the length being measured
+  
+> $L < L_0 \ \forall L$
+
+<br>
+
+> Both time dilation and length contraction are due to Einstein's 2nd postulate
+> - since both observers must have the same speed of light
+> - if L decreases, then t must increase, and vice versa
+
+### 12.3.5 Mass and energy
+- Equivalence of mass and energy means that
+  - if work is done on an object, its mass will increase
+  - if an object in motion has energy greater than its rest energy, then the additional energy is kinetic
+
+```math
+E = m c^2 \\
+E_k = mc^2 - m_0c^2 = \frac{m_0 c^2}{\sqrt{1 - \frac{v^2}{c^2}}} - m_0c^2
+```
+
+#### Bertozzi’s experiment
+- Accelerate electrons close to the speed of light and measure their KE
+  - ...by using a strong electric field to accelerate the electrons
+    ```math
+    E_k = QV
+    ```
+  - ...and using the change in temperature to measure KE
+- which provides evidence for the variation of kinetic energy with speed
