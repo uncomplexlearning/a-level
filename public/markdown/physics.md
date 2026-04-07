@@ -2259,6 +2259,157 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 
 - Appreciation of how knowledge and understanding of the behaviour of a gas has changed over time.
 
+# 7 Fields and their consequences
+## 7.1 Fields
+- A **force field** 
+  - is a region in which a body experiences a non-contact force
+  - arises from the interaction of:
+    - mass (gravitational fields)
+    - static charge (electric fields)
+    - moving charges (electric and magnetic fields)
+  - can be represented by a vector
+
+<br>
+
+- Both electic fields and gravitational fields have:
+  - inverse-square force laws
+  - field lines
+  - the concept of potential
+  - equipotential surfaces
+- However,
+  - masses always attract, but charges may attract or repel
+
+## 7.2 Gravitational fields
+### 7.2.1 Newton's law
+- Gravity is a universal attractive force acting between all matter
+- which, for two point masses, is directly proportional to the product of the masses and inversely proportional to the square of distance between the masses
+```math
+F = \frac{G m_1 m_2}{r^2}
+```
+
+<br>
+
+- Gravity:
+  - always acts towards the centre of mass, so cannot be reuplsive
+  - has infinite range
+
+> Here, we consider $r$ to be the distance between two **point** masses; so if a distance between the surface of two objects are given, the radius must be added
+
+### 7.2.2 Gravitational field strength
+- A **gravitational field** is a region in which a mass experiences a force due to another mass
+- The gravitational field **strength** $g$ is the force per unit mass at a point in a gravitational field
+  ```math
+  g = \frac{F}{m} \\
+  \implies g = \frac{GM}{r^2}
+  ```
+  from Newton's law of gravitation
+
+### 7.2.3 Gravitational potential
+- Gravitational **potential** $V$ is the work done per unit mass to bring a test mass from infinity to a point in a gravitational filed
+- We define $V$ to be zero at infinity, so work is done on a mass to increase its height
+  - This means that $V$ will always be negative on a mass
+  - ...hence the negative sign 
+- For a radial field,
+```math
+V = -\frac{GM}{r}
+```
+> $V$ is scalar!
+
+<br>
+
+- Gravitational potential difference is the difference in $V$ between two points
+- ...and the work done $\Delta W$ on a mass against a gravitational field is:
+```math
+\Delta W = m \Delta V
+```
+> This is the change in GPE
+
+- **Equipotential surfaces** are surfaces which have the same gravitational potential
+  - they are:
+    - perpendicular to the field lines
+    - denser at areas of higher potential
+- No work is done when moving along an equipotential surface
+  - $\Delta V$ = 0, so no work is being done against the gravitational field
+
+#### Graphical representations
+- In a graph of $V$ against $r$, the gradient at a point is $g$
+```math
+g = -\frac{\Delta V}{\Delta r}
+```
+- In a graph of $g$ against $r$, the area under the curve is $\Delta V$
+```math
+g = \frac{GM}{r^2} \\
+\implies g = \frac{V}{r}
+```
+
+### 7.2.4 Orbits of planets and satellites
+- For a circular orbit, the gravitational force provides the centripetal force
+```math
+\frac{GMm}{r^2} = \frac{mv^2}{r} \\
+\implies v^2 = \frac{GM}{r}
+```
+```math
+v^2 = \frac{GM}{r} = \left(\frac{2 \pi r}{T}\right)^2 \\
+\implies T^2 = \frac{4 \pi^2 r^3}{GM}\\
+\implies T^2 \propto r^3
+```
+
+#### Energy
+- The total energy of an orbiting satellite is **constant**, and
+```math
+total\ energy = kinetic\ energy + gravitational\ potential\ energy \\
+\implies E = \frac{1}{2}mv^2 - \frac[GMm]{r} \\
+\implies E = \frac[GMm]{2r} - \frac[GMm]{r} \\
+\implies E = -\frac[GMm]{2r} \\
+```
+  - if the orbital radius of a satellite decreases:
+    - KE increases
+    - GPE decreases
+
+#### Escape velocity
+- The escape velocity is:
+  - the minimum speed that will allow an object to leave a gravitational field with no further energy
+  - the same for all masses in a field
+
+```math
+\frac{1}{2}mv^2 = \frac{GMm}{r}
+\implies v = \sqrt{\frac{2GM}{r}}
+```
+
+#### Synchronous orbits
+- Synchronous orbits are orbits where the period of the satellite is equal to the period of the planet
+- Geosynchronous orbits are synchronous orbits on Earth
+- Geostationary orbits are geosynchronous orbits, which
+  - have a period of 24 hours
+  - must be in the plane of the equator
+  - stays above one point on the surface
+  - are used for:
+    - telecommunications
+
+<br>
+
+- Low orbits are close to the Earth's surface
+  - they are used for:
+    - weather observation
+    - military
+
+## 7.3 Electric fields
+### 7.3.1 Coulomb's law
+### 7.3.2 Electric field strength
+### 7.3.3 Electric potential
+## 7.4 Capacitance
+### 7.4.1 Capacitance
+### 7.4.2 Parallel plate capacitor
+### 7.4.3 Energy stored by a capacitor
+### 7.4.4 Capacitor charge and discharge
+## 7.5 Magnetic fields
+### 7.5.1 Magnetic flux density
+### 7.5.2 Moving charges in a magnetic field
+### 7.5.3 Magnetic flux and flux linkage
+### 7.5.4 Electromagnetic induction
+### 7.5.5 Alternating currents
+### 7.5.6 The operation of a transformer
+
 # 8 Nuclear physics
 ## 8.1 Radioactivity
 ### 8.1.1 Rutherford scattering
@@ -2407,9 +2558,9 @@ N = N_0 e^{- \lambda t}
 - when $t = T_{\frac{1}{2}}$, $N$ should be half of $N_0$ by definition, so
 ```math
 \frac{1}{2}N_0 = N_0 e^{- \lambda T_{\frac{1}{2}}} \\
-\frac{1}{2} = e^{- \lambda T_{\frac{1}{2}}} \\
-ln \frac{1}{2} = - \lambda T_{\frac{1}{2}} \\
-\lambda T_{\frac{1}{2}} = ln 2
+\implies  \frac{1}{2} = e^{- \lambda T_{\frac{1}{2}}} \\
+\implies  ln \frac{1}{2} = - \lambda T_{\frac{1}{2}} \\
+\implies  \lambda T_{\frac{1}{2}} = ln 2
 ```
 - we get
 ```math
@@ -2579,7 +2730,7 @@ E = \Delta m c^2
 > \implies E = 1.49242 \times 10^{-10} \ J \\
 > = 931.494893 \ MeV
 > ```
-> $\therefore 1 \ u \approx 931.5 \ MeV$, which is a useful result not given on the formula sheet (but is on the spec)
+> $\therefore 1 \ u \approx 931.5 \ MeV$, which is a useful result (but is hiding on the formula sheet)
 
 #### Nuclear fission 
 - A larger nucleus is split into two smaller daughter nuclei, along with several neutrons
@@ -2587,10 +2738,10 @@ E = \Delta m c^2
 
 <br>
 
-- The daughter nuclei have a higher binding energy per nucleon, so energy is released
+- The daughter nuclei have higher binding energy per nucleon, so energy is released
 
 #### Nuclear fusion
-- Two smaller nuclei join together toform one larger nucleus
+- Two smaller nuclei join together to form one larger nucleus
 - For fusion to occur, much higher (input) kinetic energy is required to overcome:
   - electrostatic replusion between protons
   - strong nuclear force between nucleons
