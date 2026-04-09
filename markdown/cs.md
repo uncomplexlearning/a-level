@@ -1196,11 +1196,11 @@ A - B = A \backslash B = \{x | x \in A \wedge x \notin B\}
 
 #### Metacharacters
 
-- \* (0 or more repetitions)
-- \+ (1 or more repetitions)
-- ? (0 or 1 repetitions, ie optional)
+- \* (0 or more of the preceding character)
+- \+ (1 or more of the preceding character)
+- ? (0 or 1 of the preceding character, ie optional)
 - | (alternation, ie or)
-- ( ) to group regular expressions.
+- ( ) to group regular expressions
 
 ### 4.2.4 Regular language
 
@@ -2318,12 +2318,12 @@ Exponent
 - a moving mirror directs a laser beam at the drum
 - ...as the laser moves, areas struck by the laser loses charge
 - ...the negative bitmap is drawn on the paper
-• an opposite charge (to the drum) is applied to the toner
-• toner sticks to drum based on charge
-• and the paper is passed over the drum, where the toner transfers to it
-  • a oppositely charged (to the toner) transfer roller assists transfer of toner from drum to paper
-• a heater fuses the toner onto paper
-• for colour printing four different colour toners (CMYK) are required
+- an opposite charge (to the drum) is applied to the toner
+- toner sticks to drum based on charge
+- and the paper is passed over the drum, where the toner transfers to it
+  - a oppositely charged (to the toner) transfer roller assists transfer of toner from drum to paper
+- a heater fuses the toner onto paper
+- for colour printing four different colour toners (CMYK) are required
 
 #### RFID
 
