@@ -1318,7 +1318,7 @@ y = log_{10} x
 #### In order,
 
 ```math
-O(1) < O(log n) < O(n) < O(n log n) < O(n^c) < O(2^n) < O(n!)
+O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2^n) \subset O(n!)
 ```
 
 ### 4.4.4 Limits of computation
@@ -3240,3 +3240,56 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
     - Tracks conflicts between transactions
     - Applies transactions in an order that avoid conflicts
     - Abandons transactions if they cannot be completed
+
+# 11 Big Data
+## 11.1 Big Data
+
+# 12 Fundamentals of functional programming
+## 12.1 Functional programming paradigm
+### 12.1.1 Function type
+- A function $f$ has a type signature representing its domain $A$ and co-domain $B$
+  ```
+  f: A \mapsto B
+  ```
+- The domain and co-domain are always subsets of objects in some data type
+
+> Note that if a function takes two (or more) arguments, it only has one domain, which would be the cartesian product of the domains of the two arguments
+
+### 12.1.2 First-class object
+- First-class objects are objects which:
+  - appear in expressions
+  - are assigned to variables
+  - are used as arguments
+  - are returned by functions
+- Both imperative and functional languages have first-class objects
+
+### 12.1.3 Function application
+- Function application is the process of providing a function with inputs
+
+### 12.1.4 Partial function application
+- Partial function application is the process where:
+  - a function is applied to one of its argument
+  - a new function is output, which always does what the original function and paramater does
+
+### 12.1.5 Composition of functions
+- Function composition combines two functions $f$ and $g$ to form a new function $f \circ g$
+  - $g$ is applied first
+  - the $f$ is then applied to the result
+
+## 12.2 Writing functional programs
+### 12.2.1 Functional language programs
+#### Higher order functions
+- `map` - applies a given function to each element of a list, returning a list of results
+- `filter` - processes a data structure to produce a new data structure containing exactly those elements of the original data structure that match a given condition
+  - this may be out-of-order
+- `fold` or `reduce`
+  - reudces a list of values to one value by applying a combining function (with an initial value)
+    - a combining function is one that takes 2 or more arguments and returns one output
+
+> In most functional languages, there exists at least 2 types of folding, including `foldl` and `foldr`
+
+## 12.3 Lists in functional programming
+### 12.3.1 List processing
+- In functional languages, lists are represented as a concatenation of:
+  - head (e.g. `x`)
+  - tail (e.g. `xs`)

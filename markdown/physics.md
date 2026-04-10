@@ -61,9 +61,15 @@
   - recalibrate instruments
   - use a different method
 
+> Common systematic errors include:
+> - not reading from the bottom of the meniscus
+> - parallax error
+
 #### Zero errors
 
 - A reading is given when the true value is 0
+
+> You should always ensure any stopwatches, counters or balances are zeroed
 
 #### Precision
 
@@ -115,6 +121,8 @@ percentage\ uncertainty = \frac{best\ gradient - worst\ gradient}{best\ gradient
   - add the percentage uncertainties
 - To exponentiate data
   - multiply the percentage uncertainty by the power
+
+> To reduce percentage uncertainty, collect a larger range of values
 
 ## 1.3 Estimation of physical quantities
 
@@ -1268,8 +1276,8 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 > - refer to laws explicitly
 > - refer to the forces explicitly (by name, e.g. weight)
 > - state the directions of all forces
-> - to displace a fluid, force must be exerted (2nd law)
-> - and so there will be a equal and opposite force from the fluid (3rd law)
+> - to displace (i.e. accelerate) a fluid, force must be exerted (2nd law)
+> - and so there will be a equal and opposite force from the fluid, or a drag force (3rd law)
 > - so the resultant force...
 
 ### 4.1.6 Momentum
@@ -2369,6 +2377,8 @@ total\ energy = kinetic\ energy + gravitational\ potential\ energy \\
     - KE increases
     - GPE decreases
 
+> If a drag force does work on the satellite, this leads to an decrease in total energy, which leads to a decrease in radius
+
 #### Escape velocity
 - The escape velocity is:
   - the minimum speed that will allow an object to leave a gravitational field with no further energy
@@ -2908,7 +2918,7 @@ E = \Delta m c^2
 
 <br>
 
-- The daughter nuclei have higher binding energy per nucleon, so energy is released
+- The daughter nuclei have higher binding energy per nucleon, so energy is released as KE
 
 #### Nuclear fusion
 - Two smaller nuclei join together to form one larger nucleus
@@ -2919,7 +2929,7 @@ E = \Delta m c^2
 
 <br>
 
-- The larger nucleus has a much higher binding energy per nucleon, so energy is released
+- The larger nucleus has a much higher binding energy per nucleon, so energy is released as KE
   - more energy is released by fusion than fission
 
 #### Binding energy per nucleon
