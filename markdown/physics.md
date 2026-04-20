@@ -2584,11 +2584,196 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
 
 ## 7.5 Magnetic fields
 ### 7.5.1 Magnetic flux density
+- A **magnetic field** (B field) is a region in which a magnetic pole experiences a force, and is created by:
+  - a moving charge
+  - a permanent magnet
+
+<br>
+
+- The **magnetic flux density** $B$ of a magnetic field is the number of magnetic flux lines per unit area
+- $B$ has unit Tesla, $T$, which is defined as the strength of the magnetic field (flux density) that produces a force of 1N in a wire of length 1m with 1A of current 
+
+<br>
+
+- The force $F$ on a current-carrying wire in a magnetic field is
+  ```math
+  F = BIl
+  ```
+  when the field is perpendicular to the current
+
+> If the field is not perpendicular to the current, then $F = BIl sin \theta$ where $\theta$ is the angle between the wire and the field
+> The maximum force occurs when the current is perpendicular to the field
+
+#### Field lines
+- From north to south
+- Never cross
+
+#### Fleming's left hand rule
+- The force, field and current are all perpendicular to each other, so:
+  - thu**m**b - **m**otion
+  - **f**irst finger - **f**ield
+  - se**c**ond finger = conventional **c**urrent
+
 ### 7.5.2 Moving charges in a magnetic field
+- A moving charge produces a magnetic field which interacts with other magnetic fields
+- The force on charged particles moving in a magnetic field is
+  ```math
+  F = BQv
+  ```
+  where the field is perpendicular to velocity
+
+> If the field is not perpendicular to velocity, then $F = BQv sin \theta$ where $\theta$ is the angle between the velocity and the field
+> The maximum force occurs when the velocity is perpendicular to the field
+
+- Recall that this is based on the direction of conventional current
+- ...so for a positive charge, the current is in the same direction
+- ...but for a negative charge, the current is in the opposite direction
+
+<br>
+
+- In a uniform magnetic field, charged particles will travel in a circular path
+  - since the magnetic force is perpendicular to $v$
+```math
+\frac{mv^2}{r} = BQv \\
+\implies r = \frac{mv}{BQ}
+```
+
+#### Cyclotrons
+- Cyclotrons are a type of particle accelerator consisting of:
+  - two hollow, semicircular "dees" separated by a gap
+  - a uniform magnetic field
+    - which leads to circular motion
+  - an alternating electric field
+    - which switches polarity when the particle crosses the gap so it is accelerated
+- ...so the particles are only accelerated when they cross a gap, but travel at a constant radius an speed within each dee
+
 ### 7.5.3 Magnetic flux and flux linkage
+
+- **Magnetic flux** $\phi$ is the product of magnetic flux density and the cross-sectional area perpendicular to the magnetic field
+  - and has units Webers (Wb)
+
+```math
+\phi = BA
+```
+
+- **Magnetic flux linkage** $N \phi$ is the product of the magnetic flux and the number of turns of a coil
+  - and has units Weber turns (W turns)
+
+```math
+N \phi = BAN
+```
+
+- Flux and flux linkage passing through a rectangular coil rotated in a magnetic field is
+```math
+\phi = AN cos \theta \\
+N \phi = BAN cos \theta = BAN cos \omega t
+```
+
 ### 7.5.4 Electromagnetic induction
+- An emf is induced when:
+  - a conductor moves through a magnetic field
+  - the direction of a magnetic field through a coil changes
+- because
+  - there is a change in magnetic flux
+  - ...work is done to move the conducto
+  - ...which is converted into electrical energy
+- This emf becomes an induced current when the conductor is attached to a complete circuit
+
+#### Faraday's law
+The magnitude of the induced emf is directly proportional to the rate of change of magnetic flux linkage
+```math
+\varepsilon = N \frac{\Delta \Phi}{\Delta t}
+```
+
+#### Lenz's law
+The direction of the induced emf (when there is a change of flux linkage) is such that it will produce effects to oppose the change (of flux) that is producing it
+
+> If a magnetic moves through a coil, an emf is induced <br>
+> A current is induced, so the coil has a magnetic field <br>
+> and this field acts in the opposite direction to the magnetic field of the coil
+
+#### Straight conductor
+- When a conductor of length $L$ moves perpendicular to a magnetic field at a constant velocity $v$,
+```math
+s = v\Delta t \\
+\implies A = Lv\Delta t \\
+\implies \Delta \Phi = BLv\Delta t \\
+\varepsilon = N \frac{\Delta \Phi}{\Delta t} \\
+\implies \varepsilon = \frac{BLv\Delta t}{\Delta t} \\
+\implies \varepsilon = BLv
+```
+
+#### Rotating coil
+- When a coil is rotating uniformly in a magnetic field,
+  - the emf induced is alternating
+```math
+\varepsilon = \frac{d}{dt} \left( BAN cos \omega t \right) \\
+= BAN \omega sin \omega t
+```
+- When the plane of the area of the coil is parallel to the field, the emf is at a maximum
+  - the number of field lines cut per second is the greatest
+
 ### 7.5.5 Alternating currents
+- An **alternating current** isa current which periodically varies between a positive to a negative value
+> We will only see sinusoidal AC
+- The electrons in an AC move back and forth with SHM
+```math
+peak = \frac{peak\ to\ peak}{2}
+```
+
+<br>
+
+- The root mean square (rms) value of $I$ or $V$ represents the the equivalent DC that produces the same heating effect/power
+
+```math
+I_{rms} = \frac{I_0}{\sqrt{2}} \\
+V_{rms} = \frac{V_0}{\sqrt{2}} \\ 
+```
+
+#### Applications
+- UK household mains is 230V (rms) at 50Hz
+- AC can be transformed to have lower transmission current
+  - which reduces power loss due to resistance
+
+#### Oscilloscopes
+- Time-base
+- Voltage-gain
+
 ### 7.5.6 The operation of a transformer
+- A **transformer** changes high alternating voltage to lower alternating voltage and vice versa
+- ...and is made of 3 parts:
+  - core
+    - provides greater linkage of magnetic flux from the primary coil to the secondary coil compared to an air core
+  - primary coil
+    - an AC is applied to the coil
+    - ...which creates an changing magnetic field inside the core 
+    - $\implies$ changing $N \Phi$
+  - secondary coil
+    - a conductor which has a changing magnetic flux linking with it 
+    - ...which produces an induced emf that is determined by the number of turns in the primary and the secondary coils
+
+```math
+\frac{N_s}{N_p} = \frac{V_s}{V_p}
+```
+
+#### Efficiency
+- Transformers are not 100% efficient:
+  - induced eddy currents
+  - reversal of magnetism
+  - poor insulation between 
+```math
+efficiency = \frac{I_s V_s}{I_p V_p}
+```
+- To make the core more efficient, we:
+  - use soft iron to allow easy magnetisation (and demagnetisation)
+  - laminating the core with 
+  - using a core with high resistivity
+  - using thick wires
+  - using a core which allowes all the flux to link to the secondary coil
+
+#### Eddy currents
+- A changing magnetic field acts against the field which induced the current (due to the current)
+- ...which creates a current
 
 # 8 Nuclear physics
 ## 8.1 Radioactivity
