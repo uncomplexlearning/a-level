@@ -146,18 +146,18 @@ percentage\ uncertainty = \frac{best\ gradient - worst\ gradient}{best\ gradient
 
 #### Specific charge
 
-- The ratio of the total charge of a particle to its mass
-- in an ion:
+- **Specific charge** is the ratio of the total charge of a particle to its mass
+  - in an ion:
 
-```math
-specific\ charge = \frac{number\ of\ electrons\ added}{mass}
-```
+  ```math
+  specific\ charge = \frac{number\ of\ electrons\ added}{mass}
+  ```
 
-- in a nucleus:
+  - in a nucleus:
 
-```math
-specific\ charge = \frac{charge\ of\ protons}{mass}
-```
+  ```math
+  specific\ charge = \frac{charge\ of\ protons}{mass}
+  ```
 
 > The specific charge of the electron and proton are given in the data and formula sheet
 
@@ -167,17 +167,17 @@ specific\ charge = \frac{charge\ of\ protons}{mass}
 ^{A}_{Z}\,X
 ```
 
-- where A is the nucleon number
+  - where A is the nucleon number
 
-  - also known as the mass number
+    - also known as the mass number
 
-- and Z is the proton number
-  - also known as the atomic number
+  - and Z is the proton number
+    - also known as the atomic number
 
 #### Isotopes
 
 - Elements are determined by the number of protons in their atoms
-- Isotopes are atoms of an element with a different number of neutrons
+- **Isotopes** are atoms of an element with a different number of neutrons
 
 </br>
 
@@ -192,16 +192,16 @@ Relative\ atomic\ mass\ A_r = \frac{\sum isotope\ abundance\times isotope\ mass}
 
 ### 2.1.2 Stable and unstable nuclei
 
-- in a nucleus,
+- In a nucleus,
   - electrostatic force repel due to the charge of protons
-    - infinite range, but $\propto \frac{1}{x^2}$
+    - infinite range, but intensity is $\propto \frac{1}{x^2}$
   - gravitational force attract due to the mass of the nucleons
     - very weak
   - strong nuclear force acts between nucleons
 
 #### Strong nuclear force
 
-- acts between quarks
+- The SNF acts between quarks
 
   > There are actually two "types" of the strong interaction
   > | interaction | range | particle | carrier | result
@@ -209,13 +209,13 @@ Relative\ atomic\ mass\ A_r = \frac{\sum isotope\ abundance\times isotope\ mass}
   > | strong | < 0.8fm | quark | gluon | hadron
   > | residual strong | 1 - 3fm | hadron | meson (π) | nucleus
 
-- is stronger than the electrostatic force
+- ...and is stronger than the electrostatic force
 
-  - ...and so holds the nucleus together
+  - ...so holds the nucleus together
 
-- consists of:
+- ...and consists of:
   - very-short range repulsion closer than approximately 0.5 fm (0.5 x 10<sup>-15</sup> m)
-    - equilibrium at 0 force occurs at approximately 0.5 fm
+    - equilibrium with 0 resultant force occurs at approximately 0.5 fm
   - short-range attraction up to approximately 3 fm (3 x 10<sup>-15</sup> m)
     - the maximum attractive force occurs at approximately 1 fm
       - this is typical nuclear separation
@@ -227,7 +227,9 @@ Relative\ atomic\ mass\ A_r = \frac{\sum isotope\ abundance\times isotope\ mass}
 
 - Some nuclei are unstable because they have too many protons, neutrons or both
 - ...and so they become more stable through radioactive decay
-  </br>
+
+</br>
+
 - Alpha decay
   - occurs in large nuclei with too many nucleons
   - emits an alpha particle and changes into a different element
@@ -252,24 +254,24 @@ Relative\ atomic\ mass\ A_r = \frac{\sum isotope\ abundance\times isotope\ mass}
 
 #### Neutrinos
 
-- subatomic particles with
+- **Neutrinos** are subatomic particles with
   - no charge
   - negligible mass
-- hypothesised to account for conservation of energy in beta decay
+
+- They were hypothesised to account for conservation of energy in beta decay
   - alpha particles have discrete energy levels
   - but beta particles do not
-    - ...because their energy in shared with nutrinos
+    - ...because their energy in shared with neutrinos
 
 ### 2.1.3 Particles, antiparticles and photons
 
 #### Antimatter
 
-- for every type of matter, there is a corresponding antimatter
-- matter and antimatter have:
+- For every type of matter, there is a corresponding antimatter
+- Matter and antimatter have:
   - opposite charges
   - the same rest mass
   - the same rest energy
-- common particle-antiparticle pairs include
 
 | Particle | Antiparticle |
 | -------- | ------------ |
@@ -280,26 +282,28 @@ Relative\ atomic\ mass\ A_r = \frac{\sum isotope\ abundance\times isotope\ mass}
 
 #### Photons
 
-- the fundamental particle making up electromagnetic radiation
+- **Photons** are the fundamental particle making up electromagnetic radiation
   - transfers energy in discrete "quanta"
-    <br>
+
+<br>
+
 - Photon energy:
 
 ```math
 E = hf = h\frac{c}{\lambda}
 ```
 
-- the Planck constant $h$ is the ratio of the photon's frequency to energy
+- The Planck constant $h$ is the ratio of the photon's frequency to energy
 
 #### Annihilation
 
-- occurs when a particle-antiparticle pair collide and coverts its mass into energy
-- the particle and antiparticle are destroyed
+- **Annihilation** occurs when a particle-antiparticle pair collide and coverts its mass into energy
+- The particle and antiparticle are destroyed
 - ...and two gamma-ray photons are emitted
   - they travel in opposite directions
     - to conserve momentum
-- mass-energy is conserved - but "normal" mass is not
-  - the minimum energy of one photon is equal to the rest energy of one particle
+- Mass-energy is conserved - but "normal" mass is not
+  - the minimum energy of one photon is equal to the rest energy of **one** particle
 
 ```math
 E_{min} = h(f_{min}) = E
@@ -307,12 +311,13 @@ E_{min} = h(f_{min}) = E
 
 #### Pair production
 
-- occurs when a high-energy photon converts its energy into mass
+- **Pair production** occurs when a high-energy photon converts its energy into mass
+  - ...usually in the vicinity of a nucleus
 - ...and creates a particle-antiparticle pair
   - they travel in opposite directions
     - to conserve momentum
-- mass-energy is conserved - but "normal" mass is not
-  - the minimum energy of one photon is equal to the total rest energy of both particle
+- Mass-energy is conserved - but "normal" mass is not
+  - the minimum energy of one photon is equal to the total rest energy of **both** particles
 
 ```math
 E_{min} = h(f_{min}) = 2E
@@ -320,7 +325,7 @@ E_{min} = h(f_{min}) = 2E
 
 ### 2.1.4 Particle interactions
 
-- there are 4 fundamental interactions
+- There are 4 fundamental interactions
 
 | Interaction     | Range                    | Force     | Particles     | Exchange particle       |
 | --------------- | ------------------------ | --------- | ------------- | ----------------------- |
@@ -331,27 +336,30 @@ E_{min} = h(f_{min}) = 2E
 
 #### Exchange particles
 
-- are "virtual" and only exist for a very short amount of time
-- carry the fundamental force between particles
+- **Exchange particles** are "virtual" and only exist for a very short amount of time
+- They carry the fundamental force between particles
   - there cannot be instantaneous action - the particle has to interact with "something"
     > AQA analogy: the transfer of momentum by throwing a heavy ball between two people causes them to move away from each other
 
 #### Electromagnetic force
 
-- acts between charged particles
-- responsible for:
+- The **electromagnetic** force acts between charged particles
+- Responsible for:
   - repulsion between two charged particles
   - attraction between electrons and nuclei
-- the virtual photon is exchanged
+- The **virtual photon** is exchanged
   - which has:
     - no mass
     - no charge
     - itself as its antiparticle
 
+> Electro**magnetic** force, not electro**static** force!
+
 #### Weak interaction
 
-- acts between all particles
-- responsible for
+- The **weak** interaction acts between all particles
+- Responsible for
+  - all changes of quark flavour
   - beta minus decay
     - exchange particle: $W^-$ boson
     ```math
@@ -364,16 +372,16 @@ E_{min} = h(f_{min}) = 2E
     ```
   - electron capture
     - exchange particle: $W^+$ boson
-  ```math
-  p + e^- \to n + \nu_e
-  ```
+    ```math
+    p + e^- \to n + \nu_e
+    ```
   - electron proton collision
     - exchange particle: $W^-$ boson
       - but moving from right to left instead
       - ...because the electron collides into the proton
-  ```math
-  p + e^- \to n + \nu_e
-  ```
+    ```math
+    p + e^- \to n + \nu_e
+    ```
 
 > The $Z^0$ boson is used when there is no change of charge - only momentum is transferred
 
@@ -381,9 +389,9 @@ E_{min} = h(f_{min}) = 2E
 
 #### Hadrons
 
-- made from quarks
+- **Hadrons** are made from quarks
 - ...and therefore are subject to the strong interaction and strong nuclear force
-- has two types:
+- Have two types:
   - baryons (3 quarks)
     - the baryon number is a quantum number (and so is conserved)
     - the proton is the only stable baryon
@@ -395,16 +403,16 @@ E_{min} = h(f_{min}) = 2E
 
 #### Leptons
 
-- are fundamental particles
-- the lepton number is a quantum number (and so is conserved)
+- **Leptons** are fundamental particles
+- The lepton number is a quantum number (and so is conserved)
   > the different "flavours" of the lepton number are conserved seperately
-- the muon decays into an electron
+- The muon decays into an electron
 
 #### Strange particles
 
-- produced through the strong interaction
-- decay through the weak interaction
-- are usually created in pairs
+- Strange particles are produced through the strong interaction
+- ...and decay through the weak interaction
+- Are usually created in pairs
 - ...so strangeness is a quantum number
   - however, strangeness can change by 0, +1 or -1 in weak interactions only
     > the weak interaction allows for quark flavour changes
@@ -413,36 +421,45 @@ E_{min} = h(f_{min}) = 2E
 
 - There are 3 common flavours of quarks:
 
-| Quark           | Charge | Baryon number | Strangeness |
-| --------------- | ------ | ------------- | ----------- |
-| up ($u\,$)      | + 2/3e | + 1/3         | 0           |
-| down ($d\,$)    | - 1/3e | + 1/3         | 0           |
-| strange ($s\,$) | - 1/3e | + 1/3         | -1          |
+| Quark         | Charge | Baryon number | Strangeness |
+| ------------- | ------ | ------------- | ----------- |
+| up ($u$)      | + 2/3e | + 1/3         | 0           |
+| down ($d$)    | - 1/3e | + 1/3         | 0           |
+| strange ($s$) | - 1/3e | + 1/3         | -1          |
 
 - ...and antiquarks have the opposite charge, baryon number and strangeness
 
 </br>
 
-- there are several common combinations of quarks required for baryons and antibaryons
-  - proton: $uud$
-  - antiproton: $\bar{u}\bar{u}\bar{d}$
-  - neutron: $udd$
-  - antineutron: $\bar{u}\bar{d}\bar{d}$
+- There are several common combinations of quarks for baryons and antibaryons
+
+| Particle    | Quark combination       |
+| ----------- | ----------------------- |
+| proton      | $uud$                   |
+| antiproton  | $\bar{u}\bar{u}\bar{d}$ |
+| neutron     | $udd$                   |
+| antineutron | $\bar{u}\bar{d}\bar{d}$ |
+
 - ...and mesons
-  - $\pi^+$: $u\bar{d}$
-  - $\pi^-$: $d\bar{u}$
-  - $\pi^0$: $u\bar{u}$ or $d\bar{d}$
-  - $K^+$: $u\bar{s}$
-  - $K^-$: $s\bar{u}$
-  - $K^0$: $d\bar{s}$
-  - $\bar{K^0}$: $s\bar{d}$
-    > Mesons are always formed of a quark-antiquark pair
-    > ...so the baryon number is always 0
+
+| Particle    | Quark combination        |
+| ----------- | ------------------------ |
+| $\pi^+$     | $u\bar{d}$               |
+| $\pi^-$     | $d\bar{u}$               |
+| $\pi^0$     | $u\bar{u}$ or $d\bar{d}$ |
+| $K^+$       | $u\bar{s}$               |
+| $K^-$       | $s\bar{u}$               |
+| $K^0$       | $d\bar{s}$               |
+| $\bar{K^0}$ | $s\bar{d}$               |
+
+> Mesons are always formed of a quark-antiquark pair <br>
+> ...so the baryon number is always 0 <br> <br>
+> Also note that $K^0$ and $\bar{K^0}$ both have 0 charge, but $K^0$ has strangeness +1
 
 #### Neutron decay
 
-- all baryons decay into protons
-- when a neutron decays into a proton
+- All baryons decay into protons
+- When a neutron decays into a proton
   - a down quark becomes an up quark
 
 ```math
@@ -451,61 +468,65 @@ d \to u + \beta^- + \bar{\nu}_e
 
 ### 2.1.7 Applications of conservation laws
 
-- Change of quark character in β−and in β+ decay.
 - Conservation applies to:
   - Quantum numbers
-    - Charge
-    - Baryon number
-    - Lepton number
-    - Strangeness (except in weak interactions)
+    - Charge (Q)
+    - Baryon number (B)
+    - Lepton number (L)
+    - Strangeness (S) (except in weak interactions)
   - Energy
   - Momentum
+
+> If there is an unknown decay, as long as it fulfils the properties above, AQA will be ok with it?
 
 ## 2.2 Electromagnetic radiation and quantum phenomena
 
 ### 2.2.1 The photoelectric effect
 
-- The photoelectric effect is where electrons (photoelectrons) are emitted from the **surface of a metal** after absorbing EM radiation
-  - provides evidence that light behaves as a particle
-    - carried in discrete packets/quantised
-- As the incident radiation intensity is increased
-  - more photons are incident on the material per second
-  - more photoelectrons are emitted per second
+- The **photoelectric effect** is where electrons (photoelectrons) are emitted from the **surface of a metal** after absorbing EM radiation
+  - this provides evidence that light behaves as a particle
+    - as light is carried in discrete packets/quantised
+- The number of photoelectrons emitted per second depends on:
+  - the intensity of the incident radiation = number of photons incident per second
+  - and **not** the potential difference
 
 #### Threshold frequency
 
-- The minimum frequency of incident EM radiation requried to remove a photoelectron from the surface of a metal
+- **Threshold frequency** is the minimum frequency of incident EM radiation requried to remove a photoelectron from the surface of a metal
   - therefore, the threshold wavelength is the longest wavelength
 
-#### Work Function ϕ
+#### Work Function
 
-- The minimum energy required to release a photoelectron from the surface of a metal
+- The **work function** $\Phi$ is the minimum energy required to release a photoelectron from the **surface** of a metal
 - A single electron only absorbs one photon
-  - so the absorbed photon must have energy equal to or high than Φ
-  - photons with excess energy will have that energy transferred as kinetic energy to the photoelectron
-- Not affected by the intensity of the incident radiation
-  > Photons without enough energy will just scatter
+  - so the absorbed photon must have energy equal to or high than $\Phi$
+  - ...and photons with excess energy will have that energy transferred to the kinetic energy of the emitted photoelectron
+- This is not affected by the intensity of the incident radiation
 - The energy required to release a photoelectron varies because some electrons are not on the surface of the metal
-  - work is done to reach the surface before overcoming the work function
+  - work is done to reach the surface **before** overcoming the work function
 
-#### Stopping potential V<sub>s</sub>
+> Photons without enough energy will just scatter
 
-- The potential difference required to stop photoelectron emission from occuring
+#### Stopping potential
 
-  > - can be determined using a set of collector and emitter plates connected to a circuit
-  > - a flow of electrons across the gap between the plates results in a emf
-  > - as the current is turned up, the emitter plate becomes more positively charged
-  > - electrons are attracted back towards the emitter plate - pd in gap opposes movement
-  > - electrons are released with a range of kinetic energy
-  > - some electrons have enough kinetic energy to overcome this attraction and cross the plate
-  > - the pd at which no electrons can cross the gap is known as the stopping potential
-  > - the rate of photoelectron release does not depend on pd once it is far away from stopping potential
-  >   - constant current is reached when all released photoelectrons reach the anode
-
-- $E_{k_{max}}$ is the maximum kinetic energy of the photoelectrons, where
+- The **stopping potential** $V_s$ is potential difference required to stop photoelectron emission from occuring
+- $E_{k_{max}}$ is the **maximum** kinetic energy of the photoelectrons, where
   ```math
   E_{k_{max}} = e(V_s)
   ```
+
+> This can be determined using a set of collector and emitter plates connected to a circuit:
+> - a flow of electrons across the gap between the plates results in a emf
+> - electrons are released with a range of kinetic energy (by the photoelectric effect)
+> - when the pd is in the opposite direction, electrons lose KE when crossing to the anode
+>   - electrons are "attracted back" towards the emitter plate
+> - as the magnitude of the pd increases, fewer photoelectrons have sufficient KE to reach the anode
+> - the pd at which no electrons can cross the gap is known as the stopping potential
+> - constant current is reached when all released photoelectrons reach the anode
+
+<br>
+
+> Stopping potential being related to the **maximum** KE is very important
 
 #### The photoelectric equation
 
@@ -517,7 +538,8 @@ d \to u + \beta^- + \bar{\nu}_e
   ```math
   hf = \phi + E_{k_{max}}
   ```
-  > $E_{k_{max}}$ depends only on the frequency of the incident radiation and the work function
+
+> $E_{k_{max}}$ depends only on the frequency of the incident radiation and the work function
 
 ### 2.2.2 Collisions of electrons with atoms
 
@@ -545,20 +567,20 @@ d \to u + \beta^- + \bar{\nu}_e
 
 #### In a fluorescent tube...
 
-- Low-pressure mercury vapour with phosphor coating on tube
+- There is a low-pressure mercury vapour with phosphor coating on tube
 - A high potential difference is applied across the tube
   - this creates an electron flow from the cathode to the anode
 - Electrons collide with the mercury atoms
-- Ionisation occurs
+- Ionisation occurs:
   - electrons are released from mercury ions
-- Exctiation occus in mercury atoms
+- Exctiation occus in mercury atoms:
   - free electrons collide with the mercury ions and are excited
   - these electrons are unstable and de-excite, emitting photons with UV wavelengths.
-- Exctiation occurs
-  - photons are absorbed by atoms in coating
+- Exctiation occurs:
+  - UV photons are absorbed by atoms in coating
   - atoms are excited/gain energy and its electrons move to higher energy levels (than n = 2)
   - photons have sufficient energy to promote electrons to high enough levels
-- De-excitation occurs
+- De-excitation occurs:
   - photons are emitted by atoms in coating
   - atoms de-excite/lose energy and its electrons move to lower energy levels
   - electrons move to ground state via other energy levels (indirectly)
@@ -577,17 +599,16 @@ d \to u + \beta^- + \bar{\nu}_e
 
 ### 2.2.3 Energy levels and photon emission
 
-#### Line spectra
+#### Line (atomic) spectra
 
-- Also known as atomic spectra
-- Occurs when excited atoms emit visible light corresponding to different colours
+- In a **line spectra**, atoms emit visible light corresponding to different colours
 - This can be observed as a series of lines with spaces in between
   - procides evidence that electrons in atoms can only transition between discrete energy levels
 
 #### Emission spectra
 
-- Dark background with coloured lines
-- Explaination
+- An **emission spectra** has a dark background with coloured lines
+- This is due to:
   - electrons can only exist in discrete energy levels
   - when an electron transitions from a higher energy level to a lower energy level, a single photon of EM radiation is emitted
   - the photon energy is equal to the difference in energy levels
@@ -599,10 +620,10 @@ d \to u + \beta^- + \bar{\nu}_e
 
 #### Absorbtion spectra
 
-- Continuous spectrum of colours with dark lines
-  - lines coorespond with the differences in energy levels/the coloured lines in an emission spectra
+- An **absorbtion spectra** has a continuous spectrum of colours with dark lines
+  - lines correspond with the differences in energy levels/the coloured lines in an emission spectra
   - formed by passing white light through a cool gas under low pressure
-- Explaination
+- This is due to:
   - an electron can gain energy and transition into a higher energy level from **absorbing a single photon**, if the photon energy equals the difference in energy levels
   - these excited electrons de-excite and emit a single photon
   - the emitted photons go off in all directions, so some wavelengths appear to be missing
@@ -618,23 +639,28 @@ d \to u + \beta^- + \bar{\nu}_e
 
 #### Light can behave as a particle (i.e. have the properties of a particle)
 
-- photoelectric effect
+- Photoelectric effect
   - EM radiation carry energy in discrete packets (photons)
 
 #### Light can also behave as a wave
 
-- diffraction and intereference in Young's double-slit experiment
-  > Wave theory suggests
-  >
-  > - any frequency of light will have photoelectric emission - but a threshold frequency exists
-  > - the energy absorbed will gradually increase with each wave - but energy is absorbed instantaneously
-  > - the kinetic energy of the emited electron will increase with intensity - but energy remains constant
+- Diffraction and intereference in Young's double-slit experiment
+
+> Wave theory suggests
+>
+> - any frequency of light will have photoelectric emission - but a threshold frequency exists
+> - the energy absorbed will gradually increase with each wave - but energy is absorbed instantaneously
+> - the kinetic energy of the emited electron will increase with intensity - but energy remains constant
 
 #### Electrons can behave as a particle
 
+- Fluorescent screens (see above)
+  - electrons must provide enough kinetic energy **instantly** to cause the excitation of orbital electrons
+    - this energy transfer is a 1-to-1 interaction in discrete amounts
+
 #### Electrons can also behave as a wave
 
-- electron diffraction
+- Electron diffraction
   - diffraction pattern is produced when an electron beam is directed at a thin graphite film
   - the material used to diffract electrons must have gaps similar in size to their de Broglie wavelength
     - so usually atomic lattices are used, e.g. graphite, which has a crystalline structure
@@ -644,15 +670,17 @@ d \to u + \beta^- + \bar{\nu}_e
 #### de Broglie wavelength
 
 - Increasing pd increases the speed of an electron
-- which increases the momentum of an electron
-- which decreases its angle of diffraction
-- thus the diameter of the ring decreases
-  <br>
+  - ...which increases the momentum of an electron
+  - ...which decreases its angle of diffraction
+  - ...so the diameter of each ring decreases
+
+<br>
+
 - Therefore, the smaller the momentum of an electron, the greater the de Broglie wavelength
   ```math
   \lambda = \frac{h}{p}= \frac{h}{mv}
   ```
-  > This concurs with wave properties, angle of diffraction increases as wavelength increases
+> This concurs with wave properties, angle of diffraction increases as wavelength increases
 
 #### Developing theories
 
@@ -750,31 +778,42 @@ d \to u + \beta^- + \bar{\nu}_e
 
 #### Superposition
 
-- when two or more waves with the same frequency arrive at a point, the resultant displacement is the sum of the displacements of each wave
-- if both waves have the same amplitude, they will meet:
+- **Superposition** occurs when two or more waves with the same frequency arrive at a point
+- The resultant displacement is the sum of the displacements of each wave
+- If both waves have the same amplitude, they will meet:
   - in phase
-    - constructive interference
+    - which leads to constructive interference
   - in anti-phase
-    - destructive interference
+    - which leads to destructive interference
 
 #### Stationary waves
 
-- produced by the superposition/interference of two waves of the same frequency and similar amplitude travelling in **opposite directions**
-- can be created with a progressive wave and its reflection
-- stores energy
-- wave pattern does not move along the direction of propagraion
-- has nodes and antinodes
+- **Stationary waves** are produced when two waves travelling in **opposite direction** **superpose and interfere**, given that they
+  - have the same frequency and similar amplitude 
+- Can be created with a progressive wave and its **reflection**
+- Has nodes and antinodes
   - nodes are regions with no oscillation
-    - destructive interference occurs
+    - ...due to destructive interference
   - antinodes are regions with maximum displacement
-    - constructive interference occurs
-- can either be in phase or out of phase
-  - between nodes - in phase
-  - odd number of nodes between - out of phase / antiphase
-  - even number of nodes between - in phase
-- all points have different amplitudes
-- lowest frequency for formation is the first harmonic
-- examples:
+    - ...due to  constructive interference
+
+> All of the points above are expected by the MS
+
+<br>
+
+- Wave pattern does not move along the direction of propagation
+  - ...so stores energy
+- Points on a stationary wave are **in phase** if:
+  - they are between nodes
+  - they have an even number of nodes inbetween
+- ...or out of phase if
+  - they have an odd number of nodes inbetween (antiphase)
+- All points have different amplitudes
+
+<br>
+
+- The lowest frequency for formation is the first harmonic
+- Examples:
   - strings
     - vibrations from stationary waves on stretched strings produce sound waves
     - at resonant frequencies, a whole number of half wavelengths will fit on the length of the string
@@ -785,33 +824,36 @@ d \to u + \beta^- + \bar{\nu}_e
     - can be produced as a result of the formation of stationary waves inside a closed air column
     - there must be a node at one end and an antinode at the speaker end
 
+> On an instrument, the strings have fixed boundaries $\implies$ cannot move $\implies$ are nodes
+
 #### Harmonics
 
-- wave patterns of stationary waves
-- can be observed on a string with two fixed ends
-- first harmonic
-  - 2 nodes, 1 antinode
-  ```math
-  f = \frac{v}{2L}
-  ```
-- second harmonic
-  - 3 nodes, 2 antinodes
-  ```math
-  f = \frac{v}{L}
-  ```
-- third harmonic
-  - 4 nodes, 3 antinodes
-  ```math
-  f = \frac{3v}{2L}
-  ```
+- **Harmonics** are the wave patterns of stationary waves
+- ...and can be observed on a string with two **fixed** ends
+  - first harmonic
+    - 2 nodes, 1 antinode
+    ```math
+    f = \frac{v}{2L}
+    ```
+  - second harmonic
+    - 3 nodes, 2 antinodes
+    ```math
+    f = \frac{v}{L}
+    ```
+  - third harmonic
+    - 4 nodes, 3 antinodes
+    ```math
+    f = \frac{3v}{2L}
+    ```
+- NB: the 1st harmonic spans half the wavelength, and so on
 
 </br>
 
-- wave speed on a string can be given by
+- Wave speed on a string is given by
   ```math
   v = \sqrt{\frac{T}{\mu}}
   ```
-- therefore, the frequency of the first harmonic is
+- $\therefore$ the frequency of the first harmonic is
   ```math
   f = \frac{1}{2L}\sqrt{\frac{T}{\mu}}
   ```
@@ -846,7 +888,7 @@ d \to u + \beta^- + \bar{\nu}_e
 
 #### Coherence
 
-- waves have the same frequency and a constant phase difference
+- waves have the same **frequency** and a **constant phase difference**
 - waves undergoing constructive or destructive interference must be coherent
 
 #### Path difference
@@ -895,7 +937,7 @@ d \to u + \beta^- + \bar{\nu}_e
   ```math
   fringe\ spacing =  \frac{wavelength \times\ distance\ from\ slit\ to\ screen}{slit\ spacing}
   ```
-  - D has to be much larger than other dimensions
+  - $D$ has to be much larger than $w$ and $s$
 
 </br>
 
@@ -960,6 +1002,13 @@ d \to u + \beta^- + \bar{\nu}_e
 - wavelength
   - increase $\Rightarrow$ greater angle of diffraction $\Rightarrow$ greater width of maxima
     - red light has wider fringes than blue light
+
+(Range of wavelengths results in):
+Central maximum unchanged in width
+Broader maxima/range of angles for each maximum/order
+Gradually getting broader/more spread out for greater order maxima
+Part of third order maximum suppressed at long wavelengths (for  >
+90°)
 
 #### Diffraction grating
 
@@ -1139,34 +1188,35 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 ### 4.1.1 Scalars and vectors
 
-- A vector is a quantity that has both magnitude and direction
-- A scalar is a quantity that only has magnitude
+- A **vector** is a quantity that has both magnitude and direction
+- A **scalar** is a quantity that only has magnitude
 
 ### 4.1.2 Moments
 
-- the turning effect of a force
-- given by
+- A **moment** is the turning effect of a force
+- ...given by
   ```math
   force \times perpendicular\ distance\ from\ the\ point\ to\ the\ line\ of\ action\ of\ the\ force
   ```
 
 #### Principle of moments
 
-- for a system to be in equilibrium, the sum of clockwise moments about a point must be equal to the sum of the anticlockwise moments (about the same point)
+- For a system to be in equilibrium, the sum of clockwise moments about a point must be equal to the sum of the anticlockwise moments about the same point
 
 #### Couples
 
-- a pair of equal and opposite coplanar forces
+- A **couple** is a pair of equal and opposite coplanar forces
   ```math
-  force \times perpendicular\ distance\ between\ the\ lines\ of\ action\ of\ the\ forces
+  F = force \times perpendicular\ distance\ between\ the\ lines\ of\ action\ of\ the\ forces
   ```
 
 #### Centre of mass
 
-- the point at which the weight of the object is considered to act
-- the position of the centre of mass of a uniform regular solid is at its centre
-- for symmetrical objetcs with uniform density, the centre of mass is at the point of symmetry
-- an object is stable when its centre of mass lies above its base
+- The **centre of mass** is:
+  - the point at which the weight of the object is considered to act
+  - the position of the centre of mass of a uniform regular solid is at its centre
+- For symmetrical objetcs with uniform density, the centre of mass is at the point of symmetry
+- An object is stable when its centre of mass lies above its base
 
 ### 4.1.3 Motion along a straight line
 
@@ -1181,12 +1231,12 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Graphs
 
-- velocity–time
+- Velocity–time
   - gradient: acceleration
   - area: total displacement
-- acceleration–time
+- Acceleration–time
   - area: change in velocity
-- displacement–time
+- Displacement–time
   - gradient: velocity
 
 ### 4.1.4 Projectile motion
@@ -1284,72 +1334,76 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Linear momentum
 
-- defined as
+- **Linear momentum** is defined as
   ```math
   p = mv
   ```
-- momentum in one direction
-- remains constant unless the system is acted upon by an external resultant force
-- Conservation of linear momentum
+  - this is momentum in one direction
+- Momentum remains constant unless the system is acted upon by an external resultant force
+
+<br>
+
+- Conservation of linear momentum:
   - The total momentum before a collision is equal to the total momentum after a collision, provided no external force acts
 
-#### External forces
+> Recall that momentum is a vector and signs matter!
 
-- forces that act on a system from outside
-- e.g. friction
-
-#### Internal forces
-
-- forces exchanged by particles within the system
+#### External and internal forces
+- **External** forces act on a system from outside
+  - e.g. friction
+- **Internal** forces are exchanged by particles within the system
 - e.g. tension in a string
 
 #### Force
 
-- the rate of change of momentum
+- **Force** is the rate of change of momentum
   ```math
   F = \frac{\Delta mv}{\Delta t}
   ```
 
+<br>
+
+- Impact forces are reduced by increasing contact time
+  - lowers risk of injury
+
 #### Impulse
 
-- change in momentum
-- or the product of the force applied and time
+- **Impulse** is the change in momentum
+- ...or the product of the force applied and time
   ```math
   \Delta p = F \Delta t = mv - mu
   ```
   - (where the force is constant)
-- therefore a small force acting over a long time has the same effect as a large force acting over a short time
-- in a force–time graph,
-  - Area: impulse
-- impact forces are
-  - reduced by increasing contact time
-    - lowers risk of injury
+- $\therefore$ a small force acting over a long time has the same effect as a large force acting over a short time
 
 #### Elastic and inelastic collisions
 
-- momentum is always conserved in collisions and explosions
-- elastic collisions
+- Momentum is always conserved in collisions and explosions
+
+<br>
+
+- **Elastic** collisions are where
   - kinetic energy is conserved
-  - usually colliding objects move in opposite direction
-- inelastic collisions
+  - colliding objects (usually) move in opposite directions/rebound
+- **Inelastic** collisions are where
   - kinetic energy is not conserved
-    - because some energy is lost to (internal) friction
-  - usually colliding objects stick together
+    - because some energy is lost to (internal) friction or other stores
+  - colliding objects (usually) stick together
 
 #### Momentum conservation issues
 
-- force of impact in a vehicle collision can be decreased by increasing the contact time
-  - this is achieved through safety features
-    - crumple zones
-      - designed to crush/crumple
-      - increases the time it takes for the momentum to decrease
-    - seat belts
-      - stops occupants colliding with the interior
-      - stretches slightly to increase the time it takes for the momentum to decrease
-    - airbags
-      - soft cushion to prevent injury
-      - increases the time it takes for the momentum to decrease
-  - "absorbs" energy from an impact
+- The force of impact in a (vehicle) collision can be decreased by increasing the contact time
+- ...and this is achieved through safety features, such as:
+  - crumple zones
+    - designed to crush/crumple
+    - increases the time it takes for the momentum to decrease
+  - seat belts
+    - stops occupants colliding with the interior
+    - stretches slightly to increase the time it takes for the momentum to decrease
+  - airbags
+    - soft cushion to prevent injury
+    - increases the time it takes for the momentum to decrease
+- ...which "absorbs" energy from an impact
 
 ### 4.1.7 Work, energy and power
 
@@ -1626,7 +1680,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   - so the number of charge carriers increases
   - so current increases
   - the resistance/temperature graph is non-linear - the downwards gradient is steeper at the start
-- Superconductors are materials which have zero resistivity at/below a critical **temperature**
+- Superconductors are materials which have zero resistivity at/below a **critical temperature**
   - the critical temperature varies for different materials, but is usually close to 0K
 - They can be used in:
   - power cables, to reduce energy loss through heating
@@ -1747,14 +1801,14 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 </br>
 
-- The pd across the load resistor is known as the terminal pd
-  - it is the energy wasted by the cell per coulomb of charge
+- The pd across the load resistor is known as the terminal pd $V$
 - ...therefore,
   ```math
+  \varepsilon = V + Ir \\
   emf = terminal\ pd + lost\ volts
   ```
 - The emf can be measured using a voltmeter across a cell when no current is running through it.
-
+- "lost volts" is the energy wasted by the cell per coulomb of charge
 ### Practical 6 - Investigation of emf and internal resistance
 
 #### Method
@@ -3139,7 +3193,7 @@ E = \Delta m c^2
   - $^{12} C$ and $^{16} O$ are helium nuclei bound together
 
 ### 8.1.7 Induced fission
-- Occurs when a thermal neutron is absorbed by a nucleus
+- Occurs when a thermal neutron is **absorbed** by a nucleus
   - thermal neutrons are neutrons which is in thermal equilibrium with its surroundings, which
     - are slow moving
     - have low kinetic energy
@@ -3238,14 +3292,15 @@ E = \Delta m c^2
 # 12 Turning poins in physics
 ## 12.1 The discovery of the electron
 ### 12.1.1 Cathode rays
-- Production of cathode rays in a discharged tube is schieved by:
-  - ionisation of gas atoms by an strong electric field
+- Production of cathode rays in a discharged tube is achieved by:
+  - ionisation of gas atoms by a strong electric field (under low pressure)
     - positive ions are attracted to the cathode
-    - required low pressure
-  - emission of electrons by the cathode
-  - electrons are accelerated towards the anode by a potential difference
+    - ...so there is emission of electrons by the cathode
+  - electrons are **accelerated** towards the anode by a potential difference
   - when the electron and positive ions collide, they become excited
     - when the orbital electrons de-excite, visible photons are emitted
+
+> A paddle wheel gains **energy** from the moving electrons
 
 ### 12.1.2 Thermionic emission of electrons
 - In thermionic emission,

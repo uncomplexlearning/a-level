@@ -2098,7 +2098,7 @@ Exponent
 
 #### Havard architecture
 - Instructions and data are stored in separate memory, with separate instruction and data busses
-- ...so it can execute instructions more efficiently as the processor can fetch instructions and data in aprallel
+- ...so it can execute instructions more quickly as the processor can fetch instructions and data in parallel
   - useful in real-time processing, e.g. digital signal processors
   - useful in embedded systems, the size of each bus can be adjusted separately
   
@@ -2399,7 +2399,7 @@ Exponent
 
 #### Serial transmission
 
-- Data is transmitted 1 bit at a time
+- Data is transmitted 1 bit at a time **along a single wire**
 
 #### Parallel transmission
 
@@ -2439,10 +2439,10 @@ Exponent
   - so if the start bit is logically low (0), then the stop bit must be logically high (1)
     > this is especially helpful if the line is kept logically high when idle
 - Stop bit
-
   - provides time for the receiver to process / transfer the received data
   - allows the next start bit to be recognised
-    </br>
+  
+</br>
 
 - The use of start and stop bits create overhead
   - the number of additional bits transmitted in a frame
@@ -2465,7 +2465,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 #### Bandwidth
 
-- Frequency range available for transmission within a medium
+- **Frequency range** available for transmission within a medium
   - difference between the highest and lowest frequency a communication medium can transmit
 
 #### Latency
