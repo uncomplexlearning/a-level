@@ -693,6 +693,7 @@ d \to u + \beta^- + \bar{\nu}_e
 
 ### 3.1.1 Progressive waves
 
+#### Definitions
 - Amplitude
   - the maximum displacement of a particle in the wave from its equilibrium position
 - Frequency
@@ -712,20 +713,22 @@ d \to u + \beta^- + \bar{\nu}_e
 
 </br>
 
-- Two waves are in phase if they are both at the same point in the cycle; i.e. their phase difference 2π rad.
-- Two waves are in antiphase if their phase difference is π rad.
+- Two waves are **in phase** if they are both at the same point in the cycle; i.e. their phase difference is $2 \pi$ rad
+- Two waves are **out of phase** if their phase difference is not $2 \pi$ rad
+  - Two waves are **in antiphase** if their phase difference is $\pi$ rad
 
 </br>
 
-- Progressive waves - waves which transfer energy from one point to another without transferring material (i.e. causing permanent displacement of the medium)
+- **Progressive waves** are waves which transfer energy from one point to another 
+  - without transferring material (i.e. causing permanent displacement of the medium)
   - all points have the same amplitude in each period
 
 > Always refer to:
 >
 > - (both) waves interfere
-> - path difference varies
-> - phase difference varies
-> - produces maxima and minima
+> - path difference varies (how? where?)
+> - phase difference varies (how? where?)
+> - produces maxima and minima (how? where?)
 > - recieved signal goes through series of maxima and minima
 >
 > When asked to compare:
@@ -734,45 +737,49 @@ d \to u + \beta^- + \bar{\nu}_e
 > - refer to frequency
 > - refer to speed
 
+- All EM waves travel at the same speed in a vacuum - $3.0 \times 10^{-8} ms^{-1} $
+
 ### 3.1.2 Longitudinal and transverse waves
 
 #### Transverse waves
 
-- waves oscillations perpendicular to direction of propagation
-- examples:
-  - EM waves
-  - vibrations on a string
-  - S-waves
-- can be polarised
-- has crests and troughs
-- can be demonstrated with a vertical slinky
+- **Travsverse waves** have oscillations **perpendicular** to direction of **energy transfer**
+  - examples:
+    - EM waves
+    - vibrations on a string
+    - S-waves
+- They:
+  - can be polarised
+  - have crests and troughs
+  - can be demonstrated with a vertical slinky
 
 #### Longitudinal waves
 
-- waves oscillations parallel to direction of propagation
-- examples:
-  - sound waves
-  - P-waves
-- cannot be polarised
-- has areas of compression and rarefaction
-- can be demonstrated with a horizontal slinky
+- **Longitudinal waves** have oscillations **parallel** to direction of energy transfer
+  - examples:
+    - sound waves
+    - P-waves
+- They:
+  - cannot be polarised
+  - have areas of compression and rarefaction
+  - can be demonstrated with a horizontal slinky
 
 #### Polarisation
 
-- oscillations occur in only one plane perpendicular to the direction of propagation
+- **Polarised waves** have oscillations which occur in only one plane perpendicular to the direction of propagation
   - this plane is known as the plane of polarisation
-- can only occur in transverse waves
+- This can only occur in **transverse** waves
   - because transverse waves oscillate planes perpendicular to the direction of propagation
-- can be used in:
+- ...and can be used in:
   - polaroid sunglasses
     - light reflecting from reflective surfaces (e.g. puddles) undergo partial plane polarisation
     - polaroid sunglasses polarise the light so reduces glare
   - radio/microwave signals
     - radio and television signals are usually vertically polarised or horizontally polarised
     - therefore aerials need to be mounted flat (horizontal) or on its side (vertical)
-      > When answering scenairos related to polarisation, make use of "maximum" and "minimum"
-      > Always link back - "max occurs when aerial is aligned with plane of polarisation of the wave"
-- All EM waves travel at the same speed in a vacuum - $3.0 \times 10^{-8} ms^{-1} $
+
+> When answering scenairos related to polarisation, make use of "maximum" and "minimum"
+> Always link back - "max occurs when aerial is aligned with plane of polarisation of the wave"
 
 ### 3.1.3 Principle of superposition of waves and formation of stationary waves
 
@@ -805,9 +812,9 @@ d \to u + \beta^- + \bar{\nu}_e
   - ...so stores energy
 - Points on a stationary wave are **in phase** if:
   - they are between nodes
-  - they have an even number of nodes inbetween
+  - they have an even number of nodes in between
 - ...or out of phase if
-  - they have an odd number of nodes inbetween (antiphase)
+  - they have an odd number of nodes in between (antiphase)
 - All points have different amplitudes
 
 <br>
@@ -886,18 +893,21 @@ d \to u + \beta^- + \bar{\nu}_e
 
 ### 3.2.1 Interference
 
+- **Interference** occurs when waves overlap
+  - the resultant displacement is the sum of the displacement of each wave
+
 #### Coherence
 
-- waves have the same **frequency** and a **constant phase difference**
-- waves undergoing constructive or destructive interference must be coherent
+- Waves are coherent if they have the same **frequency** and a **constant phase difference**
+- Waves undergoing constructive or destructive interference must be coherent
 
 #### Path difference
 
-- the difference in the distance travelled by two waves from their sources to the point where they meet
-- determines the type of interference:
+- **Path difference** is the difference in the distance travelled by two waves from their sources to the point where they meet
+- ...and determines the type of interference:
   - constructive : $n\lambda$
   - destructive : $(n + \frac{1}{2})\lambda$
-- expressed in multiples of wavelength
+- ...and is expressed in multiples of wavelength
 
 </br>
 
@@ -907,39 +917,40 @@ d \to u + \beta^- + \bar{\nu}_e
 
 </br>
 
-- Interference can be shown with a laser
-  - lasers are coherent and monochromatic (same wavelength)
-  - constructive interference is shown with maxima (light fringes)
-  - destructive interference is shown with minima (dark fringes)
-  - but lasers have safety issues
-    - high energy light beam may cause permanent eye damage
-- Interference can be shown with sound waves
-  - sound waves are longitudinal
-  - constructive interference is heard with a louder sound
-  - destructive interference is heard with no sound
-- Interference can be shown with microwaves
-  - constructive interference is shown with higher amplitude on detector
-  - destructive interference is shown with lower amplitude on detector
+- Interference can be demonstarted with
+  - a laser
+    - lasers are coherent and monochromatic (same wavelength)
+    - constructive interference is shown with maxima (light fringes)
+    - destructive interference is shown with minima (dark fringes)
+    - but lasers have safety issues
+      - high energy light beam may cause permanent eye damage
+  - sound waves
+    - sound waves are longitudinal
+    - constructive interference is heard with a louder sound
+    - destructive interference is heard with no sound
+  - microwaves
+    - constructive interference is shown with higher amplitude on detector
+    - destructive interference is shown with lower amplitude on detector
 
 #### Double slit interference
 
-- superposition of waves from both slits
-- diffraction patterns overlap and interfere constructively
-- produces a interference pattern using two coherent sources
-  - can be a single source passing through a double slit
-    - light diffracts to both slits, and has a fixed path difference
-- each bright fringe has the same width
-- waves further away from the central maxima will have lower intensity as their waves have to travel further (reduced coherence)
-- to calculate fringe spacing:
-  ```math
-  w = \frac{\lambda D}{s}
-  ```
-  ```math
-  fringe\ spacing =  \frac{wavelength \times\ distance\ from\ slit\ to\ screen}{slit\ spacing}
-  ```
-  - $D$ has to be much larger than $w$ and $s$
+- In double slit intereference:
+  - there is superposition of waves from both slits
+  - diffraction patterns overlap and interfere constructively
+  - this produces a interference pattern using two coherent sources
+  - to calculate fringe spacing:
+    ```math
+    w = \frac{\lambda D}{s}
+    ```
+    ```math
+    fringe\ spacing =  \frac{wavelength \times\ distance\ from\ slit\ to\ screen}{slit\ spacing}
+    ```
+    - $D$ has to be much larger than $w$ and $s$
+  - each bright fringe has the same width
+  - waves further away from the central maxima will have lower intensity as their waves have to travel further (reduced coherence)
 
-</br>
+> The slits can be a single source passing through a double slit <br>
+> - light diffracts to both slits, and has a fixed path difference
 
 #### History
 
@@ -960,71 +971,59 @@ d \to u + \beta^- + \bar{\nu}_e
 
 ### 3.2.2 Diffraction
 
-- the spreading out of waves when they pass through a gap/around an obstacle
-- examples:
-  - water waves through gaps in harbours
-  - radio waves around buildings
+- **Diffraction** is the spreading out of waves when they pass through a gap/around an obstacle
+  - e.g.:
+    - water waves through gaps in harbours
+    - radio waves around buildings
 
 #### Monochromatic diffraction
 
-- central maximum is:
-  - double the width of the other fringes
-  - much brighter
-- as order increases, the fringes have less intensity
-- dark fringes have zero intensity
+- In monochromatic diffraction:
+  - the central maximum is:
+    - **double** the width of the other fringes
+    - much brighter
+  - as order increases, the fringes have less intensity
 
 #### White light diffraction
 
-- central maxima is:
-  - white
-  - equal intensity to monochromatic light
-  - much wider than other fringes
-  - much brighter than other fringes
-- all other maxima are spectra
-  - less intense than monochromatic light
-  - shortest wavelength (violet) - closest to central maxima
-  - longest wavelength (red) - furthest from central maxima
-  - spectra eventually merge as wavelengths increase/decrease
-    - fringe spacing decreases
-    - red wavelengths increase, blue wavelengths decrease
+- In white light diffraction:
+  - the central maximum is:
+    - white
+    - equal intensity to monochromatic light
+    - **double** the width of the other fringes
+  - all other maxima are spectra
+    - broader than monochromatic light
+    - less intense than monochromatic light
+    - shortest wavelength (violet) is closest to central maxima
+    - longest wavelength (red) is furthest from central maxima
+    - gradually gets more broader until it eventually merges
+      - fringe spacing decreases
+      - red wavelengths increase, blue wavelengths decrease
+      - parts of higher order maxima may be supressed
+
+> These properties also apply for any other multi-wavelength waves, not just white light
 
 #### Factors affecting single slit diffraction
 
-- slit width
-  - decrease $\Rightarrow$ greater angle of diffraction $\Rightarrow$ greater width of maxima, but lower intensity
-    - slit width = wavelength: greatest diffraction
-    - slit width < wavelength: less diffraction
-      - some waves are reflected, spreads out less
-    - slit width > wavelength: less diffraction
-      - spreads out more
-    - slit width >> wavelength: no diffaction occurs
-    - slit width << wavelength: no diffaction occurs
-- wavelength
-  - increase $\Rightarrow$ greater angle of diffraction $\Rightarrow$ greater width of maxima
-    - red light has wider fringes than blue light
-
-(Range of wavelengths results in):
-Central maximum unchanged in width
-Broader maxima/range of angles for each maximum/order
-Gradually getting broader/more spread out for greater order maxima
-Part of third order maximum suppressed at long wavelengths (for  >
-90°)
+- Slit width
+  - decrease $\implies$ greater angle of diffraction $\implies$ greater width of maxima, but lower intensity
+- Wavelength
+  - increase $\implies$ greater angle of diffraction $\implies$ greater width of maxima
+    - red light has wider maxima and wider fringe spacing than blue light
 
 #### Diffraction grating
 
-- creates a diffraction pattern:
-  - monochromatic light $\Rightarrow$ fringes
-  - white light $\Rightarrow$ different components
-- has a large number of thin, equally spaced slits on a glass plate
-- creates a sharper pattern than a double slit
-- more useful when measuring wavelength
-- maximum angle of diffraction is when the beam is at right angles to the grating $\Rightarrow\ sin \theta = 1$
-
+- A **diffraction grating** has a large number of thin, equally spaced slits on a glass plate
+- it creates a diffraction pattern:
+  - monochromatic light $\implies$ fringes
+  - white light$ \implies$ different components
+- ...which has sharper maxima than a double/single slit
+  - ...so is more useful when measuring wavelength
+- The maximum angle of diffraction is when the beam is at right angles to the grating $\Rightarrow\ sin \theta = 1$
   - so the highest order visible is given by
-
   ```math
   n = \frac{d}{\lambda}, n \in \mathbb{N}
-  ```
+  ``` 
 
 </br>
 
@@ -1083,26 +1082,27 @@ Part of third order maximum suppressed at long wavelengths (for  >
 
 #### Refractive index
 
-- how much a material slows down light passing through it (ratio of how fast light travels compared to in vacuum)
-  - in air, n = 1
-- given by
-  ```math
-  n = \frac{c}{c_s}
-  ```
-  - where $c_s$ is the speed of light in the substance
-- high refractive index (n > 1) = optically dense
+- The **refractive index** is how much a material slows down light passing through it 
+  - i.e. the ratio of how fast light travels compared to in vacuum
+  > for exam purposes, in air, n = 1
+  - given by
+    ```math
+    n = \frac{c}{c_s}
+    ```
+    - where $c_s$ is the speed of light in the substance
+- A high refractive index (n > 1) $\implies$ optically dense
 
 #### Refraction
 
-- wave speed is different in the more optically dense material
+- Wave speed is slower in the more optically dense material
   - ...the edge of a wavefront slows down or speed up when entering that material
   - ...but the part of the wave not in the material continues at a different speed
 
 </br>
 
-- denser medium $\Rightarrow$ slower wave speed (shorter wavelength)
+- Denser medium $\implies$ slower wave speed (shorter **wavelength**)
   - therefore light bends towards the normal
-- less dense medium $\Rightarrow$ faster wave speed (longer wavelength)
+- Less dense medium $\implies$ faster wave speed (longer **wavelength**)
   - therefore light bends away from the normal
 
 #### Snell’s law
@@ -1113,43 +1113,47 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Total internal reflection
 
-- when the angle of refraction is 90° such that $sin \theta_2 = 1$
+- When the angle of refraction is 90° such that $sin \theta_2 = 1$
   - light is refracted along the boundary
   - angle of incidence is known as the critical angle $\theta_c$
-- we can therefore derive that
+- We can therefore derive that
   ```math
   sin \theta_c = \frac{n_2}{n_1} = \frac{sin \theta_1}{sin \theta_2}
   ```
   > which is only valid for $n_1 > n_2$ (i.e. going from higher to lower), as otherwise $sin \theta_c$ is not defined
-- when the angle of incidence > $\theta_c$, and $n_1 > n_2$
+
+<br>
+
+- When the angle of incidence > $\theta_c$, and $n_1 > n_2$
   - total internal reflection occurs
-- when the angle of incidence < $\theta_c$
+- When the angle of incidence < $\theta_c$
   - refraction occurs
-- when the angle of incidence = $\theta_c$
+- When the angle of incidence = $\theta_c$
   - light is refracted along the boundary
-- materials with a higher refractive index are more likely to have total internal reflection
+
+> Materials with a higher refractive index are more likely to have total internal reflection
 
 #### Fibre optics
 
-- total internal reflection occurs inside optical fibres
+- Optical fibres transfer information
+- Total internal reflection occurs inside optical fibres
   - light refracts upon entering fibres
-  - refracts out of fibres
-- light is monochromatic
+  - ...and refracts out of fibres
 
 </br>
 
-- a step-index fibre consists of
+- A **step-index fibre** consists of
   - optically dense core tube (glass)
+    - which propagates the wave using TIR
   - lower density cladding
     - protects thin core from damage
     - prevents signal degradation from light escaping
-    - keeps core separate to prevent information crossover
+    - keeps core separate to prevent crosstalk
   - outer sheath
 
 </br>
 
-- however, fibre optics face issues:
-
+- However, fibre optics face issues:
   - absorption
     - fibre absorbs part of the signal's energy
       - reduces the amplitude of the signal
@@ -1166,7 +1170,6 @@ n_1 sin \theta_1 = n_2 sin \theta_2
       - use a monochromatic source
       - use repeaters to regenerate pulse
       - use a single-mode fibre (only a single wavelength of light)
-
 - ...which are caused by
   - material dispersion
     - leads to pulse broadening
@@ -1180,7 +1183,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
     - monochromatic light is dispersed
       - each part of the wavefront has a different angle of incidence
       - some waves undergo total internal reflection more times
-    - the core is very narrow to prevent this
+    - the core is very narrow (single-mode) to prevent this
 
 # 4 Mechanics and materials
 
@@ -1309,7 +1312,8 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 - The resultant force acting on an object with a constant mass is directly proportional to its acceleration (and change in momentum)
   ```math
-  F = ma
+  F = \frac{\Delta mv}{\Delta t} \\
+  \implies F = ma
   ```
 
 #### Third law
@@ -1352,7 +1356,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 - **External** forces act on a system from outside
   - e.g. friction
 - **Internal** forces are exchanged by particles within the system
-- e.g. tension in a string
+  - e.g. tension in a string
 
 #### Force
 
@@ -1546,6 +1550,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 </br>
 
 - Brittle materials
+  - undergoes small increase in strain beyond the linear section before fracture
   - small plastic region
   - low breaking stress
 - Ductile materials
@@ -1668,24 +1673,27 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   \rho = \frac{RA}{L}
   ```
 - It is dependent on environmental factors, e.g. temperature
-- Metal conductors
-  - when temperature increases, resistance increases.
-  - metal ions gain more kinetic energy and vibrate more
-  - so charge carriers (i.e. electrons) collide with the ions more frequently
-  - charge carriers slow down
-  - current decreases
-- Negative temperature coefficient (NTC) thermistors
-  - when temperature increases, resistance decreases
-  - electrons are bumped up from the valence band to the conduction band
-  - so the number of charge carriers increases
-  - so current increases
-  - the resistance/temperature graph is non-linear - the downwards gradient is steeper at the start
-- Superconductors are materials which have zero resistivity at/below a **critical temperature**
+
+#### Metal conductors
+- when temperature increases, resistance increases.
+- metal ions gain more kinetic energy and vibrate more
+- so charge carriers (i.e. electrons) collide with the ions more frequently
+- charge carriers slow down
+- current decreases
+#### Negative temperature coefficient (NTC) thermistors
+- when temperature increases, resistance decreases
+- electrons are bumped up from the valence band to the conduction band
+- so the number of charge carriers increases
+- so current increases
+- the resistance/temperature graph is non-linear - the downwards gradient is steeper at the start
+#### Superconductors 
+- **Superconductors** are materials which have zero resistivity at/below a **critical temperature**
   - the critical temperature varies for different materials, but is usually close to 0K
 - They can be used in:
   - power cables, to reduce energy loss through heating
   - strong magnetic fields, which are used for maglev trains or medical equipment
 - The resistance/temperature graph is non-linear and drops dramatically to 0 at the critical temperature
+- A current in a superconductor causes no heatin effect
 
 ### Practical 5 - Determination of the resistivity of a wire
 
@@ -1898,6 +1906,7 @@ F = \frac{mv^2}{r} = m{\omega}^2r = m{\omega}v
 ### 6.1.2 Simple harmonic motion
 - An object is experiencing simple harmonic motion when:
   - its acceleration is directly proportional to displacement and is in the opposite direction, i.e. $a \propto -x$
+    - the restoring force is directed to the centre of oscillation
   - there is repetitive movement back and forth through an equilibrium position
   - the movement is periodic
 ```math
@@ -2581,7 +2590,7 @@ C = \frac{Q}{V}
 ```math
 C = \frac{A \varepsilon_0 \varepsilon_r}{d}
 ```
-- where \varepsilon_r is the ratio of the permittivity of the dielectric to the permittivity of free space
+- where $\varepsilon_r$ is the ratio of the permittivity of the dielectric to the permittivity of free space
   - this is also known as the dielectric constant
 
 ### 7.4.3 Energy stored by a capacitor
@@ -2711,7 +2720,7 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
 ```
 
 - **Magnetic flux linkage** $N \phi$ is the product of the magnetic flux and the number of turns of a coil
-  - and has units Weber turns (W turns)
+  - and has units Weber turns (Wb turns)
 
 ```math
 N \phi = BAN
@@ -2719,7 +2728,7 @@ N \phi = BAN
 
 - Flux and flux linkage passing through a rectangular coil rotated in a magnetic field is
 ```math
-\phi = AN cos \theta \\
+\phi = BA cos \theta \\
 N \phi = BAN cos \theta = BAN cos \omega t
 ```
 
