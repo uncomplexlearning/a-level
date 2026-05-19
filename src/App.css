@@ -249,6 +249,8 @@ header div a:hover {
   border: 1px solid #cdcdcd;
   border-left: 3px solid #7c7c7c;
   color: #7c7c7c;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding-left: 1em;
   padding-right: 0.3em;
   border-radius: 0.3em;
