@@ -339,6 +339,7 @@ E_{min} = h(f_{min}) = 2E
 - **Exchange particles** are "virtual" and only exist for a very short amount of time
 - They carry the fundamental force between particles
   - there cannot be instantaneous action - the particle has to interact with "something"
+- They have momentum
     > AQA analogy: the transfer of momentum by throwing a heavy ball between two people causes them to move away from each other
 
 #### Electromagnetic force
@@ -517,14 +518,12 @@ d \to u + \beta^- + \bar{\nu}_e
 
 > This can be determined using a set of collector and emitter plates connected to a circuit:
 > - a flow of electrons across the gap between the plates results in a emf
-> - electrons are released with a range of kinetic energy (by the photoelectric effect)
+> - electrons are released with a **range of** kinetic energy (by the photoelectric effect)
 > - when the pd is in the opposite direction, electrons lose KE when crossing to the anode
 >   - electrons are "attracted back" towards the emitter plate
 > - as the magnitude of the pd increases, fewer photoelectrons have sufficient KE to reach the anode
 > - the pd at which no electrons can cross the gap is known as the stopping potential
 > - constant current is reached when all released photoelectrons reach the anode
-
-<br>
 
 > Stopping potential being related to the **maximum** KE is very important
 
@@ -608,15 +607,15 @@ d \to u + \beta^- + \bar{\nu}_e
 #### Emission spectra
 
 - An **emission spectra** has a dark background with coloured lines
+  - formed by **exciting** atoms, e.g. by heating
 - This is due to:
   - electrons can only exist in discrete energy levels
   - when an electron transitions from a higher energy level to a lower energy level, a single photon of EM radiation is emitted
-  - the photon energy is equal to the difference in energy levels
+    - the photon energy is equal to the difference in energy levels
   - each element has a specific set of energy level differences, so it corresponds to a different wavelength of light
   ```math
   E = h\frac{c}{\lambda}
   ```
-  - the emitted photons go off in all directions, so the intensity in the original direction is reduced
 
 #### Absorbtion spectra
 
@@ -624,9 +623,11 @@ d \to u + \beta^- + \bar{\nu}_e
   - lines correspond with the differences in energy levels/the coloured lines in an emission spectra
   - formed by passing white light through a cool gas under low pressure
 - This is due to:
-  - an electron can gain energy and transition into a higher energy level from **absorbing a single photon**, if the photon energy equals the difference in energy levels
-  - these excited electrons de-excite and emit a single photon
-  - the emitted photons go off in all directions, so some wavelengths appear to be missing
+  - an electron can gain energy and transition into a higher energy level from **absorbing a single photon**
+    - if the photon energy equals the difference in energy levels
+
+>  - these excited electrons de-excite and emit a single photon
+>  - the emitted photons go off in all directions, so some wavelengths appear to be missing
 
 #### Discrete energy levels
 
@@ -1246,40 +1247,41 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Friction
 
-- a force which opposes the motion of an object
-- more friction is needed wrt acceleration
+- A **frictional force** is a force which opposes the motion of an object
 
 #### Lift forces
 
-- upwards force on an object moving through a fluid
-- perpendicular to fluid flow
-- caused by a change in direction of fluid flow
+- A **lift force** is an upwards force on an object moving through a fluid
+- It is:
+  - perpendicular to fluid flow
+  - caused by a change in direction of fluid flow
 
 #### Drag forces
 
-- opposite direction to motion
-- does not speed up an object
-- converts kinetic energy into other forms
+- A **drag force** opposite direction to motion
+- It:
+  - does not speed up an object
+  - converts kinetic energy into other forms
 
 #### Terminal speed
 
-- as an object falls through a fluid, the gravitational force is greater than the frictional force
-- the object accelerates
+- As an object falls through a fluid, the gravitational force is greater than the frictional force
+- ...so the object accelerates
   - as speed increases, the frictional force increases
-- due to Newton’s Second Law, the resultant force and therefore acceleration decreases
-- eventually, the frictional force is equal to the gravitational force, and the resultant force is zero
+- Due to Newton’s Second Law, the resultant force and therefore acceleration decreases
+- Eventually, the frictional force is equal to the gravitational force, and the resultant force is zero
   - the object will move at its terminal velocity
 
 #### Air resistance
 
-- increases with speed
-- affected by:
+- Air resistance increases with speed
+- ...and is affected by:
   - cross-sectional area
   - shape
   - altitude
   - temperature
   - humidity
-- decreases the horizontal component of velocity in a projectile
+- It ecreases the horizontal component of velocity in a projectile
 
 ### Practical 3 - Determination of g
 
@@ -1331,8 +1333,8 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 > - refer to the forces explicitly (by name, e.g. weight)
 > - state the directions of all forces
 > - to displace (i.e. accelerate) a fluid, force must be exerted (2nd law)
-> - and so there will be a equal and opposite force from the fluid, or a drag force (3rd law)
-> - so the resultant force...
+> - and so there will be a equal and opposite force from the fluid (3rd law)
+> - this force is equal to the drag force, so there is no resultant force, and momentum is constant (1st law)
 
 ### 4.1.6 Momentum
 
@@ -1396,7 +1398,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Momentum conservation issues
 
-- The force of impact in a (vehicle) collision can be decreased by increasing the contact time
+- The force of impact in a (vehicle) collision can be decreased by increasing the **contact time**
 - ...and this is achieved through safety features, such as:
   - crumple zones
     - designed to crush/crumple
@@ -1409,17 +1411,19 @@ n_1 sin \theta_1 = n_2 sin \theta_2
     - increases the time it takes for the momentum to decrease
 - ...which "absorbs" energy from an impact
 
+> Note that impluse is constant; only the time changes
+
 ### 4.1.7 Work, energy and power
 
 #### Work done
 
-- the amount of energy transferred when an external force causes an object to move over a certain distance<br>W = Fs cosθ
+- **Work done** is the amount of energy transferred when an external force causes an object to move over a certain distance<br>W = Fs cosθ
 - work can be done "against" a force, e.g. friction
   - some energy is dissipated to to the surroundings
 
 #### Power
 
-- rate of doing work = rate of energy transfer
+- **Power** is the rate of doing work = rate of energy transfer
   ```math
   P = \frac{\Delta W}{\Delta t} = Fv
   ```
@@ -1439,32 +1443,32 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Conservation of energy
 
-- energy cannot be created or destroyed
+- Energy cannot be created or destroyed
 - ...it can only be transferred from one form to another
 
 #### Dissipation of energy
 
-- no energy transfer is 100% efficient
+- No energy transfer is 100% efficient
   - some energy is dissipated to the surroundings
   - this is usually wasted as it can not be used
 
 #### Gravitational potential energy
 
-- defined as
+- **Gravitational potential energy** is given by
 
   ```math
   \Delta E_p = mg \Delta h
   ```
 
-- energy stored in mass due to its position in a gravitational field
+- This is the energy stored in mass due to its position in a gravitational field
 
 #### Kinetic energy
 
-- defined as
+- **Kinetic energy** is given by
   ```math
   E_k = \frac{1}{2}mv^2
   ```
-- energy an object has due to its motion
+- This is the energy an object has due to its motion
 
 ## 4.2 Materials
 
@@ -1472,7 +1476,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Density
 
-- Mass per unit volume
+- **Density** is mass per unit volume
   ```math
   ρ = \frac{m}{v}
   ```
@@ -1483,7 +1487,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   ```math
   F = k \Delta L
   ```
-- The stiffer the material, the higher the spring constant k
+- The stiffer the material, the higher the spring constant $k$
 
 </br>
 
@@ -1494,7 +1498,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Tensile forces
 
-- Tensile forces are stretching forces which act on a material
+- **Tensile forces** are **stretching** forces which act on a material
 - Tensile stress
   - force exerted per unit area (Pa)
     ```math
@@ -1529,65 +1533,60 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   ```math
   E = \frac{1}{2} F \Delta L
   ```
-- which is also the area under a force-extention graph
+  - which is also the area under a force-extention graph
 
 #### Spring energy
 
 - When a (vertical) spring is extended and contracted, energy is transferred between different stores
 - As the spring is stretched, elastic potential energy increases
 - As the stretching force is removed, kinetic energy increases
-- Kinetic energy is transferred to gravitational potential energy
-- and vice versa
+- Kinetic energy is transferred to gravitational potential energy and vice versa
 
 #### Plastic behaviour
 
 - There are 2 types of deformation:
-  - elastic deformation
+  - **elastic deformation**
     - objects return to their original shape when the stretching force is removed
-  - plastic deformation
+  - **plastic deformation**
     - objects remain stretched and do not return to their original shape when the stretching force is removed
 
 </br>
 
-- Brittle materials
-  - undergoes small increase in strain beyond the linear section before fracture
+- **Brittle** materials have
+  - small increase in strain beyond the linear section before fracture
   - small plastic region
   - low breaking stress
-- Ductile materials
+- **Ductile** materials have
   - large plastic region
   - high breaking stress
 
 #### Energy conservation issues
 
 - When a stretching force is removed, the material is unloaded
-
-</br>
-
 - After an object undergoes plastic deformation, the unloading curve on a force-extention graph will not pass through the origin
   - the object is permanently extended
   - the area between the loading and unloading curves is the work done to deform the wire
+  - the unloading curve is always below the loading curve
+    - ...as some energy may be transferred into other energy stores, e.g. thermal for rubber bands
 
-</br>
-
-- the unloading curve is always below the loading curve - some energy may be transferred into other energy stores, e.g. thermal for rubber bands
+> gradient is the same because after extension identical forces between bonds
 
 </br>
 
 - In a vehicle, a suspension system is used to provide comfortable handling of a vehicle
-- elastic shock absorbers dampen movements of the springs
-  - kinetic energy from the car is converted into thermal energy
-- seatbelts are made of elastic materials to convert kinetic energy into elastic strain energy
+  - elastic shock absorbers dampen movements of the springs
+    - kinetic energy from the car is converted into thermal energy
+  - seatbelts are made of elastic materials to convert kinetic energy into elastic strain energy
 
 ### 4.2.2 The Young modulus
 
-- The ability of a material to withstand changes in length with an added load
+- The **Young modulu**s is  ability of a material to withstand changes in length with an added load
   - i.e. the stiffness of a material
 - For a material which obey's Hooke's law, stress is proportional to strain
-- therefore the ratio of tensile stress and tensile strain is constant
-- therefore:
-  ```math
-  E = \frac{Tensile\ stress}{Tensile\ strain} = \frac{FL}{A \Delta L}
-  ```
+  - ...so the ratio of tensile stress and tensile strain is constant
+    ```math
+    E = \frac{Tensile\ stress}{Tensile\ strain} = \frac{FL}{A \Delta L}
+    ```
 
 > When considering springs/materials with the same Young modulus but different diameter/length, this rearrangement may be useful
 >
@@ -1628,15 +1627,15 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 ### 5.1.1 Basics of electricity
 
-- Current is the rate of flow of charge
+- **Current** is the rate of flow of charge
   ```math
   I = \frac{\Delta Q}{\Delta t}
   ```
-- Potential difference is the work done per unit charge
+- **Potential difference** is the work done per unit charge
   ```math
   V = \frac{W}{Q}
   ```
-- Resistance is how difficult it is for charge carriers to get past a component
+- **Resistance** is how difficult it is for charge carriers to get past a component
   ```math
   R = \frac{V}{I}
   ```
@@ -1644,7 +1643,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 ### 5.1.2 Current–voltage characteristics
 
 - Ohm's law states that I ∝ V under constant physical conditions.
-- We need to consider 3 types of component:
+- We need to consider 3 types of components:
   - Ohmic conductor
     - follows Ohm's law $V = IR$
       - graph is directly proportional
@@ -1668,32 +1667,35 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 ### 5.1.3 Resistivity
 
-- Resistivity is the extent to which a material opposes the flow of electric current through it
+- **Resistivity** is the extent to which a material opposes the flow of electric current through it
   ```math
   \rho = \frac{RA}{L}
   ```
 - It is dependent on environmental factors, e.g. temperature
 
 #### Metal conductors
-- when temperature increases, resistance increases.
-- metal ions gain more kinetic energy and vibrate more
-- so charge carriers (i.e. electrons) collide with the ions more frequently
-- charge carriers slow down
-- current decreases
+- Temperature increase $\implies$ resistance increase
+- Metal ions gain more kinetic energy and vibrate more
+- ...so charge carriers (i.e. electrons) collide with the ions more frequently
+- ...so charge carriers slow down
+- ...so current decreases
+
 #### Negative temperature coefficient (NTC) thermistors
-- when temperature increases, resistance decreases
-- electrons are bumped up from the valence band to the conduction band
-- so the number of charge carriers increases
-- so current increases
-- the resistance/temperature graph is non-linear - the downwards gradient is steeper at the start
+- Temperature increase $\implies$ resistance decrease
+- Electrons are bumped up from the valence band to the conduction band
+- ...so the number of charge carriers increases
+- ...so current increases
+
+> The resistance/temperature graph is non-linear - the downwards gradient is steeper at the start
+
 #### Superconductors 
-- **Superconductors** are materials which have zero resistivity at/below a **critical temperature**
+- **Superconductors** are materials which have **zero** resistivity at/below a **critical temperature**
   - the critical temperature varies for different materials, but is usually close to 0K
 - They can be used in:
   - power cables, to reduce energy loss through heating
   - strong magnetic fields, which are used for maglev trains or medical equipment
 - The resistance/temperature graph is non-linear and drops dramatically to 0 at the critical temperature
-- A current in a superconductor causes no heatin effect
+- A current in a superconductor causes **no** heating effect
 
 ### Practical 5 - Determination of the resistivity of a wire
 
@@ -1752,19 +1754,31 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   \frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...
   ```
 
+> To calculate the current in each branch, use the pd and the resistance across each branch
+> ```math
+> I_{branch} = \frac{V}{R_{branch}}
+> ```
+
 #### Battery cells
 
 - Series:
   ```math
   V_{total} = V_1 + V_2 + V_3 + ...
   ```
+  ```math
+  I_{total} = I_1 = I_2 = I_3 = ...
+  ```
   - Cancels out in opposite directions
 - Parallel:
   ```math
   V_{total} = V_1 = V_2 = V_3 = ...
   ```
-- For both cases, the current remains unchanged
-  - Each cell provides less power/energy in parallel, so they last longer, and reduces internal resistance.
+  ```math
+  I_{total} = I_1 + I_2 + I_3 + ...
+  ```
+  - Each cell provides less power/energy, so
+    - they last longer
+    - reduces internal resistance
 
 #### Power and energy
 
@@ -1778,7 +1792,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
   E = P t = I V t
   ```
 
-  </br>
+</br>
 
 - In DC circuits, charge and energy are conserved:
 - Kirchoff's first law: the current flowing into a node/junction must be equal to the current flowing out of it
@@ -1788,35 +1802,47 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 ### 5.1.5 Potential divider
 
-- A potential divider is used to supply constant or variable potential difference from a power supply with constant pd
-- This is achieved with several resistors in series across a source of pd
-- this includes variable resistors, or semiconductor components, e.g. LDRs.
+- A **potential divider** is used to supply constant or variable potential difference from a power supply with constant pd
+  - This is achieved with several resistors in series across a source of pd
+  - this includes variable resistors, or semiconductor components, e.g. LDRs.
 - Potential dividers can used as control circuts to trigger events.
-- e.g. when light intensity falls, resistance across the LDR will increase, so the current decreases (as $I = \frac{V}{R}$), so there is less shared of pd across the fixed resistor.
+  - e.g. when light intensity falls, resistance across the LDR will increase, so the current decreases (as $I = \frac{V}{R}$), so there is less shared of pd across the fixed resistor.
+
+```math
+V = \frac{R_1}{R_1 + R_2} V_{in}
+```
+
+> Always refer to the proportion of resistance of a particular resistor when describing a potenrial divider
 
 ### 5.1.6 Electromotive force and internal resistance
-
-- All cells have an internal resistance
-- caused by charge carriers (electrons) colliding with atoms/ions inside the cell, which leads to energy loss
-- represented as a resistor inside the battery in a circuit diagram
-- Electromotive force (emf) is the amount of energy provided by the battery (i.e. transferred from chemical energy to electrical energy) for every coulomb of charge (Q) passing through.
-  ```math
-  \varepsilon = \frac{E}{Q} = I (R + r)
-  ```
-  ```math
-  Total\ resistance = internal\ resistance + load\ resistance
-  ```
-
-</br>
-
-- The pd across the load resistor is known as the terminal pd $V$
+- All cells have an **internal resistance**
+  - which caused by charge carriers (electrons) colliding with atoms/ions inside the cell
+    - ...and leads to energy loss
+  - represented as a resistor inside the battery in a circuit diagram
+- **Electromotive force** (emf) is the amount of energy provided by the battery (i.e. transferred from chemical energy to electrical energy) for every coulomb of charge
+```math
+\varepsilon = \frac{E}{Q} = I (R + r)
+```
+```math
+Total\ resistance = internal\ resistance + load\ resistance
+```
+- The pd across the load resistor is known as the **terminal pd** $V$
 - ...therefore,
   ```math
   \varepsilon = V + Ir \\
   emf = terminal\ pd + lost\ volts
   ```
-- The emf can be measured using a voltmeter across a cell when no current is running through it.
-- "lost volts" is the energy wasted by the cell per coulomb of charge
+- The emf can be measured using a voltmeter across a cell when no current is running through it
+  - because the voltmeter has infinite resistance
+- "lost volts" is the energy wasted by the cell (dropped by the internal resistance) per coulomb of charge
+
+> When the current in a circuit **decreases** (e.g. due to high resistance), the **lost volts decreases** <br>
+> But for a load resistor connected in parallel, the current will **increase**, because <br>
+> ```math
+> I = \frac{V_{terminal}}{R}
+> ```
+> but $R$ is constant, and $V_{terminal}$ has increased
+
 ### Practical 6 - Investigation of emf and internal resistance
 
 #### Method
@@ -1844,45 +1870,39 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 ## 6.1 Periodic motion
 ### 6.1.1 Circular motion
 
-<br>
-
-> **centripetal force** is a force acting towards the centre of a circular path<br>
-> **centrifugal force** is a pseudo-force experienced by an object acting outwards from the centre to account for inertia
+> **Centripetal force** is a force acting towards the centre of a circular path<br>
+> **Centrifugal force** is a pseudo-force experienced by an object acting outwards from the centre to account for inertia
 
 <br>
 
-- Motion in a circular path at constant speed implies there is an acceleration
+- For motion in a circular path at constant speed, the direction is constantly changing
+- $\implies$ the velocity is constantly changing
+- $\implies$ there is an acceleration
 - ...and since there is an acceleration, there must be a centripetal force (Newton's 1st law)
   
 #### Angular speed
-- the velocity and acceleration of an object in circular motion is constantly changing
-  - as its direction is constantly changing
-
-- Magnitude of angular speed:
+- The magnitude of **angular speed** is given by:
 ```math
 \omega = \frac{\Delta \theta}{\Delta t} = \frac{v}{r} = 2{\pi}f = \frac{2{\pi}}{T}
 ```
 
-> $\theta$ is, obviously, in radians. If you aren't familiar with the concept of radians, go revise your maths.
-> Direction of angular velocity will not be considered
+> $\theta$ is in radians (the superior angle measure)
 
 #### Centripetal acceleration
-- the acceleration of an object towards the centre of its path when it is moving in a circular path at constant speed
+- **Centripetal acceleration** is the acceleration of an object towards the centre of its path when it is moving in a circular path at constant speed
 ```math
 a = \frac{v^2}{r} = {\omega}^2r = {\omega}v
 ```
 #### Centripetal force
-- the **resultant** force on an object towards the centre of its path when it is moving in a circular path at constant speed
+- **Centripetal force** is the **resultant** force on an object towards the centre of its path when it is moving in a circular path at constant speed
 ```math
 F = \frac{mv^2}{r} = m{\omega}^2r = m{\omega}v
 ```
-- this is **not a separate force** - other forces will "contribute" to provide the centripetal force
+- This is **not a separate force** - other forces will "contribute" to provide the centripetal force
   - **without** the centripetal force, the object will not remain stationary relative to the spinning base
   - so the centripetal force **is** the tension or friction towards the centre of the circle
-- there is no work done when an object is travelling in circular motion
+- There is no work done when an object is travelling in circular motion
   - ...as kinetic energy remains constant
-
-<br>
 
 > In general, if an object is on "top" of its circular path, the reaction force $R$ is given by
 > ```math
@@ -1896,15 +1916,13 @@ F = \frac{mv^2}{r} = m{\omega}^2r = m{\omega}v
 > Tension always acts towards the centre of the circle.<br>
 > tl;dr: it depends which direction the normal contact force/tension/whatever other force acts 
 
-<br>
-
 > An object in circular motion does not travel in a straight line, so a force must be acting on it (Newton's 1st law)<br>
 > The direction of the object is not constant, so its velocity and acceleration is constantly changing<br>
 > There is a force on the object which causes the object to accelerate in the direction of the force (Newton's 2nd law), and that force is centripetal<br>
 > The object must pull on the central point of support with a force that is equal and opposite to the force pulling on the object from the centre (Newton's 3rd law)
 
 ### 6.1.2 Simple harmonic motion
-- An object is experiencing simple harmonic motion when:
+- An object is experiencing **simple harmonic motion** when:
   - its acceleration is directly proportional to displacement and is in the opposite direction, i.e. $a \propto -x$
     - the restoring force is directed to the centre of oscillation
   - there is repetitive movement back and forth through an equilibrium position
@@ -1932,52 +1950,51 @@ x = A cos ({\omega} t) \ if \ the \ motion \ starts \ at \ maximum \ amplitude
 > as required.
 
 #### Graphs
-- the $v − t$ graph is derived from the gradient of the $x − t$ graph
-- the $a − t$ graph is derived from the gradient of the $v − t$ graph
+- The $v − t$ graph is derived from the gradient of the $x − t$ graph
+- The $a − t$ graph is derived from the gradient of the $v − t$ graph
 
 #### Maximum speed
-- we have
+- We have
 ```math
 v = \pm \ \omega \sqrt{A^2-x^2}
 ```
-- and $v$ is maximum at $x$ = 0, so
+- ...and $v$ is maximum at $x$ = 0, so
 ```math
 v_{max} = \pm \ \omega \sqrt{A^2} = \omega A
 ```
 
-> - alternatively, we have
+> - Alternatively, we have
 > ```math
 > x = A cos ({\omega} t) \\
 > \implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\
 > ```
-> - and $v$ is maximum at the stationary points of $v(t)$, so
+> - ...and $v$ is maximum at the stationary points of $v(t)$, so
 > ```math
 > \frac{d^2x}{dt^2} = - \omega^2 A cos ({\omega} t) = 0 \\
 > \implies cos ({\omega} t) = 0 + 2k \pi, k \in \mathbb{Z} \\
 > \implies {\omega} t  = \frac{\pi}{2}
 > ```
-> - substituting,
+> - ...substituting,
 > ```math
 > v_{max} = - \omega A sin (\frac{\pi}{2}) \\
 > \implies |{v_{max}}| = \omega A 
 > ```
-> - (obviously this was done without any sort of mathematical rigour, but you get the point)
 
 #### Maximum acceleration
-- we have
+- We have
 ```math
 x = A cos ({\omega} t) \\
 \implies v = \frac{dx}{dt} = - \omega A sin ({\omega} t) \\
 \implies a = \frac{dv}{dt} = - \omega^2 A cos ({\omega} t) \\
 \implies a = - \omega^2 x
 ```
-- and $a$ is maximum at the stationary points of $a(t)$, so
+- ...and $a$ is maximum at the stationary points of $a(t)$, so
 ```math
 \frac{da}{dt} = \omega^3 A sin ({\omega} t) = 0 \\
 \implies sin ({\omega} t) = 0 \\
 \implies {\omega} t = 0 + 2k \pi, k \in \mathbb{Z}
 ```
-- substituting,
+- ...substituting,
 ```math
 a_{max} = - \omega^2 A cos (0) \\
 \implies | a_{max} |  = \omega^2 A
@@ -2011,15 +2028,13 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 
 > The amplitude is the curved arc
 
-<br>
-
 > Questions may involve other harmonic oscillators (eg liquid in U-tube) but full information will be provided in questions where necessary
 
 #### Energy
-- There is maximum potential energy at maximum amplitude
+- There is maximum **potential** energy at maximum amplitude
   - for a spring, this is elastic potential energy from stretching
   - for a pendulum, this is gravitational potential energy
-- As the object in SHM moves towards equilibrium, kinetic energy increases
+- As the object in SHM moves towards equilibrium, **kinetic** energy increases
   - the total energy remains constant, so the potential energy has to decrease (conservation of energy)
 
 - In an energy-displacement graph
@@ -2033,41 +2048,57 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 > Remember, energy is a scalar - there is no negative energy!
 
 #### Damping
-- occurs when energy is lost due to resistive forces acing on a system in SHM
-- the frequency of damped systems remain constant
-- the amplitude of damped systems decrease
+- **Damping** occurs when energy is lost due to resistive forces acing on a system in SHM
+  - the **period** of damped systems remain constant in theory
+    - but in practice they usually decrease
+  - the **amplitude** of damped systems decrease
 
 <br>
 
-- there are three types of damping:
-  - light damping
+- There are three types of damping:
+  - light damping / underdamping
     - the amplitude of the oscillaions decays gradually but exponentially with time
   - critical damping
     - system returns to rest at equilibrium position in the shortest possible time **without oscillating**
-  - heavy damping
+  - heavy damping / overdamping
     - system returns to rest at equilibrium position slower than critical damping **without oscillating**
 
-### Practical 7 - Investigation into simple harmonic motion
+> The 3 types of damping correspond to the 3 types of solution to second order homogeneous linear DEs of the form
+>```math
+>\ddot{x} + k \dot{x} + \omega^2 x = 0
+>```
+> - underdamping
+>```math
+>x = e^{-\frac{k}{2}}(A \cos qt + B \sin qt)
+>```
+> - critical damping
+>```math
+>x = (A + Bt)e^{\lambda t}
+>```
+> - overdamping
+>```math
+>x = Ae^{\lambda_1 t} + Be^{\lambda_2 t}
+>```
 
-<br>
+### Practical 7 - Investigation into simple harmonic motion
 
 > soon<sup>TM</sup>
 
 ### 6.1.4 Forced vibrations and resonance
 #### Free vibrations
-- occurs when there are no external forces acting on a system (and therefore no energy transfer)
-- the system will oscillate at its resonant frequency
+- **Free vibrations** occur when there are no external forces acting on a system (and therefore no energy transfer)
+- The system will oscillate at its natural frequency
 
 #### Forced vibrations
-- occurs when there is an external **driving force** acting on a system causing it to oscillate
+- **Forced vibrations** occur when there is an external **driving force** acting on a system causing it to oscillate
   - the driving force does work against the resistive force responsible for damping
-- the system will oscillate vibrate at the driving frequency
+- The system will oscillate at the driving frequency
 
 #### Resonance
-- occurs when when the driving frequency of the external driving force is equal to the natural (resonant) frequency of the system
-- as the driving frequency approaches the natural frequency of the system, more energy is gained from the driving force
+- **Resonance** occurs when when the driving frequency of the external driving force is equal to the natural (resonant) frequency of the system
+- As the driving frequency approaches the natural frequency of the system, more energy is gained from the driving force
   - ...and therefore the amplitude increases
-- at resonance, the system oscillates at its **maximum amplitude**
+- At resonance, the system oscillates at its **maximum amplitude**
   - energy is transferred from the driving force to the system most efficiently
 
 <br>
@@ -2100,8 +2131,6 @@ T = 2 \pi \sqrt{\frac{l}{g}}
   - energy is lost to surroundings
   - work is done by the system on its surroundings
     - e.g. when the gas expands
-
-<br>
 
 > **First law of thermodynamics** <br> The internal energy of a system is increased when energy is transferred to it by heating or when work is done on it
 
@@ -2243,8 +2272,6 @@ T = 2 \pi \sqrt{\frac{l}{g}}
    ```math
   average\ molecular\ kinetic\ energy = \frac{1}{2} (C_{rms})^2 = \frac{3}{2}kT = \frac{3RT}{2N_A}
   ```
-<br>
-
 > **Deriving the kinetic theory model**
 > - cube with sides of equal length $L$
 > - a single molecule, mass $m$, speed $u$
@@ -2294,8 +2321,6 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 > \implies pV = \frac{1}{3}Nm(c_{rms})^2
 > ```
 
-<br>
-
 > **Deriving the average molecular kinetic energy**
 > ```math
 > pV = NkT = \frac{1}{3}Nm(c_{rms})^2
@@ -2316,8 +2341,6 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 - provides evidence for existence of atoms
   - collisions between the smaller and larger particules lead to random motion in the larger particles
   - small particles travel with a high speed and thus has high momentum
-
-<br>
 
 > **Pressure**
 > - when molecules collide with the walls of its container, there is a change in momentum because the direction has changed
@@ -3408,8 +3431,6 @@ F = 6 \pi \eta r v = mg \\
 - reflection
   - each point of reflection becomes a new point source for wavelets
 
-<br>
-
 > Newton's theory was more accepted due to:
 > - Newton being widely respected for motion
 > - No way of measuring speed of light or diffraction
@@ -3422,8 +3443,6 @@ F = 6 \pi \eta r v = mg \\
 - ...which introduces phase differences
 - Bright fringes form where waves arrive in phase
 - Dark fringes form where waves arrive in antiphase
-
-<br>
 
 > Huygen's theory was now accepted:
 > - Light was observed to travel slower in denser media
@@ -3510,8 +3529,6 @@ p = \frac{h}{\lambda} \\
   - objective lens then forms an image of the sample
   - projector lens then casts a second image onto the fluorescent screen
 
-<br>
-
 > - Wavelength depends on speed of the electrons, and the lower the wavelength gives greater the detail
 > - Emitted electrons come from a heated cathode and therefore have a speed distribution dependent on temperature
 > - The speed of the electrons is not always the same which causes different pathways through the lens and so aberration
@@ -3565,8 +3582,6 @@ p = \frac{h}{\lambda} \\
 - $L_0$ = (proper length) time measrued from an observer at rest relative to the length being measured
   
 > $L < L_0 \ \forall L$
-
-<br>
 
 > Both time dilation and length contraction are due to Einstein's 2nd postulate
 > - since both observers must have the same speed of light
