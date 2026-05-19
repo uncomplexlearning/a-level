@@ -1818,7 +1818,7 @@ V = \frac{R_1}{R_1 + R_2} V_{in}
 
 ### 5.1.6 Electromotive force and internal resistance
 - All cells have an **internal resistance**
-  - which caused by charge carriers (electrons) colliding with atoms/ions inside the cell
+  - which is caused by charge carriers (electrons) colliding with atoms/ions inside the cell
     - ...and leads to energy loss
   - represented as a resistor inside the battery in a circuit diagram
 - **Electromotive force** (emf) is the amount of energy provided by the battery (i.e. transferred from chemical energy to electrical energy) for every coulomb of charge
