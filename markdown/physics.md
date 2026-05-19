@@ -1258,7 +1258,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Drag forces
 
-- A **drag force** opposite direction to motion
+- A **drag force** is a force in the opposite direction to motion
 - It:
   - does not speed up an object
   - converts kinetic energy into other forms
@@ -1322,10 +1322,12 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 - For each force experienced by an object, the object exerts an equal and opposite force
   - The force pair has:
-    - same type of force
+    - **same type** of force
     - same magnitude
     - opposite direction
-    - different objects
+    - **different objects**
+
+> The third law pair for weight would be the planet
 
 > When describing using Newton's laws of motion:
 >
@@ -1841,7 +1843,9 @@ Total\ resistance = internal\ resistance + load\ resistance
 > ```math
 > I = \frac{V_{terminal}}{R}
 > ```
-> but $R$ is constant, and $V_{terminal}$ has increased
+> but $R$ is constant, and $V_{terminal}$ has increased <br>
+> NB if the thing adjusting the resistance is connected in series with the load, the behaviour will change
+> - the resistance decreasing will lead to greater pd across the load (think potential divider), but the terminal pd will still decrease due to greater lost volts
 
 ### Practical 6 - Investigation of emf and internal resistance
 
