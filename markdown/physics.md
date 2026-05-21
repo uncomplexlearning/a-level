@@ -3125,7 +3125,7 @@ sin \theta = 1.22 \frac {\lambda}{2R}
 - ...which
   - gives greater resolution (as the wavelength can be made very small)
   - gives greater accuracy becausse electrons can get closer to the nuclei (as there is no electrostatic repulsion)
-  - is easier to accelerate (give energy to) compared to $alpha$ particles (as charge-to-mass ratio is higher)
+  - is easier to accelerate (give energy to) compared to $\alpha$ particles (as charge-to-mass ratio is higher)
   - is easier to produce
   - is easier to interpret
   - does not involve the strong nuclear force
@@ -3325,7 +3325,7 @@ E = \Delta m c^2
   - Produces medical isotopes
   - Some can adjust output quickly
 
-# 12 Turning poins in physics
+# 12 Turning points in physics
 ## 12.1 The discovery of the electron
 ### 12.1.1 Cathode rays
 - Production of cathode rays in a discharged tube is achieved by:
