@@ -209,6 +209,7 @@ bool success = int.TryParse(string abc, out number)
   - return addresses
   - parameters
   - local variables
+  - register values
 
 </br>
 
@@ -470,8 +471,6 @@ public class Class2 : Class1 {
 - Queues are a type of ADT based on an array
 - They act on a last in, first out (LIFO) principle
 
-</br>
-
 #### Uses
 
 - Rversing sequences
@@ -482,24 +481,28 @@ public class Class2 : Class1 {
 
 #### Contains
 
-- An array
-- A stack pointer
+- Stacks are made of:
+  - An array
+  - A stack pointer
 
 #### Operations
 
-- push
+- `push`
   - check if stack is full
   - increment pointer
   - insert item into the index position of the pointer
-- pop
+- `pop`
   - check if stack is empty
   - decrement pointer
   - return item at the old position of the stack pointer
-- (peek)
+- `peek`
+
+> "Stack overflow" and "Stack underflow" refers to when a stack is full and empty and items are pushed/popped from it respectively
 
 ## 2.4 Graphs
 
-- Graphs are used to represent more complex relationships.
+- Graphs are used to represent more complex relationships
+- Weighted graphs are graphs where each edge has an associated value (weight)
 
 #### Uses
 
@@ -517,15 +520,18 @@ public class Class2 : Class1 {
 
 - Adjacency list
   - each node has a list of adjacent nodes
-  - suitable for sparse graphs
-    - or when edges rarely change
+  - suitable for:
+    - sparse graphs
+    - when edges rarely change
+    - when querying the existence of specific edges is rare
 - Adjacency matrix
   - tabular representation
   - each node is assigned a row and column
   - 1 is assigned to show that an edge exists, otherwise 0 is used
   - there is a diagonal line of 0s and diagonal symmetry
-  - suitable for dense graphs
-    - or where speed of quering edges is crtical
+  - suitable for:
+    - dense graphs
+    - or where speed of querying the existence of specific edges is crtical
 
 |      | Matrix                                                                  | List                                                                          |
 | ---- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -705,6 +711,8 @@ procedure DFS()
 
 ### 3.2.1 Simple tree-traversal algorithms
 
+- Time complexity O(n)
+
 #### Pre-order
 
 - Application:
@@ -767,36 +775,40 @@ procedure postorder(node)
 
 ## 3.3 Reverse Polish
 
+- **Reverse Polish Notation** (RPN) is used because:
+  - it is simpler for a machine to evaluate
+  - the algorithm is simpler to program (using a stack)
+  - brackets do not have to be used
+  - there is no need for order of precedence of operators
+    - operators appear in the order required for computation
+  - there is no need to backtrack while evaluating
+
 ### 3.3.1 Reverse Polish – infix transformations
-
-#### Applications
-
-- Eliminates need for brackets in subexpressions
-- Evaluation using a stack
-- Used in interpreters based on a stack
-  - Postscript and bytecode
-
 #### Infix to RPN
 
 - Traverse left to right
-- Evaluate brackets first
-- Write operands in order, then append operator at the end
+- 1. Evaluate brackets first
+- 2. Write operands in order, then append operator at the end
+
+> You must write operands in order, even if you can create a mathematically equivalent expression <br>
+> - e.g. `3 + 4 * 2 - 1` is `3 4 2 * + 1 -` only, not `4 2 * 3 + 1 -`
+
 
 > This is a post-order traversal
 
 #### RPN to Infix
 
-- Traverse left to right
-- Place operator between preceding two operands
-- Place expresssion in backets
+- Traverse left to right:
+- 1. Place operator between preceding two operands
+- 2. Place expresssion in backets
 
 #### Evaluation
 
-- Starting from the left
-- Push operands onto stack
-- Upon reach an operator, pop two operands off the stack
-- Apply the operation and push the result back on the stack
-- Repeat until the end of the expression
+- Traverse left to right:
+- 1. Push **operands** onto stack
+- 2. Upon reaching an operator, pop two operands off the stack
+- 3. Apply the operation and push the result back on the stack
+- 4. Repeat until the end of the expression
   - the top item on the stack will be the result
 
 ## 3.4 Searching algorithms
@@ -887,6 +899,7 @@ procedure BSTrecursive(node, target)
 
 - Time complexity O(n<sup>2</sup>)
 
+> In each pass through the list n items will be examined and there will be (at most) n passes through the list
 #### Unoptimised
 
 ```pseudocode
@@ -909,7 +922,6 @@ procedure bubblesort(array)
         swap(items[i], items[i + 1])
         no_swaps = false
 ```
-
 ### 3.5.2 Merge sort
 
 - Time complexity O(n log n)
@@ -980,6 +992,10 @@ function dijkstra(Graph, source):
 
   return dist[], prev[]
 ```
+
+#### Explanations
+- `prev` is used to store the previous node in the **shortest** path to this node
+  - ...which allows the path to be recreated
 
 # 4 Theory of computation
 
@@ -1338,11 +1354,12 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 
 #### Heuristics
 
-- Heuristic methods are often used when tackling intractable problems
-- Rules/knowledge about the problem domain
+- Heuristics are rules/knowledge about the problem domain
   - used to find a good/approximate but not optimal solution to a problem
   - reduces the size of the search/problem space
   - changing some constraints in the problem to make it easier to solve
+- Heuristic methods are often used when tackling intractable problems
+  - they find a solution that might not be the best
 
 ### 4.4.6 Computable and non-computable problems
 
@@ -1350,7 +1367,12 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 
 ### 4.4.7 Halting problem
 
-- the unsolvable problem of determining whether any program will eventually stop if given particular input
+- The **Halting problem** is the **non-computable** problem of determining whether any program will eventually stop (halt):
+  - for a **particular input**
+  - **without running** the program
+
+- There is no algorithm that solves the halting problem
+  - In general, inspection alone cannot always determine whether any given algorithm will halt for its given inputs
 
 ## 4.5 A model of computation
 
@@ -1358,9 +1380,11 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 
 - a Turing machine can be viewed as a computer with a single fixed program, expressed using
   - a finite set of states in a state transition diagram
+  - a set of transition rules
   - a finite alphabet of symbols
   - an infinite tape with marked-off squares
   - a sensing read-write head that can travel along the tape, one square at a time
+  - a state register
 - One of the states is called a start state and states that have no outgoing transitions arecalled halting states
 - Turing machines provide a (general/formal) model of computation
 
@@ -1368,7 +1392,7 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 
 - Universal Turing machines are turing machines which can:
   - simulate the behaviour of any other turing machine
-  - can compute any computable sequence
+    - ...so can compute any computable sequence
   - faithfully executes every single operation on the data precisely as the simulated turing machine would
   - store instructions for any turing machine on its tape
 

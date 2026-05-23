@@ -43,7 +43,7 @@
 - _Eulerian_ graphs have a closed trail including every edge
 - A graph is _Eulerian_ iff every vertex has even degree (or equivalently has no odd vertices)
     > A vertex in a closed trail must have the same number of arcs coming in as coming out
-- _semi-Eulerian_ graphs have a closed trail including every edge
+- _semi-Eulerian_ graphs have an (open) trail including every edge
 - A graph is _semi-Eulerian_ iff exactly two vertices have odd degree
     - then adding one singular edge to a semi-Eulerian graph would make it Eulerian
 
@@ -60,10 +60,6 @@
 <br>
 
 - Two graphs $G$ and $H$ are _isomorphic_ iff there is a bijection $f$ from the set of nodes of $G$ to the set of nodes of $H$ such that the number of edges between $v$ and $w$ in $G$ is the same as the number of edges between $f(v)$ and $f(w)$ in $H$. We write that $G \cong H$.
-
-<br>
-
-> Proof of the Eulerian condition: We first proof that if a graph is Eulerian then every vertex has even degree. This is trivial; a vertex in a closed trail must have the same number of arcs coming in as coming out. We can prove the converse by contradiction. Let $G$ be a connected graph where every vertex has even degree, and $C$ be the longest closed trail in $G$. If $C$ contains every edge of $G$, then $G$ is Eulerian. Assume $C$ does not contain every edge of $G$. Let $H$ be the graph of all edges in $G$ but not in $C$. Since all vertices in $G$ have even degree, and $C$ is a closed trail, all vertices in $H$ must have even degree. Since $G$ is connceted, $H$ and $C$ have a common vertex $v$. $v$ lies on a closed trail $C_1$ in $H$ (since all vertices in $H$ have even degree). Then since $v$ lies on both $C$ and $C_1$, we can create a new closed trail $C_2$ by connecting the two trails at $v$. Then $C_2$ is a closed trail in $G$ longer than $C$. This is a contradiction, as $C$ is the longest closed trail in $G$. So $C$ must contain every edge of $G$, and $G$ is Eulerian. $\blacksquare$
 
 # 3 Algorithms
 # 4 Network Algorithms

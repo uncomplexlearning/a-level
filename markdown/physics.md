@@ -2406,7 +2406,7 @@ F = \frac{G m_1 m_2}{r^2}
 - Always towards the centre of mass
 
 ### 7.2.3 Gravitational potential
-- Gravitational **potential** $V$ is the work done per unit mass to bring a test mass from infinity to a point in a gravitational filed
+- Gravitational **potential** $V$ is the work done per unit mass to bring a test mass from infinity to a point in a gravitational field
 - We define $V$ to be zero at infinity, so work is done on a mass to increase its height
   - This means that $V$ will always be negative on a mass
   - ...hence the negative sign 
@@ -2670,7 +2670,7 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
 > $\frac{1}{e} = 0.37 \\$ 
 > $T_\frac{1}{2} = ln 2 (RC) = 0.69RC$
 
-> Remember to check if the question is asking for the $V$ across the capactior or across the resistor!
+> Remember to check if the question is asking for the $V$ across the capacitor or across the resistor!
 
 ## 7.5 Magnetic fields
 ### 7.5.1 Magnetic flux density
@@ -2691,7 +2691,7 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
   ```
   when the field is perpendicular to the current
 
-> If the field is not perpendicular to the current, then $F = BIl sin \theta$ where $\theta$ is the angle between the wire and the field
+> If the field is not perpendicular to the current, then $F = BIl sin \theta$ where $\theta$ is the angle between the wire and the field <br>
 > The maximum force occurs when the current is perpendicular to the field
 
 #### Field lines
@@ -2712,7 +2712,7 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
   ```
   where the field is perpendicular to velocity
 
-> If the field is not perpendicular to velocity, then $F = BQv sin \theta$ where $\theta$ is the angle between the velocity and the field
+> If the field is not perpendicular to velocity, then $F = BQv sin \theta$ where $\theta$ is the angle between the velocity and the field <br>
 > The maximum force occurs when the velocity is perpendicular to the field
 
 - Recall that this is based on the direction of conventional current
@@ -2778,7 +2778,7 @@ The magnitude of the induced emf is directly proportional to the rate of change 
 #### Lenz's law
 The direction of the induced emf (when there is a change of flux linkage) is such that it will produce effects to oppose the change (of flux) that is producing it
 
-> If a magnetic moves through a coil, an emf is induced <br>
+> If a magnet moves through a coil, an emf is induced <br>
 > A current is induced, so the coil has a magnetic field <br>
 > and this field acts in the opposite direction to the magnetic field of the coil
 
@@ -3257,7 +3257,7 @@ E = \Delta m c^2
     - closer the moderator atoms are in size to a neutron, the larger the proportion of momentum which is transferred
   - fast moving neutrons collide elastically with the moderator and loses kinetic energy and momentum
     - ...eventually reaching thermal equilibrium, creating thermal neutrons
-    - ...which increases the chance of fission
+    - ...which increases the **probability** of fission
     - ...and causes less fatigue on the reactor
 - Control rods
   - absorbs neutrons without being dangerously unstable
@@ -3340,7 +3340,7 @@ E = \Delta m c^2
 
 ### 12.1.2 Thermionic emission of electrons
 - In thermionic emission,
-  - filament is heated due to current
+  - filament is heated due to the current through it
   - some (free) electrons gain sufficient energy ($> \phi$) to leave the surface of the metal
 - Electrons can then be accelerated by a pd (via an anode) to form an electron gun
 ```math
@@ -3558,18 +3558,22 @@ p = \frac{h}{\lambda} \\
 - Apparatus rotated 90 degrees and pattern observed
   - If the ether existed, the pattern would shift
     - path length/speed of light different depending on orientation relative to motion of apparatus
+    - ...so there is a change in the phase difference
+    - the speed of light depends on the Earth's velocity through the ether
   - However, there was no shift in pattern
 
 #### Significance
-- No evidence of ether
-- Speed of light is invariant
-  - all motion is relative/there isno absolute motion
+- There is no "absolute motion"
+- The speed of light is invariant
+- Ether did not exist
+  - light travels without a material medium
+- The Earth drags the ether with it
 
 ### 12.3.2 Einstein’s theory of special relativity
 - The two postulates of Einstein’s theory of special relativity are
-  - the laws of physics have the same form in all inertial frames
+  - the laws of physics have the same form in **all inertial frames**
     - ...so an observer in a frame will not able to tell if they are moving
-  - the speed of light in free space is invariant in all inertial frames
+  - the speed of light in free space is invariant in **free space**
 
 #### Inertial frame of reference
 - reference frames which are non-accelerating
@@ -3609,3 +3613,7 @@ E_k = mc^2 - m_0c^2 = \frac{m_0 c^2}{\sqrt{1 - \frac{v^2}{c^2}}} - m_0c^2
     ```
   - ...and using the change in temperature to measure KE
 - which provides evidence for the variation of kinetic energy with speed
+  - $v$ has an upper limit as KE increases
+  - ...and as $v$ increases, the mass increases
+    - as $v$ approaches c, the mass approaches $\infty$
+  - ...so when $v$ is close to $c$, the increase in KE is due to the increase in mass

@@ -6,10 +6,25 @@
 
 # Skills
 > - Timers aren't a thing, only **stopwatches** are
+> - Scales also don't exist, only **balances** do
 > - Beakers can't measure things, only **measuring cylinders** can
 > - Micrometer **screwgauge**
 
-## General 
+## General
+### Designing experiments
+#### Strategy
+- Readings of the _dependent variable_ will be measured for different values of the _independent variable_
+- Identify the _control variable_
+- **Method** of measuring/obtaining values for appropriate variables
+    - This includes dimension convertions, e.g. mass to weight
+#### Analysis
+- Plot the _dependent variable_ on the vertical axis, and (some manipulation) of the _independent variable_ on the horizontal axis
+- Describes how the required (e.g. constant) can be found
+    - gradient?
+    - area under graph?
+
+> The statements above are expected by the mark scheme
+
 ### "Reduce uncertainty"
 - Repeat experiment and calculate a mean
     - ...to reduce the impact of random error
@@ -48,6 +63,7 @@
 ## "Make sure X is parallel to Y"
 - Use set square(s) to align with Y
 - Allow for continuous variation of X, if required
+> Sometimes questions of this type will require two measurements to be taken - you must mention this!
 
 # Mark scheme
 ## Relationships
