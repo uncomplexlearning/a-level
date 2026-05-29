@@ -2121,48 +2121,50 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 ## 6.2 Thermal physics
 ### 6.2.1 Thermal energy transfer
 #### Internal energy
-- the sum of the randomly distributed kinetic energies and potential energies of the particles in a body
-- determined by 
+- **Internal energy** is the sum of the randomly distributed kinetic energies and potential energies of the particles in a body
+- ...and is determined by:
   - temperature
   - random motion of molecules
   - phase of matter
   - intermolecular interactions
-- increased when
+- ...and is increased when
   - energy is transferred to it by heating
   - work is done on it
     - e.g. when the gas is compressed
-- decreased when
+- ...and is decreased when
   - energy is lost to surroundings
   - work is done by the system on its surroundings
     - e.g. when the gas expands
 
 > **First law of thermodynamics** <br> The internal energy of a system is increased when energy is transferred to it by heating or when work is done on it
 
-#### Specific Heat Capacity
-- the amount of energy required to raise the temperature of 1kg of a substance by 1K **without a change of state**
-- this can be found using a continuous-flow calorimeter
-- for a change of temperature: 
+> NB the definition of "random" for gases is different to the definition for radiation <br> Particle motion is random because they have a range of speeds and no preferred direction, not because they can't be predicted
+
+#### Specific heat capacity
+- **Specific heat capacity** is the amount of energy required to raise the temperature of 1kg of a substance by 1K **without a change of state**
+  - this can be found using a continuous-flow calorimeter
+- For a change of temperature $\Delta\theta$: 
   ```math
   Q = mc \Delta\theta
   ```
 
-#### Specific Latent Heat
-- the amount of energy required to change the state of 1kg of substance **without changing its temperature**
-- has two types:
-  - specific latent heat of fusion
-    - energy required to convert from solid to liquid 
+#### Specific latent heat
+- **Specific latent heat** the amount of energy required to change the state of 1kg of substance **without changing its temperature**
+- ...and has two types:
+  - specific latent heat of **fusion**
+    - ...which is the energy required to convert from solid to liquid 
     - which means:
-      - reduces the number of nearest atomic neighbours
-      - allows atoms to move their centre of vibration
-      - breaks some bonds
-  - specific latent heat of vaporisation
-    - energy required to convert from liquid to gas
+      - the number of nearest atomic neighbours is reduced
+      - atoms can move their centre of vibration
+      - **some** bonds are broken
+  - specific latent heat of **vaporisation**
+    - ....which is the energy required to convert from liquid to gas
 
 > The specific latent heat of vapourisation is often greater than fusion. This is because energy is required to separate the molecules until there are no attractive forces acting between the molecules
 
-- during a change of state the potential energies of the particle ensemble are changing but **not** the kinetic energies
+- During a change of state the **potential** energies of the particle ensemble are changing but **not** the kinetic energies
   - ...so there must be no change in temperature
-- for a change of state
+- For a change of state
   ```math
   Q = ml
   ```
@@ -2170,16 +2172,16 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 
 ### 6.2.2 Ideal gases
 #### Absolute zero of temperature
-- according to gas laws, it is the temperature at which the volume or pressure of a gas extrapolates to zero
-- according to the kinetic theory model, it is the temperature at which the (random) motion can be extrapolated to stop
-  - the kinetic energy of the particles is zero
-  - no more energy can be removed from the system
+- According to gas laws, absolute zero is the temperature at which the volume or pressure of a gas extrapolates to zero
+- According to the kinetic theory model, absolute zero is the temperature at which the (random) motion can be extrapolated to stop
+  - ...because the kinetic energy of the particles is zero
+  - $\implies$ no more energy can be removed from the system
 ```math
   0 K = -273.15 \degree C
-  ```
+```
 
 #### Ideal gases
-- are gases which
+- Ideal gases are gases which
   - obey Boyle's law, Charles' law and the Pressure law
   - have molecules with negligible volume
   - cannot be liquified
@@ -2187,11 +2189,11 @@ T = 2 \pi \sqrt{\frac{l}{g}}
   - have no interaction between molecules (except during collisions)
   - have collisions which have short durations compared to times between collisions
   - have molecules which move with continuous random motion
-
+- For a gas with $n$ moles
   ```math
   pV = nRT
   ```
-
+- ...or $N$ molecules
   ```math
   pV = NkT
   ```
@@ -2204,13 +2206,13 @@ T = 2 \pi \sqrt{\frac{l}{g}}
   ```math
   number\ of\ moles = \frac{mass\ /\ g}{molar\ mass\ / g\ mol^-1}
   ```
-- molar gas constant $R$, Boltzmann constant $k$
+- Molar gas constant $R$, Boltzmann constant $k$
   ```math
   k = \frac{R}{N_A}
   ```
 
 #### Gas Laws
-- are experimental relationships between $p$, $V$, $T$ and the mass of the gas
+- **Gas laws** are **experimental** relationships between $p$, $V$, $T$ and the mass of the gas
 - Boyle's law
   - when temperature is constant, pressure is inversely proportional to the volume of a gas
     - particles are further apart and thus collide less often
@@ -2240,8 +2242,8 @@ T = 2 \pi \sqrt{\frac{l}{g}}
   ```
 
 #### Work done by an ideal gas
-- when a gas expands, work is done on its surroundings by the gas
-- assuming pressure remains constant:
+- When a gas expands, work is done on its surroundings **by the gas**
+- Assuming pressure remains constant:
   ```math
   Work\ done = p \Delta V
   ```
@@ -2251,35 +2253,37 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 - only take readings a few seconds after moving the plunger to ensure temperature is constant
 
 ### 6.2.3 Molecular kinetic theory model
-- Ideal gas laws are empirical in nature
-  - based on observation
-- Kinetic theory model arises from theory
+- Ideal gas laws are **empirical** in nature
+  - ...i.e. they are based on observation
+- Kinetic theory model arises from **theory**
 
 #### Internal energy
-- is the sum of kinetic energy of the atoms in the gas
-- ideal gas molecules have no intermolecular forces
+- For an ideal gas, internal energy is the sum of kinetic energy of the atoms in the gas
+- Ideal gas molecules have no intermolecular forces
   - ...so they don't have any potential energy
 
 #### Kinetic theory model
-- is modelled on these assumptions:
-  - volume of each molecule is negligible compared with the volume of the gas
-  - molecules in the gas are identical
-  - the separation between molecules is large compared to their diameter
+- The kinetic theory model is modelled on these assumptions:
+  - the volume of each molecule is negligible compared with the volume of the gas
   - all collisions between particles and the walls of the container are perfectly elastic
+  - the duration of one collision is much negligible compared to the duration between collisions
   - Newton's laws apply
   - molecules move in continuous random motion
   - there are no intermolecular forces except during collisions
-  - the duration of one collision is much negligible compared to the duration between collisions
+  - molecules in the gas are identical
+  - the separation between molecules is large compared to their diameter
+
+```math
+pV = \frac{1}{3} N m (C_{rms})^2
+```
   ```math
-  pV = \frac{1}{3} N m (C_{rms})^2
-  ```
-   ```math
-  average\ molecular\ kinetic\ energy = \frac{1}{2} (C_{rms})^2 = \frac{3}{2}kT = \frac{3RT}{2N_A}
-  ```
+average\ molecular\ kinetic\ energy = \frac{1}{2} (C_{rms})^2 = \frac{3}{2}kT = \frac{3RT}{2N_A}
+```
+
 > **Deriving the kinetic theory model**
-> - cube with sides of equal length $L$
-> - a single molecule, mass $m$, speed $u$
-> - molecules have perfectly elastic collisions, so the change in momentum would be 
+> - The "vessel" is a cube with sides of equal length $L$
+> - ...with a single molecule, mass $m$, speed $u$
+> - Molecules have perfectly elastic collisions, so the change in momentum would be 
 > ```math
 > \Delta p = -mu - mu = -2mu
 > ```
@@ -2341,13 +2345,13 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 > ```
 
 #### Brownian motion
-- the random motion of (larger, observable) particles suspended in a liquid or a gas
-- provides evidence for existence of atoms
+- **Brownian motion** is the random motion of (larger, observable) particles suspended in a liquid or a gas
+- ...which provides evidence for existence of atoms
   - collisions between the smaller and larger particules lead to random motion in the larger particles
-  - small particles travel with a high speed and thus has high momentum
+  - small particles travel with a high speed and thus have high momentum
 
 > **Pressure**
-> - when molecules collide with the walls of its container, there is a change in momentum because the direction has changed
+> - when molecules collide with the walls of its container, there is a change in momentum **because the direction has changed**
 > - force is the rate of change of momentum (Newton's 2nd law), and pressure is force over area
 > - force is exerted on the walls of the container as every force experienced by an object will lead to it exerting an equal and opposite force (Newton's 3rd law)
 > - ...so if there are fewer collisions per second, but the average momentum change per collisions remains the same, the total momentum change per second falls and pressure drops
@@ -2355,7 +2359,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 
 <br>
 
-- Appreciation of how knowledge and understanding of the behaviour of a gas has changed over time.
+- Knowledge and understanding of the behaviour of a gas has changed over time
 
 # 7 Fields and their consequences
 ## 7.1 Fields
@@ -2380,7 +2384,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 ## 7.2 Gravitational fields
 ### 7.2.1 Newton's law
 - Gravity is a universal attractive force acting between all matter
-- which, for two point masses, is directly proportional to the product of the masses and inversely proportional to the square of distance between the masses
+- ...which, for two point masses, is directly proportional to the product of the masses and inversely proportional to the square of distance between the masses
 ```math
 F = \frac{G m_1 m_2}{r^2}
 ```
@@ -2408,7 +2412,8 @@ F = \frac{G m_1 m_2}{r^2}
 ### 7.2.3 Gravitational potential
 - Gravitational **potential** $V$ is the work done per unit mass to bring a test mass from infinity to a point in a gravitational field
 - We define $V$ to be zero at infinity, so work is done on a mass to increase its height
-  - This means that $V$ will always be negative on a mass
+  - and the gravitational force is always attractive
+  - this means that $V$ will always be negative on a mass
   - ...hence the negative sign 
 - For a radial field,
 ```math
@@ -2423,7 +2428,7 @@ V = -\frac{GM}{r}
 ```math
 \Delta W = m \Delta V
 ```
-> This is the change in GPE
+> This is the change in GPE. Any change in potential energy only depends on the initial and final positions and not on path taken
 
 - **Equipotential surfaces** are surfaces which have the same gravitational potential
   - they are:
@@ -2471,7 +2476,7 @@ total\ energy = kinetic\ energy + gravitational\ potential\ energy \\
 
 #### Escape velocity
 - The escape velocity is:
-  - the minimum speed that will allow an object to leave a gravitational field with no further energy
+  - the minimum speed that will allow an object to leave a gravitational field with no further energy input
   - the same for all masses in a field
 
 ```math
@@ -2480,11 +2485,11 @@ total\ energy = kinetic\ energy + gravitational\ potential\ energy \\
 ```
 
 #### Synchronous orbits
-- Synchronous orbits are orbits where the period of the satellite is equal to the period of the planet
-- Geosynchronous orbits are synchronous orbits on Earth
-- Geostationary orbits are geosynchronous orbits, which
+- **Synchronous** orbits are orbits where the period of the satellite is equal to the period of the planet
+- Geo**synchronous** orbits are synchronous orbits on Earth
+- Geo**stationary** orbits are **geo**synchronous orbits, which
   - have a period of 24 hours
-  - must be in the plane of the equator
+  - must be in the **plane** of the equator
   - stays above one point on the surface
   - are used for:
     - telecommunications
@@ -2510,8 +2515,6 @@ total\ energy = kinetic\ energy + gravitational\ potential\ energy \\
 > Some assumptions for the exam:
 > - Air can be treated as a vacuum when calculating force between charges
 > - For a charged sphere, charge may be considered to be at the centre
-
-#### Comparison of magnitude of gravitational and electrostatic forces between subatomic particles
 
 ### 7.3.2 Electric field strength
 - The electric field **strength** $E$ is the force per unit charge experienced by a **positive** test charge at a point in an electric field
@@ -2540,9 +2543,9 @@ E = \frac{F}{Q} = \frac{V}{d} \\
 ```
 
 #### Field lines
-- Always directed from the positive charge to the negative charge
-- Positively charged conductor $\implies$ field lines are directed away from the centre 
-- Negatively charged conductor $\implies$ field lines are directed towards the centre 
+- Field lines are always directed from the positive charge to the negative charge, so
+  - positively charged conductor $\implies$ field lines are directed away from the centre 
+  - negatively charged conductor $\implies$ field lines are directed towards the centre 
 - For two opposite charges:
   - there are field lines directed from the positive charge to the negative charge
 - For two same charges:
@@ -2606,13 +2609,14 @@ C = \frac{Q}{V}
 
 - A **dielectric** is made up of polar molecules
   - No pd
-    - molecules are aligned in random directions
+    - polar molecules are aligned in random directions
   - With pd
     - there is a uniform electric field between the plates
-    - molecules are aligned parallel to the electric field
+    - polar molecules are aligned with their positive pole facing the negative plate and vice versa
     - each polar molecule produce their own electric field
     - this field opposes the electric field from the plates
     - ...so the pd between the plates reduces
+    - ...if charge is constant, then the capacitance increases
 
 ```math
 C = \frac{A \varepsilon_0 \varepsilon_r}{d}
@@ -2627,11 +2631,13 @@ C = \frac{A \varepsilon_0 \varepsilon_r}{d}
 - As the negative plate becomes more negatively charged, the repulsive force increases
   - so the work done required to increase each unit of charge increases
 - $\implies Q \propto V$
-- and the energy stored in a capacitor can be given by:
+- ...and the energy stored in a capacitor can be given by:
   ```math
   E = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{1}{2}\frac{Q^2}{C}
   ```
   which is the area under a graph of $Q$ against $V$
+
+> When the dieletric is removed from a charged capacitor, the energy stored increases, as work is done on the capacitor to separate the positively charged surface of the dielectric from the negatively charged plate
 
 ### 7.4.4 Capacitor charge and discharge
 #### Charging
@@ -2770,13 +2776,13 @@ N \phi = BAN cos \theta = BAN cos \omega t
 - This emf becomes an induced current when the conductor is attached to a complete circuit
 
 #### Faraday's law
-The magnitude of the induced emf is directly proportional to the rate of change of magnetic flux linkage
+- The magnitude of the induced emf is directly proportional to the rate of change of magnetic flux linkage
 ```math
 \varepsilon = N \frac{\Delta \Phi}{\Delta t}
 ```
 
 #### Lenz's law
-The direction of the induced emf (when there is a change of flux linkage) is such that it will produce effects to oppose the change (of flux) that is producing it
+- The direction of the induced emf (when there is a change of flux linkage) is such that it will produce effects to oppose the change (of flux) that is producing it
 
 > If a magnet moves through a coil, an emf is induced <br>
 > A current is induced, so the coil has a magnetic field <br>
@@ -2804,7 +2810,8 @@ s = v\Delta t \\
   - the number of field lines cut per second is the greatest
 
 ### 7.5.5 Alternating currents
-- An **alternating current** isa current which periodically varies between a positive to a negative value
+- An **alternating current** is a current which periodically varies between a positive to a negative value
+  - ...which creates an alternating magnetic field
 > We will only see sinusoidal AC
 - The electrons in an AC move back and forth with SHM
 ```math
@@ -2833,7 +2840,7 @@ V_{rms} = \frac{V_0}{\sqrt{2}} \\
 - A **transformer** changes high alternating voltage to lower alternating voltage and vice versa
 - ...and is made of 3 parts:
   - core
-    - provides greater linkage of magnetic flux from the primary coil to the secondary coil compared to an air core
+    - provides greater linkage of magnetic flux from the primary coil to the secondary coil **compared to an air core**
   - primary coil
     - an AC is applied to the coil
     - ...which creates an changing magnetic field inside the core 
@@ -2856,7 +2863,7 @@ efficiency = \frac{I_s V_s}{I_p V_p}
 ```
 - To make the core more efficient, we:
   - use soft iron to allow easy magnetisation (and demagnetisation)
-  - laminating the core with 
+  - laminating the core with insulators
   - using a core with high resistivity
   - using thick wires
   - using a core which allowes all the flux to link to the secondary coil
@@ -2864,6 +2871,9 @@ efficiency = \frac{I_s V_s}{I_p V_p}
 #### Eddy currents
 - A changing magnetic field acts against the field which induced the current (due to the current)
 - ...which creates a current
+- To reduce eddy currents:
+  - laminate the core
+  - ...so the resistance is higher $\implies$ the current is smaller
 
 # 8 Nuclear physics
 ## 8.1 Radioactivity

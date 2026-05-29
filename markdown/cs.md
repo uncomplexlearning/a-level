@@ -221,23 +221,28 @@ bool success = int.TryParse(string abc, out number)
 
 - Recursive subroutines call themselves
 - It must have a base case (stopping condition)
+  - a **base case** is the the circumstances when a recursive subroutine does not call itself
   - otherwise, it will never terminate
 
 ## 1.2 Programming paradigms
 
 ### 1.2.1 Programming paradigms
 
-- there are different approaches to designing and writing a program
+- A **paradigm** is a way of doing something
+- There are different approaches to designing and writing a program
 - ...but they will all compiled into the same machine code
 
 #### Functional programming
 
 - no variables and no imperative statements
+- comprises of expressions
 - consists only of functions mapping one value to another
+  - functions have no side effects
 
 #### Imperative programming
 
 - imperative statements (`if`, `for`, etc.)
+- dependent upon side effects
 - variables
   > includes procedural and object-oriented programming
 
@@ -440,7 +445,7 @@ public class Class2 : Class1 {
     > - mod incremented pointers by queue maxsize
 - dequeue
   - check if queue is not empty
-    - ...which is when front pointer is smaller than rear pointer
+    - ...which is when **front** pointer is smaller than rear pointer
   - return item at the index position of the front pointer
   - increment the front pointer
 - (peek)
@@ -452,6 +457,10 @@ public class Class2 : Class1 {
 #### Circular queues
 
 - front and rear pointers can wrap around
+- dequeue:
+  - compare the value of the **front** pointer with the maximum size of the array
+    - if they are equal then front pointer becomes one
+  - otherwise, add one to the front pointer
 
 #### Priority queues
 
@@ -503,6 +512,7 @@ public class Class2 : Class1 {
 
 - Graphs are used to represent more complex relationships
 - Weighted graphs are graphs where each edge has an associated value (weight)
+- Directed graphs have edges which have an associated direction
 
 #### Uses
 
@@ -1053,6 +1063,8 @@ function dijkstra(Graph, source):
 - ...because the problem reduces to one that has already been solved
 
 ### 4.1.9 Decomposition
+
+> aka "procedural decomposition"
 
 - Breaking a problem into a number of subproblems
 - ...so that each sub-problem accomplishes an identifiable task
@@ -2423,21 +2435,15 @@ Exponent
 
 #### Serial transmission
 
-- Data is transmitted 1 bit at a time **along a single wire**
+- **Serial transmission** is where data is transmitted 1 bit at a time **along a single wire**
 
 #### Parallel transmission
 
-- Multiple bits of data is tramsitted simultaneously across multiple wires
-
-</br>
-
+- **Parallel transmission** is where multiple bits of data is tramsitted simultaneously **across multiple wires**
 - Uses:
   - PATA
   - Within intergrated circuits
   - Buses
-
-</br>
-
 - Disadvantages:
   - data skew may occur - time difference between when each bit is recieved
     - propagation delay between the clock source and the transmission circuit
@@ -2450,13 +2456,13 @@ Exponent
 
 #### Synchronous data transmission
 
-- a common clock signal is shared between the two devices
+- When synchronous data transmission is used, a **common clock signal** is shared between the two devices
   - usually the clock signal is provided by the transmitting device along a dedicated wire
   - ...or using phase modulation
 
 #### Asynchronous data transmission
 
-- Start and stop bits added to data to form a frame
+- When asynchronous data transmission is used, **start and stop bits** added to data to form a frame
 - The reciever reads the data on receipt of the start bit
   - the clock is temporarily synchronised for the duration of the transmission
 - Start and stop bits must be opposites of each other
@@ -2475,13 +2481,14 @@ Exponent
 
 #### Baud rate
 
-- Number of symbol changes within a second
+- **Baud rate** is the number of symbol changes within a second
 
 #### Bit rate
 
-- Amount of data transferred between two devices in a second
-- Can be higher than baud rate if more than one bit is encoded in each signal change
-- Directly proportionate to bandwidth
+- **Bit rate** is the amount of data transferred between two devices in a second
+- It:
+  - can be higher than baud rate if more than one bit is encoded in each signal change
+  - is directly proportionate to bandwidth
 
 ```math
 bit\ rate = baud\ rate \times bits\ per\ symbol
@@ -2489,16 +2496,16 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 #### Bandwidth
 
-- **Frequency range** available for transmission within a medium
-  - difference between the highest and lowest frequency a communication medium can transmit
+- **Bandwidth** is the **frequency range** available for transmission within a medium
+ - difference between the highest and lowest frequency a communication medium can transmit
 
 #### Latency
 
-- Time delay between a message being sent and recieved
+- **Latency** is the ime delay between a message being sent and recieved
 
 #### Protocol
 
-- Set of rules followed during data transmission over a network to minimise inconsistencies
+- A **protocol** is the set of rules followed during data transmission over a network to minimise inconsistencies
 
 ## 9.2 Networking
 
@@ -3267,6 +3274,33 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 # 11 Big Data
 ## 11.1 Big Data
+- Big data is data that is collected on such a large scale that it cannot easily be analysed,
+- ...and can be described in terms of:
+  - **volume**
+    - too large to be stored on a single server
+  - **velocity**
+    - created and modified in milliseconds
+  - **variety**
+    - many forms of data
+
+#### Issues
+  - Functional programming has:
+    - immutable data structures
+    - statelessness
+    - higher-order functions
+  - ...so,
+      - different processes can apply functions to the "same" data without worrying if they have been modified
+      - there is no need to wait for another process to finish
+      - there is no need to apply functions in a particular sequence
+
+#### Fact-based model
+- Relational databases do not suit the volume and variety of Big Data
+- ...so a Fact-based model is used
+  - each piece of information is stored as an immutable fact
+  - ...with a timestamp
+- This can be represented using a graph schema
+  - entities are linked together with arrows representing their relationships
+  - timestamps are not included, only the most recent information is
 
 # 12 Fundamentals of functional programming
 ## 12.1 Functional programming paradigm
@@ -3303,12 +3337,16 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 ## 12.2 Writing functional programs
 ### 12.2.1 Functional language programs
 #### Higher order functions
-- `map` - applies a given function to each element of a list, returning a list of results
-- `filter` - processes a data structure to produce a new data structure containing exactly those elements of the original data structure that match a given condition
-  - this may be out-of-order
-- `fold` or `reduce`
-  - reudces a list of values to one value by applying a combining function (with an initial value)
-    - a combining function is one that takes 2 or more arguments and returns one output
+- A **higher order function** is a function which
+  - takes a function as an argument, and/or
+  - returns a function
+- This includes:
+  - `map` - applies a given function to each element of a list, returning a list of results
+  - `filter` - processes a data structure to produce a new data structure containing exactly those elements of the original data structure that match a given condition
+    - this may be out-of-order
+  - `fold` or `reduce`
+    - reudces a list of values to one value by applying a combining function (with an initial value)
+      - a combining function is one that takes 2 or more arguments and returns one output
 
 > In most functional languages, there exists at least 2 types of folding, including `foldl` and `foldr`
 

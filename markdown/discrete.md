@@ -61,6 +61,8 @@
 
 - Two graphs $G$ and $H$ are _isomorphic_ iff there is a bijection $f$ from the set of nodes of $G$ to the set of nodes of $H$ such that the number of edges between $v$ and $w$ in $G$ is the same as the number of edges between $f(v)$ and $f(w)$ in $H$. We write that $G \cong H$.
 
+> You may be asked to prove if a graph is a subgraph of another without using subdivision or contraction. In this case consider each vertex and what the graph will use to form the subgraph if it is included
+
 # 3 Algorithms
 # 4 Network Algorithms
 # 5 Decision Making in Project Management
