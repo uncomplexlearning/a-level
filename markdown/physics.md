@@ -2138,7 +2138,9 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 
 > **First law of thermodynamics** <br> The internal energy of a system is increased when energy is transferred to it by heating or when work is done on it
 
-> NB the definition of "random" for gases is different to the definition for radiation <br> Particle motion is random because they have a range of speeds and no preferred direction, not because they can't be predicted
+> NB the definition of "random" for gases is different to the definition for radiation <br> Particle motion is random because they have: 
+> - a range of speeds
+> - no preferred direction (all directions are equally likely)
 
 #### Specific heat capacity
 - **Specific heat capacity** is the amount of energy required to raise the temperature of 1kg of a substance by 1K **without a change of state**
@@ -2182,13 +2184,12 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 
 #### Ideal gases
 - Ideal gases are gases which
-  - obey Boyle's law, Charles' law and the Pressure law
   - have molecules with negligible volume
-  - cannot be liquified
+  - have collisions which have negligible durations compared to the time between collisions
+  - have no non-contact/intermolecular between molecules (except during collisions)
   - have elastic collisions
-  - have no interaction between molecules (except during collisions)
-  - have collisions which have short durations compared to times between collisions
   - have molecules which move with continuous random motion
+- ...so they obey Boyle's law, Charles' law and the Pressure law
 - For a gas with $n$ moles
   ```math
   pV = nRT
@@ -2354,8 +2355,8 @@ average\ molecular\ kinetic\ energy = \frac{1}{2} (C_{rms})^2 = \frac{3}{2}kT = 
 > - when molecules collide with the walls of its container, there is a change in momentum **because the direction has changed**
 > - force is the rate of change of momentum (Newton's 2nd law), and pressure is force over area
 > - force is exerted on the walls of the container as every force experienced by an object will lead to it exerting an equal and opposite force (Newton's 3rd law)
-> - ...so if there are fewer collisions per second, but the average momentum change per collisions remains the same, the total momentum change per second falls and pressure drops
-> - ...or if the molecules have less mean speed, the average momentum change per collision decreases, the total momentum change per second falls and pressure drops
+> - ...so if there are fewer collisions per second, but the **average** momentum change per collisions remains the same, the **total** momentum change per second falls and pressure drops
+> - ...or if the molecules have less mean speed, the **average** momentum change per collision decreases, the **total** momentum change per second falls and pressure drops
 
 <br>
 
@@ -3120,15 +3121,19 @@ E_k = E_p \implies \frac{1}{2}mv^2 = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 Q_2
 ```
 <br>
 
-- ...which always provides an overestimate
-  - because it only gives the distance of closest approach/upper limit to the radius
+- ...which always provides an overestimate, because
+  - it only gives an upper limit to the radius
+    - because the particle doesn't actually "hit" the nucleus
+  - it depends on the energy of the alpha particle
+  - recoil of the nucleus is ignored
+  - only considers the number of protons
 
 #### Electron diffraction
 - Electron diffraction occurs when a beam of electrons is directed at a thin film
 - ...and each electron diffracts around a nucleus
 - ...because the de Broglie wavelength of an electron at high speed is similar to the size of the nucleus
-- This produces a diffraction pattern of concentric circles of minima
-- ...and the size of the nucleus can be determined using the first minima
+- This produces a diffraction pattern of concentric circles of **minima**
+- ...and the size of the nucleus can be determined using the first **minima**
 ```math
 sin \theta = 1.22 \frac {\lambda}{2R}
 ```
