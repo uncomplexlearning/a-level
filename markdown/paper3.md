@@ -35,7 +35,7 @@
 ### "Reduce uncertainty"
 - Use a smaller (time-base / voltage-gain)
     - ...so the waveform will stretch (horizontally / vertically)
-- ...then, the resolution of the (time/ voltage) axis has increased
+- ...then, the resolution of the (time / voltage) axis has increased
 - ...and measuring more divisions reduces percentage uncertainty
 > Provide a numerical factor for any stretches
 
