@@ -2171,6 +2171,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
   Q = ml
   ```
 
+> Remember energy is conserved in a closed system (think melting ice cooling water)
 
 ### 6.2.2 Ideal gases
 #### Absolute zero of temperature
@@ -2858,10 +2859,10 @@ V_{rms} = \frac{V_0}{\sqrt{2}} \\
 ```
 
 #### Efficiency
-- Transformers are not 100% efficient:
-  - induced eddy currents
+- Transformers are not 100% efficient, because:
+  - eddy currents are induced
   - reversal of magnetism
-  - poor insulation between 
+  - poor insulation between the coils
 ```math
 efficiency = \frac{I_s V_s}{I_p V_p}
 ```
@@ -2873,11 +2874,14 @@ efficiency = \frac{I_s V_s}{I_p V_p}
   - using a core which allowes all the flux to link to the secondary coil
 
 #### Eddy currents
-- A changing magnetic field acts against the field which induced the current (due to the current)
-- ...which creates a current
+- A changing magnetic field induces a current within a conductor
+- ...and these currents produce their own magnetic field
+- ...which opposes the "original" magnetic field that induced it
 - To reduce eddy currents:
-  - laminate the core
-  - ...so the resistance is higher $\implies$ the current is smaller
+  - laminate the core with a material with high resitivity
+    - ...so the resistance is higher $\implies$ the current is smaller
+  - use thin sheets of iron
+    - ...so smaller emfs are induced
 
 # 8 Nuclear physics
 ## 8.1 Radioactivity
@@ -3287,7 +3291,12 @@ E = \Delta m c^2
 - Coolant
   - transfers thermal energy (efficiently) between water systems within the reactor
     - ...to maintain a safe working temperature in the core
-  - made of materials with a high specific heat capacity, e.g. water, helium, or molten salt
+  - made of materials with a high specific heat capacity and high boiling point, e.g. water, helium, or molten salt
+    - ...and also:
+      - do not absorb neutrons
+      - are stable under high temperature and radiation intensity
+      - inert (non-reactive)
+      - have low viscosity
   - pumped into reactor at a cold temperature to extract the heat released by fission
     - ...which is then delived it to the boiler/turbine via a heat exchanger
 
