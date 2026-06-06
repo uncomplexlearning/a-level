@@ -3375,10 +3375,12 @@ E = \Delta m c^2
 ```math
 work\ done\ = \frac{1}{2}mv^2 = eV
 ```
+
 ### 12.1.3 Specific charge of the electron
 #### Circular motion
 - Using a fine beam tube, which has
   - low pressure gas, which collides with the electrons and de-excite to emit light of visible wavelengths
+  - a perpendicular magnetic field which leads to circular motion
 ```math
 F = \frac{mv^2}{r} = Bev \\
 \implies v = \frac{Ber}{m} \\
@@ -3389,11 +3391,19 @@ eV = \frac{1}{2}mv^2 \\
 > You (usually) can't measure the speed of the electrons, so you must rearrange the given equation to use the accelerating pd
 
 #### Magnetic and electric fields
+- Using a set of parallel plates which has a pd $V_p$ applied across it
+  - a magnetic field is applied to produce balanced forces so the beam is horizontal
 ```math
-F = eE = \frac{eV}{d} = Bev\\
-\implies v = \frac{V}{Bd}
+F = \frac{eV_p}{d} = Bev\\
+\implies v = \frac{V_p}{Bd}
 ```
-switching off the E field,
+- then
+```math
+eV = \frac{1}{2}mv^2 \\
+\implies \frac{e}{m_e} = \frac{v^2}{2V} \\
+\implies \frac{e}{m_e} = \frac{V_p^2}{2 B^2 d^2 V}
+```
+- or switching off the E field,
 ```math
 F = \frac{mv^2}{r} = Bev\\
 \implies v = \frac{Ber}{m} \\
@@ -3416,57 +3426,58 @@ F = \frac{QV}{d} = mg
 ```
 
 #### Radius
-- Assuming the droplet is a perfect sphere,
+- When the electric field is turned off, the oil droplets fall at **terminal velocity**
+  - then force = viscous drag force
+- Assuming air is a viscous fluid, we can use Stoke's law for the force on an oil droplet, which requires that
+  - force = viscous drag force
+  - air is a viscous fluid
+  - upthrust is negligible
+  - the droplet is small, perfectly spherical and slow
 ```math
+F = 6 \pi \eta r v
+```
+- ...which is true if:
+  - Newton's laws apply
+  - upthrust is negligible
+```math
+F = mg = 6 \pi \eta r v \\
 m = \frac{4}{3} \pi \rho r^3 \\
-mg = 6 \pi \eta r v \\
 \implies r = \sqrt{\frac{9 \eta v}{2 \rho g}}
 ```
 
 #### Mass
-- When the electric field is turned off, the oil droplets fall at **terminal velocity**
-- Assuming air is a viscous fluid, we can use Stoke's law for the force on an oil droplet, assuming that the droplet is:
-  - small
-  - spherical
-  - slow
+- The mass can then be calculated with the radius
 ```math
-F = 6 \pi \eta r v
+m = \frac{\rho 4 \pi r^3}{3}
 ```
-- then,
-```math
-F = 6 \pi \eta r v = mg \\
-\implies m = \frac{\rho 4 \pi r^3}{3}
-```
-- which is true if:
-  - Newton's laws apply
-  - upthrust is negligible
 
 ## 12.2 Wave-particle duality
 ### 12.2.1 Newton’s corpuscular theory of light
 #### Newton's corpuscular theory
-- light is made up of corpuscles (particles), which are elastic spheres
-- refraction
-  - force acts attracting them to the denser medium
+- Light is made up of corpuscles (particles), which are elastic spheres
+- Refraction occurs because:
+  - short-range force acts attracting them to the denser medium
     - attraction only affects motion at the interface/boundary
   - only one component of momentum (perpendicular to the surface) changes at the interface
   - ...which causes the change in direction
-- reflection
+- Reflection occurs because:
   - corpuscles hit the reflective medium and experience a reaction force (Newton's 3rd law)
-- particles travel in a straight line
-  - ...so there is no diffraction (and the shadows of the image would be sharp)
+- Particles travel in a **straight line**
+  - ...so there is no diffraction (and the **shadows** of the image would be sharp)
 #### Huygens’ wave theory
-- wave front is incident on interface
-- there are secondary wavelets at wave fronts
-- refraction
-  - wavelets travel more slowly in a heavier medium
+- Light is made up of waves with wave fronts
+- There are secondary wavelets at wave fronts
+- Refraction occurs because:
+  - wave front is incident on interface
+  - wavelets travel more slowly in a denser medium
   - different parts of the wave front cross the interface at different times
   - ...so the slowing down of the wavelets causes the change in direction
-- reflection
+- Reflection occurs because:
   - each point of reflection becomes a new point source for wavelets
 
 > Newton's theory was more accepted due to:
 > - Newton being widely respected for motion
-> - No way of measuring speed of light or diffraction
+> - there being no way of measuring speed of light or diffraction at the time
 
 ### 12.2.2 Significance of Young’s double slits experiment
 - When the light wave reaches a slit,
@@ -3478,8 +3489,8 @@ F = 6 \pi \eta r v = mg \\
 - Dark fringes form where waves arrive in antiphase
 
 > Huygen's theory was now accepted:
-> - Light was observed to travel slower in denser media
-> - Light was observed to show interference effects that cannot be explained using corpuscular theory
+> - Light was **observed to travel slower** in denser media
+> - Light was observed to show **interference effects** that cannot be explained using corpuscular theory
 
 ### 12.2.3 Electromagnetic waves
 - Electromagnetic waves consist of an electric field and a magnetic field, which are
@@ -3495,40 +3506,52 @@ F = 6 \pi \eta r v = mg \\
   ```math
   c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}
   ```
-  - $\varepsilon_0$ relates to the electric field strength due to a charged object in free space
-  - $\mu_0$ relates to the magnetic flux density due to a current-carrying wire in free space.
+  - $\varepsilon_0$ relates to the electric field **strength** due to a charged object in free space
+  - $\mu_0$ relates to the magnetic flux **density** due to a current-carrying wire in free space
 
 #### Hertz’s discovery of radio waves
-- Using a spark gap transmitter and loop detector, with a metal reflector
+- Using a spark gap transmitter and movable loop detector, with a metal reflector
 - A stationary wave is created
   - $\implies$ $\lambda$ = 2 × distance between adjacent maxima
 - ...which can then be used to determine the speed of EM waves
 
 #### Fizeau’s determination of the speed of light
 - Maxwell’s theory of electromagnetic waves predicted a value for the speed of EM waves
-- Fizeau’s result is close to the predicted speed $\implies$ light is an EM wave
+- In Fizeau's experiment,
+  - A toothed wheel is rotated and the reflected light from a distant mirror is observed
+    - the rotation speed of the wheel can be adjusted
+  - At slow speeds, the light returns through the original gap
+```math
+c = 4dnf_0
+```
+- ...where $f_0$ is the lowest frequency where no reflected light is seen
+  - reflected light is blocked when it hits an adjacent tooth
+- Fizeau’s result is close to Maxwell's predicted speed $\implies$ light is an EM wave
 
 ### 12.2.4 The discovery of photoelectricity
 #### Black-body radiation
-- Black-body radiation has a spectrum with peak depending on temperature of the emitted **only**
+- A perfect black body absorbs all incident radiation and does not reflect or transmit any radiation
+  - perfect absorber $/implies$ perfect emitter
+- Black-body radiation has a spectrum with peak depending on temperature of the body only **only**
 
 #### Ultraviolet catastrophe
 - If EM radiaiton was a wave, it is predicted that a black body wouth emit an infinite amount of UV as its temperature increased
 - This did not match up with experimental evidence
 
 #### Planck’s interpretation 
-- The energy emitted by oscillators was quantised
+- The energy emitted by **oscillators** was quantised into discrete packets
 ```math
 E = nhf
 ```
+> so, at low frequencies, the energy required per quanta is very small, so many are produced; but at high frequencies, the energy per quanta is very large, so oscillators will not have enough energy to emit these quanta frequently
 
 #### Obersverations
-- no photoelectric emission if incident light below threshold frequency
+- No photoelectric emission if incident light below threshold frequency
   - classical wave theory: light of any frequency should cause emission
-- photoelectric emission is instantaneous
+- Photoelectric emission is instantaneous
   - classical wave theory: energy is spread and needs time to accumulate
 - (photoelectrons have a range of KE from zero to max value)
-- number of photoelectrons per second is proportional to intensity of incident radiation
+- Number of photoelectrons per second is proportional to intensity of incident radiation
   - classical wave theory: intensity of wave should determine whether photoelectron emitted
 
 #### Einstein's explanation
@@ -3536,12 +3559,12 @@ E = nhf
 - Photoelectrons due to one photon interacting with one electron in surface of metal.
 - Minimum energy (work function of metal) needed for electron to be emitted related to a threshold frequency
 - Remaining energy of photon becomes max KE of photoelectron.
-- Brighter source means more photons (per second) and therefore more photoelectrons (per second).
+- Brighter source means more photons (per second) and therefore more photoelectrons (per second)
 
 
 ### 12.2.5 Wave–particle duality
 #### de Broglie’s hypothesis
-- all matter exhibit wave-particle duality
+- All matter particles exhibit wave-like properties
 ```math
 p = \frac{h}{\lambda} \\
 \implies \lambda = \frac{h}{\sqrt{2meV}}
@@ -3583,13 +3606,12 @@ p = \frac{h}{\lambda} \\
   - (The plane block ensures that both beams pass through the same thickness of glass and air)
 - Beams travel at right angles and return to combine at telescope with a path difference
   - Observer sees interference pattern from two beams
-  - If the speed of light depends on the Earth's velocity through the ether, rotating the apparatus through 90° would cause the phase difference to change
 - Apparatus rotated 90 degrees and pattern observed
   - If the ether existed, the pattern would shift
-    - path length/speed of light different depending on orientation relative to motion of apparatus
-    - ...so there is a change in the phase difference
+    - the speed of light is different depending on orientation relative to motion of apparatus
+    - ...so there is a change in the phase difference when rotated
     - the speed of light depends on the Earth's velocity through the ether
-  - However, there was no shift in pattern
+  - However, there was no shift in pattern (and the apparatus was capable of detecting very small shifts)
 
 #### Significance
 - There is no "absolute motion"
@@ -3602,10 +3624,10 @@ p = \frac{h}{\lambda} \\
 - The two postulates of Einstein’s theory of special relativity are
   - the laws of physics have the same form in **all inertial frames**
     - ...so an observer in a frame will not able to tell if they are moving
-  - the speed of light in free space is invariant in **free space**
+  - the speed of light in **free space** is invariant
 
 #### Inertial frame of reference
-- reference frames which are non-accelerating
+- **Inertial frames of reference** are reference frames which are non-accelerating
 
 ### 12.3.3 Time dilation
 - $t$ = time measured from an observer moving relative to the time being measured
@@ -3627,6 +3649,7 @@ p = \frac{h}{\lambda} \\
 ### 12.3.5 Mass and energy
 - Equivalence of mass and energy means that
   - if work is done on an object, its mass will increase
+    - "mass increases with speed"
   - if an object in motion has energy greater than its rest energy, then the additional energy is kinetic
 
 ```math
