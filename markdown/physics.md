@@ -3359,7 +3359,7 @@ E = \Delta m c^2
 ### 12.1.1 Cathode rays
 - Production of cathode rays in a discharged tube is achieved by:
   - ionisation of gas atoms by a strong electric field (under low pressure)
-    - positive ions are attracted to the cathode
+    - positive ions are attracted to the cathode and strikes the surface
     - ...so there is emission of electrons by the cathode
   - electrons are **accelerated** towards the anode by a potential difference
   - when the electron and positive ions collide, they become excited
@@ -3413,8 +3413,8 @@ F = \frac{mv^2}{r} = Bev\\
 > Also with constant acceleration formulae for electric field only
 
 #### Significance
-- specific charge of the cathode rays was much larger than the hydrogen ion
-- ...so the cathode ray particles must have a very small mass or very high charge
+- specific charge of the cathode rays was much larger than the hydrogen ion (which was the largest then known)
+- ...so the cathode ray particles must have a very small mass or very high charge (compared to the hydrogen ion)
 
 ### 12.1.4 Principle of Millikan’s determination of the electronic charge
 #### Stationary force
@@ -3531,15 +3531,17 @@ c = 4dnf_0
 ### 12.2.4 The discovery of photoelectricity
 #### Black-body radiation
 - A perfect black body absorbs all incident radiation and does not reflect or transmit any radiation
-  - perfect absorber $/implies$ perfect emitter
-- Black-body radiation has a spectrum with peak depending on temperature of the body only **only**
+  - perfect absorber $\implies$ perfect emitter
+- Black-body radiation is EM radiaiton which has a spectrum with peak depending on temperature of the body only **only**
 
 #### Ultraviolet catastrophe
-- If EM radiaiton was a wave, it is predicted that a black body wouth emit an infinite amount of UV as its temperature increased
-- This did not match up with experimental evidence
+- If EM radiaiton was a wave, it is predicted that a black body would haveemit an infinite amount of UV as its temperature increased at very short wavelengths
+- This did not match up with experimental evidence, which:
+  - had similar intensity at long wavelengths
+  - but has peaks at short wavelengths
 
 #### Planck’s interpretation 
-- The energy emitted by **oscillators** was quantised into discrete packets
+- The energy emitted by **oscillators** (i.e. EM radiation) was quantised into discrete **quanta**
 ```math
 E = nhf
 ```
@@ -3556,7 +3558,7 @@ E = nhf
 
 #### Einstein's explanation
 - Light is made of photons
-- Photoelectrons due to one photon interacting with one electron in surface of metal.
+- Photoelectrons due to one photon interacting with one electron in surface of metal
 - Minimum energy (work function of metal) needed for electron to be emitted related to a threshold frequency
 - Remaining energy of photon becomes max KE of photoelectron.
 - Brighter source means more photons (per second) and therefore more photoelectrons (per second)
@@ -3578,12 +3580,12 @@ p = \frac{h}{\lambda} \\
 - an atom has a diameter of approximately $1 \times 10^{-10}$m
 
 #### Transmission electron microscope (TEM)
-  - uses magnetic lenses to deflect moving electrons
-  - electrons through the middle of the lenses are undeviated
-  - electrons on the edges are deflected by magnetic fields toward the axis of the TEM
-  - condenser lens deflects the electrons into a wide parallel beam incident uniformly on the sample
-  - objective lens then forms an image of the sample
-  - projector lens then casts a second image onto the fluorescent screen
+- uses magnetic lenses to deflect moving electrons
+- electrons through the middle of the lenses are undeviated
+- electrons on the edges are deflected by magnetic fields toward the axis of the TEM
+- condenser lens deflects the electrons into a wide parallel beam incident uniformly on the sample
+- objective lens then forms an image of the sample
+- projector lens then casts a second image onto the fluorescent screen
 
 > - Wavelength depends on speed of the electrons, and the lower the wavelength gives greater the detail
 > - Emitted electrons come from a heated cathode and therefore have a speed distribution dependent on temperature
@@ -3591,14 +3593,21 @@ p = \frac{h}{\lambda} \\
 > - The sample thickness reduces the speed of the electrons increasing the wavelength and decreasing the detail
 
 #### Scanning tunnelling microscope (STM)
-- uses quantum tunnelling
+- Uses quantum tunnelling
   - electrons on the surface may jump onto the tip of the probe, if
   - ...they can overcome the potential barrier
-  - but not all electrons have sufficient energy to do so
-- tip of probe maintained a certain distance (about 1nm) above surface
-- when probe moves over higher layer of electrons, current increases
-- tip is moved higher to reduce current to original value
-- so the surface can be mapped by the position of the tip
+  - ...but not all electrons have sufficient energy to do so
+  - this creates a tunnelling current
+- Constant-current mode is where:
+  - tip of probe maintains a constant distance (about 1nm) above surface
+  - when probe moves over higher layer of electrons, current increases
+  - tip is moved higher to reduce current to original value
+  - so the surface can be mapped by the position of the tip
+- Constant height mode is where:
+  - tip of probe maintains a constant distance (doesn't move up or down)
+  - the change in elevation of the surface changes the distance to the probe
+  - ...so the current varies
+  - the current is used to create the mapping
 
 ## 12.3 Special relativity
 ### 12.3.1 The Michelson-Morley experiment
@@ -3625,6 +3634,8 @@ p = \frac{h}{\lambda} \\
   - the laws of physics have the same form in **all inertial frames**
     - ...so an observer in a frame will not able to tell if they are moving
   - the speed of light in **free space** is invariant
+
+> the speed of light is invariant in all frames of reference, not just inertial ones
 
 #### Inertial frame of reference
 - **Inertial frames of reference** are reference frames which are non-accelerating
@@ -3663,8 +3674,10 @@ E_k = mc^2 - m_0c^2 = \frac{m_0 c^2}{\sqrt{1 - \frac{v^2}{c^2}}} - m_0c^2
     ```math
     E_k = QV
     ```
-  - ...and using the change in temperature to measure KE
-- which provides evidence for the variation of kinetic energy with speed
+  - ...and using the change in temperature of the aluminium target to measure KE
+- The speed of the electrons is measured using oscilloscope signals for two detectors, with a known distance
+- A graph of speed and kinetic energy can then be drawn
+- This provides evidence for the variation of kinetic energy with speed
   - $v$ has an upper limit as KE increases
   - ...and as $v$ increases, the mass increases
     - as $v$ approaches c, the mass approaches $\infty$

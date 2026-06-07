@@ -14,6 +14,7 @@
 ### Designing experiments
 #### Strategy
 - Readings of the _dependent variable_ will be measured for different values of the _independent variable_
+    - How to vary the independent variable?
 - Identify the _control variable_
 - **Method** of measuring/obtaining values for appropriate variables
     - This includes dimension convertions, e.g. mass to weight
@@ -52,6 +53,15 @@
 ## Measuring the diameter of long things
 - Repeat measurements/readings at different **points** along the rod in different **directions**, and calculate a mean
 - ...and discard anomalies as before
+
+## Fiducial marker
+- Placed where the oscillator is moving fastest 
+    - ...so the transit time is least
+
+## Micrometer screwgauge
+- Use the thimble and then ratchet, which:
+    - prevents the object being measured from being crushed
+    - prevents damage to the mechanism
 
 ## Radiation
 ### Background radiation
