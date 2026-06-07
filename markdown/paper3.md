@@ -3,6 +3,7 @@
 - Has a mirror
     - if the needle is aligned with its reflection,
     - ...then parallax error is reduced
+- Easier to read quickly (than digital)
 
 # Skills
 > - Timers aren't a thing, only **stopwatches** are
@@ -29,7 +30,7 @@
 ### "Reduce uncertainty"
 - Repeat experiment and calculate a mean
     - ...to reduce the impact of random error
-- Repeat experiment to detect anomalies
+- Repeat experiment to detect **anomalies**
     - ...to be discarded
 
 ## Oscilloscope
@@ -44,6 +45,7 @@
 ### "Reduce uncertainty"
 - View at right angles at eye level
     - to reduce the impact of parallax error
+    - by aligning with own reflection in mirror
 - (liquids) Read from the bottom of the meniscus
 
 ## Stuff with a zero button
@@ -76,5 +78,14 @@
 > Sometimes questions of this type will require two measurements to be taken - you must mention this!
 
 # Mark scheme
-## Relationships
 - When describing the relationship demonstrated by a graph, you must include the relationship and the **direction**
+- Always give quantitative value for adjusting scales oe
+- "can be applied" => state assumptions
+- Not everything has to be linear (e.g. non-ohmic condictors)
+- Always calculate % difference when asked if something supports prediction
+- ZERO BUTTON!!
+- Refer to scales being low resolution owtte instead of just "integer"
+- Usually if a graph has e.g. a certain number of oscillations, they want to keep that even if the wave changes
+- range != uncertainty
+- "change" in - be precise (also what is constant needs to be mentioned if it matters)
+- Repeats always related to **anomalies** and random error
