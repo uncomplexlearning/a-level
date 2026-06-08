@@ -1258,7 +1258,7 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 #### Drag forces
 
-- A **drag force** opposite direction to motion
+- A **drag force** is a force in the opposite direction to motion
 - It:
   - does not speed up an object
   - converts kinetic energy into other forms
@@ -1322,10 +1322,12 @@ n_1 sin \theta_1 = n_2 sin \theta_2
 
 - For each force experienced by an object, the object exerts an equal and opposite force
   - The force pair has:
-    - same type of force
+    - **same type** of force
     - same magnitude
     - opposite direction
-    - different objects
+    - **different objects**
+
+> The third law pair for weight would be the planet
 
 > When describing using Newton's laws of motion:
 >
@@ -1816,7 +1818,7 @@ V = \frac{R_1}{R_1 + R_2} V_{in}
 
 ### 5.1.6 Electromotive force and internal resistance
 - All cells have an **internal resistance**
-  - which caused by charge carriers (electrons) colliding with atoms/ions inside the cell
+  - which is caused by charge carriers (electrons) colliding with atoms/ions inside the cell
     - ...and leads to energy loss
   - represented as a resistor inside the battery in a circuit diagram
 - **Electromotive force** (emf) is the amount of energy provided by the battery (i.e. transferred from chemical energy to electrical energy) for every coulomb of charge
@@ -1841,7 +1843,9 @@ Total\ resistance = internal\ resistance + load\ resistance
 > ```math
 > I = \frac{V_{terminal}}{R}
 > ```
-> but $R$ is constant, and $V_{terminal}$ has increased
+> but $R$ is constant, and $V_{terminal}$ has increased <br>
+> NB if the thing adjusting the resistance is connected in series with the load, the behaviour will change
+> - the resistance decreasing will lead to greater pd across the load (think potential divider), but the terminal pd will still decrease due to greater lost volts
 
 ### Practical 6 - Investigation of emf and internal resistance
 
@@ -2117,77 +2121,81 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 ## 6.2 Thermal physics
 ### 6.2.1 Thermal energy transfer
 #### Internal energy
-- the sum of the randomly distributed kinetic energies and potential energies of the particles in a body
-- determined by 
+- **Internal energy** is the sum of the randomly distributed kinetic energies and potential energies of the particles in a body
+- ...and is determined by:
   - temperature
   - random motion of molecules
   - phase of matter
   - intermolecular interactions
-- increased when
+- ...and is increased when
   - energy is transferred to it by heating
   - work is done on it
     - e.g. when the gas is compressed
-- decreased when
+- ...and is decreased when
   - energy is lost to surroundings
   - work is done by the system on its surroundings
     - e.g. when the gas expands
 
 > **First law of thermodynamics** <br> The internal energy of a system is increased when energy is transferred to it by heating or when work is done on it
 
-#### Specific Heat Capacity
-- the amount of energy required to raise the temperature of 1kg of a substance by 1K **without a change of state**
-- this can be found using a continuous-flow calorimeter
-- for a change of temperature: 
+> NB the definition of "random" for gases is different to the definition for radiation <br> Particle motion is random because they have: 
+> - a range of speeds
+> - no preferred direction (all directions are equally likely)
+
+#### Specific heat capacity
+- **Specific heat capacity** is the amount of energy required to raise the temperature of 1kg of a substance by 1K **without a change of state**
+  - this can be found using a continuous-flow calorimeter
+- For a change of temperature $\Delta\theta$: 
   ```math
   Q = mc \Delta\theta
   ```
 
-#### Specific Latent Heat
-- the amount of energy required to change the state of 1kg of substance **without changing its temperature**
-- has two types:
-  - specific latent heat of fusion
-    - energy required to convert from solid to liquid 
+#### Specific latent heat
+- **Specific latent heat** the amount of energy required to change the state of 1kg of substance **without changing its temperature**
+- ...and has two types:
+  - specific latent heat of **fusion**
+    - ...which is the energy required to convert from solid to liquid 
     - which means:
-      - reduces the number of nearest atomic neighbours
-      - allows atoms to move their centre of vibration
-      - breaks some bonds
-  - specific latent heat of vaporisation
-    - energy required to convert from liquid to gas
+      - the number of nearest atomic neighbours is reduced
+      - atoms can move their centre of vibration
+      - **some** bonds are broken
+  - specific latent heat of **vaporisation**
+    - ....which is the energy required to convert from liquid to gas
 
 > The specific latent heat of vapourisation is often greater than fusion. This is because energy is required to separate the molecules until there are no attractive forces acting between the molecules
 
-- during a change of state the potential energies of the particle ensemble are changing but **not** the kinetic energies
+- During a change of state the **potential** energies of the particle ensemble are changing but **not** the kinetic energies
   - ...so there must be no change in temperature
-- for a change of state
+- For a change of state
   ```math
   Q = ml
   ```
 
+> Remember energy is conserved in a closed system (think melting ice cooling water)
 
 ### 6.2.2 Ideal gases
 #### Absolute zero of temperature
-- according to gas laws, it is the temperature at which the volume or pressure of a gas extrapolates to zero
-- according to the kinetic theory model, it is the temperature at which the (random) motion can be extrapolated to stop
-  - the kinetic energy of the particles is zero
-  - no more energy can be removed from the system
+- According to gas laws, absolute zero is the temperature at which the volume or pressure of a gas extrapolates to zero
+- According to the kinetic theory model, absolute zero is the temperature at which the (random) motion can be extrapolated to stop
+  - ...because the kinetic energy of the particles is zero
+  - $\implies$ no more energy can be removed from the system
 ```math
   0 K = -273.15 \degree C
-  ```
+```
 
 #### Ideal gases
-- are gases which
-  - obey Boyle's law, Charles' law and the Pressure law
+- Ideal gases are gases which
   - have molecules with negligible volume
-  - cannot be liquified
+  - have collisions which have negligible durations compared to the time between collisions
+  - have no non-contact/intermolecular between molecules (except during collisions)
   - have elastic collisions
-  - have no interaction between molecules (except during collisions)
-  - have collisions which have short durations compared to times between collisions
   - have molecules which move with continuous random motion
-
+- ...so they obey Boyle's law, Charles' law and the Pressure law
+- For a gas with $n$ moles
   ```math
   pV = nRT
   ```
-
+- ...or $N$ molecules
   ```math
   pV = NkT
   ```
@@ -2200,13 +2208,13 @@ T = 2 \pi \sqrt{\frac{l}{g}}
   ```math
   number\ of\ moles = \frac{mass\ /\ g}{molar\ mass\ / g\ mol^-1}
   ```
-- molar gas constant $R$, Boltzmann constant $k$
+- Molar gas constant $R$, Boltzmann constant $k$
   ```math
   k = \frac{R}{N_A}
   ```
 
 #### Gas Laws
-- are experimental relationships between $p$, $V$, $T$ and the mass of the gas
+- **Gas laws** are **experimental** relationships between $p$, $V$, $T$ and the mass of the gas
 - Boyle's law
   - when temperature is constant, pressure is inversely proportional to the volume of a gas
     - particles are further apart and thus collide less often
@@ -2236,8 +2244,8 @@ T = 2 \pi \sqrt{\frac{l}{g}}
   ```
 
 #### Work done by an ideal gas
-- when a gas expands, work is done on its surroundings by the gas
-- assuming pressure remains constant:
+- When a gas expands, work is done on its surroundings **by the gas**
+- Assuming pressure remains constant:
   ```math
   Work\ done = p \Delta V
   ```
@@ -2247,35 +2255,37 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 - only take readings a few seconds after moving the plunger to ensure temperature is constant
 
 ### 6.2.3 Molecular kinetic theory model
-- Ideal gas laws are empirical in nature
-  - based on observation
-- Kinetic theory model arises from theory
+- Ideal gas laws are **empirical** in nature
+  - ...i.e. they are based on observation
+- Kinetic theory model arises from **theory**
 
 #### Internal energy
-- is the sum of kinetic energy of the atoms in the gas
-- ideal gas molecules have no intermolecular forces
+- For an ideal gas, internal energy is the sum of kinetic energy of the atoms in the gas
+- Ideal gas molecules have no intermolecular forces
   - ...so they don't have any potential energy
 
 #### Kinetic theory model
-- is modelled on these assumptions:
-  - volume of each molecule is negligible compared with the volume of the gas
-  - molecules in the gas are identical
-  - the separation between molecules is large compared to their diameter
+- The kinetic theory model is modelled on these assumptions:
+  - the volume of each molecule is negligible compared with the volume of the gas
   - all collisions between particles and the walls of the container are perfectly elastic
+  - the duration of one collision is much negligible compared to the duration between collisions
   - Newton's laws apply
   - molecules move in continuous random motion
   - there are no intermolecular forces except during collisions
-  - the duration of one collision is much negligible compared to the duration between collisions
+  - molecules in the gas are identical
+  - the separation between molecules is large compared to their diameter
+
+```math
+pV = \frac{1}{3} N m (C_{rms})^2
+```
   ```math
-  pV = \frac{1}{3} N m (C_{rms})^2
-  ```
-   ```math
-  average\ molecular\ kinetic\ energy = \frac{1}{2} (C_{rms})^2 = \frac{3}{2}kT = \frac{3RT}{2N_A}
-  ```
+average\ molecular\ kinetic\ energy = \frac{1}{2} (C_{rms})^2 = \frac{3}{2}kT = \frac{3RT}{2N_A}
+```
+
 > **Deriving the kinetic theory model**
-> - cube with sides of equal length $L$
-> - a single molecule, mass $m$, speed $u$
-> - molecules have perfectly elastic collisions, so the change in momentum would be 
+> - The "vessel" is a cube with sides of equal length $L$
+> - ...with a single molecule, mass $m$, speed $u$
+> - Molecules have perfectly elastic collisions, so the change in momentum would be 
 > ```math
 > \Delta p = -mu - mu = -2mu
 > ```
@@ -2337,21 +2347,21 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 > ```
 
 #### Brownian motion
-- the random motion of (larger, observable) particles suspended in a liquid or a gas
-- provides evidence for existence of atoms
+- **Brownian motion** is the random motion of (larger, observable) particles suspended in a liquid or a gas
+- ...which provides evidence for existence of atoms
   - collisions between the smaller and larger particules lead to random motion in the larger particles
-  - small particles travel with a high speed and thus has high momentum
+  - small particles travel with a high speed and thus have high momentum
 
 > **Pressure**
-> - when molecules collide with the walls of its container, there is a change in momentum because the direction has changed
+> - when molecules collide with the walls of its container, there is a change in momentum **because the direction has changed**
 > - force is the rate of change of momentum (Newton's 2nd law), and pressure is force over area
 > - force is exerted on the walls of the container as every force experienced by an object will lead to it exerting an equal and opposite force (Newton's 3rd law)
-> - ...so if there are fewer collisions per second, but the average momentum change per collisions remains the same, the total momentum change per second falls and pressure drops
-> - ...or if the molecules have less mean speed, the average momentum change per collision decreases, the total momentum change per second falls and pressure drops
+> - ...so if there are fewer collisions per second, but the **average** momentum change per collisions remains the same, the **total** momentum change per second falls and pressure drops
+> - ...or if the molecules have less mean speed, the **average** momentum change per collision decreases, the **total** momentum change per second falls and pressure drops
 
 <br>
 
-- Appreciation of how knowledge and understanding of the behaviour of a gas has changed over time.
+- Knowledge and understanding of the behaviour of a gas has changed over time
 
 # 7 Fields and their consequences
 ## 7.1 Fields
@@ -2376,7 +2386,7 @@ T = 2 \pi \sqrt{\frac{l}{g}}
 ## 7.2 Gravitational fields
 ### 7.2.1 Newton's law
 - Gravity is a universal attractive force acting between all matter
-- which, for two point masses, is directly proportional to the product of the masses and inversely proportional to the square of distance between the masses
+- ...which, for two point masses, is directly proportional to the product of the masses and inversely proportional to the square of distance between the masses
 ```math
 F = \frac{G m_1 m_2}{r^2}
 ```
@@ -2402,9 +2412,10 @@ F = \frac{G m_1 m_2}{r^2}
 - Always towards the centre of mass
 
 ### 7.2.3 Gravitational potential
-- Gravitational **potential** $V$ is the work done per unit mass to bring a test mass from infinity to a point in a gravitational filed
+- Gravitational **potential** $V$ is the work done per unit mass to bring a test mass from infinity to a point in a gravitational field
 - We define $V$ to be zero at infinity, so work is done on a mass to increase its height
-  - This means that $V$ will always be negative on a mass
+  - and the gravitational force is always attractive
+  - this means that $V$ will always be negative on a mass
   - ...hence the negative sign 
 - For a radial field,
 ```math
@@ -2419,7 +2430,7 @@ V = -\frac{GM}{r}
 ```math
 \Delta W = m \Delta V
 ```
-> This is the change in GPE
+> This is the change in GPE. Any change in potential energy only depends on the initial and final positions and not on path taken
 
 - **Equipotential surfaces** are surfaces which have the same gravitational potential
   - they are:
@@ -2467,7 +2478,7 @@ total\ energy = kinetic\ energy + gravitational\ potential\ energy \\
 
 #### Escape velocity
 - The escape velocity is:
-  - the minimum speed that will allow an object to leave a gravitational field with no further energy
+  - the minimum speed that will allow an object to leave a gravitational field with no further energy input
   - the same for all masses in a field
 
 ```math
@@ -2476,11 +2487,11 @@ total\ energy = kinetic\ energy + gravitational\ potential\ energy \\
 ```
 
 #### Synchronous orbits
-- Synchronous orbits are orbits where the period of the satellite is equal to the period of the planet
-- Geosynchronous orbits are synchronous orbits on Earth
-- Geostationary orbits are geosynchronous orbits, which
+- **Synchronous** orbits are orbits where the period of the satellite is equal to the period of the planet
+- Geo**synchronous** orbits are synchronous orbits on Earth
+- Geo**stationary** orbits are **geo**synchronous orbits, which
   - have a period of 24 hours
-  - must be in the plane of the equator
+  - must be in the **plane** of the equator
   - stays above one point on the surface
   - are used for:
     - telecommunications
@@ -2495,7 +2506,7 @@ total\ energy = kinetic\ energy + gravitational\ potential\ energy \\
 ## 7.3 Electric fields
 ### 7.3.1 Coulomb's law
 - An **electric field** is generated by all charged particles
-- The electrostatic focr between two point charges is directly proportional to the product of the charges and inversely proportional to the square of the separation
+- The electrostatic force between two point charges is directly proportional to the product of the charges and inversely proportional to the square of the separation
   ```math
   F = \frac{1}{4 \pi \varepsilon_0}\frac{Q_1 Q_2}{r^2}
   ```
@@ -2506,8 +2517,6 @@ total\ energy = kinetic\ energy + gravitational\ potential\ energy \\
 > Some assumptions for the exam:
 > - Air can be treated as a vacuum when calculating force between charges
 > - For a charged sphere, charge may be considered to be at the centre
-
-#### Comparison of magnitude of gravitational and electrostatic forces between subatomic particles
 
 ### 7.3.2 Electric field strength
 - The electric field **strength** $E$ is the force per unit charge experienced by a **positive** test charge at a point in an electric field
@@ -2536,9 +2545,9 @@ E = \frac{F}{Q} = \frac{V}{d} \\
 ```
 
 #### Field lines
-- Always directed from the positive charge to the negative charge
-- Positively charged conductor $\implies$ field lines are directed away from the centre 
-- Negatively charged conductor $\implies$ field lines are directed towards the centre 
+- Field lines are always directed from the positive charge to the negative charge, so
+  - positively charged conductor $\implies$ field lines are directed away from the centre 
+  - negatively charged conductor $\implies$ field lines are directed towards the centre 
 - For two opposite charges:
   - there are field lines directed from the positive charge to the negative charge
 - For two same charges:
@@ -2602,13 +2611,14 @@ C = \frac{Q}{V}
 
 - A **dielectric** is made up of polar molecules
   - No pd
-    - molecules are aligned in random directions
+    - polar molecules are aligned in random directions
   - With pd
     - there is a uniform electric field between the plates
-    - molecules are aligned parallel to the electric field
+    - polar molecules are aligned with their positive pole facing the negative plate and vice versa
     - each polar molecule produce their own electric field
     - this field opposes the electric field from the plates
     - ...so the pd between the plates reduces
+    - ...if charge is constant, then the capacitance increases
 
 ```math
 C = \frac{A \varepsilon_0 \varepsilon_r}{d}
@@ -2623,11 +2633,13 @@ C = \frac{A \varepsilon_0 \varepsilon_r}{d}
 - As the negative plate becomes more negatively charged, the repulsive force increases
   - so the work done required to increase each unit of charge increases
 - $\implies Q \propto V$
-- and the energy stored in a capacitor can be given by:
+- ...and the energy stored in a capacitor can be given by:
   ```math
   E = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{1}{2}\frac{Q^2}{C}
   ```
   which is the area under a graph of $Q$ against $V$
+
+> When the dieletric is removed from a charged capacitor, the energy stored increases, as work is done on the capacitor to separate the positively charged surface of the dielectric from the negatively charged plate
 
 ### 7.4.4 Capacitor charge and discharge
 #### Charging
@@ -2635,6 +2647,7 @@ C = \frac{A \varepsilon_0 \varepsilon_r}{d}
 - ...they travel around the circuit and are pushed onto the plate connected to the negative terminal $\implies$ plate becomes negatively charged
 - The rate of flow of electrons is greatest at the start and decreases to 0
   - with an exponential relationship
+  - ...due to electrostatic repulsion from electrons already on the plate - charging stops when no more electrons can be pushed onto the plate
 
 ```math
 Q = Q_0 e^{-\frac{t}{RC}} \\
@@ -2666,7 +2679,7 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
 > $\frac{1}{e} = 0.37 \\$ 
 > $T_\frac{1}{2} = ln 2 (RC) = 0.69RC$
 
-> Remember to check if the question is asking for the $V$ across the capactior or across the resistor!
+> Remember to check if the question is asking for the $V$ across the capacitor or across the resistor!
 
 ## 7.5 Magnetic fields
 ### 7.5.1 Magnetic flux density
@@ -2677,7 +2690,7 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
 <br>
 
 - The **magnetic flux density** $B$ of a magnetic field is the number of magnetic flux lines per unit area
-- $B$ has unit Tesla, $T$, which is defined as the strength of the magnetic field (flux density) that produces a force of 1N in a wire of length 1m with 1A of current 
+- $B$ has unit Tesla, $T$, which is defined as the strength of the magnetic field (flux density) that produces a force of $1N$ in a wire of length $1m$ carrying $1A$ of current 
 
 <br>
 
@@ -2687,7 +2700,7 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
   ```
   when the field is perpendicular to the current
 
-> If the field is not perpendicular to the current, then $F = BIl sin \theta$ where $\theta$ is the angle between the wire and the field
+> If the field is not perpendicular to the current, then $F = BIl sin \theta$ where $\theta$ is the angle between the wire and the field <br>
 > The maximum force occurs when the current is perpendicular to the field
 
 #### Field lines
@@ -2708,7 +2721,7 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
   ```
   where the field is perpendicular to velocity
 
-> If the field is not perpendicular to velocity, then $F = BQv sin \theta$ where $\theta$ is the angle between the velocity and the field
+> If the field is not perpendicular to velocity, then $F = BQv sin \theta$ where $\theta$ is the angle between the velocity and the field <br>
 > The maximum force occurs when the velocity is perpendicular to the field
 
 - Recall that this is based on the direction of conventional current
@@ -2749,7 +2762,7 @@ I = I_0 (1 - e^{-\frac{t}{RC}}) \\
 N \phi = BAN
 ```
 
-- Flux and flux linkage passing through a rectangular coil rotated in a magnetic field is
+- Flux and flux linkage passing through a rectangular coil rotated in a magnetic field are
 ```math
 \phi = BA cos \theta \\
 N \phi = BAN cos \theta = BAN cos \omega t
@@ -2760,23 +2773,25 @@ N \phi = BAN cos \theta = BAN cos \omega t
   - a conductor moves through a magnetic field
   - the direction of a magnetic field through a coil changes
 - because
-  - there is a change in magnetic flux
-  - ...work is done to move the conducto
+  - there is a **change** in magnetic flux
+  - ...work is done to move the conductor
   - ...which is converted into electrical energy
 - This emf becomes an induced current when the conductor is attached to a complete circuit
 
 #### Faraday's law
-The magnitude of the induced emf is directly proportional to the rate of change of magnetic flux linkage
+- The magnitude of the induced emf is directly proportional to the rate of change of magnetic flux linkage
 ```math
 \varepsilon = N \frac{\Delta \Phi}{\Delta t}
 ```
 
 #### Lenz's law
-The direction of the induced emf (when there is a change of flux linkage) is such that it will produce effects to oppose the change (of flux) that is producing it
+- The direction of the induced emf (when there is a change of flux linkage) is such that it will produce effects to oppose the change (of flux) that is producing it
 
-> If a magnetic moves through a coil, an emf is induced <br>
+> If a magnet moves through a coil, an emf is induced <br>
 > A current is induced, so the coil has a magnetic field <br>
-> and this field acts in the opposite direction to the magnetic field of the coil
+> and this field acts in the opposite direction to the magnetic field of the magnet
+
+> Current can "create" flux to oppose an increase/decrease in flux
 
 #### Straight conductor
 - When a conductor of length $L$ moves perpendicular to a magnetic field at a constant velocity $v$,
@@ -2800,7 +2815,8 @@ s = v\Delta t \\
   - the number of field lines cut per second is the greatest
 
 ### 7.5.5 Alternating currents
-- An **alternating current** isa current which periodically varies between a positive to a negative value
+- An **alternating current** is a current which periodically varies between a positive to a negative value
+  - ...which creates an alternating magnetic field
 > We will only see sinusoidal AC
 - The electrons in an AC move back and forth with SHM
 ```math
@@ -2829,7 +2845,7 @@ V_{rms} = \frac{V_0}{\sqrt{2}} \\
 - A **transformer** changes high alternating voltage to lower alternating voltage and vice versa
 - ...and is made of 3 parts:
   - core
-    - provides greater linkage of magnetic flux from the primary coil to the secondary coil compared to an air core
+    - provides greater linkage of magnetic flux from the primary coil to the secondary coil **compared to an air core**
   - primary coil
     - an AC is applied to the coil
     - ...which creates an changing magnetic field inside the core 
@@ -2843,23 +2859,29 @@ V_{rms} = \frac{V_0}{\sqrt{2}} \\
 ```
 
 #### Efficiency
-- Transformers are not 100% efficient:
-  - induced eddy currents
+- Transformers are not 100% efficient, because:
+  - eddy currents are induced
   - reversal of magnetism
-  - poor insulation between 
+  - poor insulation between the coils
 ```math
 efficiency = \frac{I_s V_s}{I_p V_p}
 ```
 - To make the core more efficient, we:
   - use soft iron to allow easy magnetisation (and demagnetisation)
-  - laminating the core with 
+  - laminating the core with insulators
   - using a core with high resistivity
   - using thick wires
   - using a core which allowes all the flux to link to the secondary coil
 
 #### Eddy currents
-- A changing magnetic field acts against the field which induced the current (due to the current)
-- ...which creates a current
+- A changing magnetic field induces a current within a conductor
+- ...and these currents produce their own magnetic field
+- ...which opposes the "original" magnetic field that induced it
+- To reduce eddy currents:
+  - laminate the core with a material with high resitivity
+    - ...so the resistance is higher $\implies$ the current is smaller
+  - use thin sheets of iron
+    - ...so smaller emfs are induced
 
 # 8 Nuclear physics
 ## 8.1 Radioactivity
@@ -2887,7 +2909,7 @@ efficiency = \frac{I_s V_s}{I_p V_p}
 - Some $\alpha$ particles were deflected through small angles
   - ...and therefore there must be a positive nucleus at the centre (repels positively charged $\alpha$ particles)
 - A small number of $\alpha$ particles were deflected through angles of >90°
-  - ...and therefore the nucleus must be extremely small
+  - ...and therefore the nucleus must be extremely small ($< 10^{-14}m$)
   - ...and is where the majority of the mass and charge is concentrated
 
 ### 8.1.2 Alpha, beta and gamma radiation
@@ -3021,11 +3043,11 @@ T_{\frac{1}{2}} = \frac{ln 2}{\lambda}
 <br>
 
 - Graphically, half-life can be determined by finding the point where the activity has halved (wowzers who could've known)
-- By plotting a log-log graph of $log N$ against $log t$, we get
+- By plotting a log-log graph of $\ln N$ against $\ln t$, we get
 ```math
-ln N = ln N_0 - \lambda t
+\ln N = \ln N_0 - \lambda t
 ```
-- which is a linear function in $t$ where the gradient is $- \lambda$, and the y-intercept is $ln N_0$
+- which is a linear function in $t$ where the gradient is $- \lambda$, and the y-intercept is $\ln N_0$
 
 #### Applications
 - Storage of radioactive waste
@@ -3051,6 +3073,7 @@ ln N = ln N_0 - \lambda t
   - for light nuclei, where $Z < 20$, the line is linear with gradient 1 (i.e. $N = Z$)
   - for heavier nuclei, the gradient of the line increases
     - i.e. stable nuclei have more neutrons than protons
+    - ...because the electromagnetic force only acts on protons, so more neutrons are required to add to the SNF
 
 #### Decay modes
 - $\alpha$ decay
@@ -3106,22 +3129,26 @@ E_k = E_p \implies \frac{1}{2}mv^2 = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 Q_2
 ```
 <br>
 
-- ...which always provides an overestimate
-  - because it only gives the distance of closest approach/upper limit to the radius
+- ...which always provides an overestimate, because
+  - it only gives an upper limit to the radius
+    - because the particle doesn't actually "hit" the nucleus
+  - it depends on the energy of the alpha particle
+  - recoil of the nucleus is ignored
+  - only considers the number of protons
 
 #### Electron diffraction
 - Electron diffraction occurs when a beam of electrons is directed at a thin film
 - ...and each electron diffracts around a nucleus
 - ...because the de Broglie wavelength of an electron at high speed is similar to the size of the nucleus
-- This produces a diffraction pattern of concentric circles of minima
-- ...and the size of the nucleus can be determined using the first minima
+- This produces a diffraction pattern of concentric circles of **minima**
+- ...and the size of the nucleus can be determined using the first **minima**
 ```math
 sin \theta = 1.22 \frac {\lambda}{2R}
 ```
 - ...which
   - gives greater resolution (as the wavelength can be made very small)
   - gives greater accuracy becausse electrons can get closer to the nuclei (as there is no electrostatic repulsion)
-  - is easier to accelerate (give energy to) compared to $alpha$ particles (as charge-to-mass ratio is higher)
+  - is easier to accelerate (give energy to) compared to $\alpha$ particles (as charge-to-mass ratio is higher)
   - is easier to produce
   - is easier to interpret
   - does not involve the strong nuclear force
@@ -3253,7 +3280,7 @@ E = \Delta m c^2
     - closer the moderator atoms are in size to a neutron, the larger the proportion of momentum which is transferred
   - fast moving neutrons collide elastically with the moderator and loses kinetic energy and momentum
     - ...eventually reaching thermal equilibrium, creating thermal neutrons
-    - ...which increases the chance of fission
+    - ...which increases the **probability** of fission
     - ...and causes less fatigue on the reactor
 - Control rods
   - absorbs neutrons without being dangerously unstable
@@ -3263,9 +3290,15 @@ E = \Delta m c^2
     - and is usually adjusted such that one fission neutron from each fission event causes exactly one other fission
 - Coolant
   - transfers thermal energy (efficiently) between water systems within the reactor
-  - made of materials with a high specific heat capacity, e.g. water, helium, or molten salt
+    - ...to maintain a safe working temperature in the core
+  - made of materials with a high specific heat capacity and high boiling point, e.g. water, helium, or molten salt
+    - ...and also:
+      - do not absorb neutrons
+      - are stable under high temperature and radiation intensity
+      - inert (non-reactive)
+      - have low viscosity
   - pumped into reactor at a cold temperature to extract the heat released by fission
-    - ...which is then transferred to water used to produce steam externally in the heat exchanger
+    - ...which is then delived it to the boiler/turbine via a heat exchanger
 
 ### 8.1.8 Safety aspects
 - Fuel used
@@ -3321,12 +3354,12 @@ E = \Delta m c^2
   - Produces medical isotopes
   - Some can adjust output quickly
 
-# 12 Turning poins in physics
+# 12 Turning points in physics
 ## 12.1 The discovery of the electron
 ### 12.1.1 Cathode rays
 - Production of cathode rays in a discharged tube is achieved by:
   - ionisation of gas atoms by a strong electric field (under low pressure)
-    - positive ions are attracted to the cathode
+    - positive ions are attracted to the cathode and strikes the surface
     - ...so there is emission of electrons by the cathode
   - electrons are **accelerated** towards the anode by a potential difference
   - when the electron and positive ions collide, they become excited
@@ -3336,16 +3369,18 @@ E = \Delta m c^2
 
 ### 12.1.2 Thermionic emission of electrons
 - In thermionic emission,
-  - filament is heated due to current
+  - filament is heated due to the current through it
   - some (free) electrons gain sufficient energy ($> \phi$) to leave the surface of the metal
 - Electrons can then be accelerated by a pd (via an anode) to form an electron gun
 ```math
 work\ done\ = \frac{1}{2}mv^2 = eV
 ```
+
 ### 12.1.3 Specific charge of the electron
 #### Circular motion
 - Using a fine beam tube, which has
   - low pressure gas, which collides with the electrons and de-excite to emit light of visible wavelengths
+  - a perpendicular magnetic field which leads to circular motion
 ```math
 F = \frac{mv^2}{r} = Bev \\
 \implies v = \frac{Ber}{m} \\
@@ -3356,11 +3391,19 @@ eV = \frac{1}{2}mv^2 \\
 > You (usually) can't measure the speed of the electrons, so you must rearrange the given equation to use the accelerating pd
 
 #### Magnetic and electric fields
+- Using a set of parallel plates which has a pd $V_p$ applied across it
+  - a magnetic field is applied to produce balanced forces so the beam is horizontal
 ```math
-F = eE = \frac{eV}{d} = Bev\\
-\implies v = \frac{V}{Bd}
+F = \frac{eV_p}{d} = Bev\\
+\implies v = \frac{V_p}{Bd}
 ```
-switching off the E field,
+- then
+```math
+eV = \frac{1}{2}mv^2 \\
+\implies \frac{e}{m_e} = \frac{v^2}{2V} \\
+\implies \frac{e}{m_e} = \frac{V_p^2}{2 B^2 d^2 V}
+```
+- or switching off the E field,
 ```math
 F = \frac{mv^2}{r} = Bev\\
 \implies v = \frac{Ber}{m} \\
@@ -3370,8 +3413,8 @@ F = \frac{mv^2}{r} = Bev\\
 > Also with constant acceleration formulae for electric field only
 
 #### Significance
-- specific charge of the cathode rays was much larger than the hydrogen ion
-- ...so the cathode ray particles must have a very small mass or very high charge
+- specific charge of the cathode rays was much larger than the hydrogen ion (which was the largest then known)
+- ...so the cathode ray particles must have a very small mass or very high charge (compared to the hydrogen ion)
 
 ### 12.1.4 Principle of Millikan’s determination of the electronic charge
 #### Stationary force
@@ -3383,57 +3426,58 @@ F = \frac{QV}{d} = mg
 ```
 
 #### Radius
-- Assuming the droplet is a perfect sphere,
+- When the electric field is turned off, the oil droplets fall at **terminal velocity**
+  - then force = viscous drag force
+- Assuming air is a viscous fluid, we can use Stoke's law for the force on an oil droplet, which requires that
+  - force = viscous drag force
+  - air is a viscous fluid
+  - upthrust is negligible
+  - the droplet is small, perfectly spherical and slow
 ```math
+F = 6 \pi \eta r v
+```
+- ...which is true if:
+  - Newton's laws apply
+  - upthrust is negligible
+```math
+F = mg = 6 \pi \eta r v \\
 m = \frac{4}{3} \pi \rho r^3 \\
-mg = 6 \pi \eta r v \\
 \implies r = \sqrt{\frac{9 \eta v}{2 \rho g}}
 ```
 
 #### Mass
-- When the electric field is turned off, the oil droplets fall at **terminal velocity**
-- Assuming air is a viscous fluid, we can use Stoke's law for the force on an oil droplet, assuming that the droplet is:
-  - small
-  - spherical
-  - slow
+- The mass can then be calculated with the radius
 ```math
-F = 6 \pi \eta r v
+m = \frac{\rho 4 \pi r^3}{3}
 ```
-- then,
-```math
-F = 6 \pi \eta r v = mg \\
-\implies m = \frac{\rho 4 \pi r^3}{3}
-```
-- which is true if:
-  - Newton's laws apply
-  - upthrust is negligible
 
 ## 12.2 Wave-particle duality
 ### 12.2.1 Newton’s corpuscular theory of light
 #### Newton's corpuscular theory
-- light is made up of corpuscles (particles), which are elastic spheres
-- refraction
-  - force acts attracting them to the denser medium
+- Light is made up of corpuscles (particles), which are elastic spheres
+- Refraction occurs because:
+  - short-range force acts attracting them to the denser medium
     - attraction only affects motion at the interface/boundary
   - only one component of momentum (perpendicular to the surface) changes at the interface
   - ...which causes the change in direction
-- reflection
+- Reflection occurs because:
   - corpuscles hit the reflective medium and experience a reaction force (Newton's 3rd law)
-- particles travel in a straight line
-  - ...so there is no diffraction (and the shadows of the image would be sharp)
+- Particles travel in a **straight line**
+  - ...so there is no diffraction (and the **shadows** of the image would be sharp)
 #### Huygens’ wave theory
-- wave front is incident on interface
-- there are secondary wavelets at wave fronts
-- refraction
-  - wavelets travel more slowly in a heavier medium
+- Light is made up of waves with wave fronts
+- There are secondary wavelets at wave fronts
+- Refraction occurs because:
+  - wave front is incident on interface
+  - wavelets travel more slowly in a denser medium
   - different parts of the wave front cross the interface at different times
   - ...so the slowing down of the wavelets causes the change in direction
-- reflection
+- Reflection occurs because:
   - each point of reflection becomes a new point source for wavelets
 
 > Newton's theory was more accepted due to:
 > - Newton being widely respected for motion
-> - No way of measuring speed of light or diffraction
+> - there being no way of measuring speed of light or diffraction at the time
 
 ### 12.2.2 Significance of Young’s double slits experiment
 - When the light wave reaches a slit,
@@ -3445,8 +3489,8 @@ F = 6 \pi \eta r v = mg \\
 - Dark fringes form where waves arrive in antiphase
 
 > Huygen's theory was now accepted:
-> - Light was observed to travel slower in denser media
-> - Light was observed to show interference effects that cannot be explained using corpuscular theory
+> - Light was **observed to travel slower** in denser media
+> - Light was observed to show **interference effects** that cannot be explained using corpuscular theory
 
 ### 12.2.3 Electromagnetic waves
 - Electromagnetic waves consist of an electric field and a magnetic field, which are
@@ -3462,53 +3506,67 @@ F = 6 \pi \eta r v = mg \\
   ```math
   c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}
   ```
-  - $\varepsilon_0$ relates to the electric field strength due to a charged object in free space
-  - $\mu_0$ relates to the magnetic flux density due to a current-carrying wire in free space.
+  - $\varepsilon_0$ relates to the electric field **strength** due to a charged object in free space
+  - $\mu_0$ relates to the magnetic flux **density** due to a current-carrying wire in free space
 
 #### Hertz’s discovery of radio waves
-- Using a spark gap transmitter and loop detector, with a metal reflector
+- Using a spark gap transmitter and movable loop detector, with a metal reflector
 - A stationary wave is created
   - $\implies$ $\lambda$ = 2 × distance between adjacent maxima
 - ...which can then be used to determine the speed of EM waves
 
 #### Fizeau’s determination of the speed of light
 - Maxwell’s theory of electromagnetic waves predicted a value for the speed of EM waves
-- Fizeau’s result is close to the predicted speed $\implies$ light is an EM wave
+- In Fizeau's experiment,
+  - A toothed wheel is rotated and the reflected light from a distant mirror is observed
+    - the rotation speed of the wheel can be adjusted
+  - At slow speeds, the light returns through the original gap
+```math
+c = 4dnf_0
+```
+- ...where $f_0$ is the lowest frequency where no reflected light is seen
+  - reflected light is blocked when it hits an adjacent tooth
+- Fizeau’s result is close to Maxwell's predicted speed $\implies$ light is an EM wave
 
 ### 12.2.4 The discovery of photoelectricity
 #### Black-body radiation
-- Black-body radiation has a spectrum with peak depending on temperature of the emitted **only**
+- A perfect black body absorbs all incident radiation and does not reflect or transmit any radiation
+  - perfect absorber $\implies$ perfect emitter
+- Black-body radiation is EM radiaiton which has a spectrum with peak depending on temperature of the body only **only**
 
 #### Ultraviolet catastrophe
-- If EM radiaiton was a wave, it is predicted that a black body wouth emit an infinite amount of UV as its temperature increased
-- This did not match up with experimental evidence
+- If EM radiaiton was a wave, it is predicted that a black body would haveemit an infinite amount of UV as its temperature increased at very short wavelengths
+- This did not match up with experimental evidence, which:
+  - had similar intensity at long wavelengths
+  - but has peaks at short wavelengths
 
 #### Planck’s interpretation 
-- The energy emitted by oscillators was quantised
+- The energy emitted by **oscillators** (i.e. EM radiation) was quantised into discrete **quanta**
 ```math
 E = nhf
 ```
+> so, at low frequencies, the energy required per quanta is very small, so many are produced; but at high frequencies, the energy per quanta is very large, so oscillators will not have enough energy to emit these quanta frequently
 
 #### Obersverations
-- no photoelectric emission if incident light below threshold frequency
+- No photoelectric emission if incident light below threshold frequency
   - classical wave theory: light of any frequency should cause emission
-- photoelectric emission is instantaneous
+- Photoelectric emission is instantaneous
   - classical wave theory: energy is spread and needs time to accumulate
 - (photoelectrons have a range of KE from zero to max value)
-- number of photoelectrons per second is proportional to intensity of incident radiation
+- Number of photoelectrons per second is proportional to intensity of incident radiation
   - classical wave theory: intensity of wave should determine whether photoelectron emitted
 
 #### Einstein's explanation
 - Light is made of photons
-- Photoelectrons due to one photon interacting with one electron in surface of metal.
+- Photoelectrons due to one photon interacting with one electron in surface of metal
 - Minimum energy (work function of metal) needed for electron to be emitted related to a threshold frequency
 - Remaining energy of photon becomes max KE of photoelectron.
-- Brighter source means more photons (per second) and therefore more photoelectrons (per second).
+- Brighter source means more photons (per second) and therefore more photoelectrons (per second)
 
 
 ### 12.2.5 Wave–particle duality
 #### de Broglie’s hypothesis
-- all matter exhibit wave-particle duality
+- All matter particles exhibit wave-like properties
 ```math
 p = \frac{h}{\lambda} \\
 \implies \lambda = \frac{h}{\sqrt{2meV}}
@@ -3522,12 +3580,12 @@ p = \frac{h}{\lambda} \\
 - an atom has a diameter of approximately $1 \times 10^{-10}$m
 
 #### Transmission electron microscope (TEM)
-  - uses magnetic lenses to deflect moving electrons
-  - electrons through the middle of the lenses are undeviated
-  - electrons on the edges are deflected by magnetic fields toward the axis of the TEM
-  - condenser lens deflects the electrons into a wide parallel beam incident uniformly on the sample
-  - objective lens then forms an image of the sample
-  - projector lens then casts a second image onto the fluorescent screen
+- uses magnetic lenses to deflect moving electrons
+- electrons through the middle of the lenses are undeviated
+- electrons on the edges are deflected by magnetic fields toward the axis of the TEM
+- condenser lens deflects the electrons into a wide parallel beam incident uniformly on the sample
+- objective lens then forms an image of the sample
+- projector lens then casts a second image onto the fluorescent screen
 
 > - Wavelength depends on speed of the electrons, and the lower the wavelength gives greater the detail
 > - Emitted electrons come from a heated cathode and therefore have a speed distribution dependent on temperature
@@ -3535,14 +3593,21 @@ p = \frac{h}{\lambda} \\
 > - The sample thickness reduces the speed of the electrons increasing the wavelength and decreasing the detail
 
 #### Scanning tunnelling microscope (STM)
-- uses quantum tunnelling
+- Uses quantum tunnelling
   - electrons on the surface may jump onto the tip of the probe, if
   - ...they can overcome the potential barrier
-  - but not all electrons have sufficient energy to do so
-- tip of probe maintained a certain distance (about 1nm) above surface
-- when probe moves over higher layer of electrons, current increases
-- tip is moved higher to reduce current to original value
-- so the surface can be mapped by the position of the tip
+  - ...but not all electrons have sufficient energy to do so
+  - this creates a tunnelling current
+- Constant-current mode is where:
+  - tip of probe maintains a constant distance (about 1nm) above surface
+  - when probe moves over higher layer of electrons, current increases
+  - tip is moved higher to reduce current to original value
+  - so the surface can be mapped by the position of the tip
+- Constant height mode is where:
+  - tip of probe maintains a constant distance (doesn't move up or down)
+  - the change in elevation of the surface changes the distance to the probe
+  - ...so the current varies
+  - the current is used to create the mapping
 
 ## 12.3 Special relativity
 ### 12.3.1 The Michelson-Morley experiment
@@ -3550,25 +3615,30 @@ p = \frac{h}{\lambda} \\
   - (The plane block ensures that both beams pass through the same thickness of glass and air)
 - Beams travel at right angles and return to combine at telescope with a path difference
   - Observer sees interference pattern from two beams
-  - If the speed of light depends on the Earth's velocity through the ether, rotating the apparatus through 90° would cause the phase difference to change
 - Apparatus rotated 90 degrees and pattern observed
   - If the ether existed, the pattern would shift
-    - path length/speed of light different depending on orientation relative to motion of apparatus
-  - However, there was no shift in pattern
+    - the speed of light is different depending on orientation relative to motion of apparatus
+    - ...so there is a change in the phase difference when rotated
+    - the speed of light depends on the Earth's velocity through the ether
+  - However, there was no shift in pattern (and the apparatus was capable of detecting very small shifts)
 
 #### Significance
-- No evidence of ether
-- Speed of light is invariant
-  - all motion is relative/there isno absolute motion
+- There is no "absolute motion"
+- The speed of light is invariant
+- Ether did not exist
+  - light travels without a material medium
+- The Earth drags the ether with it
 
 ### 12.3.2 Einstein’s theory of special relativity
 - The two postulates of Einstein’s theory of special relativity are
-  - the laws of physics have the same form in all inertial frames
+  - the laws of physics have the same form in **all inertial frames**
     - ...so an observer in a frame will not able to tell if they are moving
-  - the speed of light in free space is invariant in all inertial frames
+  - the speed of light in **free space** is invariant
+
+> the speed of light is invariant in all frames of reference, not just inertial ones
 
 #### Inertial frame of reference
-- reference frames which are non-accelerating
+- **Inertial frames of reference** are reference frames which are non-accelerating
 
 ### 12.3.3 Time dilation
 - $t$ = time measured from an observer moving relative to the time being measured
@@ -3590,6 +3660,7 @@ p = \frac{h}{\lambda} \\
 ### 12.3.5 Mass and energy
 - Equivalence of mass and energy means that
   - if work is done on an object, its mass will increase
+    - "mass increases with speed"
   - if an object in motion has energy greater than its rest energy, then the additional energy is kinetic
 
 ```math
@@ -3603,5 +3674,11 @@ E_k = mc^2 - m_0c^2 = \frac{m_0 c^2}{\sqrt{1 - \frac{v^2}{c^2}}} - m_0c^2
     ```math
     E_k = QV
     ```
-  - ...and using the change in temperature to measure KE
-- which provides evidence for the variation of kinetic energy with speed
+  - ...and using the change in temperature of the aluminium target to measure KE
+- The speed of the electrons is measured using oscilloscope signals for two detectors, with a known distance
+- A graph of speed and kinetic energy can then be drawn
+- This provides evidence for the variation of kinetic energy with speed
+  - $v$ has an upper limit as KE increases
+  - ...and as $v$ increases, the mass increases
+    - as $v$ approaches c, the mass approaches $\infty$
+  - ...so when $v$ is close to $c$, the increase in KE is due to the increase in mass
