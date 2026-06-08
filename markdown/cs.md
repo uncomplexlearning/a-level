@@ -182,26 +182,27 @@ bool success = int.TryParse(string abc, out number)
 
 ### 1.1.11 Parameters of subroutines
 
-- Parameters are used to pass data within programs.
+- Parameters are used to pass data within program
 
 ### 1.1.12 Returning a value/values from a subroutine
 
-- Subroutines can return a value.
-- Functions will always return a value
+- Subroutines **can** return a value
+- Functions **will always** return a value
 
 ### 1.1.13 Local variables in subroutines
 
-- Subroutines may declare their own local variables
-
-#### Local variables:
-
-- exist only while the subroutine is executing
-- are accessible only within the subroutine
+- Subroutines may declare their own **local variables**, which:
+  - exist only while the subroutine is executing
+  - are accessible only within the subroutine (i.e. have limited scope)
+- This allows:
+  - modularisation of a program
+  - reuse of subroutines
+  - less chance of side-effects
 
 ### 1.1.14 Global variables in a programming languages
 
 - Global variables can be accessed from any part of a program
-- Global variables exist in memory for the entire runtime.
+- Global variables exist in memory for the entire runtime
 
 ### 1.1.15 Role of stack frames in subroutine calls
 
@@ -230,7 +231,7 @@ bool success = int.TryParse(string abc, out number)
 
 - A **paradigm** is a way of doing something
 - There are different approaches to designing and writing a program
-- ...but they will all compiled into the same machine code
+- ...but they will all compile into the same machine code
 
 #### Functional programming
 
@@ -278,7 +279,7 @@ bool success = int.TryParse(string abc, out number)
 #### Instantiation
 
 - A class is a definition of an object
-  - attribures and methods are declared
+  - attributes and methods are declared
 - An object is an instance of a class
 - ...and instantiation is the process of creating the object belonging to a class
 - ...which can be done by calling the constructor method of the class
@@ -383,14 +384,28 @@ public class Class2 : Class1 {
   - vectors
   - tables, matrices
 
+
+```C#
+int[] a = new int[3];
+int[] b = new int[] { 1, 2, 3 };
+int[] c = [1, 2, 3];
+```
+
 ### 2.1.3 Fields, records and files
 
 - A file is a data structure for storing data
 - Each file is made of related records
 - Each record is made of related fields
 
-### 2.1.4 Abstract data types/data structures
+```C#
+File.WriteAllText("filename.txt", "Hello World!"); 
+File.WriteAllLines("filename.txt", ["Hello World!"]); 
 
+string readText = File.ReadAllText("filename.txt");
+string[] readLines = File.ReadAllLines("filename.txt");
+```
+
+### 2.1.4 Abstract data types/data structures
 - Abstract data types are conceptual models of
   - how data is organised
   - the operations that can be carried out on that data
@@ -563,6 +578,7 @@ public class Class2 : Class1 {
 #### Binary tree
 
 - Each node has at most 2 children
+- Has a root
 
 ## 2.6 Hash tables
 
