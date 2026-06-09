@@ -188,7 +188,7 @@ bool success = int.TryParse(string abc, out number)
 
 ### 1.1.11 Parameters of subroutines
 
-- Parameters are used to pass data within program
+- Parameters are used to pass data within a program
 
 ### 1.1.12 Returning a value/values from a subroutine
 
@@ -332,13 +332,20 @@ ClassName instance = new ClassName(params);
 
 #### Polymorphism
 
-- Providing interfaces for parameters of different types
+- Providing a single interface for objects of different types
 - ...this can be done using override methods
+- This can be demonstrated by:
+  - a method shared by different classes (up and down the hierarchy chain) but with each class implementing it differently
+  - processing objects differently depending on class/type
+  - objects of different classes respond differently to the use of a common interface
 
 #### Overriding
 
+- Overriding is when a derived class has a different implementation for a method to the base class
 - Methods which can be overriden have to be declared as `virtual`
 - ...and methods which override have to be declared as `override`
+
+> `abstract` methods must be overriden by the derived class and do not have an implementation (and must be declared in an abstract class <br> `virtual` methods have an implementation
 
 ```C#
 private class Class1 {
@@ -1079,13 +1086,13 @@ function dijkstra(Graph, source):
 
 ### 4.1.10 Composition
 
-- Combining procedures to form compound procedures
-- Combining data objects to form compound data
+- **Composition** is to combine procedures to form compound procedures
+- ...or to combine data objects to form compound data
   - e.g.: a tree data structure
 
 ### 4.1.11 Automation
 
-- Automation requires putting models (abstraction of real world objects/phenomena) to solve problems
+- **Automation** requires putting models (abstraction of real world objects/phenomena) to solve problems
 - This is achieved by:
   - creating algorithms
   - implementing the algorithms in program code
