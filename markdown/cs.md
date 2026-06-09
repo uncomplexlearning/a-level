@@ -179,6 +179,12 @@ bool success = int.TryParse(string abc, out number)
   - named
   - a ‘out of line’ block of code
   - executed (called) by writing its name in a program statement
+- Programs which use subroutines are:
+  - easier to test as each subroutine can be tested separately
+  - easier to understand if sensible identifiers are used
+  - can be easily reused as each subroutine is independent of the rest of the program, so less duplicate code has to be written
+  - easier to update in the future
+  - allows for use of recursion
 
 ### 1.1.11 Parameters of subroutines
 
@@ -220,7 +226,7 @@ bool success = int.TryParse(string abc, out number)
 
 ### 1.1.16 Recursive techniques
 
-- Recursive subroutines call themselves
+- Recursive subroutines are subroutines which call itself
 - It must have a base case (stopping condition)
   - a **base case** is the the circumstances when a recursive subroutine does not call itself
   - otherwise, it will never terminate
@@ -368,7 +374,7 @@ public class Class2 : Class1 {
 
 ### 2.1.1 Data structures
 
-- A container combining multiple data under a single identifier
+- **Data structures** are containers combining multiple pieces of data under a single identifier
 
 ### 2.1.2 Single- and multi-dimensional arrays (or equivalent)
 
@@ -407,115 +413,110 @@ string[] readLines = File.ReadAllLines("filename.txt");
 
 ### 2.1.4 Abstract data types/data structures
 - Abstract data types are conceptual models of
-  - how data is organised
-  - the operations that can be carried out on that data
+  - how data is **organised**
+  - the **operations** that can be carried out on that data
 - Data structures are implementations of abstract data types
   - Technically, they are partial implementations
   - the data structure itself doesn't contain the operations
 
-#### Static data structures:
+#### Static data structures
+- **Static** data structures:
+  - have a fixed size determined at compilation
+    - ...so they are inefficient if more memory is assigned than is needed
+  - are (typically) stored contiguously in memory
+  - do not require pointers to be stored
 
-- Fixed size determined at compilation
-  - ...so they are inefficient if more memory is assigned than is needed
-- Stored contiguously in memory
-- Does not require pointers to be stored
-
-#### Dynamic data structures:
-
-- Changes in size during runtime
-  - utilises pointers and allocates memory from the heap
-- Data is stored across memory locations
-- Pointers have to be stored with the data in memory to point to the next element
+#### Dynamic data structures
+- **Dynamic** data structures:
+  - change in size during runtime
+    - utilises pointers and allocates memory from the heap
+    - ...so only takes up the memory required for the actual data
+  - is stored across memory locations
+  - requires pointers to be stored with the data in memory to point to the next element
+- However, this means they:
+  - are slower than static data structires
+  - may lead to memory leaks
+    - if memory is not returned to the heap
 
 ## 2.2 Queues
 
 ### 2.2.1 Queues
 
-- Queues are a type of ADT based on an array
+- **Queues** are a type of ADT based on an array
 - They act on a first in, first out (FIFO) principle
+- A queue is made up of
+  - an array
+  - a front pointer
+  - a rear pointer
 
 #### Uses
-
 - Keyboard buffers
 - Handling file downloads
 - Allocating resources (priority queue)
 - Playlists
 - Buffering network streams
 
-#### Conatins
-
-- an array
-- a front pointer
-- a rear pointer
-
-#### Operations
-
-- enqueue
-  - check if queue is full
-  - increment rear pointer
-  - insert item into the index position of the rear pointer
-    > circular queue
-    >
-    > - check queuesize variable
-    > - mod incremented pointers by queue maxsize
-- dequeue
-  - check if queue is not empty
-    - ...which is when **front** pointer is smaller than rear pointer
-  - return item at the index position of the front pointer
-  - increment the front pointer
-- (peek)
-
 #### Linear queues
-
-- may result in unused capacity
+- When an item is removed from a linear queue, all other items need to be shuffled up by 1, or it may result in unused capacity
+- `enqueue`:
+  - 1. check if queue is full
+  - 2. increment rear pointer
+  - 3. insert item into the index position indicated by the rear pointer
+- `dequeue`:
+  - 1. check if queue is not empty
+    - ...which is when **front** pointer is smaller than rear pointer
+  - 2. return item at the index position indicated by the front pointer
+  - 3. increment the front pointer
 
 #### Circular queues
-
-- front and rear pointers can wrap around
-- dequeue:
-  - compare the value of the **front** pointer with the maximum size of the array
-    - if they are equal then front pointer becomes one
-  - otherwise, add one to the front pointer
+- Has a queuesize variable
+- Front and rear pointers can wrap around, so all spaces are usable without "shuffling"
+- `enqueue`:
+  - 1. check if queue is full (using the queuesize variable)
+  - 2. increment rear pointer
+  - 3. if the rear pointer is equal to the size of the array, set the rear pointer to 0
+  - 4. insert item into the index position indicated by the the rear pointer
+  - 5. increment the queuesize variable
+- `dequeue`:
+  - 1. check that the queue is not already empty
+  - 2. if it isn't, then process the item at index position indicated by the front pointer
+  - 3. increment front pointer
+  - 4. if the front pointer is equal to the size of the array, set the front pointer to 0
+  - 5. decrement the queuesize variable
 
 #### Priority queues
-
-- priority is stored with each element
-- shuffle items in each queue to "make room"
-- enqueue:
-  - starting with the item at the rear of the queue move each item back one place in the array
+- A priority is stored with each element
+- `enqueue`:
+  - starting with the item at the **rear** of the queue move each item **back** one place in the array
   - until:
     - the start of the queue is reached
-    - item with the same or higher priority is reached
+    - item with the **same or higher** priority is reached
   - add the new item in the position before that item
 
 ## 2.3 Stacks
 
 ### 2.3.1 Stacks
 
-- Queues are a type of ADT based on an array
+- **Stacks** are a type of ADT based on an array
 - They act on a last in, first out (LIFO) principle
 
-#### Uses
+- Stacks are made of:
+  - An array
+  - A stack pointer
 
+#### Uses
 - Rversing sequences
 - Call stacks (storing stack frames)
 - Storing register values while handling an interrupt
 - Reverse polish notation
 - Undo lists
 
-#### Contains
-
-- Stacks are made of:
-  - An array
-  - A stack pointer
-
 #### Operations
-
-- `push`
+- `push`:
   - check if stack is full
   - increment pointer
   - insert item into the index position of the pointer
-- `pop`
+- `pop`:
   - check if stack is empty
   - decrement pointer
   - return item at the old position of the stack pointer
@@ -526,23 +527,19 @@ string[] readLines = File.ReadAllLines("filename.txt");
 ## 2.4 Graphs
 
 - Graphs are used to represent more complex relationships
-- Weighted graphs are graphs where each edge has an associated value (weight)
-- Directed graphs have edges which have an associated direction
+- **Weighted** graphs (aka networks) are graphs where each edge has an associated value (weight)
+- **Directed** graphs (aka digraphs) have edges which have an associated direction
+
+- Graphs contain
+  - nodes (aka vertices)
+    - smallest unit of a graph
+  - ...joined by edges
 
 #### Uses
-
 - Representing networks
 - Representing maps
 
-#### Contains
-
-- Nodes
-  - vertex
-  - smallest unit of a graph
-- ...joined by edges
-
 #### Representations
-
 - Adjacency list
   - each node has a list of adjacent nodes
   - suitable for:
@@ -565,10 +562,9 @@ string[] readLines = File.ReadAllLines("filename.txt");
 
 ## 2.5 Trees
 
-- Trees are connected, undirected graphs with no cycles
+- Trees are **connected**, **undirected** graphs with **no cycles**
 
 #### Rooted tree
-
 - One vertex has been designated as the root (usually at the top of a tree), and has
   - parent-child relationships between nodes
   - root is the only node with no parent
@@ -576,33 +572,32 @@ string[] readLines = File.ReadAllLines("filename.txt");
 - Trees do not have to have a root
 
 #### Binary tree
-
 - Each node has at most 2 children
 - Has a root
 
 ## 2.6 Hash tables
 
-- Data structure containing mappings between keys and values based on an index calculated from a hashing algorithm
-- Theoretically O(1) access
+- A **hash table** is a data structure containing mappings between keys and values based on an index calculated from a hashing algorithm
+- Theoretically, accessing a record can be done in $O(1)$ time
+  - the hashing algorithm will determine the memory location used, so there is no need to search through each record
 
 #### Hashing algorithms
-
-- take in a input and return a hash
+- A **hashing algorithm** takes in a input and return a hash
   - the same hash is always returned for the same input
   - usually, the hashing algorithm involves modulo division with the size of the table
 - A good hashing algorithm should:
   - have a even distribution of hash values
   - use efficient operations
 
-#### Storing values
-
-- Hashing algorithm is applied to the key
-- The resultant hash is where the record should be stored
+#### Adding a new record
+- Hashing algorithm is applied to the **key**
+- The resultant hash is the index the record should be stored
 - If the location is not empty, then resolve the collision
 
 #### Collisions
-
-- Occurs when two key values compute the same hash
+- Collisions occur when two key values compute the same hash
+  - ...so the larger the table, the more collisions occur
+  - ...so direct access will not happen as frequently
 - This can be solved by:
   - Rehashing
     - Increase the size of the hash table
@@ -615,17 +610,15 @@ string[] readLines = File.ReadAllLines("filename.txt");
 
 ## 2.7 Dictionaries
 
-- Key-value pairs
-- Value is accessed via the associated key
+- **Dictonaries** are data structures which store **key-value pairs**
+- ...where a value is accessed via the associated key
 
-</br>
-
-- Can be implemented as:
-  - Associative arrays
-    - A pair of arrays, one storing keys and one storing values
-    - Indices correspond
-  - Multi-dimensional arrays
-    - Keys and values are stored on the same array
+#### Representations
+- Associative arrays
+  - A pair of arrays, one storing keys and one storing values
+  - Indices correspond
+- Multi-dimensional arrays
+  - Keys and values are stored on the same array
 
 ## 2.8 Vectors
 
@@ -811,10 +804,9 @@ procedure postorder(node)
 
 ### 3.3.1 Reverse Polish – infix transformations
 #### Infix to RPN
-
 - Traverse left to right
-- 1. Evaluate brackets first
-- 2. Write operands in order, then append operator at the end
+  - 1. Evaluate brackets first
+  - 2. Write operands in order, then append operator at the end
 
 > You must write operands in order, even if you can create a mathematically equivalent expression <br>
 > - e.g. `3 + 4 * 2 - 1` is `3 4 2 * + 1 -` only, not `4 2 * 3 + 1 -`
@@ -823,25 +815,24 @@ procedure postorder(node)
 > This is a post-order traversal
 
 #### RPN to Infix
-
 - Traverse left to right:
-- 1. Place operator between preceding two operands
-- 2. Place expresssion in backets
+  - 1. Place operator between preceding two operands
+  - 2. Place expresssion in backets
 
 #### Evaluation
-
 - Traverse left to right:
-- 1. Push **operands** onto stack
-- 2. Upon reaching an operator, pop two operands off the stack
-- 3. Apply the operation and push the result back on the stack
-- 4. Repeat until the end of the expression
-  - the top item on the stack will be the result
+  - 1. Push **operands** onto stack
+  - 2. Upon reaching an operator, pop two operands off the stack
+  - 3. Apply the operation and push the result back on the stack
+  - 4. Repeat until the end of the expression
+    - the top item on the stack will be the result
 
 ## 3.4 Searching algorithms
 
 ### 3.4.1 Linear search
 
-- Time complexity O(n)
+- Time complexity $O(n)$
+  - ...because there is a loop which repeats $n$ times
 
 ```pseudocode
 procedure linearsearch(target)
@@ -852,7 +843,9 @@ procedure linearsearch(target)
 
 ### 3.4.2 Binary search
 
-- Time complexity O(log n)
+- Time complexity $O(log n)$
+  - ...because each comparison halves the size of the list to be searched through
+- Requires a sorted list
 
 ```pseudocode
 procedure binarysearch(target)
@@ -891,7 +884,7 @@ procedure bstinsert(root, item)
 
 #### Searching
 
-- Time complexity O(log n)
+- Time complexity $O(log n)$
 
 ```pseudocode
 procedure BSTiterative(node, target)
@@ -923,11 +916,10 @@ procedure BSTrecursive(node, target)
 
 ### 3.5.1 Bubble sort
 
-- Time complexity O(n<sup>2</sup>)
+- Time complexity $O(n^2)$
+  - ...because each pass through the list $n$ items will be compared, and there are at most $n$ passes through the list
 
-> In each pass through the list n items will be examined and there will be (at most) n passes through the list
 #### Unoptimised
-
 ```pseudocode
 procedure bubblesort(array)
   for i = 0 to array.length - 1 do
@@ -937,7 +929,6 @@ procedure bubblesort(array)
 ```
 
 #### Optimised
-
 ```pseudocode
 procedure bubblesort(array)
   no_swaps = false
@@ -950,7 +941,7 @@ procedure bubblesort(array)
 ```
 ### 3.5.2 Merge sort
 
-- Time complexity O(n log n)
+- Time complexity $O(n log n)$
 
 ```pseudocode
 function mergesort(array)
@@ -1031,8 +1022,8 @@ function dijkstra(Graph, source):
 
 ### 4.1.2 Following and writing algorithms
 
-- An algorithm is a sequence of steps that can be followed to complete a task
-- Always terminates
+- An **algorithm** is a **sequence of steps** that can be followed to complete a task
+- ...which **always terminates**
 
 #### Programming constructs
 
@@ -1045,44 +1036,44 @@ function dijkstra(Graph, source):
 
 #### Representational abstraction
 
-- Representation arrived at by removing unnecessary details
+- **Representational abstraction** is to arrive at a representation by removing unnecessary details
 
 #### Abstraction by generalisation or categorisation
 
-- Grouping by common characteristics to arrive at a hierarchical relationship
+- **Abstraction by generalisation** is to group by common characteristics to arrive at a hierarchical relationship
   > something "is a kind of" something else
 
 ### 4.1.4 Information hiding
 
-- Hiding all details of an object that do not contribute to its essential characteristics
+- **Information hiding** is to hide all details of an object that do not contribute to its essential characteristics
 
 ### 4.1.5 Procedural abstraction
 
-- To abstract a computational method (the actual values used in any particular computation)
+- **Procedural abstraction** is to abstract a computational method (the actual values used in any particular computation)
 - ...in order to create a computational pattern or computational method
   - also known as a procedure
 
 ### 4.1.6 Functional abstraction
 
-- To abstract a procedure
+- **Functional abstraction** is to abstract a procedure
 - ...in order to disregard the particular computational method
   - also known as a fucntion
 
 ### 4.1.7 Data abstraction
 
-- To isolate how a compound data object is used from the details of how it is constructed
+- **Data abstraction** is to isolate how a compound data object is used from the details of how it is constructed
 - ...in order to allow new kinds of data objects to be constructed from previously defined types of data objects
 
 ### 4.1.8 Problem abstraction/reduction
 
-- Details are removed until the problem is represented in a way that is possible to solve
+- **Problem abstraction** is to remove details until the problem is represented in a way that is possible to solve
 - ...because the problem reduces to one that has already been solved
 
 ### 4.1.9 Decomposition
 
 > aka "procedural decomposition"
 
-- Breaking a problem into a number of subproblems
+- **Decomposition** is to break down a problem into a number of subproblems
 - ...so that each sub-problem accomplishes an identifiable task
 - ...or can be further subdivided
 
@@ -1107,7 +1098,7 @@ function dijkstra(Graph, source):
 
 #### Use
 
-- Model the behaviour of systems
+- A FSM can be used to model the behaviour of systems
   - compilers
   - hardware systems
   - syntax parsing
@@ -1123,15 +1114,15 @@ function dijkstra(Graph, source):
 
 #### Finite State Automata
 
-- FSMs with no output
+- **Finite state automata** are FSMs with no output
 - If only one transition between each state and input are possible
   - then the transition is uniquely determined by its input
   - and so the FSM is a deterministic Finite State Automaton
 
 #### Mealy Machine
 
-- A type of FSM with output
-- Do not have accepting states
+- A **Mealy Machine** is a type of FSM with output
+- ...which do not have accepting states
 - Produces output when input is being processed
   - ...instead of when a accepting state is reached
 - Only one transition between each state and input are possible
@@ -1145,11 +1136,11 @@ function dijkstra(Graph, source):
 
 ### 4.2.2 Maths for regular expressions
 
-- A set is an unordered collection of values in which each value occurs at most once
+- A set is an **unordered** collection of values in which each value occurs **at most once**
 
 #### Notation
 
-- A set A has elements 1, 2, 3, 4 and 5
+- A set $A$ has elements $1, 2, 3, 4$ and $5$
 
 ```math
 A = \{1, 2, 3, 4, 5\}
@@ -1235,8 +1226,8 @@ A - B = A \backslash B = \{x | x \in A \wedge x \notin B\}
 
 ### 4.2.3 Regular expressions
 
-- A way of describing a set
-- Allow particular types of languages to be described in a convenient shorthand notation
+- A **regular expression** is a way of describing a set
+- ...which allows particular types of languages to be described in a convenient shorthand notation
 
 #### Metacharacters
 
@@ -1252,6 +1243,10 @@ A - B = A \backslash B = \{x | x \in A \wedge x \notin B\}
 - Regular expressions and FSMs are equivalent ways of defining a regular language
 - Any language that FSMs will accept are regular languages
 
+<br>
+
+- Regular languages cannot do both left- and right-recursion (e.g. brackets)
+
 ## 4.3 Context-free languages
 
 ### 4.3.1 Backus-Naur Form (BNF)/syntax diagrams
@@ -1259,10 +1254,12 @@ A - B = A \backslash B = \{x | x \in A \wedge x \notin B\}
 #### Context-free languages
 
 - Languages that follow the rules of a context-free grammar
-- Context-free grammars are a set of production rules
+- **Context-free grammars** are a set of production rules
   - production rules can be made up of other production rules
   - does not depend on the context of where it is used
-    </br>
+  
+</br>
+
 - All regular expressions are context-free
 
 #### Backus-Naur Form
@@ -1272,7 +1269,9 @@ A - B = A \backslash B = \{x | x \in A \wedge x \notin B\}
 - `|` - OR operator
 - `ε` - the empty set
 - `<n> ::= ab` - production rule
-  </br>
+
+</br>
+
 - Recursive definition:
 
 ```pseudocode
@@ -1372,18 +1371,16 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 ### 4.4.5 Classifcation of algorithmic problems
 
 #### Tractable problems
-
-- Problems that have a polynomial (or less) time solution
+- **Tractable problems** are problems that have a polynomial (or less) time solution
 
 #### Intractable problems
-
-- Problems that have no polynomial (or less) time solution
-  - but still can be solved
+- **Intractable problems** are problems that have no polynomial (or less) time solution
+  - but still **can be solved**
 
 #### Heuristics
 
 - Heuristics are rules/knowledge about the problem domain
-  - used to find a good/approximate but not optimal solution to a problem
+  - used to find a good/approximate but **not optimal** solution to a problem
   - reduces the size of the search/problem space
   - changing some constraints in the problem to make it easier to solve
 - Heuristic methods are often used when tackling intractable problems
@@ -1391,7 +1388,7 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 
 ### 4.4.6 Computable and non-computable problems
 
-- some problems cannot be solved algorithmically
+- **Non-computable** problems cannot be solved algorithmically
 
 ### 4.4.7 Halting problem
 
@@ -1406,15 +1403,16 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 
 ### 4.5.1 Turing machine
 
-- a Turing machine can be viewed as a computer with a single fixed program, expressed using
+- A **Turing machine** can be viewed as a computer with a single fixed program, expressed using
   - a finite set of states in a state transition diagram
   - a set of transition rules
   - a finite alphabet of symbols
   - an infinite tape with marked-off squares
-  - a sensing read-write head that can travel along the tape, one square at a time
+  - a sensing read/write head that can travel along the tape, one square at a time
   - a state register
 - One of the states is called a start state and states that have no outgoing transitions arecalled halting states
 - Turing machines provide a (general/formal) model of computation
+  - iff an algorithm exists to solve a problem then a Turing machine can be designed to solve the problem
 
 <br>
 
