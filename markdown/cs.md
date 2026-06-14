@@ -2115,6 +2115,58 @@ Exponent
 
 > Coming soon!
 
+# 8 Consequences of uses of computing
+## 8.1 Individual (moral), social (ethical), legal and cultural issues and opportunities
+
+#### General
+- Developments in computer science and the digital technologies have dramatically altered the shape of communications and information flows in societies
+- ...including enabling massive transformations in the capacity to:
+  - monitor behaviour
+  - amass and analyse personal information
+  - distribute, publish, communicate and disseminate personal information
+- Computer scientists and software have power and responsibility in the algorithms that they devise and the code that they deploy
+- The issue of scale, for software the whole world over, creates potential for individual computer scientists and software engineers to produce great good, but with it comes the ability to cause great harm
+
+#### Legal challenges
+- Technology evolves quickly, so it is difficult for laws to keep up with changes
+  - new types of crime become possible
+- Legislators may lack technical expertise
+- Technology companies may use their wealth to lobby for their own interests
+- It is difficult to balance the needs of individuals (privacy) and state
+  - individuals may have access to large amounts of sensitive information that may be of public interest
+- Crimes may be committed in one country from outside its direct jurisdiction on the Internet
+  - including crimes commited by states
+- Methods such as encryption make it harder to monitor criminal activity
+  - ...so electronic evidence may be harder to gather than physical evidence
+- Resources required to enforce legislation may not be available
+
+#### Moral issues
+- If an incident occurs, who takes responsibility?
+  - including if the software/device is hacked
+- Systems may have to decide between the lesser of two evils
+
+#### Social/ethical issues
+- Will this lead to unemployment?
+- Will this set a precedence (for other similar products)?
+- Will this mislead people?
+- Will this influence people?
+- Will governments want to influence it?
+- Do people know what you are doing with their data?
+- ...and will people be ok with it if they know?
+
+#### Legal issues
+- If an incident occurs, who takes legal responsibility?
+- Data collection
+  - will the data be stored securely?
+  - where will the data be stored?
+  - who owns the data?
+- Will this encourage crime?
+
+#### Cultural issues
+- Different countries / cultures may have different attitudes to principles important to computer science (eg copyright, intellectual property, privacy)
+- Ways of exploiting human nature to increase uptake (eg advertising)
+- Does this improve safety/quality of life?
+
 # 7 Fundamentals of computer organisation and architecture
 
 ## 7.1 Internal hardware components of a computer
@@ -2278,6 +2330,11 @@ Exponent
 
 <br>
 
+- Assembly code:
+  - executes more quickly than high-level language source code
+  - uses less memory
+  - has more control over the final machine code
+
 #### Syntax
 - Symbols
   - cf. variables in high level languages
@@ -2344,12 +2401,12 @@ Exponent
 
 ### 7.4.1 Input and output devices
 #### Barcode reader
-- laser is directed at bar code to illuminate the barcode
-- moving mirror/prism moves light beam across bar code (or the reader is manually moved)
-- light is reflected back
+- A laser is directed at bar code to illuminate the barcode
+- A moving mirror/prism moves light beam across bar code (or the reader is manually moved)
+- Light is reflected back
   - black and white bands reflect different amounts of light 
 - A photodiode or CCD (charge-coupled device) measures the amount of reflected light, which is converted into electricial signal
-- and stored as binary
+- ...and stored as binary
 
 > Alternatively, barcode readers can just be cameras
 > - grid of sensors or a CMOS/CCD sensor measures light intensity of a point
@@ -2359,28 +2416,28 @@ Exponent
 > - and converted into the code
 
 #### Digital camera
-- light enters through the camera and is focused by the lens
+- Light enters through the camera and is focused by the lens
 - ...to pass through a Bayer filter to restrict light into RGB grids
 - ...on to an array of sensors on the a (CMOS/CCD) sensor chip
-- each sensor produces an electrical current/signal dependent upon light intensity, which represents a pixel
-- which is converted into binary data with an ADC
-- and a colour filter is applied to generate separate data values for RGB components
-- demosaicing is used to reconstruct the colours
-- the pixels are stored as an array;
+- Each sensor produces an electrical current/signal dependent upon light intensity, which represents a pixel
+- ...which is converted into binary data with an ADC
+- A colour filter is applied to generate separate data values for RGB components
+- Demosaicing is used to reconstruct the colours
+- The pixels are stored as an array
 
 #### Laser printer
 
-- bitmap of the page to be printed is generated
-- a negative charge is applied to a photosensitive drum
-- a moving mirror directs a laser beam at the drum
+- A bitmap of the page to be printed is generated
+- A negative charge is applied to a photosensitive drum
+- A moving mirror directs a laser beam at the drum
 - ...as the laser moves, areas struck by the laser loses charge
 - ...the negative bitmap is drawn on the paper
-- an opposite charge (to the drum) is applied to the toner
-- toner sticks to drum based on charge
-- and the paper is passed over the drum, where the toner transfers to it
+- An opposite charge (to the drum) is applied to the toner
+- The toner sticks to drum based on charge
+- The paper is passed over the drum, where the toner transfers to it
   - a oppositely charged (to the toner) transfer roller assists transfer of toner from drum to paper
-- a heater fuses the toner onto paper
-- for colour printing four different colour toners (CMYK) are required
+- A heater fuses the toner onto paper
+- For colour printing four different colour toners (CMYK) are required
 
 #### RFID
 
@@ -2389,6 +2446,7 @@ Exponent
 - RFID reader emits EM waves
 - ...which induces a current in the RFID tag
 - RFID tag transmits data on the tag to the reader via EM waves
+- ...over a very short range
 - RFID reader converts the waves back into binary data
 
 > Active RFID tags also exist; they have a internal power source and transmits actively
@@ -2587,6 +2645,9 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 - each computer has equal status and can act as both server and cluient
 - peers communicate directly with each other
 - resources are distributed across peers
+  - and the same resource can be shared from multiple peers
+- no centralised management of security
+- hardware and software on computers is (usually) general purpose
 
 </br>
 
@@ -2796,6 +2857,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
   - A query to one of 13 root name servers is sent, which responds with the IP address of the TLD nameserver
   - The DNS resolver then sends a DNS request to the TLD nameserver, which responds with the IP addess of the nameserver for the domain in the FQDN
   - The DNS resolver sends a DNS request to the authoritative nameserver for that domain, which knows the IP address of all of its hosts. It returns the IP address to the resolver, which then returns it to the client
+  - DNS servers support load distribution by returning one IP address from a list
 
 <br>
 
@@ -2999,7 +3061,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
   - configuring services
   - user management
   - configuring firewalls
-- SSH provides an encrypted connection
+- SSH provides an **encrypted** connection
 
 <br>
 
@@ -3055,7 +3117,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 - DHCP server is required
 - Process:
   - host broadcasts DHCPDISCOVER packet
-  - server broadcasts with DHCPOFFER pack
+  - server broadcasts DHCPOFFER packet which contains the offered configuration
   - host sends DHCPREQUEST packet to confirm the offer, and ask for additional information (e.g. subnet mask, DNS server)
   - server sends DHCPACK packet with the information requested
 
@@ -3121,6 +3183,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 | Applications hosted on server and accessed remotely | Applications installed locally        |
 | Has less computational power                        | Requires more computational power     |
 | Server requires more computational power            | Servers can be relatively low powered |
+| Higher bandwidth network connection                 | Lower bandwidth network connection    |
 
 # 10 Fundamentals of databases
 
@@ -3299,24 +3362,33 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 - ...and can be described in terms of:
   - **volume**
     - too large to be stored on a single server
+      - in the range of hundreds of terabytes
   - **velocity**
+    - data is generated very quickly, with thousands of items to process per second
     - created and modified in milliseconds
   - **variety**
-    - many forms of data
+    - many forms of data which may lack structure
+      - so cannot be represented by a relational database
 
-#### Issues
+#### To overcome:
   - Functional programming has:
     - immutable data structures
     - statelessness
     - higher-order functions
   - ...so,
-      - different processes can apply functions to the "same" data without worrying if they have been modified
-      - there is no need to wait for another process to finish
-      - there is no need to apply functions in a particular sequence
+    - different processes can apply functions to the "same" data without worrying if they have been modified
+    - there is no need to wait for another process to finish
+    - there is no need to apply functions in a particular sequence
+  - ...which makes it easier to write distribule code
+  - Distributed database systems can be used
+  - Servers with multiple CPUs, each with multiple cores can be used
+  - Machine learning can be used to predict data
+  - XML and JSON can be used to describe semi-structured data
+  - Fact-based models can be used
 
 #### Fact-based model
 - Relational databases do not suit the volume and variety of Big Data
-- ...so a Fact-based model is used
+- ...so a fact-based model is used
   - each piece of information is stored as an immutable fact
   - ...with a timestamp
 - This can be represented using a graph schema
@@ -3327,9 +3399,9 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 ## 12.1 Functional programming paradigm
 ### 12.1.1 Function type
 - A function $f$ has a type signature representing its domain $A$ and co-domain $B$
-  ```
-  f: A \mapsto B
-  ```
+```math
+f: A \mapsto B
+```
 - The domain and co-domain are always subsets of objects in some data type
 
 > Note that if a function takes two (or more) arguments, it only has one domain, which would be the cartesian product of the domains of the two arguments
