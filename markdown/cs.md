@@ -1997,6 +1997,7 @@ Exponent
 #### Subsitution cipher
 
 - letters are randomly replaced
+- ...but each letter is always encrypted to the same letter so is still subsceptible to frequency analysis
 
 #### Vernam cipher
 
@@ -2349,8 +2350,8 @@ Exponent
 
 ### 7.3.6 Interrupts
 
-- Interrupts are signals sent to the processor  allows the current process to be suspended
-- ...so the source of the interrupt can be serviced
+- Interrupts are signals sent to the processor which allows the current process to be suspended
+- ...so the **source** of the interrupt can be serviced
 
 <br>
 
@@ -2799,7 +2800,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 <br>
 
 - Routers
-  - pass packets across netwroks
+  - pass packets across netwroks (ie "connects networks together)
   - are connected to one or more routes via its interfaces
   - determines:
     - if the packet should be dropped
@@ -2991,7 +2992,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 <br>
 
-- Well-known ports are reserved ports for a specific procotol
+- Well-known ports are reserved ports for a **specific purpose**
   - so clients can initiate communication with remote servers
   - assigned by IANA
 
@@ -3049,7 +3050,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 - local changes are not synchronised
 
 #### IMAP (Internet Message Access Procotol)
-- access email messages from the mail server
+- retrieve/manage email messages from the mail server
 - changes are synchronised
 
 #### SMTP (Simple Mail Transfer Protocol)
@@ -3373,12 +3374,14 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 #### To overcome:
   - Functional programming has:
     - immutable data structures
+      - states stored in data structures cannot be changed
     - statelessness
+      - functions do not have side effects
     - higher-order functions
+      - ...which can compose the results of processing on multiple processors
   - ...so,
-    - different processes can apply functions to the "same" data without worrying if they have been modified
-    - there is no need to wait for another process to finish
-    - there is no need to apply functions in a particular sequence
+    - functions can be distributed to servers and executed on data sets then the results can be combined (aka map-reduce)
+    - the order of execution can be determined at run-time 
   - ...which makes it easier to write distribule code
   - Distributed database systems can be used
   - Servers with multiple CPUs, each with multiple cores can be used
