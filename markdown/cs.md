@@ -1439,26 +1439,33 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 
 ### 5.1.1 Natural numbers
 
-- ℕ = {0, 1, 2, 3, 4, ...}
+```math
+\mathbb{N} = \{0, 1, 2, 3, 4, ...\}
+```
 - Positive integers
 - Used for counting
 
 ### 5.1.2 Integer numbers
-
-- ℤ = {..., -2, -1, 0, 1, 2, ...}
+```math
+\mathbb{Z} = \{..., -2, -1, 0, 1, 2, ...\}
+```
 - Whole numbers
 
 ### 5.1.3 Rational numbers
 
-- ℚ = a/b where b != 0
+```math
+\mathbb{Q} = \{\frac{p}{q} | p, q \in \mathbb{Z}, q \neq 0\}
+```
 
 ### 5.1.4 Irrational numbers
 
-- Cannot be expressed as a/b where b != 0
+```math
+\mathbb{R} \setminus \mathbb{Q}
+```
 
 ### 5.1.5 Real numbers
 
-- ℝ is the set of all 'possible real world quantities'.
+- $\mathbb{R}$ is the set of all 'possible real world quantities'.
 - Used for measurements
 
 ### 5.1.6 Ordinal numbers
@@ -1471,19 +1478,17 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 ### 5.2.1 Number base
 
 - **Binary**
-  - **2** values per "digit"
+  - **2** values per "digit" (base 2)
     - 0 or 1
   - 1 bit
-  - Base-2
 
 | 2<sup>0</sup> | 2<sup>1</sup> | 2<sup>2</sup> | 2<sup>3</sup> | 2<sup>4</sup> | 2<sup>5</sup> | 2<sup>6</sup> | 2<sup>7</sup> |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 1             | 2             | 4             | 8             | 16            | 32            | 64            | 128           |
 
 - **Denary** (decimal)
-  - **10** values per "digit"
+  - **10** values per "digit" (base 10)
     - 0 - 9
-  - Base-10
   - 1 byte gives **255 denary values**
 
 | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    |
@@ -1491,10 +1496,9 @@ O(1) \subset O(log n) \subset O(n) \subset O(n log n) \subset O(n^c) \subset O(2
 | 0000 | 0001 | 0010 | 0011 | 0100 | 0101 | 0110 | 0111 | 1000 | 1001 |
 
 - **Hexadecimal** (hex)
-  - **16** values per "digit"
+  - **16** values per "digit" (base 16)
     - 0-9. A-F
-  - 1 nibble (4 bits)
-  - Base-16
+  - ...which is 1 nibble (4 bits)
   - Used in MAC and IPv6 addresses, memory dumps, colour codes, etc.
   - Are suitable, because:
     - provides a shorter/more compact representation of a number than binary
@@ -1830,52 +1834,53 @@ Exponent
     - 10 numeric digits
     - 32 punctuations and symbols
     - 32 printing control codes
-  - Limited usefulness in languages other than english, hence:
+  - limited usefulness in languages other than english, hence:
 - **Extended ASCII**
   - 8 bits, 256 characters
-    - Includes special accented characters used by European languages
+    - includes special accented characters used by European languages
 - **Unicode**
-  - Developed to represent every possible character in the world
-  - First 128 characters are backwards compatible with ASCII
-  - Allows the use of 8-48 bits, which creates a wider range of availble character codes
+  - developed to represent every possible character in the world
+  - first 128 characters are backwards compatible with ASCII
+  - allows the use of 8-48 bits, which creates a wider range of availble character codes
 
 ### 5.5.3 Error checking and correction
 
 - Parity bits
-  - A bit is added to a binary number to ensure that it has been transmitted correctly
-  - The sender counts the number of 1s in the data
+  - a bit is added to a binary number to ensure that it has been transmitted correctly
+  - the sender counts the number of 1s in the data
   - Even parity
-    - The value of the parity bit is chosen so as to make the total number of 1s in the transmitted data even
+    - the value of the parity bit is chosen so as to make the total number of 1s in the transmitted data even
   - Odd parity
-    - The value of the parity bit is chosen so as to make the total number of 1s in the transmitted data odd
-  - The receiver counts the number of 1s in the the recieved data, and compares it to the type of parity used.
-  - If the number of 1s does not match the parity type, the reciever requests a retransmission of the data
+    - the value of the parity bit is chosen so as to make the total number of 1s in the transmitted data odd
+  - the receiver counts the number of 1s in the the recieved data, and compares it to the type of parity used.
+  - if the number of 1s does not match the parity type, the reciever requests a retransmission of the data
   - Disadvantages:
-    - If an even number of bits is flipped, the parity bit system will not be able to detect the error
+    - cannot detect the position of the error
+    - if an even number of bits is flipped, the parity bit system will not be able to detect the error
 - Majority voting
-  - Each bit of the data is transmitted multiple (odd number greater than 2) times
-  - The reciever checks the bits it has recieved
-  - If they are not all the same, the most common value is taken to be correct
+  - each bit of the data is transmitted multiple (odd number greater than 2) times
+  - the reciever checks the bits it has recieved
+  - if they are not all the same, the most common value is taken to be correct
   - Advantages:
-    - Errors in transmission can be corrected as well as identified
-    - Can detect multiple bit errors
+    - errors in transmission can be corrected as well as identified
+    - can detect multiple bit errors
   - Disadvantages:
-    - The transmission size is increased dramatically
+    - the transmission size is increased dramatically
 - Checksums
-  - A value is calculated by a specific checksum algorithm and transmitted with the data
-  - The reciever recalculates the checksum with the same algorithm and compares it with the recieved checksum
-  - If they are not identical, the recieved data has to be resent
+  - a value is calculated by a specific checksum (hashing) algorithm and transmitted with the data
+  - the reciever recalculates the checksum with the same algorithm and compares it with the recieved checksum
+  - if they are not identical, the recieved data has to be resent
   - Disadvantages:
     - not very efficient, as the algorithms may be complex
 - Check digits
-  - Extremely similar to checksum, but a smaller value
-  - The complexity of the algorithm is limited, so it is more efficient than checksums (usually)
+  - extremely similar to checksum, but a smaller value
+  - the complexity of the algorithm is limited, so it is more efficient than checksums (usually)
 
 ## 5.6 Representing images, sound and other data
 
 ### 5.6.1 Bit patterns, images, sound and other data
 
-- Bit patterns may represent other forms of data, including graphics and sound.
+- Bit patterns may represent other forms of data, including graphics and sound
 
 ### 5.6.2 Analogue and digital
 
@@ -1892,33 +1897,29 @@ Exponent
 ### 5.6.3 Analogue/digital conversion
 
 - Digital to analogue:
-  - A digital to analogue converter (DAC) reads a bit pattern representing an analogue signal
-  - Outputs analogue alternating current
-  - The most common use for a DAC is to convert a digital audio signal to an analogue signal
+  - a digital to analogue converter (DAC) reads a bit pattern representing an analogue signal
+  - ...and outputs analogue alternating current
 - Analogue to digital:
-  - A analogue to digital converter (ADC) takes samples of the analogue signal at regular intervals
-  - Samples are quantised (approximated to an integer value) and encoded as a binary value
-  - ADCs are used with analogue sensors
+  - a analogue to digital converter (ADC) takes samples of the analogue signal at regular intervals
+  - ...the amplitude at each point is measured
+  - samples are quantised (approximated to an integer value) and encoded as a binary value
 
 ### 5.6.4 Bitmapped graphics
 
 - Image is broken down into pixels
-- Each pixel has a binary value assigned to it
-- Stored as an array of pixels
+- ...each pixel has a binary value assigned to it
+- ...and is stored as an array of pixels
 
 #### Resolution
 
-- Size of the image
-- Number of dots per inch
-
-#### Size in pixels
-
-- Number of pixels in the image
+- Resolution is the size of the image
+- ...which could be the number of pixels in the image, or
+- ...the number of dots per inch
 
 #### Colour depth
 
-- Number of bits stored in each pixel
-- Corresponding to the number of colours that can be displayed
+- Colour depth is the number of bits used to store each pixel
+- ...which corresponds to the number of colours that can be displayed
 
 #### Metadata
 
@@ -1954,6 +1955,7 @@ Exponent
 
 ### 5.6.7 Digital representation of sound
 
+- Each sample is the measurement of the amplitude of the sound wave at a point in time
 - The Nyquist theorem states that the sampling rate of a digital audio file must be at least twice the frequency of the sound
   - If the sampling rate is below this, the sound may not be accurately represented
 
@@ -1964,9 +1966,10 @@ Exponent
   - instrument
   - volume
   - sustained
-- Allows easy manipulation
+- Allows easy manipulation of each note
 - More compact representation
-- Can be generated directly and send to instruments directly
+  - a piece of music is likely to be composed of fewer events than the number of samples
+- Can be generated into sheet music directly or sent to instruments directly
 - No data is lost through sampling
 
 ### 5.6.9 Data compression
@@ -1986,30 +1989,30 @@ Exponent
 
 #### Caesar cipher
 
-- replaces characters with another character, which is kept the same
+- A **Caesar cipher** replaces characters with another character, which is kept the same
 
 #### Shift cipher
 
-- all letters are shifted by the same amount
+- In a **shift cipher**, all letters are shifted by the same amount
 - can be very easily cracked
   - the frequency of each character provides a clue; E is the most common letter in the English alphabet
 
 #### Subsitution cipher
 
-- letters are randomly replaced
+- In a **subsitution cipher**, letters are randomly replaced
 - ...but each letter is always encrypted to the same letter so is still subsceptible to frequency analysis
 
 #### Vernam cipher
 
-- contains a one-time pad
-  - key that should only be used once
-- key should be random and at least as long as the plaintext
-- the binary value of each character has a logical XOR applied with the key
-  -the key and the ciphertext must be transmitted to be decoded
+- In a **Vernam cipher**, the binary value of the ciphertext is logically XORed with the key
+  - the key and the ciphertext must be transmitted to be decoded
+- ...and the key is a one-time pad
+  - only be used once
+- ...which is random and at least as long as the plaintext
 
 </br>
 
-- All ciphers except the vernam cipher are crackable in theory.
+- All ciphers except the vernam cipher are crackable in theory
 - Not all of them can be cracked within a reasonable timeframe
   - This is known as computational security
 
@@ -2020,11 +2023,12 @@ Exponent
 ### 6.1.1 Relationship between hardware and software
 
 - Hardware is the physical components of a computer
-- Software are the sequences of instructions which make up programs on a computer
+- Software are the sequences of instructions which make up programs on a computer and run on the hardware
 
 ### 6.1.2 Classification of software
 
-- System software is used in the management of the system
+- System software is used in the control and management of the system
+  - which abstract the user from how the computer works
 - Application software peforms tasks for the user
   - general purpose software performs many tasks
   - special purpose software performs one specific task
@@ -2035,9 +2039,14 @@ Exponent
 - OS
   - provides an interface between hardware and software
 - Utility programs
-  - peforms non-core system maintenance
+  - peforms non-core system maintenance/management, eg
+    - anti-virus
+    - defragmenter
+    - backup
+    - compression
 - Libraries
-  - provides reusable code used by software applications
+  - provides reusable subroutines used by software applications
+  - ...which improves the speed of development
 - Translators
   - translate high-level source code to low-level machine code to be executed
 
@@ -2047,9 +2056,12 @@ Exponent
   - ...so each process things it has its own machine
   - provides a standard platform for applications using an API
 - and also provides resource management
-  - allocate processors (scheduling) and memory to competing processes
-  - handle communcation between I/O devices and processes
+  - allocate processors (scheduling) and memory to competing **processes**
+  - handle communcation between I/O devices and processes, which includes:
+    - interrupts
+    - drivers
   - file system to allocate space on storage devices
+  - authenticating users
 
 ## 6.2 Classification of programming languages
 
@@ -2063,6 +2075,10 @@ Exponent
 - They are made of opcodes and operands:
   - expressed as binary (machine code)
   - mnemonics (assembly)
+- Which means they usually:
+  - execute faster
+  - use less memory
+  - can directly control hardware
 
 #### High-level languages
 - High-level languages use human-oriented statements
@@ -2071,38 +2087,45 @@ Exponent
     - they are easier to understand by humans
     - programs are shorter and quicker to write
     - meaningful names and reusable libraries can be used
-    - data structures and programming structures can be used
+    - data structures and programming (flow-control) structures can be used
     - programs are portable between architecture
 
 <br>
 
-- Imperative languages provide instructions which are executed by the computer in a defined sequence
-  - each instruction in a high-level imperative language translates to many instructions in machine code
+- Imperative languages provide **instructions** which are executed by the computer in a defined **sequence**
+  - each instruction describes how to carry out a task
+  - each instruction in a high-level imperative language translates to **many** instructions in machine code
 
 ## 6.3 Types of program translator
 
 ### 6.3.1 Types of program translator
 
+- Translators are necessary because processors can only **execute** machine code instructions
+
 #### Assembler
 - Translates assembly language source code into machine code
+
 #### Compiler
 - Translates a program as a whole and produces object code
 - Compiling can be slow, but the compiled machine code runs quicker than a complier
-- Only provides a list of error once the compiling process has finished/stopped because there is an error
+- Only provides a list of error once the compiling process has finished/stops because there is an error
 - Hides the original source code
 - Compiled program does not require the compiler to run
 - If an unchanged program is executed multiple times, the compiler will only need to translate it once
+
 #### Interpreter
 - Translates a program one statement at a time, and calls pre-compiled subroutines to execute each statement
 - Stops intepreting when an error is encounted
 - Interpreter must be present for the program to run
+
 #### Bytecode
 - Provides an intermediate medium between interpreted and compiled languages
 - Source code is compiled into bytecode, which is then:
-  - just-in-time (JIT) compiled into object code and executed (by a virtual machine)
+  - just-in-time (JIT) compiled into object code (for the correct platform) and executed (by a virtual machine), or
   - interpreted and executed using pre-compiled subroutines
 - Bytecode is:
   - portable, if the appropriate runtime environment has been installed
+    - so only one translation is necessary
   - faster than purely interpreted languages (but not as fast as compiled code)
   - binary, consisting of opcodes and operands
 
@@ -2110,63 +2133,14 @@ Exponent
   
 ### 6.4.1 Logic gates
 
+#### Edge-triggered D-type flip-flop
+- On each "edge" (change of clock signal), the value of the output will change to the value of the input
+
 ## 6.5 Boolean algebra
 
 ### 6.5.1 Using Boolean algebra
 
 > Coming soon!
-
-# 8 Consequences of uses of computing
-## 8.1 Individual (moral), social (ethical), legal and cultural issues and opportunities
-
-#### General
-- Developments in computer science and the digital technologies have dramatically altered the shape of communications and information flows in societies
-- ...including enabling massive transformations in the capacity to:
-  - monitor behaviour
-  - amass and analyse personal information
-  - distribute, publish, communicate and disseminate personal information
-- Computer scientists and software have power and responsibility in the algorithms that they devise and the code that they deploy
-- The issue of scale, for software the whole world over, creates potential for individual computer scientists and software engineers to produce great good, but with it comes the ability to cause great harm
-
-#### Legal challenges
-- Technology evolves quickly, so it is difficult for laws to keep up with changes
-  - new types of crime become possible
-- Legislators may lack technical expertise
-- Technology companies may use their wealth to lobby for their own interests
-- It is difficult to balance the needs of individuals (privacy) and state
-  - individuals may have access to large amounts of sensitive information that may be of public interest
-- Crimes may be committed in one country from outside its direct jurisdiction on the Internet
-  - including crimes commited by states
-- Methods such as encryption make it harder to monitor criminal activity
-  - ...so electronic evidence may be harder to gather than physical evidence
-- Resources required to enforce legislation may not be available
-
-#### Moral issues
-- If an incident occurs, who takes responsibility?
-  - including if the software/device is hacked
-- Systems may have to decide between the lesser of two evils
-
-#### Social/ethical issues
-- Will this lead to unemployment?
-- Will this set a precedence (for other similar products)?
-- Will this mislead people?
-- Will this influence people?
-- Will governments want to influence it?
-- Do people know what you are doing with their data?
-- ...and will people be ok with it if they know?
-
-#### Legal issues
-- If an incident occurs, who takes legal responsibility?
-- Data collection
-  - will the data be stored securely?
-  - where will the data be stored?
-  - who owns the data?
-- Will this encourage crime?
-
-#### Cultural issues
-- Different countries / cultures may have different attitudes to principles important to computer science (eg copyright, intellectual property, privacy)
-- Ways of exploiting human nature to increase uptake (eg advertising)
-- Does this improve safety/quality of life?
 
 # 7 Fundamentals of computer organisation and architecture
 
@@ -2178,7 +2152,9 @@ Exponent
 - Processor 
   - executes instructions and sends control signals to other components
 - Main Memory
-  - temporarily stores data and instructions being processed by the CPI
+  - temporarily stores data and instructions being executed by the CPU
+  - ...and also the results of execution
+  - programs are transferred from secondary storage to memory to be executed
 - Address bus
   - group of wires which transmit the memory location being accessed by the CPU
   - unidirectional (CPU to memory)
@@ -2196,6 +2172,8 @@ Exponent
 - I/O controller
   - provides an interface between processor and other components
     - appears to the processor as addressable memory
+  - translates data received from a peripheral into a form that can be processed by a computer
+  - buffer data from a peripheral
   - consists of:
     - physical I/O ports
     - registers
@@ -2242,9 +2220,13 @@ Exponent
 
 - A processor is made up of many components:
   - control unit (CU)
+    - manages the fetch-execute cycle
+    - controls the fetching of instructions
     - decodes instructions fetched from memory and identify the operations to be carried out
     - ...and if the instruction is arithmetic, it sends a control signal to the ALU
     - ...or if it is related to memory, then the CU will send control signals to memory
+    - sends control signals in general
+    - handles interrupts
   - arithmetic logic unit (ALU)
     - carries out arithmetic and logical operations
     - stores result in the a specified GP register, or accumulator
@@ -2253,7 +2235,9 @@ Exponent
       - components activate on the rising or falling edge of the signal
     - determines the number of FDE cycles carried out per second
   - general-purpose registers
-    - small units of memory, storing values required by the processor to execute instructions
+    - small units of memory, which store
+      - values which will be used as operands or the results of operations
+      - values which need to be accessed frequently
     - GP registers store any type of data
   - dedicated registers
     - program counter (PC)
@@ -2265,23 +2249,30 @@ Exponent
       - stores the memory address where data should be retrieved or written to
     - memory buffer register (MBR)
       - stores the data recieved from the data bus/to be written to memory
+      - to handle the speed difference between processor and memory
     - status register (SR)
       - provides information about the result of the last instruction
+      - used to control conditional branch instructions
       - stores the status of the processor, e.g.:
         - interrupt flag
         - overflow flag
-        - accumulator
+        - sine, carry, equal
 
 ### 7.3.2 The Fetch-Execute cycle and the role of registers within it
 
 #### Fetch
 - contents of PC transferred to MAR
+  - ...so the PC can be updated
 - address bus used to transfer this address to main memory
+  - ...so the correct location is accessed
 - read enable sent along control bus
 - transfer of main memory content uses the data bus
 - contents of addressed memory location loaded into the MBR
+  - not all fetches are for instruction, so cannot load into CIR directly
 - increment contents of PC
+  - so the next instruction can be fetched
 - contents of MBR copied to CIR
+  - so if data is fetched again as part of the instruction the current instruction is not overwritten
 
 #### Decode
 - instruction to decode held by the CIR
@@ -2350,8 +2341,8 @@ Exponent
 
 ### 7.3.6 Interrupts
 
-- Interrupts are signals sent to the processor which allows the current process to be suspended
-- ...so the **source** of the interrupt can be serviced
+- Interrupts are signals sent to the processor which allows the current process to be **suspended**
+- ...so the **source** of the interrupt (i.e. needs the imeediate attention of the processor) can be **serviced**
 
 <br>
 
@@ -2368,6 +2359,8 @@ Exponent
 - Programs stored in memory (ROM or RAM) containing the instructions required to respond to an interrupt
 - Start address of each ISR stored in an interrupt vector table (IVT)
 - Interrupt register stores an offset vector relative to the start of the IVT to indicate the correct ISR to be executed
+- This will overwrite the register values
+  - ...so the volatile environment has to be safed
 
 #### Process
 - Processor detects interrupt
@@ -2382,18 +2375,23 @@ Exponent
 #### Multiple cores
 - Each core has its own CU and ALU, so multiple instructions can be processed at the same time
   - only if programs are multithreaded/tasks are parallelisable
+
 #### Cache memory
 - Cache is very fast memory located on/closed to the processor
   - ...made of SRAM (static RAM)
   - ...and stores recently fetched/anticipated instructions for faster retrieval
 - Larger -> more instructions can be stored, so faster fetching
+
 #### Clock speed
 - Instructions per second
+
 #### Word length
 - The size of instructions or the number of bits processed simultaneously
 - Higher -> improved performance
+
 #### Address bus width
 - Determines the size of addressable memory
+
 #### Data bus width
 - Determines the number of bits which can be transferred at once
   - typically identical to word length
@@ -2454,37 +2452,41 @@ Exponent
 
 ### 7.4.2 Secondary storage devices
 
-- Secondary storage is needed because:
-
+- Secondary storage is needed to:
+  - store programs while the computer is turned off
+    - ...because main memory is volatile
+  - transfer data between computers
+  - store larger files (too large for main memory)
 
 #### Hard disk
-- contains (multiple) disks stored vertically as a platter, and a read/write head
-- each disk is coated in a magnetisable material
+- Contains (multiple) disks stored vertically as a platter, and a read/write head
+- Each disk is coated in a magnetisable material
   - magnetising a spot in one direction could represent 0 and the other direction could represent 1
-- disk divided into tracks (radially) and sectors (like a normal circle)
+- Each disk is divided into tracks (radially) and sectors (like a normal circle)
   - each intersection is known as a block
-- disks spin at high speed
+- Disks spin at high speed
   - at a constant angular velocity
-- read/write head moves radially to correct track
+    - ...so the data near outside edge of disk stored less densely
+- Read/write head moves radially to correct track
 - ...and waits until correct sector passes under the read/write head
-- read/write head senses the magnetic field and converts the data to binary
+- Read/write head senses the magnetic field and converts the data to binary
   - the whole block is read together
-- data may be stored in a buffer while being read
-
+- Data may be stored in a buffer while being read
 > Each block is usually 512 or 4096 bits, but AQA writes their mark scheme like 1 block = 1 bit...
 
 #### Optical disk
-- disk is covered with pits and lands
-- a low power laser coupled with a photodiode illuminates the surface
+- Disk is covered with pits and lands on **one spiral track**
+- A low power laser coupled with a photodiode illuminates the surface
   - which moves radially
-- disk spins at a constant linear velocity
-- the photodiode detects the amount of light reflected from each pit and land
-- which is converted into binary data
+- Disk spins at a constant linear velocity
+- The photodiode detects the amount of light reflected from each pit and land
+- ...which is converted into binary data
   - transitions between each pit and land are encoded as 1, while contiuation is encoded as a 0
 
 <br>
-- prone to scratching
-- very cheap
+
+- Prone to scratching
+- Very cheap
 
 > Writing to optical disks
 > - disks have a photosensitive layer
@@ -2493,19 +2495,72 @@ Exponent
 #### Solid-state disk (SSD)
 > NOOOOO ITS A DRIVE!!! where is the disk in the SSD, AQA? don't you want your answers to be specific? double standards, not fair !! :(
 
-- data is stored electronically with no mechanical moving parts
-- data is stored in NAND flash made of floating gate transistors (electrons are trapped between oxide layers)
-  - presence/absebce of trapped electrons/charge 0 / 1
-- data is organised into pages
+- Data is stored electronically with no mechanical moving parts
+- Data is stored in NAND flash made of floating gate transistors (electrons are trapped between oxide layers)
+  - presence/absence of trapped electrons/charge 0 / 1
+- Data is organised into pages
   - and pages form blocks
-- a block must be erased before it can be written to
+- A block must be erased before it can be written to
   - and only a whole block can be written to, not a page
-- a controller manages the organisation of data
+- A controller manages the organisation of data
 
 <br>
-- can only be written a finite number of times; error rate will increase
-- lower power consumpton
-- generate less heat
+
+- Can only be written a finite number of times; error rate will increase
+- Lower power consumpton
+- Generates less heat
+
+# 8 Consequences of uses of computing
+## 8.1 Individual (moral), social (ethical), legal and cultural issues and opportunities
+
+#### General
+- Developments in computer science and the digital technologies have dramatically altered the shape of communications and information flows in societies
+- ...including enabling massive transformations in the capacity to:
+  - monitor behaviour
+  - amass and analyse personal information
+  - distribute, publish, communicate and disseminate personal information
+- Computer scientists and software have power and responsibility in the algorithms that they devise and the code that they deploy
+- The issue of scale, for software the whole world over, creates potential for individual computer scientists and software engineers to produce great good, but with it comes the ability to cause great harm
+
+#### Legal challenges
+- Technology evolves quickly, so it is difficult for laws to keep up with changes
+  - new types of crime become possible
+- Legislators may lack technical expertise
+- Technology companies may use their wealth to lobby for their own interests
+- It is difficult to balance the needs of individuals (privacy) and state
+  - individuals may have access to large amounts of sensitive information that may be of public interest
+- Crimes may be committed in one country from outside its direct jurisdiction on the Internet
+  - including crimes commited by states
+- Methods such as encryption make it harder to monitor criminal activity
+  - ...so electronic evidence may be harder to gather than physical evidence
+- Resources required to enforce legislation may not be available
+
+#### Moral issues
+- If an incident occurs, who takes responsibility?
+  - including if the software/device is hacked
+- Systems may have to decide between the lesser of two evils
+
+#### Social/ethical issues
+- Will this lead to unemployment?
+- Will this set a precedence (for other similar products)?
+- Will this mislead people?
+- Will this influence people?
+- Will governments want to influence it?
+- Do people know what you are doing with their data?
+- ...and will people be ok with it if they know?
+
+#### Legal issues
+- If an incident occurs, who takes legal responsibility?
+- Data collection
+  - will the data be stored securely?
+  - where will the data be stored?
+  - who owns the data?
+- Will this encourage crime?
+
+#### Cultural issues
+- Different countries / cultures may have different attitudes to principles important to computer science (eg copyright, intellectual property, privacy)
+- Ways of exploiting human nature to increase uptake (eg advertising)
+- Does this improve safety/quality of life?
 
 # 9 Fundamentals of communication and networking
 
@@ -2812,7 +2867,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 <br>
 
-- Gateways repackage packets to use a different link layer proctocol
+- Gateways converts frames to use a different link layer proctocol
   - packets may be sent between networks which use different link layer protocols
     - e.g. Ethernet to PPP (Point to Point Protocol)
 
@@ -2871,6 +2926,10 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 #### Internet registries
 - Internet registries are organisations responsible for the administration and organisation of IP address and domain names
+- ie registering domains to people/organisations 
+- ...so:
+  - domain names are unique
+  - domain names are entered in DNS
 - Internet Assigned Numbers Authority (IANA) - IP
   - delegates the administraion of IP addresses and ASNs to 5 regional internet registeries
 - Internet Corporation for Assigned Names and Number (iCANN) - DNS
@@ -2973,6 +3032,24 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
   - boot sector virus
     - runs before operating systems
 
+<br>
+- To reduce the threat posed by malware:
+  - monitoring
+    - firewalls block packets from sources known to be high-ridk
+    - proxy servers check downloaded files
+    - digital signatures 
+  - protection
+    - update software to path vulunerabilities
+    - use a virtual machine
+    - set access rights
+    - encrypt files
+    - backup data so it can be recovered
+    - use Harvard architechure so data cannot be executed as code
+  - code quality
+    - should not allow buffer overflow
+    - test software
+    - only use latest version of libraries
+
 ## 9.4 The Transmission Control Protocol/Internet Protocol (TCP/IP) protocol
 ### 9.4.1 TCP/IP
 #### TCP/IP stack
@@ -2982,8 +3059,8 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 | ----------- | --------------------------------------------- | ------------- |
 | Application | creates requests and interprets responses     | HTTPS, POP    |
 | Transport   | set up end-to-end communication between hosts <br> performs error detection <br> splits data into segments <br> adds port numbers to identify the correct application| TCP, UDP      |
-| Network     | encapsulates segements into packets <br> allows routing to be performed by adding source and destination IP address  | IP            |
-| Link        | physical transmission of data in frames       | Ethernet, PPP |
+| Network     | encapsulates segements into packets <br> allows routing to be performed by adding source and destination IP address <br> adds TTL | IP            |
+| Link        | physical transmission of data in frames <br> uses device drivers and NIC <br> adds hardware (MAC) address      | Ethernet, PPP |
 
 #### Sockets
 - Consists of an IP address and a port, separated by a colon
@@ -3130,13 +3207,20 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 ### 9.4.8 Network Address Translation (NAT)
 - NAT allows a single global IP address to be shared amongst many hosts in a LAN
-- managed by routers
+- ...and is managed by routers
   - a translation table is used 
-  - the TCP/UDP source port is changed to indicate which internal host/port the packet originated from
+<br>
+- Process:
+- 1. The source IP address is replaced with the public IP of the router
+- 2. The source port is replaces by a port generated by the router
+- 3. The generated port is mapped to the original address and port and is stored in the translation table
+- 4. When a reply is recieved, the destination port is looked up in the translation table
+- 5. The destination address/port is replaced with the original address/port of the internal host and transmitted to it
 
 ### 9.4.9 Port forwarding
-- a feature of NAT
-- routers set up to always forward packets with a specific destination port to a specific host/port
+- Port forwarding is a feature of NAT
+- Routers are set up to always forward packets with a specific destination port to a specific host/port
+  - ...using a port mapping table
 
 ### 9.4.10 Client server model
 - Servers provide services requested by clients
@@ -3190,25 +3274,15 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 ## 10.1 Conceptual data models and entity relationship model
 
-#### Entity
-
-- Thing about which data is to be store
-
-#### Attributes
-
-- Information about entities
-
-#### Entity Indentifiers
-
-- Unique attribute within a table to identify an entity
+- An **entity** is thing about which data is to be stored
+- **Attributes** are pieces of information about entities
+- **Entity Indentifiers** are unique attribute(s) within a table to identify an entity
 
 #### Entity description
-
-- Used to describe how an entity can be stored in a database
-- Written as:<br>Entity1 (<ins>Identifier</ins>, Attribute1, Attribute2, Attribute3)
+- An **entity description** is used to describe how an entity can be stored in a database
+- Written as: <br>Entity1 (<ins>Identifier</ins>, Attribute1, Attribute2, Attribute3)
 
 #### Entity-relationship diagrams
-
 - Tables in a database can be related to each other, linked by common attributes
 - ER diagrams are used to graphically represent relationships between tables
 - There are three types of relationships:
@@ -3221,20 +3295,11 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 
 ## 10.2 Relational databases
 
-- A type of database that organises data into multiple linked tables and provides access to data points related to each other
-
-#### Primary key
-
-- An attribute that provides a unique identifier for each entity
-
-#### Composite primary key
-
-- A primary key composed of multiple primary keys
-- Only used when it is not possible to form a primary key from just one attribute
-
-#### Foreign key
-
-- Attribute which is the primary key in another related table
+- A **relational database** is a type of database that organises data into multiple linked tables and provides access to data points related to each other
+- A **primary key** is an attribute that provides a unique identifier for each entity
+- A **composite** primary key is a primary key composed of multiple primary keys
+  - ...and is only used when it is not possible to form a primary key from just one attribute
+- A **foreign key** is an attribute which is the primary key in another related table
 
 ## 10.3 Database design and normalisation techniques
 
@@ -3269,8 +3334,9 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 - Third normal form (3NF)
   - Table is already in 2NF
   - There are no non-key dependencies
-    > For AQA, only knowledge of 3NF is required:
-    > every non-key attribute is dependent on the key; the whole key; and nothing but the key; contains no repeating groups; and all data is atomic
+
+> For AQA, only knowledge of 3NF is required:
+> every non-key attribute is dependent on the key; the whole key; and nothing but the key; contains no repeating groups; and all data is atomic
 
 ## 10.4 Structured Query Language (SQL)
 
@@ -3392,7 +3458,7 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 #### Fact-based model
 - Relational databases do not suit the volume and variety of Big Data
 - ...so a fact-based model is used
-  - each piece of information is stored as an immutable fact
+  - each piece of information is stored as an **immutable** fact
   - ...with a timestamp
 - This can be represented using a graph schema
   - entities are linked together with arrows representing their relationships
@@ -3422,8 +3488,10 @@ f: A \mapsto B
 
 ### 12.1.4 Partial function application
 - Partial function application is the process where:
-  - a function is applied to one of its argument
-  - a new function is output, which always does what the original function and paramater does
+  - a function is applied to one of its arguments
+  - a new function is output which:
+    - has fewer arguments
+    - always does what the original function and paramater does
 
 ### 12.1.5 Composition of functions
 - Function composition combines two functions $f$ and $g$ to form a new function $f \circ g$
