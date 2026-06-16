@@ -3322,18 +3322,18 @@ bit\ rate = baud\ rate \times bits\ per\ symbol
 </br>
 
 - First normal form (1NF)
-  - Data is atomic
+  - data is atomic
     - no attribute has more than one value
-  - There are no repeating groups
-  - Each row has a primary key
-  - There are no repeated rows
+  - there are no repeating groups
+  - each row has a primary key
+  - there are no repeated rows
 - Second normal form (2NF)
-  - Table is already in 1NF
-  - There are no partial key dependencies
+  - table is already in 1NF
+  - there are no partial key dependencies
     - every non-key attribute should depend upon the whole composite key
 - Third normal form (3NF)
-  - Table is already in 2NF
-  - There are no non-key dependencies
+  - table is already in 2NF
+  - there are no non-key dependencies
 
 > For AQA, only knowledge of 3NF is required:
 > every non-key attribute is dependent on the key; the whole key; and nothing but the key; contains no repeating groups; and all data is atomic
@@ -3476,7 +3476,7 @@ f: A \mapsto B
 > Note that if a function takes two (or more) arguments, it only has one domain, which would be the cartesian product of the domains of the two arguments
 
 ### 12.1.2 First-class object
-- First-class objects are objects which:
+- **First-class objects** are objects which:
   - appear in expressions
   - are assigned to variables
   - are used as arguments
@@ -3484,17 +3484,17 @@ f: A \mapsto B
 - Both imperative and functional languages have first-class objects
 
 ### 12.1.3 Function application
-- Function application is the process of providing a function with inputs
+- **Function application** is the process of providing a function with inputs
 
 ### 12.1.4 Partial function application
-- Partial function application is the process where:
+- **Partial function application** is the process where:
   - a function is applied to one of its arguments
   - a new function is output which:
     - has fewer arguments
     - always does what the original function and paramater does
 
 ### 12.1.5 Composition of functions
-- Function composition combines two functions $f$ and $g$ to form a new function $f \circ g$
+- **Function composition** combines two functions $f$ and $g$ to form a new function $f \circ g$
   - $g$ is applied first
   - the $f$ is then applied to the result
 
